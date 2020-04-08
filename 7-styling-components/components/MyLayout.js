@@ -7,6 +7,7 @@ const layoutStyle = {
 }
 
 const Layout = (props) => {
+  // 這邊import了 Header所以才能在畫面顯示Header中的內容
   return (
     <div style={layoutStyle}>
       <Header />
