@@ -6,7 +6,8 @@ const layoutStyle = {
   border: '1px solid #DDD'
 }
 
-export default function Layout(props) {
+const Layout = (props) => {
+  // 這邊import了 Header所以才能在畫面顯示Header中的內容
   return (
     <div style={layoutStyle}>
       <Header />
@@ -14,3 +15,5 @@ export default function Layout(props) {
     </div>
   )
 }
+
+export default Layout

@@ -1,9 +1,11 @@
-import Layout from '../components/MyLayout.js'
+import Layout from '../components/MyLayout'
 
-export default function About() {
+const About = () => {
   return (
     <Layout>
       <p>This is the about page</p>
     </Layout>
   )
 }
+
+export default About
