@@ -1,15 +1,21 @@
+import { useRouter } from 'next/router'
 import useSWR from 'swr'
+// css style 全都使用js進行書寫，額外嵌入避免畫面太多混雜的資訊
+import { mainStyle, quoteStyle, authorStyle } from './css/JsToCSS'
 
 const fetcher = (url) => {
-  return(
+  return (
     fetch(url).then(r => r.json())
   )
 }
 
 const Index = () => {
-  // 使用swr把api資料夾中的randomQuote function用進來
-  // 並且使用 data跟error承接內容
-  const { data, error } = useSWR('/api/randomQuote', fetcher)
+  const { query } = useRouter()
+  // 使用useSWR把data跟error解構為query接到的api/randomQuote接到的內容
+  const { data, error } = useSWR(
+    `/api/randomQuote${query.author ? '?author=' + query.author : ''}`,
+    fetcher
+  )
   const author = data?.author;
   let quote = data?.quote;
 
@@ -25,23 +31,3 @@ const Index = () => {
 }
 
 export default Index
-
-const mainStyle = {
-  width: "90%",
-  maxWidth: "900px",
-  margin: "300px auto",
-  textAlign: "center",
-}
-
-const quoteStyle = {
-  fontFamily: "cursive",
-  color: "#e243de",
-  fontSize: "24px",
-  paddingBottom: "10px",
-}
-
-const authorStyle = {
-  fontFamily: "sans-serif",
-  color: "#559834",
-  fontSize: "20px",
-}
