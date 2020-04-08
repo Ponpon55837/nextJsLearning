@@ -4,6 +4,7 @@ import fetch from 'isomorphic-unfetch'
 
 const Index = (props) => {
   // 當api抓取到值之後，props把接到的值map進li當中
+  // 這裡href為pages/p/[id].js但是後面使用as來代替為api中的id值
   return (
     <Layout>
       <h1>Batman TV Shows</h1>
