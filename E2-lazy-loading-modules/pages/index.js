@@ -2,6 +2,7 @@ import Layout from '../components/MyLayout.js'
 import Link from 'next/link'
 import loadDB from '../lib/load-db'
 
+
 const PostLink = (props) => {
   return (
     <li>
