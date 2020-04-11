@@ -1,7 +1,7 @@
 import Layout from '../../components/MyLayout.js'
 import loadDB from '../../lib/load-db'
 
-function Post({ item }) {
+const Post = ({ item }) => {
   return (
     <Layout>
       <h1>{item.title}</h1>

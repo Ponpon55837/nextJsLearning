@@ -2,7 +2,7 @@ import Layout from '../components/MyLayout.js'
 import Link from 'next/link'
 import loadDB from '../lib/load-db'
 
-function PostLink(props) {
+const PostLink = (props) => {
   return (
     <li>
       <Link href="/p/[id]" as={`/p/${props.id}`}>
@@ -12,7 +12,7 @@ function PostLink(props) {
   )
 }
 
-function Index({ stories }) {
+const Index = ({ stories }) => {
   return (
     <Layout>
       <h1>Hacker News - Latest</h1>
@@ -25,6 +25,7 @@ function Index({ stories }) {
   )
 }
 
+// 從loadDB路徑把從firebase的內容load進來
 Index.getInitialProps = async function() {
   const db = await loadDB()
 
