@@ -1,12 +1,12 @@
 import Link from 'next/link'
 
-const linkStyle = {
-  marginRight: 15
+const mainStyle = {
+  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'
 }
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light" style={mainStyle}>
       <Link href="/">
         <a className="navbar-brand">NextJsPublic</a>
       </Link>
