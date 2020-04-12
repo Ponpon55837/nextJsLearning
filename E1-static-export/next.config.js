@@ -4,6 +4,7 @@ module.exports = {
     return {
       '/': { page: '/' },
       '/about': { page: '/about' },
+      '/batman': { page: '/batman' },
       '/contact': { page: '/contact' }
     }
   }

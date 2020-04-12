@@ -1,7 +1,13 @@
 import Link from 'next/link'
 
 const mainStyle = {
-  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)'
+  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+  position: 'sticky',
+  top:'0',
+  width: '100%',
+  transition:'all 0.5s',
+  /* position: relative; */
+  zIndex: '1'
 }
 
 const Header = () => {
