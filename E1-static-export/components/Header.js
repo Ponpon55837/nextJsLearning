@@ -6,7 +6,6 @@ const mainStyle = {
   top:'0',
   width: '100%',
   transition:'all 0.5s',
-  /* position: relative; */
   zIndex: '1'
 }
 
