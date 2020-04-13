@@ -30,5 +30,4 @@ About.getInitialProps = async function () {
   }
 }
 
-
 export default About

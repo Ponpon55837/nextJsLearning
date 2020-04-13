@@ -5,7 +5,8 @@ module.exports = {
       '/': { page: '/' },
       '/about': { page: '/about' },
       '/batman': { page: '/batman' },
-      '/contact': { page: '/contact' }
+      '/contact': { page: '/contact' },
+      '/login': { page: '/login' }
     }
   }
 }
