@@ -32,6 +32,9 @@ const Header = () => {
           <Link href="/contact">
             <a className="nav-item nav-link ">Contact</a>
           </Link>
+          <Link href="/user">
+            <a className="nav-item nav-link ">UserIndex</a>
+          </Link>
           <Link href="/login">
             <a className="nav-item nav-link ">Login</a>
           </Link>
