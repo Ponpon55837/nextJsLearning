@@ -23,17 +23,11 @@ const Header = () => {
           <Link href="/">
             <a className="nav-item nav-link ">Home</a>
           </Link>
-          <Link href="/about">
-            <a className="nav-item nav-link ">About</a>
-          </Link>
           <Link href="/batman">
             <a className="nav-item nav-link ">Batman</a>
           </Link>
           <Link href="/contact">
             <a className="nav-item nav-link ">Contact</a>
-          </Link>
-          <Link href="/user">
-            <a className="nav-item nav-link ">UserIndex</a>
           </Link>
           <Link href="/login">
             <a className="nav-item nav-link ">Login</a>
@@ -43,5 +37,9 @@ const Header = () => {
     </nav>
   )
 }
+
+// <Link href="/about">
+//   <a className="nav-item nav-link ">About</a>
+// </Link>
 
 export default Header
