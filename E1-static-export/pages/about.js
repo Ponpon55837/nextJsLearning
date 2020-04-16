@@ -1,32 +1,28 @@
 import Layout from '../components/MyLayout.js'
 import fetch from 'isomorphic-unfetch'
 
-const About = (props) => {
+const About = ({ stars }) => {
   return (
     <Layout>
       <h1>This is the about page</h1>
       <ul className="list-group">
-        {
-          props.data.map(data => (
-            <li className="list-group-item" key={data.id}>
-              <h3>{data.title}</h3>
-              <h3><a href={data.url}>{data.thumbnailUrl}</a></h3>
-            </li>
-          ))
-        }
+        <li className="list-group-item">
+          <h3>{stars.svn_url}</h3>
+          <a href={stars.subscribers_url}>{stars.homepage}</a>
+        </li>
       </ul>
     </Layout>
   )
 }
 
-About.getInitialProps = async function () {
-  const res = await fetch('https://jsonplaceholder.typicode.com/photos')
+About.getInitialProps = async function ({ req }) {
+  const res = await fetch('https://api.github.com/repos/zeit/next.js')
   const data = await res.json()
 
   console.log(`Show data fetched. Count: ${data.length}`)
 
   return {
-    data
+    stars: data
   }
 }
 

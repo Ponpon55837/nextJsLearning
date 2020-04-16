@@ -3,11 +3,10 @@ module.exports = {
   exportPathMap: function() {
     return {
       '/': { page: '/' },
+      '/about': { page: '/about' },
       '/batman': { page: '/batman' },
       '/contact': { page: '/contact' },
       '/login': { page: '/login' }
     }
   }
 }
-
-// '/about': { page: '/about' },
