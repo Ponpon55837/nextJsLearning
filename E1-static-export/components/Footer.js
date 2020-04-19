@@ -17,7 +17,7 @@ const fatFooter = {
   textAlign: 'center',
   paddingTop: '25px',
   paddingBottom: '25px',
-  position: 'relative'
+  position: 'fixed'
 }
 
 export default Footer

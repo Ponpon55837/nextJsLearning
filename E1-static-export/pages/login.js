@@ -1,7 +1,7 @@
 import Layout from '../components/MyLayout'
 
 const divStyle = {
-  width:'31rem',
+  width:'auto',
   height: '18rem'
 }
 
