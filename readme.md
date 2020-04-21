@@ -35,3 +35,6 @@ npm run dev
 不過目前都是使用function component
 
 後續會一點點改成class component
+
+目前使用的網站：https://ttttproject-102f7.firebaseapp.com/about/
+這是由E1資料夾輸出的內容
