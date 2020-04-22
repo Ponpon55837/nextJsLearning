@@ -1,16 +1,22 @@
 import Layout from '../components/MyLayout.js'
 import fetch from 'isomorphic-unfetch'
+import Card from 'react-bootstrap/Card'
+import Accordion from 'react-bootstrap/Accordion'
 
 const About = ({ stars }) => {
   return (
     <Layout>
       <h1>This is the about page</h1>
-      <ul className="list-group">
-        <li className="list-group-item">
-          <h3>{stars.svn_url}</h3>
-          <a href={stars.subscribers_url}>{stars.homepage}</a>
-        </li>
-      </ul>
+      <Accordion defaultActiveKey="0">
+        <Card>
+          <Accordion.Toggle as={Card.Header} eventKey="0">
+            {stars.svn_url}
+          </Accordion.Toggle>
+          <Accordion.Collapse eventKey="0">
+            <Card.Body><a href={stars.subscribers_url}>{stars.homepage}</a></Card.Body>
+          </Accordion.Collapse>
+        </Card>
+      </Accordion>
     </Layout>
   )
 }

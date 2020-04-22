@@ -1,6 +1,7 @@
 import Layout from '../components/MyLayout'
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
+import ListGroup from 'react-bootstrap/ListGroup'
 
 const Batman = (props) => {
   // 當api抓取到值之後，props把接到的值map進li當中
@@ -9,13 +10,17 @@ const Batman = (props) => {
     <Layout>
       <h1>Batman TV Shows</h1>
       <ul>
-        {props.shows.map( show => (
-          <li key={show.id}>
-            <Link href="/batman/[id]" as={`/batman/${show.id}`}>
-              <a>{show.name}</a>
-            </Link>
-          </li>
-        ))}
+        {
+          props.shows.map( show => (
+            <ListGroup variant="flush" key={show.id}>
+              <ListGroup.Item>
+                <Link href="/batman/[id]" as={`/batman/${show.id}`}>
+                  <a>{show.name}</a>
+                </Link>
+              </ListGroup.Item>
+            </ListGroup>
+          ))
+        }
       </ul>
     </Layout>
   )
@@ -35,5 +40,11 @@ Batman.getInitialProps = async function() {
     shows: data.map(entry => entry.show)
   }
 }
+//
+// <li key={show.id}>
+//   <Link href="/batman/[id]" as={`/batman/${show.id}`}>
+//     <a>{show.name}</a>
+//   </Link>
+// </li>
 
 export default Batman
