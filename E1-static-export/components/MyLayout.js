@@ -3,6 +3,11 @@ import Header from './Header'
 import Footer from './Footer'
 import Head from 'next/head'
 
+// bootstrap
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 const layoutStyle = {
     // paddingTop: '60px'
 }
@@ -16,17 +21,13 @@ const Layout = (props) => {
       </Head>
       <Header />
       <br />
-      <div className="container">
-        <div className="row">
-          <div className="col">
-          </div>
-          <div className="col-12 col-sm-10 col-md-11 col-lg-11 col-xl-11">
-            {props.children}
-          </div>
-          <div className="col">
-          </div>
-        </div>
-      </div>
+      <Container>
+        <Row>
+          <Col xs={0} sm={0} md={1} lg={1}></Col>
+          <Col xs={12} sm={12} md={10} lg={10}>{props.children}</Col>
+          <Col xs={0} sm={0} md={1} lg={1}></Col>
+        </Row>
+      </Container>
       <br />
       <Footer />
     </div>

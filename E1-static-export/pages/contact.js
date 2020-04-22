@@ -1,6 +1,7 @@
 import Layout from '../components/MyLayout'
 import fetch from 'isomorphic-unfetch'
 import park from './api/parkAPI.json'
+import Card from 'react-bootstrap/Card'
 
 const Contact = (props) => {
   return (
@@ -8,22 +9,19 @@ const Contact = (props) => {
       <h1>Contacts</h1>
       {
         getPosts().map(park => (
-          <div className="card" key={park.areaId} park={park} style={parkStyle}>
-            <div className="card-header">
-              <h2>{park.areaName}</h2>
-            </div>
-            <div className="card-body">
-              <blockquote className="blockquote mb-0">
-                <p>{park.payGuide}</p>
-                <footer className="blockquote-footer">
-                  {park.introduction}
-                  <cite title="Source Title">-({park.address})</cite>
-                </footer>
-              </blockquote>
-            </div>
-          </div>
+          <Card key={park.areaId} park={park} style={parkStyle}>
+            <Card.Header>{park.areaName}</Card.Header>
+            <Card.Body>
+              <Card.Title>{park.introduction}</Card.Title>
+              <Card.Text>
+                {park.payGuide}
+              </Card.Text>
+            </Card.Body>
+            <Card.Footer><cite title="Source Title">({park.address})</cite></Card.Footer>
+          </Card>
         ))
       }
+      <br /><br />
     </Layout>
   )
 }
