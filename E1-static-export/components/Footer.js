@@ -1,9 +1,12 @@
+// bootstrap
+import Container from 'react-bootstrap/Container'
+
 const Footer = () => {
   return (
     <footer className="footer" style ={fatFooter}>
-      <div className="container">
+      <Container>
         <span className="text-muted">Upfloor make nextjs (๑•ี_เ•ี๑)</span>
-      </div>
+      </Container>
     </footer>
   )
 }
