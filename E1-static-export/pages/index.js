@@ -1,15 +1,21 @@
 import Layout from '../components/MyLayout'
 import Link from 'next/link'
+import ListGroup from 'react-bootstrap/ListGroup'
+
 
 const Index = () => {
   return (
     <Layout>
       <h1>My Blog</h1>
-      <ul>
-        {getPosts().map(post => (
-          <PostLink key={post.id} post={post} />
-        ))}
-      </ul>
+      {
+        getPosts().map(post => (
+          <ListGroup variant="flush" key={post.id}>
+            <ListGroup.Item>
+              <PostLink key={post.id} post={post} />
+            </ListGroup.Item>
+          </ListGroup>
+        ))
+      }
     </Layout>
   )
 }
@@ -25,11 +31,9 @@ const getPosts = () => {
 
 // 當作額外插入的link來使用，這裡面的post.id，post.title都是藉由被map進來的post值使用
 const PostLink = ({ post }) => (
-  <li>
     <Link href="/batman/[id]" as={`/batman/${post.id}`}>
       <a>{post.title}</a>
     </Link>
-  </li>
 )
 
 export default Index
