@@ -1,21 +1,33 @@
 import Layout from '../components/MyLayout'
 import Link from 'next/link'
+// bootstrap
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import ListGroup from 'react-bootstrap/ListGroup'
-
 
 const Index = () => {
   return (
     <Layout>
-      <h1>My Blog</h1>
-      {
-        getPosts().map(post => (
-          <ListGroup variant="flush" key={post.id}>
-            <ListGroup.Item>
-              <PostLink key={post.id} post={post} />
-            </ListGroup.Item>
-          </ListGroup>
-        ))
-      }
+      <Container>
+        <Row>
+          <Col xs={0} sm={0} md={1} lg={2} xl={2}>
+          </Col>
+          <Col xs={12} sm={12} md={10} lg={8} xl={8}>
+            <h1>My Blog</h1>
+            {
+              getPosts().map(post => (
+                <ListGroup variant="flush" key={post.id}>
+                  <ListGroup.Item>
+                    <PostLink key={post.id} post={post} />
+                  </ListGroup.Item>
+                </ListGroup>
+              ))
+            }
+          </Col>
+          <Col xs={0} sm={0} md={1} lg={2} xl={2}></Col>
+        </Row>
+      </Container>
     </Layout>
   )
 }

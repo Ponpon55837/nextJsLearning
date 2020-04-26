@@ -1,6 +1,10 @@
 import Layout from '../components/MyLayout'
 import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
+// bootstrap
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 import ListGroup from 'react-bootstrap/ListGroup'
 
 const Batman = (props) => {
@@ -8,20 +12,29 @@ const Batman = (props) => {
   // 這裡href為pages/p/[id].js但是後面使用as來代替為api中的id值
   return (
     <Layout>
-      <h1>Batman TV Shows</h1>
-      <ul>
-        {
-          props.shows.map( show => (
-            <ListGroup variant="flush" key={show.id}>
-              <ListGroup.Item>
-                <Link href="/batman/[id]" as={`/batman/${show.id}`}>
-                  <a>{show.name}</a>
-                </Link>
-              </ListGroup.Item>
-            </ListGroup>
-          ))
-        }
-      </ul>
+      <Container>
+        <Row>
+          <Col xs={0} sm={0} md={1} lg={2} xl={2}>
+          </Col>
+          <Col xs={12} sm={12} md={10} lg={8} xl={8}>
+            <h1>Batman TV Shows</h1>
+            <ul>
+              {
+                props.shows.map( show => (
+                  <ListGroup variant="flush" key={show.id}>
+                    <ListGroup.Item>
+                      <Link href="/batman/[id]" as={`/batman/${show.id}`}>
+                        <a>{show.name}</a>
+                      </Link>
+                    </ListGroup.Item>
+                  </ListGroup>
+                ))
+              }
+            </ul>
+          </Col>
+          <Col xs={0} sm={0} md={1} lg={2} xl={2}></Col>
+        </Row>
+      </Container>
     </Layout>
   )
 }
