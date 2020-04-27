@@ -8821,9 +8821,9 @@ var Index = function Index() {
       columnNumber: 9
     }
   }, __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    xs: 0,
+    className: "d-none d-sm-none d-md-block",
     sm: 0,
-    md: 1,
+    md: 2,
     lg: 2,
     xl: 2,
     __self: _this,
@@ -8832,7 +8832,43 @@ var Index = function Index() {
       lineNumber: 14,
       columnNumber: 11
     }
-  }), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    style: listGroupStyle,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 13
+    }
+  }, headers.map(function (header) {
+    return __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_6__["default"].Item, {
+      style: listGroupStyle,
+      key: header,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 19
+      }
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: "/[headers]",
+      as: "/".concat(header),
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 19,
+        columnNumber: 21
+      }
+    }, __jsx("a", {
+      style: wordCapitalize,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 23
+      }
+    }, header)));
+  }))), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_5__["default"], {
     xs: 12,
     sm: 12,
     md: 10,
@@ -8841,14 +8877,14 @@ var Index = function Index() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 28,
       columnNumber: 11
     }
   }, __jsx("h1", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 29,
       columnNumber: 13
     }
   }, "My Blog"), getPosts().map(function (post) {
@@ -8858,14 +8894,14 @@ var Index = function Index() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20,
+        lineNumber: 32,
         columnNumber: 17
       }
     }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_6__["default"].Item, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21,
+        lineNumber: 33,
         columnNumber: 19
       }
     }, __jsx(PostLink, {
@@ -8874,20 +8910,20 @@ var Index = function Index() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 34,
         columnNumber: 21
       }
     })));
   })), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_5__["default"], {
     xs: 0,
     sm: 0,
-    md: 1,
+    md: 0,
     lg: 2,
     xl: 2,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 40,
       columnNumber: 11
     }
   }))));
@@ -8916,24 +8952,32 @@ var PostLink = function PostLink(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46,
+      lineNumber: 58,
       columnNumber: 5
     }
   }, __jsx("a", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
+      lineNumber: 59,
       columnNumber: 7
     }
   }, post.title));
-};
+}; // 使用陣列把連結塞入map中
 
+
+var headers = ['about', 'batman', 'contact', 'login'];
+var wordCapitalize = {
+  textTransform: "capitalize"
+};
+var listGroupStyle = {
+  padding: '8px'
+};
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!**************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2FE1-static-export%2Fpages%2Findex.js ***!
   \**************************************************************************************************************************************************************/
@@ -8956,5 +9000,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

@@ -11,7 +11,19 @@ const Index = () => {
     <Layout>
       <Container>
         <Row>
-          <Col xs={0} sm={0} md={1} lg={2} xl={2}>
+          <Col className='d-none d-sm-none d-md-block' sm={0} md={2} lg={2} xl={2}>
+            <ListGroup style={listGroupStyle}>
+              {
+                headers.map(header => (
+                  <ListGroup.Item style={listGroupStyle} key={header}>
+                    <Link href="/[headers]" as={`/${header}`}>
+                      <a style={wordCapitalize} >{header}</a>
+                      </Link>
+                  </ListGroup.Item>
+
+                ))
+              }
+            </ListGroup>
           </Col>
           <Col xs={12} sm={12} md={10} lg={8} xl={8}>
             <h1>My Blog</h1>
@@ -25,7 +37,7 @@ const Index = () => {
               ))
             }
           </Col>
-          <Col xs={0} sm={0} md={1} lg={2} xl={2}></Col>
+          <Col xs={0} sm={0} md={0} lg={2} xl={2}></Col>
         </Row>
       </Container>
     </Layout>
@@ -47,5 +59,16 @@ const PostLink = ({ post }) => (
       <a>{post.title}</a>
     </Link>
 )
+
+// 使用陣列把連結塞入map中
+const headers = ['about', 'batman', 'contact', 'login']
+
+const wordCapitalize = {
+  textTransform: "capitalize"
+}
+
+const listGroupStyle = {
+  padding: '8px'
+}
 
 export default Index
