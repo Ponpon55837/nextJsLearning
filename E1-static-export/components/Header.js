@@ -11,32 +11,34 @@ const mainStyle = {
   zIndex: '1'
 }
 
+const wordCapitalize = {
+  textTransform: "capitalize"
+}
+
 const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" style={mainStyle}>
-      <Navbar.Brand href="#home">NextJS with Bootstrap</Navbar.Brand>
+      <Navbar.Brand href="/">NextJS with Bootstrap</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <Link href="/">
             <a className="nav-item nav-link ">Home</a>
           </Link>
-          <Link href="/about">
-            <a className="nav-item nav-link ">About</a>
-          </Link>
-          <Link href="/batman">
-            <a className="nav-item nav-link ">Batman</a>
-          </Link>
-          <Link href="/contact">
-            <a className="nav-item nav-link ">Contact</a>
-          </Link>
-          <Link href="/login">
-            <a className="nav-item nav-link ">Login</a>
-          </Link>
+          {
+            headers.map(header => (
+              <Link href="/[headers]" as={`/${header}`}>
+                <a className="nav-item nav-link" style={wordCapitalize}>{header}</a>
+              </Link>
+            ))
+          }
         </Nav>
       </Navbar.Collapse>
     </Navbar>
   )
 }
+
+// 使用陣列把連結塞入map中
+const headers = ['about', 'batman', 'contact', 'login']
 
 export default Header
