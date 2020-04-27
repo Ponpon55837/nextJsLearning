@@ -2,17 +2,39 @@ import { useRouter } from 'next/router'
 // 用來顯示 `` 中的內容，使用markdown的css標籤來做為外觀調整
 import Markdown from 'react-markdown'
 import Layout from '../../components/MyLayout'
+// bootstrap
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Card from 'react-bootstrap/Card'
+
+const cardHeader = {
+  background: 'linear-gradient(to bottom right, #f8f0a9 0%, #fbf1f8 100%)'
+}
 
 const IdPost = () => {
   const router = useRouter()
   return (
     <Layout>
-      <h1>{router.query.id}</h1>
-      <div className="markdown">
-        <Markdown
-          source={`This is our blog post.Yes. We can have a [link](/link).And we can have a title as well.### This is a title And here's the content.`}
-        />
-      </div>
+      <Container>
+        <Row>
+          <Col xs={0} sm={0} md={1} lg={2} xl={2}>
+          </Col>
+          <Col xs={12} sm={12} md={10} lg={8} xl={8}>
+            <Card border="primary" style={{ width: 'auto' }}>
+              <Card.Header style={cardHeader}><h1>{router.query.id}</h1></Card.Header>
+              <Card.Body>
+                <Card.Text className="markdown">
+                  <Markdown
+                    source={`This is our blog post.Yes. We can have a [link](/link).And we can have a title as well.### This is a title And here's the content.`}
+                  />
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs={0} sm={0} md={1} lg={2} xl={2}></Col>
+        </Row>
+      </Container>
       <style jsx global>
         {`
           .markdown {

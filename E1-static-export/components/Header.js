@@ -28,7 +28,7 @@ const Header = () => {
           {
             headers.map(header => (
               <Link href="/[headers]" as={`/${header}`}>
-                <a className="nav-item nav-link" style={wordCapitalize}>{header}</a>
+                <a className="nav-item nav-link " style={wordCapitalize} >{header}</a>
               </Link>
             ))
           }

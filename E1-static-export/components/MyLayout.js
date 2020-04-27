@@ -3,10 +3,6 @@ import Header from './Header'
 import Footer from './Footer'
 import Head from 'next/head'
 
-const layoutStyle = {
-    // paddingTop: '60px'
-}
-
 const Layout = (props) => {
   return (
     <div>
