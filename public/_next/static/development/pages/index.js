@@ -157,31 +157,62 @@ var Header = function Header() {
       lineNumber: 26,
       columnNumber: 13
     }
-  }, "Home")), headers.map(function (header) {
-    return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/[headers]",
-      as: "/".concat(header),
+  }, "Home")), getHeaders().map(function (header) {
+    return __jsx(HeaderLink, {
+      key: header.id,
+      header: header,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 30,
         columnNumber: 15
       }
-    }, __jsx("a", {
-      className: "nav-item nav-link ",
-      style: wordCapitalize,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 31,
-        columnNumber: 17
-      }
-    }, header));
+    });
   }))));
-}; // 使用陣列把連結塞入map中
+}; // 使用function作爲api承接內容，在上方的return中map接到的值
 
 
-var headers = ['about', 'batman', 'contact', 'login'];
+var getHeaders = function getHeaders() {
+  return [{
+    id: 'about',
+    title: 'About'
+  }, {
+    id: 'batman',
+    title: 'Batman'
+  }, {
+    id: 'contact',
+    title: 'Contact'
+  }, {
+    id: 'login',
+    title: 'Login'
+  }];
+};
+
+var HeaderLink = function HeaderLink(_ref) {
+  var header = _ref.header;
+  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/[headers]",
+    as: "/".concat(header.id),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 3
+    }
+  }, __jsx("a", {
+    className: "nav-item nav-link ",
+    style: wordCapitalize,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 5
+    }
+  }, header.title));
+}; // // 使用陣列把連結塞入map中
+// const headers = ['about', 'batman', 'contact', 'login']
+
+
 /* harmony default export */ __webpack_exports__["default"] = (Header);
 
 /***/ }),
@@ -8852,34 +8883,34 @@ var Index = function Index(_ref) {
       lineNumber: 18,
       columnNumber: 15
     }
-  }, headers.map(function (header) {
-    return __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_7__["default"].Item, {
-      style: listGroupStyle,
-      key: header,
+  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 17
+    }
+  }, __jsx("a", {
+    className: "nav-item nav-link ",
+    style: wordCapitalize,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 19
+    }
+  }, "home")), getHeaders().map(function (header) {
+    return __jsx(HeaderLink, {
+      key: header.id,
+      header: header,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21,
+        lineNumber: 24,
         columnNumber: 21
       }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: "/[headers]",
-      as: "/".concat(header),
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 23
-      }
-    }, __jsx("a", {
-      style: wordCapitalize,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23,
-        columnNumber: 25
-      }
-    }, header)));
+    });
   }))), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_6__["default"], {
     xs: 12,
     sm: 12,
@@ -8889,14 +8920,14 @@ var Index = function Index(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31,
+      lineNumber: 29,
       columnNumber: 13
     }
   }, __jsx("h1", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 30,
       columnNumber: 15
     }
   }, "My Blog"), getPosts().map(function (post) {
@@ -8906,14 +8937,14 @@ var Index = function Index(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35,
+        lineNumber: 33,
         columnNumber: 19
       }
     }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_7__["default"].Item, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36,
+        lineNumber: 34,
         columnNumber: 21
       }
     }, __jsx(PostLink, {
@@ -8922,7 +8953,7 @@ var Index = function Index(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37,
+        lineNumber: 35,
         columnNumber: 23
       }
     })));
@@ -8935,7 +8966,7 @@ var Index = function Index(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 41,
       columnNumber: 13
     }
   })))));
@@ -8964,21 +8995,60 @@ var PostLink = function PostLink(_ref2) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 5
+      lineNumber: 60,
+      columnNumber: 3
     }
   }, __jsx("a", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
-      columnNumber: 7
+      lineNumber: 61,
+      columnNumber: 5
     }
   }, post.title));
 }; // 使用陣列把連結塞入map中
+// const headers = ['about', 'batman', 'contact', 'login']
 
 
-var headers = ['about', 'batman', 'contact', 'login'];
+var getHeaders = function getHeaders() {
+  return [{
+    id: 'about',
+    title: 'About'
+  }, {
+    id: 'batman',
+    title: 'Batman'
+  }, {
+    id: 'contact',
+    title: 'Contact'
+  }, {
+    id: 'login',
+    title: 'Login'
+  }];
+};
+
+var HeaderLink = function HeaderLink(_ref3) {
+  var header = _ref3.header;
+  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    href: "/[headers]",
+    as: "/".concat(header.id),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77,
+      columnNumber: 3
+    }
+  }, __jsx("a", {
+    className: "nav-item nav-link ",
+    style: wordCapitalize,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78,
+      columnNumber: 5
+    }
+  }, header.title));
+};
+
 var wordCapitalize = {
   textTransform: "capitalize"
 };
@@ -8989,7 +9059,7 @@ var listGroupStyle = {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!**************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2FE1-static-export%2Fpages%2Findex.js ***!
   \**************************************************************************************************************************************************************/
@@ -9012,5 +9082,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
