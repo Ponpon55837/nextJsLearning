@@ -1,46 +1,50 @@
 import Layout from '../components/MyLayout'
 import Link from 'next/link'
+import Head from 'next/head'
 // bootstrap
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import ListGroup from 'react-bootstrap/ListGroup'
 
-const Index = () => {
+const Index = ({title = 'Index Title Page'}) => {
   return (
-    <Layout>
-      <Container>
-        <Row>
-          <Col className='d-none d-sm-none d-md-block' sm={0} md={2} lg={2} xl={2}>
-            <ListGroup style={listGroupStyle}>
-              {
-                headers.map(header => (
-                  <ListGroup.Item style={listGroupStyle} key={header}>
-                    <Link href="/[headers]" as={`/${header}`}>
-                      <a style={wordCapitalize} >{header}</a>
-                      </Link>
-                  </ListGroup.Item>
+    <>
+      <Head><title>{title}</title></Head>
+      <Layout>
+        <Container>
+          <Row>
+            <Col className='d-none d-sm-none d-md-block' sm={0} md={2} lg={2} xl={2}>
+              <ListGroup style={listGroupStyle}>
+                {
+                  headers.map(header => (
+                    <ListGroup.Item style={listGroupStyle} key={header}>
+                      <Link href="/[headers]" as={`/${header}`}>
+                        <a style={wordCapitalize} >{header}</a>
+                        </Link>
+                    </ListGroup.Item>
 
+                  ))
+                }
+              </ListGroup>
+            </Col>
+            <Col xs={12} sm={12} md={10} lg={8} xl={8}>
+              <h1>My Blog</h1>
+              {
+                getPosts().map(post => (
+                  <ListGroup variant="flush" key={post.id}>
+                    <ListGroup.Item>
+                      <PostLink key={post.id} post={post} />
+                    </ListGroup.Item>
+                  </ListGroup>
                 ))
               }
-            </ListGroup>
-          </Col>
-          <Col xs={12} sm={12} md={10} lg={8} xl={8}>
-            <h1>My Blog</h1>
-            {
-              getPosts().map(post => (
-                <ListGroup variant="flush" key={post.id}>
-                  <ListGroup.Item>
-                    <PostLink key={post.id} post={post} />
-                  </ListGroup.Item>
-                </ListGroup>
-              ))
-            }
-          </Col>
-          <Col xs={0} sm={0} md={0} lg={2} xl={2}></Col>
-        </Row>
-      </Container>
-    </Layout>
+            </Col>
+            <Col xs={0} sm={0} md={0} lg={2} xl={2}></Col>
+          </Row>
+        </Container>
+      </Layout>
+    </>
   )
 }
 
