@@ -27,13 +27,13 @@ const Login = (props, {title = 'Login and Regist Page'}) => {
     <>
       <Head><title>{title}</title></Head>
       <Layout>
-        <Container>
+        <Container fluid>
           <Row>
-            <Col xs={0} sm={0} md={1} lg={2} xl={2}>
+            <Col xs={0} sm={0} md={2} lg={2} xl={2}>
             </Col>
-            <Col xs={12} sm={12} md={10} lg={8} xl={8}>
+            <Col xs={12} sm={12} md={8} lg={8} xl={8}>
               <Row>
-                <Col xs={12} sm={12} md={12} lg={12} xl={6} style={colStyle}>
+                <Col xs={12} sm={12} md={12} lg={6} xl={6} style={colStyle}>
                   <Card style={divStyle}>
                     <Card.Header style={cardTitleStyle}>Login</Card.Header>
                     <Card.Body>
@@ -59,7 +59,7 @@ const Login = (props, {title = 'Login and Regist Page'}) => {
                     </Card.Body>
                   </Card>
                 </Col>
-                <Col xs={12} sm={12} md={12} lg={12} xl={6} style={colStyle}>
+                <Col xs={12} sm={12} md={12} lg={6} xl={6} style={colStyle}>
                   <Card style={divStyle}>
                     <Card.Header style={cardTitleStyle}>Regist</Card.Header>
                     <Card.Body>
@@ -85,7 +85,7 @@ const Login = (props, {title = 'Login and Regist Page'}) => {
               </Row>
               <br /><br /><br />
             </Col>
-            <Col xs={0} sm={0} md={1} lg={2} xl={2}></Col>
+            <Col xs={0} sm={0} md={2} lg={2} xl={2}></Col>
           </Row>
         </Container>
       </Layout>

@@ -13,7 +13,7 @@ const Contact = (props, {title = 'Contact to the park'}) => {
     <>
       <Head><title>{title}</title></Head>
       <Layout>
-        <Container>
+        <Container fluid>
           <Row>
             <Col xs={0} sm={0} md={1} lg={2} xl={2}>
             </Col>
