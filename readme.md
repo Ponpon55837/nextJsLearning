@@ -18,8 +18,7 @@ npm run dev
 
 2. 使用匯出功能
 
-請輸入 npm run build，跑完後輸入npm run exportTrailingSlash
-
+請輸入 npm run build，跑完後輸入npm run export
 這時候會在資料夾中出現一個out的資料夾，裡面就是匯出的內容
 
 看是要直接把這個資料夾內容丟到server上
@@ -34,7 +33,9 @@ npm run dev
 
 不過目前都是使用function component
 
-後續會一點點改成class component
+後續可能會一點點改成class component
+
+主要想要減少每個頁面使用的程式行數，所以大部分的重複內容都會以json進行書寫再匯入
 
 目前使用的網站：https://ttttproject-102f7.firebaseapp.com/about/
 這是由E1資料夾輸出的內容
