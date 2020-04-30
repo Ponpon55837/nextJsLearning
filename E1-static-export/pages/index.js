@@ -1,7 +1,7 @@
 import Layout from '../components/MyLayout'
 import Link from 'next/link'
 import Head from 'next/head'
-import HeaderLink from '../components/HeaderLink'
+import headerlink from './api/headerlink.json'
 // bootstrap
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -18,7 +18,13 @@ const Index = ({title = 'Index Title Page'}) => {
             <Col className='d-none d-sm-none d-md-block' md={2} lg={2} xl={2}>
               <ListGroup variant="flush">
                 <ListGroup.Item>
-                  <HeaderLink />
+                  {
+                    getHeader().map(header => (
+                      <Link href={header.link} key={header.id}>
+                        <a className="nav-item nav-link" style={wordCapitalize}>{header.title}</a>
+                      </Link>
+                    ))
+                  }
                 </ListGroup.Item>
               </ListGroup>
             </Col>
@@ -60,6 +66,14 @@ const PostLink = ({ post }) => (
 
 const listGroupStyle = {
   padding: '8px'
+}
+
+const getHeader = () => {
+  return headerlink
+}
+
+const wordCapitalize = {
+  textTransform: "capitalize"
 }
 
 export default Index

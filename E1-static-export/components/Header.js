@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import HeaderLink from './HeaderLink'
+import headerlink from '../pages/api/headerlink.json'
 
 const mainStyle = {
   background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
@@ -12,6 +12,10 @@ const mainStyle = {
   zIndex: '1'
 }
 
+const wordCapitalize = {
+  textTransform: "capitalize"
+}
+
 const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" style={mainStyle}>
@@ -19,11 +23,21 @@ const Header = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
-          <HeaderLink />
+          {
+            getHeader().map(header => (
+              <Link href={header.link} key={header.id}>
+                <a className="nav-item nav-link" style={wordCapitalize}>{header.title}</a>
+              </Link>
+            ))
+          }
         </Nav>
       </Navbar.Collapse>
     </Navbar>
   )
+}
+
+const getHeader = () => {
+  return headerlink
 }
 
 export default Header
