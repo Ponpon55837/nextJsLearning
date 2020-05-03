@@ -17,6 +17,11 @@
     "title" : "contact"
   }, {
     "id" : "5",
+    "link" : "/fileup",
+    "title" : "FileUp"
+  },
+  {
+    "id" : "6",
     "link" : "/login",
     "title" : "login"
   }
