@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col'
 import ListGroup from 'react-bootstrap/ListGroup'
 import Image from 'react-bootstrap/Image'
 
-const Test = ({courses, title = 'Courses show menu'}) => {
+const Test = ({courses, categories, title = 'Courses show menu'}) => {
   const { API_URL } = process.env
   console.log(courses)
   // 當api抓取到值之後，props把接到的值map進li當中
@@ -27,12 +27,26 @@ const Test = ({courses, title = 'Courses show menu'}) => {
               <Row>
                 {
                   courses.map(course => (
-                    <Col xs={12} sm={12} md={6} lg={6} xl={6} key={course.id}>
+                    <Col xs={12} sm={6} md={4} lg={4} xl={3} key={course.id}>
                       <ListGroup variant="flush" >
                         <ListGroup.Item >
                           {course.title}<br />
-                          <Image style={imagStyle} src={API_URL + course.image.formats.large.url} rounded /><br />
+                          <Image  src={API_URL + course.image.url} rounded fluid /><br />
                           <cite title="Source Title">{course.published}</cite>
+                        </ListGroup.Item>
+                      </ListGroup>
+                    </Col>
+                  ))
+                }
+              </Row><br /><br />
+              <Row>
+                {
+                  categories.map(category => (
+                    <Col xs={12} sm={12} md={12} lg={6} xl={6} key={category.id}>
+                      <ListGroup variant="flush" >
+                        <ListGroup.Item >
+                          {category.name}<br />
+                          <cite title="Source Title">{category.created_at}</cite>
                         </ListGroup.Item>
                       </ListGroup>
                     </Col>
@@ -51,14 +65,23 @@ const Test = ({courses, title = 'Courses show menu'}) => {
 export async function getStaticProps () {
   const { API_URL } = process.env
 
-  const res = await fetch(`${API_URL}/courses`)
-  const data = await res.json()
+  const res_course = await fetch(`${API_URL}/courses`)
+  const res_category = await fetch(`${API_URL}/categories`)
 
-  return {props: {courses:data}}
+  const data_course = await res_course.json()
+  const data_category = await res_category.json()
+
+
+  return {
+    props: {
+      courses: data_course ,
+      categories: data_category
+    }
+  }
 }
 
 const imagStyle = {
-  width: "20rem",
+  width: "13rem",
   height: 'auto'
 }
 
