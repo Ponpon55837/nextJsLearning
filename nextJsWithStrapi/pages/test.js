@@ -8,8 +8,10 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import ListGroup from 'react-bootstrap/ListGroup'
 import Image from 'react-bootstrap/Image'
+import Card from 'react-bootstrap/Card'
+import Accordion from 'react-bootstrap/Accordion'
 
-const Test = ({courses, categories, title = 'Courses show menu'}) => {
+const Test = ({courses, products, categories, title = 'Courses show menu'}) => {
   const { API_URL } = process.env
   console.log(courses)
   // 當api抓取到值之後，props把接到的值map進li當中
@@ -24,7 +26,7 @@ const Test = ({courses, categories, title = 'Courses show menu'}) => {
             </Col>
             <Col xs={12} sm={12} md={10} lg={8} xl={8}>
               <h1>Course shows</h1>
-              <Row>
+              <Row style={rowStyle}>
                 {
                   courses.map(course => (
                     <Col xs={12} sm={6} md={4} lg={4} xl={3} key={course.id}>
@@ -38,8 +40,30 @@ const Test = ({courses, categories, title = 'Courses show menu'}) => {
                     </Col>
                   ))
                 }
-              </Row><br /><br />
-              <Row>
+              </Row><hr />
+              <Row style={rowStyle}>
+                {
+                  products.map(product => (
+                    <Col xs={12} sm={12} md={12} lg={12} xl={12} key={product.id}>
+                      <Accordion defaultActiveKey={product.id}>
+                        <Card>
+                          <Accordion.Toggle as={Card.Header} eventKey={product.id}>
+                            {product.title}
+                          </Accordion.Toggle>
+                          <Accordion.Collapse eventKey={product.id}>
+                            <Card.Body>
+                              {product.description}<br /><br />
+                              Price:{product.price}<br />
+                              <cite title="Source Title">Quality:{product.quality}</cite>
+                            </Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
+                    </Col>
+                  ))
+                }
+              </Row><hr />
+              <Row style={rowStyle}>
                 {
                   categories.map(category => (
                     <Col xs={12} sm={12} md={12} lg={6} xl={6} key={category.id}>
@@ -52,7 +76,7 @@ const Test = ({courses, categories, title = 'Courses show menu'}) => {
                     </Col>
                   ))
                 }
-              </Row><br /><br />
+              </Row>
             </Col>
             <Col xs={0} sm={0} md={1} lg={2} xl={2}></Col>
           </Row>
@@ -66,23 +90,26 @@ export async function getStaticProps () {
   const { API_URL } = process.env
 
   const res_course = await fetch(`${API_URL}/courses`)
+  const res_product = await fetch(`${API_URL}/products`)
+  // 只抓取特定頁面的話可以用/categories?_start=4&limit=1
   const res_category = await fetch(`${API_URL}/categories`)
 
   const data_course = await res_course.json()
+  const data_product = await res_product.json()
   const data_category = await res_category.json()
 
 
   return {
     props: {
       courses: data_course ,
+      products: data_product ,
       categories: data_category
     }
   }
 }
 
-const imagStyle = {
-  width: "13rem",
-  height: 'auto'
+const rowStyle = {
+  paddingButtom: '1rem'
 }
 
 export default Test
