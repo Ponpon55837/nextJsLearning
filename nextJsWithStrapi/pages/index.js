@@ -1,14 +1,14 @@
 import Layout from '../components/MyLayout'
 import Link from 'next/link'
 import Head from 'next/head'
-import headerlink from './api/headerlink.json'
 // bootstrap
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import ListGroup from 'react-bootstrap/ListGroup'
 
-const Index = ({title = 'Index Title Page'}) => {
+const Index = ({headers, title = 'Index Title Page'}) => {
+  const { API_URL } = process.env
   return (
     <>
       <Head><title>{title}</title></Head>
@@ -19,11 +19,12 @@ const Index = ({title = 'Index Title Page'}) => {
               <ListGroup variant="flush">
                 <ListGroup.Item>
                   {
-                    getHeader().map(header => (
-                      <Link href={header.link} key={header.id}>
+                    headers ? headers.map(header => (
+                      <Link href={header.url} key={header.id}>
                         <a className="nav-item nav-link" style={wordCapitalize}>{header.title}</a>
                       </Link>
                     ))
+                    : 'Loading ...'
                   }
                 </ListGroup.Item>
               </ListGroup>
@@ -64,12 +65,22 @@ const PostLink = ({ post }) => (
     </Link>
 )
 
-const listGroupStyle = {
-  padding: '8px'
+export async function getStaticProps () {
+  const { API_URL } = process.env
+
+  const res_headers = await fetch(`${API_URL}/headers`)
+
+  const data_headers = await res_headers.json()
+
+  return {
+    props: {
+      headers: data_headers
+    }
+  }
 }
 
-const getHeader = () => {
-  return headerlink
+const listGroupStyle = {
+  padding: '8px'
 }
 
 const wordCapitalize = {

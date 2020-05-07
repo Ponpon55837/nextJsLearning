@@ -27,8 +27,7 @@ const Test = ({courses, products, categories, title = 'Courses show menu'}) => {
             <Col xs={12} sm={12} md={10} lg={8} xl={8}>
               <h1>Course shows</h1>
               <Row style={rowStyle}>
-                {
-                  courses.map(course => (
+                { courses ? courses.map(course => (
                     <Col xs={12} sm={6} md={4} lg={4} xl={3} key={course.id}>
                       <ListGroup variant="flush" >
                         <ListGroup.Item >
@@ -39,11 +38,11 @@ const Test = ({courses, products, categories, title = 'Courses show menu'}) => {
                       </ListGroup>
                     </Col>
                   ))
+                  : 'Loading ...'
                 }
               </Row><hr />
               <Row style={rowStyle}>
-                {
-                  products.map(product => (
+                { products ? products.map(product => (
                     <Col xs={12} sm={12} md={12} lg={12} xl={12} key={product.id}>
                       <Accordion defaultActiveKey={product.id}>
                         <Card>
@@ -61,11 +60,11 @@ const Test = ({courses, products, categories, title = 'Courses show menu'}) => {
                       </Accordion>
                     </Col>
                   ))
+                  : 'Loading ...'
                 }
               </Row><hr />
               <Row style={rowStyle}>
-                {
-                  categories.map(category => (
+                { categories ? categories.map(category => (
                     <Col xs={12} sm={12} md={12} lg={6} xl={6} key={category.id}>
                       <ListGroup variant="flush" >
                         <ListGroup.Item >
@@ -75,6 +74,7 @@ const Test = ({courses, products, categories, title = 'Courses show menu'}) => {
                       </ListGroup>
                     </Col>
                   ))
+                  : 'Loading'
                 }
               </Row>
             </Col>
