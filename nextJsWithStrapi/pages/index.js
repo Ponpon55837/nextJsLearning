@@ -1,7 +1,7 @@
 import Layout from '../components/MyLayout'
 import Link from 'next/link'
 import Head from 'next/head'
-import fetch from 'isomorphic-unfetch'
+import HeaderJson from './apiComponents/headerJson.js'
 // bootstrap
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -17,18 +17,7 @@ const Index = ({headers, title = 'Index Title Page'}) => {
         <Container fluid>
           <Row>
             <Col className='d-none d-sm-none d-md-block' md={2} lg={2} xl={2}>
-              <ListGroup variant="flush">
-                <ListGroup.Item>
-                  {
-                    headers ? headers.map(header => (
-                      <Link href={header.url} key={header.id}>
-                        <a className="nav-item nav-link" style={wordCapitalize}>{header.title}</a>
-                      </Link>
-                    ))
-                    : 'Loading ...'
-                  }
-                </ListGroup.Item>
-              </ListGroup>
+              <HeaderJson headers={headers} />
             </Col>
             <Col xs={12} sm={12} md={10} lg={8} xl={8}>
               <h1>My Blog</h1>
@@ -66,11 +55,9 @@ const PostLink = ({ post }) => (
     </Link>
 )
 
-export async function getStaticProps () {
+export const getStaticProps = async () => {
   const { API_URL } = process.env
-
   const res_headers = await fetch(`${API_URL}/headers`)
-
   const data_headers = await res_headers.json()
 
   return {
@@ -78,14 +65,6 @@ export async function getStaticProps () {
       headers: data_headers
     }
   }
-}
-
-const listGroupStyle = {
-  padding: '8px'
-}
-
-const wordCapitalize = {
-  textTransform: "capitalize"
 }
 
 export default Index
