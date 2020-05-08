@@ -46,15 +46,15 @@ const Batman = (props, {title = 'Batman TV show menu'}) => {
 // 使用非同步的方式讀取json的內容
 Batman.getInitialProps = async function() {
   // 使用fetch來抓取api中的值
-  const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
+  const res_batman = await fetch('https://api.tvmaze.com/search/shows?q=batman')
   // 指定變數data來非同步這個api值
-  const data = await res.json()
+  const data_batman = await res_batman.json()
   // 回報抓到幾個data值
-  console.log(`Show data fetched. Count: ${data.length}`)
+  console.log(`Show data fetched. Count: ${data_batman.length}`)
 
   return {
     // 使用map來把值塞入，並且使用變數entry當作主詞來附帶api中的內容
-    shows: data.map(entry => entry.show)
+    shows: data_batman.map(entry => entry.show)
   }
 }
 //
