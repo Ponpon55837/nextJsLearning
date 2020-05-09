@@ -12,7 +12,7 @@ const ProductJson = ({ products }) => {
       <Row style={rowStyle}>
         { products ? products.map(product => (
             <Col xs={12} sm={12} md={12} lg={12} xl={12} key={product.id}>
-              <Accordion defaultActiveKey={product.id}>
+              <Accordion defaultActiveKey='false'>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey={product.id}>
                     {product.title}

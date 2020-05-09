@@ -7,7 +7,7 @@ import Accordion from 'react-bootstrap/Accordion'
 const ReposJson = ({ repos }) => {
   return(
     <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-      <Accordion defaultActiveKey="0">
+      <Accordion defaultActiveKey={repos.svn_url}>
         <Card>
           <Accordion.Toggle as={Card.Header} eventKey={repos.svn_url}>
             {repos.svn_url}

@@ -21,7 +21,7 @@ const Contact = (props, {title = 'Contact to the park'}) => {
               <h1>Contacts</h1>
               {
                 getPosts().map(park => (
-                  <Card key={park.areaId} park={park} style={parkStyle}>
+                  <Card key={`${park.areaId} + ${park.parkId}`} park={park} style={parkStyle}>
                     <Card.Header>{park.areaName}</Card.Header>
                     <Card.Body>
                       <Card.Title>{park.introduction}</Card.Title>
