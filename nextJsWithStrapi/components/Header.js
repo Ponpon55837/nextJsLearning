@@ -25,7 +25,7 @@ const Header = () => {
         <Nav className="mr-auto">
           {
             getHeader().map(header => (
-              <Link href={header.link} key={header.id}>
+              <Link prefetch href={header.link} key={header.id}>
                 <a className="nav-item nav-link" style={wordCapitalize}>{header.title}</a>
               </Link>
             ))
