@@ -1,15 +1,12 @@
 import Layout from '../components/MyLayout.js'
-import fetch from 'isomorphic-unfetch'
 import Head from 'next/head'
+import ReposJson from './apiComponents/reposJson.js'
 // bootstrap
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import ListGroup from 'react-bootstrap/ListGroup'
-import Card from 'react-bootstrap/Card'
-import Accordion from 'react-bootstrap/Accordion'
 
-const About = ({ stars, title ='About this url page' }) => {
+const About = ({ repos, repos_sub, title ='About this url page' }) => {
   return (
     <>
       <Head><title>{title}</title></Head>
@@ -20,16 +17,7 @@ const About = ({ stars, title ='About this url page' }) => {
             </Col>
             <Col xs={12} sm={12} md={10} lg={8} xl={8}>
               <h1>This is the about page</h1>
-              <Accordion defaultActiveKey="0">
-                <Card>
-                  <Accordion.Toggle as={Card.Header} eventKey="0">
-                    {stars.svn_url}
-                  </Accordion.Toggle>
-                  <Accordion.Collapse eventKey="0">
-                    <Card.Body><a href={stars.subscribers_url}>{stars.homepage}</a></Card.Body>
-                  </Accordion.Collapse>
-                </Card>
-              </Accordion>
+              <ReposJson repos={repos} /><br />
             </Col>
             <Col xs={0} sm={0} md={1} lg={2} xl={2}></Col>
           </Row>
@@ -39,14 +27,16 @@ const About = ({ stars, title ='About this url page' }) => {
   )
 }
 
-About.getInitialProps = async function ({ req }) {
-  const res = await fetch('https://api.github.com/repos/zeit/next.js')
-  const data = await res.json()
+export const getStaticProps = async({ req }) => {
+  const res_repos = await fetch('https://api.github.com/repos/zeit/next.js')
+  const data_repos = await res_repos.json()
 
-  console.log(`Show data fetched. Count: ${data.length}`)
+  console.log(`Show data fetched. Count: ${data_repos.length}`)
 
   return {
-    stars: data
+    props:{
+      repos: data_repos,
+    }
   }
 }
 

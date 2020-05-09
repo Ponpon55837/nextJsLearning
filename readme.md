@@ -37,5 +37,5 @@ npm run dev
 
 主要想要減少每個頁面使用的程式行數，所以大部分的重複內容都會以json進行書寫再匯入
 
-目前使用的網站：https://ttttproject-102f7.firebaseapp.com/about/
+目前使用的網站：https://ttttproject-102f7.firebaseapp.com/
 這是由E1資料夾輸出的內容
