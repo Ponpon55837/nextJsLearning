@@ -2,6 +2,7 @@ import Layout from '../components/MyLayout'
 import Link from 'next/link'
 import Head from 'next/head'
 import HeaderJson from './apiComponents/headerJson.js'
+import indexHelloNextJs from './api/indexHelloNextJs.json'
 // bootstrap
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -41,11 +42,7 @@ const Index = ({headers, title = 'Index Title Page'}) => {
 
 // 使用function作爲api承接內容，在上方的return中map接到的值
 const getPosts = () => {
-  return [
-    { id: 'hello-nextjs', title: 'Hello Next.js' },
-    { id: 'learn-nextjs', title: 'Learn Next.js is awesome' },
-    { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT' }
-  ]
+  return indexHelloNextJs
 }
 
 // 當作額外插入的link來使用，這裡面的post.id，post.title都是藉由被map進來的post值使用

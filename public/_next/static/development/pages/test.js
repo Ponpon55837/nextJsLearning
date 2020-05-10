@@ -9690,7 +9690,7 @@ var __N_SSG = true;
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!***************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ftest&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2FnextJsWithStrapi%2Fpages%2Ftest.js&hotRouterUpdates=true ***!
   \***************************************************************************************************************************************************************************************/
@@ -9713,5 +9713,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=test.js.map
