@@ -9205,10 +9205,11 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
+ // categories由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
 
 var CategoryJson = function CategoryJson(_ref) {
   var categories = _ref.categories;
+  // API_URL為.env這個檔案中的網址來使用，雖然在這邊並沒有影響，但是如果要使用image這種api匯入的話，就需要指定API_URL
   var API_URL = "http://localhost:1337";
   console.log(categories);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -9216,7 +9217,7 @@ var CategoryJson = function CategoryJson(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 13,
       columnNumber: 7
     }
   }, categories ? categories.map(function (category) {
@@ -9230,7 +9231,7 @@ var CategoryJson = function CategoryJson(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 13,
+        lineNumber: 15,
         columnNumber: 13
       }
     }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -9238,21 +9239,21 @@ var CategoryJson = function CategoryJson(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14,
+        lineNumber: 16,
         columnNumber: 15
       }
     }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__["default"].Item, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15,
+        lineNumber: 17,
         columnNumber: 17
       }
     }, category.name, __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
+        lineNumber: 18,
         columnNumber: 34
       }
     }), __jsx("cite", {
@@ -9260,11 +9261,12 @@ var CategoryJson = function CategoryJson(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 19,
         columnNumber: 19
       }
     }, category.created_at))));
-  }) : 'Loading'));
+  }) // 如果products不存在，那畫面就顯示Loading...
+  : 'Loading'));
 };
 
 var rowStyle = {
@@ -9300,10 +9302,11 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
+ // courses由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
 
 var CourseJson = function CourseJson(_ref) {
   var courses = _ref.courses;
+  // API_URL為.env這個檔案中的網址來使用，雖然在這邊並沒有影響，但是如果要使用image這種api匯入的話，就需要指定API_URL
   var API_URL = "http://localhost:1337";
   console.log(courses);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -9311,7 +9314,7 @@ var CourseJson = function CourseJson(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 7
     }
   }, courses ? courses.map(function (course) {
@@ -9325,7 +9328,7 @@ var CourseJson = function CourseJson(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14,
+        lineNumber: 16,
         columnNumber: 13
       }
     }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -9333,21 +9336,21 @@ var CourseJson = function CourseJson(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15,
+        lineNumber: 17,
         columnNumber: 15
       }
     }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__["default"].Item, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
+        lineNumber: 18,
         columnNumber: 17
       }
     }, course.title, __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 19,
         columnNumber: 33
       }
     }), __jsx(react_bootstrap_Image__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -9357,14 +9360,14 @@ var CourseJson = function CourseJson(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 20,
         columnNumber: 19
       }
     }), __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
+        lineNumber: 20,
         columnNumber: 76
       }
     }), __jsx("cite", {
@@ -9372,11 +9375,12 @@ var CourseJson = function CourseJson(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19,
+        lineNumber: 21,
         columnNumber: 19
       }
     }, course.published))));
-  }) : 'Loading ...'));
+  }) // 如果products不存在，那畫面就顯示Loading...
+  : 'Loading ...'));
 };
 
 var rowStyle = {
@@ -9412,10 +9416,11 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-
+ // products由外部接入，這個值需要由data傳入
 
 var ProductJson = function ProductJson(_ref) {
   var products = _ref.products;
+  // API_URL為.env這個檔案中的網址來使用，雖然在這邊並沒有影響，但是如果要使用image這種api匯入的話，就需要指定API_URL
   var API_URL = "http://localhost:1337";
   console.log(products);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -9423,7 +9428,7 @@ var ProductJson = function ProductJson(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 7
     }
   }, products ? products.map(function (product) {
@@ -9437,7 +9442,7 @@ var ProductJson = function ProductJson(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 14,
+        lineNumber: 16,
         columnNumber: 13
       }
     }, __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -9445,14 +9450,14 @@ var ProductJson = function ProductJson(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15,
+        lineNumber: 17,
         columnNumber: 15
       }
     }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_3__["default"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
+        lineNumber: 18,
         columnNumber: 17
       }
     }, __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_2__["default"].Toggle, {
@@ -9461,7 +9466,7 @@ var ProductJson = function ProductJson(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
+        lineNumber: 19,
         columnNumber: 19
       }
     }, product.title), __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_2__["default"].Collapse, {
@@ -9469,35 +9474,35 @@ var ProductJson = function ProductJson(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20,
+        lineNumber: 22,
         columnNumber: 19
       }
     }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_3__["default"].Body, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21,
+        lineNumber: 23,
         columnNumber: 21
       }
     }, product.description, __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 24,
         columnNumber: 44
       }
     }), __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22,
+        lineNumber: 24,
         columnNumber: 50
       }
     }), "Price:", product.price, __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23,
+        lineNumber: 25,
         columnNumber: 44
       }
     }), __jsx("cite", {
@@ -9505,11 +9510,12 @@ var ProductJson = function ProductJson(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 26,
         columnNumber: 23
       }
     }, "Quality:", product.quality))))));
-  }) : 'Loading ...'));
+  }) // 如果products不存在，那畫面就顯示Loading...
+  : 'Loading ...'));
 };
 
 var rowStyle = {
@@ -9690,7 +9696,7 @@ var __N_SSG = true;
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!***************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ftest&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2FnextJsWithStrapi%2Fpages%2Ftest.js&hotRouterUpdates=true ***!
   \***************************************************************************************************************************************************************************************/
@@ -9713,5 +9719,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[5,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=test.js.map

@@ -3,7 +3,9 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import ListGroup from 'react-bootstrap/ListGroup'
 
+// categories由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
 const CategoryJson = ({ categories }) => {
+  // API_URL為.env這個檔案中的網址來使用，雖然在這邊並沒有影響，但是如果要使用image這種api匯入的話，就需要指定API_URL
   const { API_URL } = process.env
   console.log(categories)
   return (
@@ -19,6 +21,7 @@ const CategoryJson = ({ categories }) => {
               </ListGroup>
             </Col>
           ))
+          // 如果products不存在，那畫面就顯示Loading...
           : 'Loading'
         }
       </Row>

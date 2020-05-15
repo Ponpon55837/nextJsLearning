@@ -8837,10 +8837,11 @@ var _this = undefined,
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-
+ // headers由外部傳入
 
 var HeaderJson = function HeaderJson(_ref) {
   var headers = _ref.headers;
+  // API_URL為.env這個檔案中的網址來使用，雖然在這邊並沒有影響，但是如果要使用image這種api匯入的話，就需要指定API_URL
   var API_URL = "http://localhost:1337";
   console.log(headers);
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -8848,14 +8849,14 @@ var HeaderJson = function HeaderJson(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 13,
       columnNumber: 7
     }
   }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_3__["default"].Item, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 9
     }
   }, headers ? headers.map(function (header) {
@@ -8865,7 +8866,7 @@ var HeaderJson = function HeaderJson(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 15,
+        lineNumber: 17,
         columnNumber: 15
       }
     }, __jsx("a", {
@@ -8874,7 +8875,7 @@ var HeaderJson = function HeaderJson(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
+        lineNumber: 18,
         columnNumber: 17
       }
     }, header.title));
@@ -9081,7 +9082,7 @@ var __N_SSG = true;
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2FnextJsWithStrapi%2Fpages%2Findex.js&hotRouterUpdates=true ***!
   \************************************************************************************************************************************************************************************/
@@ -9104,5 +9105,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
