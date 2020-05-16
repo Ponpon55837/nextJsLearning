@@ -10,7 +10,7 @@
 
 >請輸入```npm run dev```
 
->打開瀏覽器輸入localhost:3000
+>打開瀏覽器輸入: http://localhost:3000
 
 >可以看到測試server的內容
 
