@@ -5,7 +5,7 @@
 ### download整份zip檔案後
 
 ####  安裝npm 
->使用終端機cd到對應的資料夾後，輸入npm install
+>使用終端機cd到對應的資料夾後，輸入```npm install```
 
 #### 使用測試的port
 
@@ -27,6 +27,16 @@
 >
 >或是輸入```cd out```，然後輸入```serve -p port```都可以，這個port請輸入你要使用的port
 
+---
+```
+"script": {
+	"dev": "next",
+	"build": "next build",
+	"start": "next start",
+	"export": "next export"
+}
+```
+---
 ## 2. 語言使用
 >由於next.js的js語法雖然是使用react.js
 >
