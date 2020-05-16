@@ -1,7 +1,7 @@
 # 使用基於react.js的next.js框架來建立頁面與內容
 >https://github.com/zeit/next-learn-demo/archive/master.zip
 
-##1. 安裝方式
+## 1. 安裝方式
 ### download整份zip檔案後
 
 ### 使用終端機cd到對應的資料夾後，輸入npm install
@@ -25,7 +25,7 @@
 
 >或是輸入```cd out```，然後輸入```serve -p port```都可以，這個port請輸入你要使用的port
 
-##2. 語言使用
+## 2. 語言使用
 >由於next.js的js語法雖然是使用react.js
 
 >但是有些使用es5有些使用es6
@@ -36,7 +36,7 @@
 
 >後續可能會一點點改成class component
 
-##3. 備註
+## 3. 備註
 >主要想要減少每個頁面使用的程式行數，所以大部分的重複內容都會以json進行書寫再匯入
 
 ---
