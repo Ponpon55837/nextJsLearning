@@ -1,12 +1,12 @@
-#使用基於react.js的next.js框架來建立頁面與內容
+# 使用基於react.js的next.js框架來建立頁面與內容
 >https://github.com/zeit/next-learn-demo/archive/master.zip
 
 ##1. 安裝方式
-###download整份zip檔案後
+### download整份zip檔案後
 
 ### 使用終端機cd到對應的資料夾後，輸入npm install
 
-####使用測試的port
+#### 使用測試的port
 
 >請輸入```npm run dev```
 
@@ -14,7 +14,7 @@
 
 >可以看到測試server的內容
 
-####使用匯出功能
+#### 使用匯出功能
 
 >請輸入 ```npm run build```，
 >跑完後輸入```npm run export```
@@ -40,6 +40,6 @@
 >主要想要減少每個頁面使用的程式行數，所以大部分的重複內容都會以json進行書寫再匯入
 
 ---
->目前使用的網站：`https://ttttproject-102f7.firebaseapp.com/`
+>目前使用的網站：https://ttttproject-102f7.firebaseapp.com/
 
 >這是由nextJsWithSrapi資料夾輸出的內容
