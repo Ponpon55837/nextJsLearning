@@ -9036,9 +9036,7 @@ var Index = function Index(_ref) {
       }
     })));
   })), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    xs: 0,
-    sm: 0,
-    md: 0,
+    className: "d-none d-sm-none d-md-none d-lg-block",
     lg: 2,
     xl: 2,
     __self: _this,

@@ -29,7 +29,7 @@ const Login = (props, {title = 'Login and Regist Page'}) => {
       <Layout>
         <Container fluid>
           <Row>
-            <Col xs={0} sm={0} md={2} lg={2} xl={2}>
+            <Col className='d-none d-sm-none d-md-block' md={2} lg={2} xl={2}>
             </Col>
             <Col xs={12} sm={12} md={8} lg={8} xl={8}>
               <Row>
@@ -85,7 +85,7 @@ const Login = (props, {title = 'Login and Regist Page'}) => {
               </Row>
               <br /><br /><br />
             </Col>
-            <Col xs={0} sm={0} md={2} lg={2} xl={2}></Col>
+            <Col className='d-none d-sm-none d-md-block' md={2} lg={2} xl={2}></Col>
           </Row>
         </Container>
       </Layout>

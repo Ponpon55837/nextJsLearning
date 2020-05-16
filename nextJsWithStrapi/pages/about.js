@@ -13,13 +13,13 @@ const About = ({ repos, repos_sub, title ='About this url page' }) => {
       <Layout>
         <Container fluid>
           <Row>
-            <Col xs={0} sm={0} md={1} lg={2} xl={2}>
+            <Col className='d-none d-sm-none d-md-block' md={1} lg={2} xl={2}>
             </Col>
             <Col xs={12} sm={12} md={10} lg={8} xl={8}>
               <h1>This is the about page</h1>
               <ReposJson repos={repos} /><br />
             </Col>
-            <Col xs={0} sm={0} md={1} lg={2} xl={2}></Col>
+            <Col className='d-none d-sm-none d-md-block' md={1} lg={2} xl={2}></Col>
           </Row>
         </Container>
       </Layout>

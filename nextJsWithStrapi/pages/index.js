@@ -32,7 +32,7 @@ const Index = ({headers, title = 'Index Title Page'}) => {
                 ))
               }
             </Col>
-            <Col xs={0} sm={0} md={0} lg={2} xl={2}></Col>
+            <Col className='d-none d-sm-none d-md-none d-lg-block' lg={2} xl={2}></Col>
           </Row>
         </Container>
       </Layout>
