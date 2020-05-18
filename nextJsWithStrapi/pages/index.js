@@ -52,6 +52,9 @@ const PostLink = ({ post }) => (
     </Link>
 )
 
+// 我覺得這部分應該可以額外拉到一個components裡面去寫，再由import進來
+// 例如 import { getStaticProps } from './components/StaticProps.js'
+// 然後由上面的 const Index = ({ header }) => {}把data值丟進來。
 export const getStaticProps = async () => {
   const { API_URL } = process.env
   const res_headers = await fetch(`${API_URL}/headers`)
