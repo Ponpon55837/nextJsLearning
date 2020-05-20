@@ -38,6 +38,34 @@ const ProductJson = ({ products }) => {
   )
 }
 
+// accondion多層寫法
+// 不過這樣寫的複雜度很高，不建議使用
+// <Accordion defaultActiveKey='false'>
+//   <Card>
+//     <Accordion.Toggle as={Card.Header} eventKey={productfirst.id}>
+//       {productfirst.title}
+//     </Accordion.Toggle>
+//     <Accordion.Collapse eventKey={productfirst.id}>
+//       <Card.Body>
+//       <Accordion defaultActiveKey='false'>
+//         <Card>
+//           <Accordion.Toggle as={Card.Header} eventKey={productSecond.id}>
+//             {productSecond.title}
+//           </Accordion.Toggle>
+//           <Accordion.Collapse eventKey={productSecond.id}>
+//             <Card.Body>
+//               {product.description}<br /><br />
+//               Price:{product.price}<br />
+//               <cite title="Source Title">Quality:{product.quality}</cite>
+//             </Card.Body>
+//           </Accordion.Collapse>
+//         </Card>
+//       </Accordion>
+//       </Card.Body>
+//     </Accordion.Collapse>
+//   </Card>
+// </Accordion>
+
 const rowStyle = {
   paddingButtom: '1rem'
 }
