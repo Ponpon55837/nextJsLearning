@@ -57,11 +57,21 @@ Batman.getInitialProps = async function() {
     shows: data_batman.map(entry => entry.show)
   }
 }
-//
-// <li key={show.id}>
-//   <Link href="/batman/[id]" as={`/batman/${show.id}`}>
-//     <a>{show.name}</a>
-//   </Link>
-// </li>
+
+// 如果看不懂 return裡面的  <Link href="/batman/[id]" as={`/batman/${show.id}`}>
+// 下面是官網參考的範例我改成es6格式
+// const Home = ({ posts }) => {
+//   return (
+//     <ul>
+//       {posts.map(post => (
+//         <li key={post.id}>
+//           <Link href="/blog/[slug]" as={`/blog/${post.slug}`}>
+//             <a>{post.title}</a>
+//           </Link>
+//         </li>
+//       ))}
+//     </ul>
+//   )
+// }
 
 export default Batman
