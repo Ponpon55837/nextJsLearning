@@ -38,7 +38,7 @@ const ProductJson = ({ products }) => {
   )
 }
 
-// accondion多層寫法
+// accordion多層寫法
 // 不過這樣寫的複雜度很高，不建議使用
 // <Accordion defaultActiveKey='false'>
 //   <Card>
