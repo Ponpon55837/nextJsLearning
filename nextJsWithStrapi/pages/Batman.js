@@ -60,18 +60,34 @@ Batman.getInitialProps = async function() {
 
 // 如果看不懂 return裡面的  <Link href="/batman/[id]" as={`/batman/${show.id}`}>
 // 下面是官網參考的範例我改成es6格式
-// const Home = ({ posts }) => {
+
+// import { useRouter } from 'next/router'
+// import Link from 'next/link'
+// import Header from '../../../components/header'
+//
+// const Post = () => {
+//   const router = useRouter()
+//   const { id } = router.query
+//
 //   return (
-//     <ul>
-//       {posts.map(post => (
-//         <li key={post.id}>
-//           <Link href="/blog/[slug]" as={`/blog/${post.slug}`}>
-//             <a>{post.title}</a>
+//     <>
+//       <Header />
+//       <h1>Post: {id}</h1>
+//       <ul>
+//         <li>
+//           <Link href="/post/[id]/[comment]" as={`/post/${id}/first-comment`}>
+//             <a>First comment</a>
 //           </Link>
 //         </li>
-//       ))}
-//     </ul>
+//         <li>
+//           <Link href="/post/[id]/[comment]" as={`/post/${id}/second-comment`}>
+//             <a>Second comment</a>
+//           </Link>
+//         </li>
+//       </ul>
+//     </>
 //   )
 // }
+
 
 export default Batman
