@@ -39,7 +39,9 @@ const IdPost = ({title = 'ID by index page'}) => {
           </Row>
         </Container>
         <style jsx global>
-          {`
+          { // 如果直接使用import css在next.js會無法使用，需要在config中設定，我覺得很麻煩
+            // 不如使用jsx global 或是js去寫css方便很多
+            `
             .markdown {
               font-family: 'Arial';
             }
