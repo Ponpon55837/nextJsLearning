@@ -41,3 +41,22 @@ export const getStaticProps = async({ req }) => {
 }
 
 export default About
+
+
+// class component用法 可是使用起來串街的太多 反而變得很複雜
+
+// import React from 'react'
+//
+// class Page extends React.Component {
+//   static async getInitialProps(ctx) {
+//     const res = await fetch('https://api.github.com/repos/zeit/next.js')
+//     const json = await res.json()
+//     return { stars: json.stargazers_count }
+//   }
+//
+//   render() {
+//     return <div>Next stars: {this.props.stars}</div>
+//   }
+// }
+//
+// export default Page
