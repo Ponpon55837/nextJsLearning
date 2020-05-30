@@ -11,7 +11,8 @@ const CategoryJson = ({ categories }) => {
   return (
     <>
       <Row style={rowStyle}>
-        { categories ? categories.map(category => (
+        { // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
+          categories ? categories.map(category => (
             <Col xs={12} sm={12} md={12} lg={6} xl={6} key={category.id}>
               <ListGroup variant="flush" >
                 <ListGroup.Item >

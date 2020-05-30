@@ -12,7 +12,8 @@ const ProductJson = ({ products }) => {
   return (
     <>
       <Row style={rowStyle}>
-        { products ? products.map(product => (
+        { // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
+          products ? products.map(product => (
             <Col xs={12} sm={12} md={12} lg={12} xl={12} key={product.id}>
               <Accordion defaultActiveKey='false'>
                 <Card>

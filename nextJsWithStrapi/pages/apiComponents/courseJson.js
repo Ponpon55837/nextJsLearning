@@ -12,7 +12,8 @@ const CourseJson = ({ courses }) => {
   return (
     <>
       <Row style={rowStyle}>
-        { courses ? courses.map(course => (
+        { // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
+          courses ? courses.map(course => (
             <Col xs={12} sm={6} md={4} lg={4} xl={3} key={course.id}>
               <ListGroup variant="flush" >
                 <ListGroup.Item >

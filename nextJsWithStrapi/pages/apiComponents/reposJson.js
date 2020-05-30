@@ -4,8 +4,8 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import Card from 'react-bootstrap/Card'
 import Accordion from 'react-bootstrap/Accordion'
 
-const ReposJson = ({ repos }) => {
-  return(
+export const ReposJson = ({ repos }) => {
+  return (
     <Col xs={12} sm={12} md={12} lg={12} xl={12}>
       <Accordion defaultActiveKey={repos.svn_url}>
         <Card>
@@ -21,4 +21,27 @@ const ReposJson = ({ repos }) => {
   )
 }
 
-export default ReposJson
+export const SubscribersJson = ({ subscribers }) => {
+  return (
+    <>
+      <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+        {
+          subscribers ? subscribers.map(subs => (
+            <Accordion defaultActiveKey={subs.id}>
+              <Card>
+                <Accordion.Toggle as={Card.Header} eventKey={subs.id}>
+                  {subs.login}
+                </Accordion.Toggle>
+                <Accordion.Collapse eventKey={subs.id}>
+                  <Card.Body>
+                    <a href={subs.url}>{subs.login}</a>
+                  </Card.Body>
+                </Accordion.Collapse>
+              </Card>
+            </Accordion>
+          )) : 'Loading...'
+        }
+      </Col>
+    </>
+  )
+}
