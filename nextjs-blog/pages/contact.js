@@ -1,4 +1,4 @@
-import Layout from '../components/Mylayout'
+import Layout from '../components/layout'
 import Head from 'next/head'
 import fetch from 'isomorphic-unfetch'
 import park from './api/parkAPI.json'
