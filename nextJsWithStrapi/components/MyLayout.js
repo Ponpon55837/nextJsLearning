@@ -3,7 +3,8 @@ import Header from './Header'
 import Footer from './Footer'
 import Head from 'next/head'
 
-const Layout = (props) => {
+// 原先寫為(props.children) 現在改爲 {children} 縮減一點複雜度
+const Layout = ({ children }) => {
   return (
     <div>
       <Head>
@@ -12,7 +13,8 @@ const Layout = (props) => {
       </Head>
       <Header />
       <br />
-      { props.children ? props.children : 'Loading'}
+      { // 原本寫為 props.children ? props.children : 'Loading...'
+        children ? children : 'Loading...'}
       <br />
       <Footer />
     </div>
