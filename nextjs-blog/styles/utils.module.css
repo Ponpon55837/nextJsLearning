@@ -69,3 +69,8 @@
   padding: 0;
   text-transform: uppercase;
 }
+
+.notfound {
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+}

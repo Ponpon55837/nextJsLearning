@@ -4,7 +4,7 @@
 ## 1. 安裝方式
 ### download整份zip檔案後
 
-####  安裝npm 
+####  安裝npm
 >使用終端機cd到對應的資料夾後，輸入```npm install```
 
 #### 使用測試的port
@@ -54,4 +54,4 @@
 ---
 >目前使用的網站：https://ttttproject-102f7.firebaseapp.com/
 >
->這是由nextJsWithSrapi資料夾輸出的內容
+>這是由nextjs-blog資料夾輸出的內容
