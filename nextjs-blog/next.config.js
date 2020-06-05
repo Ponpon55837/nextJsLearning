@@ -5,9 +5,11 @@ module.exports = {
   },
 
   exportTrailingSlash: true,
-  exportPathMap: function() {
+  exportPathMap: function(
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }) {
     return {
-      '/': { page: '/' },
+      '/': { page: '/'},
       '/about': { page: '/about' },
       '/batman': { page: '/batman' },
       '/contact': { page: '/contact' },
