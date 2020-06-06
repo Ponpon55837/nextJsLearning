@@ -5,6 +5,9 @@ module.exports = {
 
     // 如果要使用在nginx or apache中分網頁有不同的目錄的話，先在.env檔案中加入要放的路徑位置
     // HOME_URL : process.env.HOME_URL
+
+    // 如果頁面當中要使用Link的話，請使用下面的方式
+    // <Link href=(`${HOME_URL/contact}`)>contact</Link>
   },
 
   exportTrailingSlash: true,
