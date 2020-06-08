@@ -38,7 +38,7 @@ const Test = ({courses, products, categories, title = 'Courses show menu'}) => {
 // es6的function async寫法
 // es5寫成 export async function getStaticProps(){}
 // 只有在node.js run npm start時候用getInitialProps才會及時render，放到apache or nginx就要重新build 跟 export
-export const getInitialProps = async ({ start_num = 2, limit_num = 3 }) => {
+export const getStaticProps = async ({ start_num = 2, limit_num = 3 }) => {
   // 使用.env裡面的http://localhost/1337來抓取api網址
   const { API_URL } = process.env
 
@@ -52,9 +52,11 @@ export const getInitialProps = async ({ start_num = 2, limit_num = 3 }) => {
   const data_category = await res_category.json()
 
   return {
+    props: {
       courses: data_course ,
       products: data_product ,
       categories: data_category
+    }
   }
 }
 
