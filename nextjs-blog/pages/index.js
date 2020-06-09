@@ -16,19 +16,19 @@ const Home = ({ title = 'Index Page' }) => {
       <Layout>
         <Container fluid>
           <Row>
-            <Col className='d-none d-sm-none d-md-block' md={2} lg={2} xl={2}>
+            <Col className='d-none d-sm-none d-md-block' md={2} lg={3} xl={3}>
             </Col>
-            <Col className={utilStyles.homeShow} xs={12} sm={12} md={10} lg={8} xl={8}>
+            <Col className={utilStyles.homeShow} xs={12} sm={12} md={8} lg={6} xl={6}>
               <h1 className={utilStyles.divH1}>WelCome</h1>
               { // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
                 getHeader().map(header => (
-                  <Button variant="outline-dark" size='lg' block className={utilStyles.buttonControl}>
-                    <Link href={header.link} key={header.id}><a style={wordCapitalize}>{header.title}</a></Link>
+                  <Button variant="outline-dark" size='lg' block className={utilStyles.buttonControl} key={header.id}>
+                    <Link href={header.link}><a style={wordCapitalize}>{header.title}</a></Link>
                   </Button>
                 ))
               }
             </Col>
-            <Col className='d-none d-sm-none d-md-none d-lg-block' lg={2} xl={2}></Col>
+            <Col className='d-none d-sm-none d-md-block' md={2} lg={3} xl={3}></Col>
           </Row>
         </Container>
       </Layout>
