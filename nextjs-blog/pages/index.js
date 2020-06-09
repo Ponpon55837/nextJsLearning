@@ -13,13 +13,11 @@ const Home = ({ title = 'Index Page' }) => {
   return (
     <div className={utilStyles.indexBG}>
       <Head><title>{title}</title></Head>
-      <Layout>
+
         <Container fluid>
           <Row>
-            <Col className='d-none d-sm-none d-md-block' md={2} lg={3} xl={3}>
-            </Col>
             <Col className={utilStyles.homeShow} xs={12} sm={12} md={8} lg={6} xl={6}>
-              <h1 className={utilStyles.divH1}>WelCome</h1>
+              <h1 className={utilStyles.divH1}>Welcome</h1>
               { // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
                 getHeader().map(header => (
                   <Button variant="outline-dark" size='lg' block className={utilStyles.buttonControl} key={header.id}>
@@ -28,10 +26,9 @@ const Home = ({ title = 'Index Page' }) => {
                 ))
               }
             </Col>
-            <Col className='d-none d-sm-none d-md-block' md={2} lg={3} xl={3}></Col>
           </Row>
         </Container>
-      </Layout>
+
     </div>
   )
 }
