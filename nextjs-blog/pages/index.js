@@ -1,35 +1,30 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import HeaderJson from './apiComponents/headerJson.js'
 import Layout from '../components/layout'
-import indexHelloNextJs from './api/indexHelloNextJs.json'
+import headerlink from '../pages/api/headerlink.json'
 import utilStyles from '../styles/utils.module.css'
 // bootstrap
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import ListGroup from 'react-bootstrap/ListGroup'
+import Button from 'react-bootstrap/Button'
 
-const Home = ({headers, title = 'Index Title Page'}) => {
-  const { API_URL } = process.env
+const Home = ({ title = 'Index Page' }) => {
   return (
-    <>
+    <div className={utilStyles.indexBG}>
       <Head><title>{title}</title></Head>
       <Layout>
         <Container fluid>
           <Row>
             <Col className='d-none d-sm-none d-md-block' md={2} lg={2} xl={2}>
-              <HeaderJson headers={headers} />
             </Col>
-            <Col xs={12} sm={12} md={10} lg={8} xl={8}>
-              <h1>My Blog</h1>
-              {
-                getPosts().map(post => (
-                  <ListGroup variant="flush" key={post.id}>
-                    <ListGroup.Item>
-                      <PostLink key={post.id} post={post} />
-                    </ListGroup.Item>
-                  </ListGroup>
+            <Col className={utilStyles.homeShow} xs={12} sm={12} md={10} lg={8} xl={8}>
+              <h1 className={utilStyles.divH1}>WelCome</h1>
+              { // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
+                getHeader().map(header => (
+                  <Button variant="outline-dark" size='lg' block className={utilStyles.buttonControl}>
+                    <Link href={header.link} key={header.id}><a style={wordCapitalize}>{header.title}</a></Link>
+                  </Button>
                 ))
               }
             </Col>
@@ -37,35 +32,16 @@ const Home = ({headers, title = 'Index Title Page'}) => {
           </Row>
         </Container>
       </Layout>
-    </>
+    </div>
   )
 }
 
-// 使用function作爲api承接內容，在上方的return中map接到的值
-const getPosts = () => {
-  return indexHelloNextJs
+const wordCapitalize = {
+  textTransform: "capitalize"
 }
 
-// 當作額外插入的link來使用，這裡面的post.id，post.title都是藉由被map進來的post值使用
-const PostLink = ({ post }) => (
-    <Link href="/batman/[id]" as={`/batman/${post.id}`}>
-      <a>{post.title}</a>
-    </Link>
-)
-
-// 我覺得這部分應該可以額外拉到一個components裡面去寫，再由import進來
-// 例如 import { getStaticProps } from './components/StaticProps.js'
-// 然後由上面的 const Index = ({ header }) => {}把data值丟進來。
-export const getStaticProps = async () => {
-  const { API_URL } = process.env
-  const res_headers = await fetch(`${API_URL}/headers`)
-  const data_headers = await res_headers.json()
-
-  return {
-    props: {
-      headers: data_headers
-    }
-  }
+const getHeader = () => {
+  return headerlink
 }
 
 export default Home
