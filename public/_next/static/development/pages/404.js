@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/404.js"],{
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -1102,6 +1102,27 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/layout.module.css":
+/*!*************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./styles/layout.module.css ***!
+  \*************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".layout_container__1LfYE {\n  max-width: 36rem;\n  padding: 0 1rem;\n  margin: 3rem auto 6rem;\n}\n\n.layout_header__1OJ41 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.layout_headerImage__jSguI {\n  width: 6rem;\n  height: 6rem;\n}\n\n.layout_headerHomeImage__3w_dQ {\n  width: 8rem;\n  height: 8rem;\n}\n\n.layout_backToHome__knf4J {\n  margin: 3rem 0 0;\n}\n", "",{"version":3,"sources":["/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/styles/layout.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,eAAe;EACf,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,gBAAgB;AAClB","file":"layout.module.css","sourcesContent":[".container {\n  max-width: 36rem;\n  padding: 0 1rem;\n  margin: 3rem auto 6rem;\n}\n\n.header {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.headerImage {\n  width: 6rem;\n  height: 6rem;\n}\n\n.headerHomeImage {\n  width: 8rem;\n  height: 8rem;\n}\n\n.backToHome {\n  margin: 3rem 0 0;\n}\n"]}]);
+// Exports
+exports.locals = {
+	"container": "layout_container__1LfYE",
+	"header": "layout_header__1OJ41",
+	"headerImage": "layout_headerImage__jSguI",
+	"headerHomeImage": "layout_headerHomeImage__3w_dQ",
+	"backToHome": "layout_backToHome__knf4J"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/utils.module.css":
 /*!************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./styles/utils.module.css ***!
@@ -1863,21 +1884,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Findex.js!./":
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Findex.js ***!
-  \*****************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F404&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2F404.js!./":
+/*!******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F404&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2F404.js ***!
+  \******************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
-      var mod = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/404", function() {
+      var mod = __webpack_require__(/*! ./pages/404.js */ "./pages/404.js")
       if(true) {
-        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
-          if(!next.router.components["/"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
-          next.router.update("/", updatedPage)
+        module.hot.accept(/*! ./pages/404.js */ "./pages/404.js", function() {
+          if(!next.router.components["/404"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/404.js */ "./pages/404.js")
+          next.router.update("/404", updatedPage)
         })
       }
       return mod
@@ -5388,76 +5409,6 @@ AbstractNavItem.defaultProps = defaultProps;
 
 /***/ }),
 
-/***/ "./node_modules/react-bootstrap/esm/Button.js":
-/*!****************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/Button.js ***!
-  \****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
-/* harmony import */ var _SafeAnchor__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./SafeAnchor */ "./node_modules/react-bootstrap/esm/SafeAnchor.js");
-
-
-
-
-
-
-var defaultProps = {
-  variant: 'primary',
-  active: false,
-  disabled: false,
-  type: 'button'
-};
-var Button = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function (_ref, ref) {
-  var bsPrefix = _ref.bsPrefix,
-      variant = _ref.variant,
-      size = _ref.size,
-      active = _ref.active,
-      className = _ref.className,
-      block = _ref.block,
-      type = _ref.type,
-      as = _ref.as,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["bsPrefix", "variant", "size", "active", "className", "block", "type", "as"]);
-
-  var prefix = Object(_ThemeProvider__WEBPACK_IMPORTED_MODULE_4__["useBootstrapPrefix"])(bsPrefix, 'btn');
-  var classes = classnames__WEBPACK_IMPORTED_MODULE_2___default()(className, prefix, active && 'active', prefix + "-" + variant, block && prefix + "-block", size && prefix + "-" + size);
-
-  if (props.href) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_SafeAnchor__WEBPACK_IMPORTED_MODULE_5__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-      as: as,
-      ref: ref,
-      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(classes, props.disabled && 'disabled')
-    }));
-  }
-
-  if (ref) {
-    props.ref = ref;
-  }
-
-  if (!as) {
-    props.type = type;
-  }
-
-  var Component = as || 'button';
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    className: classes
-  }));
-});
-Button.displayName = 'Button';
-Button.defaultProps = defaultProps;
-/* harmony default export */ __webpack_exports__["default"] = (Button);
-
-/***/ }),
-
 /***/ "./node_modules/react-bootstrap/esm/CardContext.js":
 /*!*********************************************************!*\
   !*** ./node_modules/react-bootstrap/esm/CardContext.js ***!
@@ -5471,73 +5422,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ __webpack_exports__["default"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext(null));
-
-/***/ }),
-
-/***/ "./node_modules/react-bootstrap/esm/Col.js":
-/*!*************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/Col.js ***!
-  \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
-
-
-
-
-
-var DEVICE_SIZES = ['xl', 'lg', 'md', 'sm', 'xs'];
-var Col = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef( // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
-function (_ref, ref) {
-  var bsPrefix = _ref.bsPrefix,
-      className = _ref.className,
-      _ref$as = _ref.as,
-      Component = _ref$as === void 0 ? 'div' : _ref$as,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["bsPrefix", "className", "as"]);
-
-  var prefix = Object(_ThemeProvider__WEBPACK_IMPORTED_MODULE_4__["useBootstrapPrefix"])(bsPrefix, 'col');
-  var spans = [];
-  var classes = [];
-  DEVICE_SIZES.forEach(function (brkPoint) {
-    var propValue = props[brkPoint];
-    delete props[brkPoint];
-    var span, offset, order;
-
-    if (propValue != null && typeof propValue === 'object') {
-      var _propValue$span = propValue.span;
-      span = _propValue$span === void 0 ? true : _propValue$span;
-      offset = propValue.offset;
-      order = propValue.order;
-    } else {
-      span = propValue;
-    }
-
-    var infix = brkPoint !== 'xs' ? "-" + brkPoint : '';
-    if (span != null) spans.push(span === true ? "" + prefix + infix : "" + prefix + infix + "-" + span);
-    if (order != null) classes.push("order" + infix + "-" + order);
-    if (offset != null) classes.push("offset" + infix + "-" + offset);
-  });
-
-  if (!spans.length) {
-    spans.push(prefix); // plain 'col'
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
-    ref: ref,
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default.a.apply(void 0, [className].concat(spans, classes))
-  }));
-});
-Col.displayName = 'Col';
-/* harmony default export */ __webpack_exports__["default"] = (Col);
 
 /***/ }),
 
@@ -6211,68 +6095,6 @@ var NavbarToggle = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(funct
 NavbarToggle.displayName = 'NavbarToggle';
 NavbarToggle.defaultProps = defaultProps;
 /* harmony default export */ __webpack_exports__["default"] = (NavbarToggle);
-
-/***/ }),
-
-/***/ "./node_modules/react-bootstrap/esm/Row.js":
-/*!*************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/Row.js ***!
-  \*************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
-
-
-
-
-
-var DEVICE_SIZES = ['xl', 'lg', 'md', 'sm', 'xs'];
-var defaultProps = {
-  noGutters: false
-};
-var Row = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function (_ref, ref) {
-  var bsPrefix = _ref.bsPrefix,
-      className = _ref.className,
-      noGutters = _ref.noGutters,
-      _ref$as = _ref.as,
-      Component = _ref$as === void 0 ? 'div' : _ref$as,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["bsPrefix", "className", "noGutters", "as"]);
-
-  var decoratedBsPrefix = Object(_ThemeProvider__WEBPACK_IMPORTED_MODULE_4__["useBootstrapPrefix"])(bsPrefix, 'row');
-  var sizePrefix = decoratedBsPrefix + "-cols";
-  var classes = [];
-  DEVICE_SIZES.forEach(function (brkPoint) {
-    var propValue = props[brkPoint];
-    delete props[brkPoint];
-    var cols;
-
-    if (propValue != null && typeof propValue === 'object') {
-      cols = propValue.cols;
-    } else {
-      cols = propValue;
-    }
-
-    var infix = brkPoint !== 'xs' ? "-" + brkPoint : '';
-    if (cols != null) classes.push("" + sizePrefix + infix + "-" + cols);
-  });
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    ref: ref
-  }, props, {
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default.a.apply(void 0, [className, decoratedBsPrefix, noGutters && 'no-gutters'].concat(classes))
-  }));
-});
-Row.displayName = 'Row';
-Row.defaultProps = defaultProps;
-/* harmony default export */ __webpack_exports__["default"] = (Row);
 
 /***/ }),
 
@@ -9211,6 +9033,80 @@ module.exports = warning;
 
 /***/ }),
 
+/***/ "./pages/404.js":
+/*!**********************!*\
+  !*** ./pages/404.js ***!
+  \**********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _styles_layout_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/layout.module.css */ "./styles/layout.module.css");
+/* harmony import */ var _styles_layout_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_layout_module_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/utils.module.css */ "./styles/utils.module.css");
+/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_4__);
+var _this = undefined,
+    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/404.js";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+var Custom404 = function Custom404(_ref) {
+  var _ref$title = _ref.title,
+      title = _ref$title === void 0 ? 'This Page is Not Found' : _ref$title;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 7
+    }
+  }, __jsx("title", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9,
+      columnNumber: 13
+    }
+  }, title)), __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 7
+    }
+  }, __jsx("div", {
+    className: "".concat(_styles_layout_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.container, " ").concat(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.notfound),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11,
+      columnNumber: 9
+    }
+  }, __jsx("h1", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12,
+      columnNumber: 11
+    }
+  }, "404 - Page Not Found"))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Custom404);
+
+/***/ }),
+
 /***/ "./pages/api/headerlink.json":
 /*!***********************************!*\
   !*** ./pages/api/headerlink.json ***!
@@ -9222,150 +9118,64 @@ module.exports = JSON.parse("[{\"id\":\"1\",\"link\":\"/\",\"title\":\"Home\"},{
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./styles/layout.module.css":
+/*!**********************************!*\
+  !*** ./styles/layout.module.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-/* harmony import */ var _pages_api_headerlink_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/api/headerlink.json */ "./pages/api/headerlink.json");
-var _pages_api_headerlink_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../pages/api/headerlink.json */ "./pages/api/headerlink.json", 1);
-/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/utils.module.css */ "./styles/utils.module.css");
-/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
-/* harmony import */ var react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Row */ "./node_modules/react-bootstrap/esm/Row.js");
-/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap/Col */ "./node_modules/react-bootstrap/esm/Col.js");
-/* harmony import */ var react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap/Button */ "./node_modules/react-bootstrap/esm/Button.js");
-var _this = undefined,
-    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/index.js";
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./layout.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/layout.module.css");
 
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var options = {}
 
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
 
+var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
 
+if (content.locals) {
+  module.exports = content.locals;
+}
 
- // bootstrap
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./layout.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/layout.module.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./layout.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/layout.module.css");
 
-
-
-
-
-
-var Home = function Home(_ref) {
-  var _ref$title = _ref.title,
-      title = _ref$title === void 0 ? 'Index Page' : _ref$title;
-  return __jsx("div", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.indexBG,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 5
-    }
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 7
-    }
-  }, __jsx("title", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 13
-    }
-  }, title)), __jsx(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    fluid: true,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 7
-    }
-  }, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 9
-    }
-  }, __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.homeShow,
-    xs: 12,
-    sm: 12,
-    md: 8,
-    lg: 6,
-    xl: 6,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 11
-    }
-  }, __jsx("h1", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.divH1,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 13
-    }
-  }, "Welcome"), // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
-  getHeader() ? getHeader().map(function (header) {
-    return __jsx(react_bootstrap_Button__WEBPACK_IMPORTED_MODULE_9__["default"], {
-      variant: "outline-dark",
-      size: "lg",
-      block: true,
-      className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.buttonControl,
-      key: header.id,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 17
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
       }
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: header.link,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23,
-        columnNumber: 19
-      }
-    }, __jsx("a", {
-      style: wordCapitalize,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23,
-        columnNumber: 44
-      }
-    }, header.title)));
-  }) : 'Loading'))));
-};
+    )
+  }
 
-var wordCapitalize = {
-  textTransform: "capitalize"
-};
-
-var getHeader = function getHeader() {
-  return _pages_api_headerlink_json__WEBPACK_IMPORTED_MODULE_4__;
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Home);
+  module.hot.dispose(function() { 
+    update();
+  });
+}
 
 /***/ }),
 
@@ -9430,14 +9240,14 @@ if (true) {
 
 /***/ }),
 
-/***/ 1:
-/*!*********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Findex.js ***!
-  \*********************************************************************************************************************************************************/
+/***/ 5:
+/*!**********************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F404&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2F404.js ***!
+  \**********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Findex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F404&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2F404.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F404&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2F404.js!./");
 
 
 /***/ }),
@@ -9453,5 +9263,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=index.js.map
+},[[5,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=404.js.map

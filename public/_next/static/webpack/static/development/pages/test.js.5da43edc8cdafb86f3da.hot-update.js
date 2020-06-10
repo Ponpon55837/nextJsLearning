@@ -1,0 +1,288 @@
+webpackHotUpdate("static/development/pages/test.js",{
+
+/***/ "./pages/apiComponents/contextJson.js":
+/*!********************************************!*\
+  !*** ./pages/apiComponents/contextJson.js ***!
+  \********************************************/
+/*! exports provided: CourseJson, ProductJson, CategoryJson */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseJson", function() { return CourseJson; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductJson", function() { return ProductJson; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CategoryJson", function() { return CategoryJson; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Row */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Col */ "./node_modules/react-bootstrap/esm/Col.js");
+/* harmony import */ var react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/ListGroup */ "./node_modules/react-bootstrap/esm/ListGroup.js");
+/* harmony import */ var react_bootstrap_Image__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap/Image */ "./node_modules/react-bootstrap/esm/Image.js");
+/* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Card */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Accordion */ "./node_modules/react-bootstrap/esm/Accordion.js");
+var _this = undefined,
+    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/apiComponents/contextJson.js";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+
+
+
+
+var rowStyle = {
+  paddingButtom: '1rem'
+}; // courses由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
+
+var CourseJson = function CourseJson(_ref) {
+  var courses = _ref.courses;
+  // API_URL為.env這個檔案中的網址來使用，雖然在這邊並沒有影響，但是如果要使用image這種api匯入的話，就需要指定API_URL
+  var API_URL = "http://localhost:1337";
+  console.log(courses);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    style: rowStyle,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 7
+    }
+  }, // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
+  courses ? courses.map(function (course) {
+    return __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      xs: 12,
+      sm: 6,
+      md: 4,
+      lg: 4,
+      xl: 3,
+      key: course.id,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 23,
+        columnNumber: 13
+      }
+    }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      variant: "flush",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 15
+      }
+    }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__["default"].Item, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 17
+      }
+    }, course.title, __jsx("br", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 33
+      }
+    }), __jsx(react_bootstrap_Image__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      src: API_URL + course.image.url,
+      rounded: true,
+      fluid: true,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 19
+      }
+    }), __jsx("br", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 76
+      }
+    }), __jsx("cite", {
+      title: "Source Title",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 19
+      }
+    }, course.published))));
+  }) // 如果products不存在，那畫面就顯示Loading...
+  : 'Loading ...'));
+}; // products由外部接入，這個值需要由data傳入
+
+var ProductJson = function ProductJson(_ref2) {
+  var products = _ref2.products;
+  // API_URL為.env這個檔案中的網址來使用，雖然在這邊並沒有影響，但是如果要使用image這種api匯入的話，就需要指定API_URL
+  var API_URL = "http://localhost:1337";
+  console.log(products);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    style: rowStyle,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 7
+    }
+  }, // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
+  products ? products.map(function (product) {
+    return __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      xs: 12,
+      sm: 12,
+      md: 12,
+      lg: 12,
+      xl: 12,
+      key: product.id,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51,
+        columnNumber: 13
+      }
+    }, __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      defaultActiveKey: "false",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52,
+        columnNumber: 15
+      }
+    }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 53,
+        columnNumber: 17
+      }
+    }, __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_7__["default"].Toggle, {
+      as: react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_6__["default"].Header,
+      eventKey: product.id,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 54,
+        columnNumber: 19
+      }
+    }, product.title), __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_7__["default"].Collapse, {
+      eventKey: product.id,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57,
+        columnNumber: 19
+      }
+    }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_6__["default"].Body, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 58,
+        columnNumber: 21
+      }
+    }, product.description, __jsx("br", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59,
+        columnNumber: 44
+      }
+    }), __jsx("br", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 59,
+        columnNumber: 50
+      }
+    }), "Price:", product.price, __jsx("br", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 60,
+        columnNumber: 44
+      }
+    }), __jsx("cite", {
+      title: "Source Title",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 61,
+        columnNumber: 23
+      }
+    }, "Quality:", product.quality))))));
+  }) // 如果products不存在，那畫面就顯示Loading...
+  : 'Loading ...'));
+}; // categories由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
+
+var CategoryJson = function CategoryJson(_ref3) {
+  var categories = _ref3.categories;
+  // API_URL為.env這個檔案中的網址來使用，雖然在這邊並沒有影響，但是如果要使用image這種api匯入的話，就需要指定API_URL
+  var API_URL = "http://localhost:1337";
+  console.log(categories);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    style: rowStyle,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83,
+      columnNumber: 7
+    }
+  }, // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
+  categories ? categories.map(function (category) {
+    return __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      xs: 12,
+      sm: 12,
+      md: 12,
+      lg: 6,
+      xl: 6,
+      key: category.id,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 86,
+        columnNumber: 13
+      }
+    }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      variant: "flush",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 87,
+        columnNumber: 15
+      }
+    }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_4__["default"].Item, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 88,
+        columnNumber: 17
+      }
+    }, category.name, __jsx("br", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 89,
+        columnNumber: 34
+      }
+    }), __jsx("cite", {
+      title: "Source Title",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 90,
+        columnNumber: 19
+      }
+    }, category.created_at))));
+  }) // 如果products不存在，那畫面就顯示Loading...
+  : 'Loading'));
+};
+
+/***/ })
+
+})
+//# sourceMappingURL=test.js.5da43edc8cdafb86f3da.hot-update.js.map

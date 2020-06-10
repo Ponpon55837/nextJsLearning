@@ -1,8 +1,6 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
-import CourseJson from './apiComponents/courseJson.js'
-import ProductJson from './apiComponents/productJson.js'
-import CategoryJson from './apiComponents/categoryJson.js'
+import { CourseJson, ProductJson, CategoryJson } from './apiComponents/contextJson.js'
 // bootstrap
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'

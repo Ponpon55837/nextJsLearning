@@ -27,7 +27,7 @@ export const SubscribersJson = ({ subscribers }) => {
       <Col xs={12} sm={12} md={12} lg={12} xl={12}>
         {
           subscribers ? subscribers.map(subs => (
-            <Accordion defaultActiveKey={subs.id}>
+            <Accordion defaultActiveKey={subs.id} key={subs.id}>
               <Card>
                 <Accordion.Toggle as={Card.Header} eventKey={subs.id}>
                   {subs.login}
