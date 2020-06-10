@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/about.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog.js"],{
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -274,6 +274,17 @@ var Layout = function Layout(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
+
+/***/ }),
+
+/***/ "./img/bg.jpg":
+/*!********************!*\
+  !*** ./img/bg.jpg ***!
+  \********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "static/media/bg.1875ec282c40d65da77c870918ccce5f.jpg";
 
 /***/ }),
 
@@ -1091,6 +1102,188 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/utils.module.css":
+/*!************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./styles/utils.module.css ***!
+  \************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Imports
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL_PURE_IMPORT_0___ = __webpack_require__(/*! ../img/bg.jpg */ "./img/bg.jpg");
+var ___CSS_LOADER_URL_IMPORT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_PURE_IMPORT_0___);
+// Module
+exports.push([module.i, ".utils_heading2Xl__1I65m {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingXl__1XecN {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingLg__de7p0 {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.utils_headingMd__3de6G {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.utils_borderCircle__13qdJ {\n  border-radius: 9999px;\n}\n\n.utils_colorInherit__3Gudf {\n  color: inherit;\n}\n\n.utils_padding1px__oCny8 {\n  padding-top: 1px;\n}\n\n.utils_list__S7_pe {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.utils_listItem__2eJpJ {\n  margin: 0 0 1.25rem;\n}\n\n.utils_lightText__12Ckm {\n  color: #999;\n}\n\n.utils_markdown__2R-tk {\n  font-family: 'Arial';\n}\n\n.utils_markdown__2R-tk a {\n  text-decoration: none;\n  color: blue;\n}\n\n.utils_markdown__2R-tk a:hover {\n  opacity: 0.6;\n}\n\n.utils_markdown__2R-tk h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.utils_notfound__3uF6d {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.utils_indexBG__1DCbH {\n  background-image: url(" + ___CSS_LOADER_URL_IMPORT_0___ + ");\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.utils_homeShow__2HxQ3 {\n  padding-top: 12%;\n  padding-bottom: 32%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 800px;\n}\n\n.utils_divH1__1lonv {\n  color: white;\n  font-size: 3rem;\n  font-weight: bold;\n  opacity: 0.5;\n  align: center;\n}\n\n.utils_buttonControl__2dBWX {\n  opacity: 0.3;\n  color:white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2.3rem;\n}\n", "",{"version":3,"sources":["/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/styles/utils.module.css"],"names":[],"mappings":"AAAA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,oBAAoB;AACtB;;AAEA;EACE,qBAAqB;EACrB,WAAW;AACb;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,SAAS;EACT,UAAU;EACV,yBAAyB;AAC3B;;AAEA;EACE,iBAAiB;EACjB,oBAAoB;AACtB;;AAEA;EACE,oDAAoC;EACpC,WAAW;;EAEX,sCAAsC;EACtC,2BAA2B;EAC3B,4BAA4B;EAC5B,sBAAsB;AACxB;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,eAAe;EACf,iBAAiB;EACjB,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,iBAAiB;AACnB","file":"utils.module.css","sourcesContent":[".heading2Xl {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingXl {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingLg {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.headingMd {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.borderCircle {\n  border-radius: 9999px;\n}\n\n.colorInherit {\n  color: inherit;\n}\n\n.padding1px {\n  padding-top: 1px;\n}\n\n.list {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.listItem {\n  margin: 0 0 1.25rem;\n}\n\n.lightText {\n  color: #999;\n}\n\n.markdown {\n  font-family: 'Arial';\n}\n\n.markdown a {\n  text-decoration: none;\n  color: blue;\n}\n\n.markdown a:hover {\n  opacity: 0.6;\n}\n\n.markdown h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.notfound {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.indexBG {\n  background-image: url(../img/bg.jpg);\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.homeShow {\n  padding-top: 12%;\n  padding-bottom: 32%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 800px;\n}\n\n.divH1 {\n  color: white;\n  font-size: 3rem;\n  font-weight: bold;\n  opacity: 0.5;\n  align: center;\n}\n\n.buttonControl {\n  opacity: 0.3;\n  color:white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2.3rem;\n}\n"]}]);
+// Exports
+exports.locals = {
+	"heading2Xl": "utils_heading2Xl__1I65m",
+	"headingXl": "utils_headingXl__1XecN",
+	"headingLg": "utils_headingLg__de7p0",
+	"headingMd": "utils_headingMd__3de6G",
+	"borderCircle": "utils_borderCircle__13qdJ",
+	"colorInherit": "utils_colorInherit__3Gudf",
+	"padding1px": "utils_padding1px__oCny8",
+	"list": "utils_list__S7_pe",
+	"listItem": "utils_listItem__2eJpJ",
+	"lightText": "utils_lightText__12Ckm",
+	"markdown": "utils_markdown__2R-tk",
+	"notfound": "utils_notfound__3uF6d",
+	"indexBG": "utils_indexBG__1DCbH",
+	"homeShow": "utils_homeShow__2HxQ3",
+	"divH1": "utils_divH1__1lonv",
+	"buttonControl": "utils_buttonControl__2dBWX"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/api.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+// eslint-disable-next-line func-names
+module.exports = function (useSourceMap) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = cssWithMappingToString(item, useSourceMap);
+
+      if (item[2]) {
+        return "@media ".concat(item[2], "{").concat(content, "}");
+      }
+
+      return content;
+    }).join('');
+  }; // import a list of modules into the list
+  // eslint-disable-next-line func-names
+
+
+  list.i = function (modules, mediaQuery) {
+    if (typeof modules === 'string') {
+      // eslint-disable-next-line no-param-reassign
+      modules = [[null, modules, '']];
+    }
+
+    var alreadyImportedModules = {};
+
+    for (var i = 0; i < this.length; i++) {
+      // eslint-disable-next-line prefer-destructuring
+      var id = this[i][0];
+
+      if (id != null) {
+        alreadyImportedModules[id] = true;
+      }
+    }
+
+    for (var _i = 0; _i < modules.length; _i++) {
+      var item = modules[_i]; // skip already imported module
+      // this implementation is not 100% perfect for weird media query combinations
+      // when a module is imported multiple times with different media queries.
+      // I hope this will never occur (Hey this way we have smaller bundles)
+
+      if (item[0] == null || !alreadyImportedModules[item[0]]) {
+        if (mediaQuery && !item[2]) {
+          item[2] = mediaQuery;
+        } else if (mediaQuery) {
+          item[2] = "(".concat(item[2], ") and (").concat(mediaQuery, ")");
+        }
+
+        list.push(item);
+      }
+    }
+  };
+
+  return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring
+
+  var cssMapping = item[3];
+
+  if (!cssMapping) {
+    return content;
+  }
+
+  if (useSourceMap && typeof btoa === 'function') {
+    var sourceMapping = toComment(cssMapping);
+    var sourceURLs = cssMapping.sources.map(function (source) {
+      return "/*# sourceURL=".concat(cssMapping.sourceRoot).concat(source, " */");
+    });
+    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+  }
+
+  return [content].join('\n');
+} // Adapted from convert-source-map (MIT)
+
+
+function toComment(sourceMap) {
+  // eslint-disable-next-line no-undef
+  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+  var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
+  return "/*# ".concat(data, " */");
+}
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = url && url.__esModule ? url.default : url;
+
+  if (typeof url !== 'string') {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, '\\n'), "\"");
+  }
+
+  return url;
+};
+
+/***/ }),
+
 /***/ "./node_modules/dom-helpers/esm/addEventListener.js":
 /*!**********************************************************!*\
   !*** ./node_modules/dom-helpers/esm/addEventListener.js ***!
@@ -1682,21 +1875,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fabout.js!./":
-/*!**********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fabout.js ***!
-  \**********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fblog.js!./":
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fblog.js ***!
+  \********************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/about", function() {
-      var mod = __webpack_require__(/*! ./pages/about.js */ "./pages/about.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog", function() {
+      var mod = __webpack_require__(/*! ./pages/blog.js */ "./pages/blog.js")
       if(true) {
-        module.hot.accept(/*! ./pages/about.js */ "./pages/about.js", function() {
-          if(!next.router.components["/about"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/about.js */ "./pages/about.js")
-          next.router.update("/about", updatedPage)
+        module.hot.accept(/*! ./pages/blog.js */ "./pages/blog.js", function() {
+          if(!next.router.components["/blog"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/blog.js */ "./pages/blog.js")
+          next.router.update("/blog", updatedPage)
         })
       }
       return mod
@@ -5207,260 +5400,6 @@ AbstractNavItem.defaultProps = defaultProps;
 
 /***/ }),
 
-/***/ "./node_modules/react-bootstrap/esm/Accordion.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/Accordion.js ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var uncontrollable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! uncontrollable */ "./node_modules/uncontrollable/esm/index.js");
-/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
-/* harmony import */ var _AccordionToggle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./AccordionToggle */ "./node_modules/react-bootstrap/esm/AccordionToggle.js");
-/* harmony import */ var _SelectableContext__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SelectableContext */ "./node_modules/react-bootstrap/esm/SelectableContext.js");
-/* harmony import */ var _AccordionCollapse__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./AccordionCollapse */ "./node_modules/react-bootstrap/esm/AccordionCollapse.js");
-/* harmony import */ var _AccordionContext__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./AccordionContext */ "./node_modules/react-bootstrap/esm/AccordionContext.js");
-
-
-
-
-
-
-
-
-
-
-var Accordion = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function (props, ref) {
-  var _useUncontrolled = Object(uncontrollable__WEBPACK_IMPORTED_MODULE_4__["useUncontrolled"])(props, {
-    activeKey: 'onSelect'
-  }),
-      _useUncontrolled$as = _useUncontrolled.as,
-      Component = _useUncontrolled$as === void 0 ? 'div' : _useUncontrolled$as,
-      activeKey = _useUncontrolled.activeKey,
-      bsPrefix = _useUncontrolled.bsPrefix,
-      children = _useUncontrolled.children,
-      className = _useUncontrolled.className,
-      onSelect = _useUncontrolled.onSelect,
-      controlledProps = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_useUncontrolled, ["as", "activeKey", "bsPrefix", "children", "className", "onSelect"]);
-
-  bsPrefix = Object(_ThemeProvider__WEBPACK_IMPORTED_MODULE_5__["useBootstrapPrefix"])(bsPrefix, 'accordion');
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_AccordionContext__WEBPACK_IMPORTED_MODULE_9__["default"].Provider, {
-    value: activeKey
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_SelectableContext__WEBPACK_IMPORTED_MODULE_7__["default"].Provider, {
-    value: onSelect
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    ref: ref
-  }, controlledProps, {
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(className, bsPrefix)
-  }), children)));
-});
-Accordion.Toggle = _AccordionToggle__WEBPACK_IMPORTED_MODULE_6__["default"];
-Accordion.Collapse = _AccordionCollapse__WEBPACK_IMPORTED_MODULE_8__["default"];
-/* harmony default export */ __webpack_exports__["default"] = (Accordion);
-
-/***/ }),
-
-/***/ "./node_modules/react-bootstrap/esm/AccordionCollapse.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/AccordionCollapse.js ***!
-  \***************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Collapse__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Collapse */ "./node_modules/react-bootstrap/esm/Collapse.js");
-/* harmony import */ var _AccordionContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AccordionContext */ "./node_modules/react-bootstrap/esm/AccordionContext.js");
-
-
-
-
-
-var AccordionCollapse = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function (_ref, ref) {
-  var children = _ref.children,
-      eventKey = _ref.eventKey,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["children", "eventKey"]);
-
-  var contextEventKey = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_AccordionContext__WEBPACK_IMPORTED_MODULE_4__["default"]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Collapse__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    ref: ref,
-    in: contextEventKey === eventKey
-  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.only(children)));
-});
-AccordionCollapse.displayName = 'AccordionCollapse';
-/* harmony default export */ __webpack_exports__["default"] = (AccordionCollapse);
-
-/***/ }),
-
-/***/ "./node_modules/react-bootstrap/esm/AccordionContext.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/AccordionContext.js ***!
-  \**************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-/* harmony default export */ __webpack_exports__["default"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext(null));
-
-/***/ }),
-
-/***/ "./node_modules/react-bootstrap/esm/AccordionToggle.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/AccordionToggle.js ***!
-  \*************************************************************/
-/*! exports provided: useAccordionToggle, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useAccordionToggle", function() { return useAccordionToggle; });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _SelectableContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SelectableContext */ "./node_modules/react-bootstrap/esm/SelectableContext.js");
-/* harmony import */ var _AccordionContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AccordionContext */ "./node_modules/react-bootstrap/esm/AccordionContext.js");
-
-
-
-
-
-function useAccordionToggle(eventKey, onClick) {
-  var contextEventKey = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_AccordionContext__WEBPACK_IMPORTED_MODULE_4__["default"]);
-  var onSelect = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_SelectableContext__WEBPACK_IMPORTED_MODULE_3__["default"]);
-  return function (e) {
-    /*
-      Compare the event key in context with the given event key.
-      If they are the same, then collapse the component.
-    */
-    var eventKeyPassed = eventKey === contextEventKey ? null : eventKey;
-    onSelect(eventKeyPassed, e);
-    if (onClick) onClick(e);
-  };
-}
-var AccordionToggle = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function (_ref, ref) {
-  var _ref$as = _ref.as,
-      Component = _ref$as === void 0 ? 'button' : _ref$as,
-      children = _ref.children,
-      eventKey = _ref.eventKey,
-      onClick = _ref.onClick,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["as", "children", "eventKey", "onClick"]);
-
-  var accordionOnClick = useAccordionToggle(eventKey, onClick);
-
-  if (Component === 'button') {
-    props.type = 'button';
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    ref: ref,
-    onClick: accordionOnClick
-  }, props), children);
-});
-/* harmony default export */ __webpack_exports__["default"] = (AccordionToggle);
-
-/***/ }),
-
-/***/ "./node_modules/react-bootstrap/esm/Card.js":
-/*!**************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/Card.js ***!
-  \**************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
-/* harmony import */ var _createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./createWithBsPrefix */ "./node_modules/react-bootstrap/esm/createWithBsPrefix.js");
-/* harmony import */ var _divWithClassName__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./divWithClassName */ "./node_modules/react-bootstrap/esm/divWithClassName.js");
-/* harmony import */ var _CardContext__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./CardContext */ "./node_modules/react-bootstrap/esm/CardContext.js");
-/* harmony import */ var _CardImg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./CardImg */ "./node_modules/react-bootstrap/esm/CardImg.js");
-
-
-
-
-
-
-
-
-
-var DivStyledAsH5 = Object(_divWithClassName__WEBPACK_IMPORTED_MODULE_6__["default"])('h5');
-var DivStyledAsH6 = Object(_divWithClassName__WEBPACK_IMPORTED_MODULE_6__["default"])('h6');
-var CardBody = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-body');
-var defaultProps = {
-  body: false
-};
-var Card = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function (_ref, ref) {
-  var bsPrefix = _ref.bsPrefix,
-      className = _ref.className,
-      bg = _ref.bg,
-      text = _ref.text,
-      border = _ref.border,
-      body = _ref.body,
-      children = _ref.children,
-      _ref$as = _ref.as,
-      Component = _ref$as === void 0 ? 'div' : _ref$as,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["bsPrefix", "className", "bg", "text", "border", "body", "children", "as"]);
-
-  var prefix = Object(_ThemeProvider__WEBPACK_IMPORTED_MODULE_4__["useBootstrapPrefix"])(bsPrefix, 'card');
-  var cardContext = Object(react__WEBPACK_IMPORTED_MODULE_3__["useMemo"])(function () {
-    return {
-      cardHeaderBsPrefix: prefix + "-header"
-    };
-  }, [prefix]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_CardContext__WEBPACK_IMPORTED_MODULE_7__["default"].Provider, {
-    value: cardContext
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    ref: ref
-  }, props, {
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(className, prefix, bg && "bg-" + bg, text && "text-" + text, border && "border-" + border)
-  }), body ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(CardBody, null, children) : children));
-});
-Card.displayName = 'Card';
-Card.defaultProps = defaultProps;
-Card.Img = _CardImg__WEBPACK_IMPORTED_MODULE_8__["default"];
-Card.Title = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-title', {
-  Component: DivStyledAsH5
-});
-Card.Subtitle = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-subtitle', {
-  Component: DivStyledAsH6
-});
-Card.Body = CardBody;
-Card.Link = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-link', {
-  Component: 'a'
-});
-Card.Text = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-text', {
-  Component: 'p'
-});
-Card.Header = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-header');
-Card.Footer = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-footer');
-Card.ImgOverlay = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-img-overlay');
-/* harmony default export */ __webpack_exports__["default"] = (Card);
-
-/***/ }),
-
 /***/ "./node_modules/react-bootstrap/esm/CardContext.js":
 /*!*********************************************************!*\
   !*** ./node_modules/react-bootstrap/esm/CardContext.js ***!
@@ -5474,51 +5413,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ __webpack_exports__["default"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext(null));
-
-/***/ }),
-
-/***/ "./node_modules/react-bootstrap/esm/CardImg.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/CardImg.js ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
-
-
-
-
-
-var defaultProps = {
-  variant: null
-};
-var CardImg = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef( // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
-function (_ref, ref) {
-  var bsPrefix = _ref.bsPrefix,
-      className = _ref.className,
-      variant = _ref.variant,
-      _ref$as = _ref.as,
-      Component = _ref$as === void 0 ? 'img' : _ref$as,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["bsPrefix", "className", "variant", "as"]);
-
-  var prefix = Object(_ThemeProvider__WEBPACK_IMPORTED_MODULE_4__["useBootstrapPrefix"])(bsPrefix, 'card-img');
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    ref: ref,
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(variant ? prefix + "-" + variant : prefix, className)
-  }, props));
-});
-CardImg.displayName = 'CardImg';
-CardImg.defaultProps = defaultProps;
-/* harmony default export */ __webpack_exports__["default"] = (CardImg);
 
 /***/ }),
 
@@ -6758,34 +6652,6 @@ function createWithBsPrefix(prefix, _temp) {
   BsComponent.displayName = displayName;
   return BsComponent;
 }
-
-/***/ }),
-
-/***/ "./node_modules/react-bootstrap/esm/divWithClassName.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/divWithClassName.js ***!
-  \**************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = (function (className) {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.forwardRef(function (p, ref) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, p, {
-      ref: ref,
-      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(p.className, className)
-    }));
-  });
-});
 
 /***/ }),
 
@@ -8703,6 +8569,299 @@ try {
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var stylesInDom = {};
+
+var isOldIE = function isOldIE() {
+  var memo;
+  return function memorize() {
+    if (typeof memo === 'undefined') {
+      // Test for IE <= 9 as proposed by Browserhacks
+      // @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
+      // Tests for existence of standard globals is to allow style-loader
+      // to operate correctly into non-standard environments
+      // @see https://github.com/webpack-contrib/style-loader/issues/177
+      memo = Boolean(window && document && document.all && !window.atob);
+    }
+
+    return memo;
+  };
+}();
+
+var getTarget = function getTarget() {
+  var memo = {};
+  return function memorize(target) {
+    if (typeof memo[target] === 'undefined') {
+      var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
+
+      if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+        try {
+          // This will throw an exception if access to iframe is blocked
+          // due to cross-origin restrictions
+          styleTarget = styleTarget.contentDocument.head;
+        } catch (e) {
+          // istanbul ignore next
+          styleTarget = null;
+        }
+      }
+
+      memo[target] = styleTarget;
+    }
+
+    return memo[target];
+  };
+}();
+
+function listToStyles(list, options) {
+  var styles = [];
+  var newStyles = {};
+
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i];
+    var id = options.base ? item[0] + options.base : item[0];
+    var css = item[1];
+    var media = item[2];
+    var sourceMap = item[3];
+    var part = {
+      css: css,
+      media: media,
+      sourceMap: sourceMap
+    };
+
+    if (!newStyles[id]) {
+      styles.push(newStyles[id] = {
+        id: id,
+        parts: [part]
+      });
+    } else {
+      newStyles[id].parts.push(part);
+    }
+  }
+
+  return styles;
+}
+
+function addStylesToDom(styles, options) {
+  for (var i = 0; i < styles.length; i++) {
+    var item = styles[i];
+    var domStyle = stylesInDom[item.id];
+    var j = 0;
+
+    if (domStyle) {
+      domStyle.refs++;
+
+      for (; j < domStyle.parts.length; j++) {
+        domStyle.parts[j](item.parts[j]);
+      }
+
+      for (; j < item.parts.length; j++) {
+        domStyle.parts.push(addStyle(item.parts[j], options));
+      }
+    } else {
+      var parts = [];
+
+      for (; j < item.parts.length; j++) {
+        parts.push(addStyle(item.parts[j], options));
+      }
+
+      stylesInDom[item.id] = {
+        id: item.id,
+        refs: 1,
+        parts: parts
+      };
+    }
+  }
+}
+
+function insertStyleElement(options) {
+  var style = document.createElement('style');
+
+  if (typeof options.attributes.nonce === 'undefined') {
+    var nonce =  true ? __webpack_require__.nc : undefined;
+
+    if (nonce) {
+      options.attributes.nonce = nonce;
+    }
+  }
+
+  Object.keys(options.attributes).forEach(function (key) {
+    style.setAttribute(key, options.attributes[key]);
+  });
+
+  if (typeof options.insert === 'function') {
+    options.insert(style);
+  } else {
+    var target = getTarget(options.insert || 'head');
+
+    if (!target) {
+      throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+    }
+
+    target.appendChild(style);
+  }
+
+  return style;
+}
+
+function removeStyleElement(style) {
+  // istanbul ignore if
+  if (style.parentNode === null) {
+    return false;
+  }
+
+  style.parentNode.removeChild(style);
+}
+/* istanbul ignore next  */
+
+
+var replaceText = function replaceText() {
+  var textStore = [];
+  return function replace(index, replacement) {
+    textStore[index] = replacement;
+    return textStore.filter(Boolean).join('\n');
+  };
+}();
+
+function applyToSingletonTag(style, index, remove, obj) {
+  var css = remove ? '' : obj.css; // For old IE
+
+  /* istanbul ignore if  */
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = replaceText(index, css);
+  } else {
+    var cssNode = document.createTextNode(css);
+    var childNodes = style.childNodes;
+
+    if (childNodes[index]) {
+      style.removeChild(childNodes[index]);
+    }
+
+    if (childNodes.length) {
+      style.insertBefore(cssNode, childNodes[index]);
+    } else {
+      style.appendChild(cssNode);
+    }
+  }
+}
+
+function applyToTag(style, options, obj) {
+  var css = obj.css;
+  var media = obj.media;
+  var sourceMap = obj.sourceMap;
+
+  if (media) {
+    style.setAttribute('media', media);
+  }
+
+  if (sourceMap && btoa) {
+    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
+  } // For old IE
+
+  /* istanbul ignore if  */
+
+
+  if (style.styleSheet) {
+    style.styleSheet.cssText = css;
+  } else {
+    while (style.firstChild) {
+      style.removeChild(style.firstChild);
+    }
+
+    style.appendChild(document.createTextNode(css));
+  }
+}
+
+var singleton = null;
+var singletonCounter = 0;
+
+function addStyle(obj, options) {
+  var style;
+  var update;
+  var remove;
+
+  if (options.singleton) {
+    var styleIndex = singletonCounter++;
+    style = singleton || (singleton = insertStyleElement(options));
+    update = applyToSingletonTag.bind(null, style, styleIndex, false);
+    remove = applyToSingletonTag.bind(null, style, styleIndex, true);
+  } else {
+    style = insertStyleElement(options);
+    update = applyToTag.bind(null, style, options);
+
+    remove = function remove() {
+      removeStyleElement(style);
+    };
+  }
+
+  update(obj);
+  return function updateStyle(newObj) {
+    if (newObj) {
+      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {
+        return;
+      }
+
+      update(obj = newObj);
+    } else {
+      remove();
+    }
+  };
+}
+
+module.exports = function (list, options) {
+  options = options || {};
+  options.attributes = typeof options.attributes === 'object' ? options.attributes : {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+  // tags it will allow on a page
+
+  if (!options.singleton && typeof options.singleton !== 'boolean') {
+    options.singleton = isOldIE();
+  }
+
+  var styles = listToStyles(list, options);
+  addStylesToDom(styles, options);
+  return function update(newList) {
+    var mayRemove = [];
+
+    for (var i = 0; i < styles.length; i++) {
+      var item = styles[i];
+      var domStyle = stylesInDom[item.id];
+
+      if (domStyle) {
+        domStyle.refs--;
+        mayRemove.push(domStyle);
+      }
+    }
+
+    if (newList) {
+      var newStyles = listToStyles(newList, options);
+      addStylesToDom(newStyles, options);
+    }
+
+    for (var _i = 0; _i < mayRemove.length; _i++) {
+      var _domStyle = mayRemove[_i];
+
+      if (_domStyle.refs === 0) {
+        for (var j = 0; j < _domStyle.parts.length; j++) {
+          _domStyle.parts[j]();
+        }
+
+        delete stylesInDom[_domStyle.id];
+      }
+    }
+  };
+};
+
+/***/ }),
+
 /***/ "./node_modules/uncontrollable/esm/hook.js":
 /*!*************************************************!*\
   !*** ./node_modules/uncontrollable/esm/hook.js ***!
@@ -9132,166 +9291,6 @@ module.exports = warning;
 
 /***/ }),
 
-/***/ "./pages/about.js":
-/*!************************!*\
-  !*** ./pages/about.js ***!
-  \************************/
-/*! exports provided: __N_SSG, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__N_SSG", function() { return __N_SSG; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _apiComponents_reposJson_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./apiComponents/reposJson.js */ "./pages/apiComponents/reposJson.js");
-/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
-/* harmony import */ var react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap/Row */ "./node_modules/react-bootstrap/esm/Row.js");
-/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Col */ "./node_modules/react-bootstrap/esm/Col.js");
-var _this = undefined,
-    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/about.js";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
- // bootstrap
-
-
-
-
-
-var About = function About(_ref) {
-  var repos = _ref.repos,
-      subscribers = _ref.subscribers,
-      _ref$title = _ref.title,
-      title = _ref$title === void 0 ? 'About this url page' : _ref$title;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 7
-    }
-  }, __jsx("title", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 13
-    }
-  }, title)), __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 7
-    }
-  }, __jsx(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    fluid: true,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 9
-    }
-  }, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 11
-    }
-  }, __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    className: "d-none d-sm-none d-md-block",
-    md: 1,
-    lg: 2,
-    xl: 2,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 13
-    }
-  }), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    xs: 12,
-    sm: 12,
-    md: 10,
-    lg: 8,
-    xl: 8,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 13
-    }
-  }, __jsx("h1", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 15
-    }
-  }, "This is the about page"), __jsx(_apiComponents_reposJson_js__WEBPACK_IMPORTED_MODULE_3__["ReposJson"], {
-    repos: repos,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 15
-    }
-  }), __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 42
-    }
-  }), __jsx(_apiComponents_reposJson_js__WEBPACK_IMPORTED_MODULE_3__["SubscribersJson"], {
-    subscribers: subscribers,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 15
-    }
-  })), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    className: "d-none d-sm-none d-md-block",
-    md: 1,
-    lg: 2,
-    xl: 2,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 13
-    }
-  })))));
-};
-
-var __N_SSG = true;
-/* harmony default export */ __webpack_exports__["default"] = (About); // class component用法 可是使用起來串街的太多 反而變得很複雜
-// import React from 'react'
-//
-// class Page extends React.Component {
-//   static async getInitialProps(ctx) {
-//     const res = await fetch('https://api.github.com/repos/zeit/next.js')
-//     const json = await res.json()
-//     return { stars: json.stargazers_count }
-//   }
-//
-//   render() {
-//     return <div>Next stars: {this.props.stars}</div>
-//   }
-// }
-//
-// export default Page
-
-/***/ }),
-
 /***/ "./pages/api/headerlink.json":
 /*!***********************************!*\
   !*** ./pages/api/headerlink.json ***!
@@ -9303,27 +9302,120 @@ module.exports = JSON.parse("[{\"id\":\"1\",\"link\":\"/\",\"title\":\"Home\"},{
 
 /***/ }),
 
-/***/ "./pages/apiComponents/reposJson.js":
-/*!******************************************!*\
-  !*** ./pages/apiComponents/reposJson.js ***!
-  \******************************************/
-/*! exports provided: ReposJson, SubscribersJson */
+/***/ "./pages/api/indexHelloNextJs.json":
+/*!*****************************************!*\
+  !*** ./pages/api/indexHelloNextJs.json ***!
+  \*****************************************/
+/*! exports provided: 0, 1, 2, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":\"hello-nextjs\",\"title\":\"Hello Next.js\"},{\"id\":\"learn-nextjs\",\"title\":\"Learn Next.js is awesome\"},{\"id\":\"deploy-nextjs\",\"title\":\"Deploy apps with ZEIT\"}]");
+
+/***/ }),
+
+/***/ "./pages/apiComponents/headerJson.js":
+/*!*******************************************!*\
+  !*** ./pages/apiComponents/headerJson.js ***!
+  \*******************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReposJson", function() { return ReposJson; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SubscribersJson", function() { return SubscribersJson; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Col */ "./node_modules/react-bootstrap/esm/Col.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/ListGroup */ "./node_modules/react-bootstrap/esm/ListGroup.js");
-/* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/Card */ "./node_modules/react-bootstrap/esm/Card.js");
-/* harmony import */ var react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap/Accordion */ "./node_modules/react-bootstrap/esm/Accordion.js");
 var _this = undefined,
-    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/apiComponents/reposJson.js";
+    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/apiComponents/headerJson.js";
+
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+ // headers由外部傳入
+
+var HeaderJson = function HeaderJson(_ref) {
+  var headers = _ref.headers;
+  // API_URL為.env這個檔案中的網址來使用，雖然在這邊並沒有影響，但是如果要使用image這種api匯入的話，就需要指定API_URL
+  var API_URL = "http://localhost:1337";
+  console.log(headers);
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    variant: "flush",
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
+      columnNumber: 7
+    }
+  }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_3__["default"].Item, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 9
+    }
+  }, headers ? headers.map(function (header) {
+    return __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      href: header.url,
+      key: header.id,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 17,
+        columnNumber: 15
+      }
+    }, __jsx("a", {
+      className: "nav-item nav-link",
+      style: wordCapitalize,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 18,
+        columnNumber: 17
+      }
+    }, header.title));
+  }) : 'Loading ...')));
+};
+
+var wordCapitalize = {
+  textTransform: "capitalize"
+};
+/* harmony default export */ __webpack_exports__["default"] = (HeaderJson);
+
+/***/ }),
+
+/***/ "./pages/blog.js":
+/*!***********************!*\
+  !*** ./pages/blog.js ***!
+  \***********************/
+/*! exports provided: __N_SSG, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__N_SSG", function() { return __N_SSG; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _apiComponents_headerJson_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./apiComponents/headerJson.js */ "./pages/apiComponents/headerJson.js");
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+/* harmony import */ var _api_indexHelloNextJs_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./api/indexHelloNextJs.json */ "./pages/api/indexHelloNextJs.json");
+var _api_indexHelloNextJs_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./api/indexHelloNextJs.json */ "./pages/api/indexHelloNextJs.json", 1);
+/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/utils.module.css */ "./styles/utils.module.css");
+/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap/Row */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap/Col */ "./node_modules/react-bootstrap/esm/Col.js");
+/* harmony import */ var react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-bootstrap/ListGroup */ "./node_modules/react-bootstrap/esm/ListGroup.js");
+var _this = undefined,
+    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/blog.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
@@ -9332,146 +9424,236 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var ReposJson = function ReposJson(_ref) {
-  var repos = _ref.repos;
-  return __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    xs: 12,
-    sm: 12,
-    md: 12,
-    lg: 12,
-    xl: 12,
+ // bootstrap
+
+
+
+
+
+
+var Blog = function Blog(_ref) {
+  var headers = _ref.headers,
+      _ref$title = _ref.title,
+      title = _ref$title === void 0 ? 'Blog Page' : _ref$title;
+  var API_URL = "http://localhost:1337";
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 5
-    }
-  }, __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    defaultActiveKey: repos.svn_url,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 17,
       columnNumber: 7
     }
-  }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 9
-    }
-  }, __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__["default"].Toggle, {
-    as: react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4__["default"].Header,
-    eventKey: repos.svn_url,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 11
-    }
-  }, repos.svn_url), __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__["default"].Collapse, {
-    eventKey: repos.svn_url,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 11
-    }
-  }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4__["default"].Body, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 17,
       columnNumber: 13
     }
-  }, __jsx("a", {
-    href: repos.subscribers_url,
+  }, title)), __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 24
-    }
-  }, repos.homepage))))));
-};
-var SubscribersJson = function SubscribersJson(_ref2) {
-  var subscribers = _ref2.subscribers;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    xs: 12,
-    sm: 12,
-    md: 12,
-    lg: 12,
-    xl: 12,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 18,
       columnNumber: 7
     }
-  }, subscribers ? subscribers.map(function (subs) {
-    return __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      defaultActiveKey: subs.id,
-      key: subs.id,
+  }, __jsx(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    fluid: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 9
+    }
+  }, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 11
+    }
+  }, __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    className: "d-none d-sm-none d-md-block",
+    md: 2,
+    lg: 2,
+    xl: 2,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 13
+    }
+  }, __jsx(_apiComponents_headerJson_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    headers: headers,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 15
+    }
+  })), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    xs: 12,
+    sm: 12,
+    md: 10,
+    lg: 8,
+    xl: 8,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 13
+    }
+  }, __jsx("h1", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 15
+    }
+  }, "My Blog"), getPosts() ? getPosts().map(function (post) {
+    return __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      variant: "flush",
+      key: post.id,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 19
+      }
+    }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_10__["default"].Item, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 21
+      }
+    }, __jsx(PostLink, {
+      key: post.id,
+      post: post,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 30,
-        columnNumber: 13
+        columnNumber: 23
       }
-    }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 31,
-        columnNumber: 15
-      }
-    }, __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__["default"].Toggle, {
-      as: react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4__["default"].Header,
-      eventKey: subs.id,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 17
-      }
-    }, subs.login), __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__["default"].Collapse, {
-      eventKey: subs.id,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 35,
-        columnNumber: 17
-      }
-    }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4__["default"].Body, {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36,
-        columnNumber: 19
-      }
-    }, __jsx("a", {
-      href: subs.url,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 37,
-        columnNumber: 21
-      }
-    }, subs.login)))));
-  }) : 'Loading...'));
-};
+    })));
+  }) : 'Loading...'), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    className: "d-none d-sm-none d-md-none d-lg-block",
+    lg: 2,
+    xl: 2,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 13
+    }
+  })))));
+}; // 使用function作爲api承接內容，在上方的return中map接到的值
+
+
+var getPosts = function getPosts() {
+  return _api_indexHelloNextJs_json__WEBPACK_IMPORTED_MODULE_5__;
+}; // 當作額外插入的link來使用，這裡面的post.id，post.title都是藉由被map進來的post值使用
+
+
+var PostLink = function PostLink(_ref2) {
+  var post = _ref2.post;
+  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+    href: "/batman/[id]",
+    as: "/batman/".concat(post.id),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 5
+    }
+  }, __jsx("a", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 7
+    }
+  }, post.title));
+}; // 我覺得這部分應該可以額外拉到一個components裡面去寫，再由import進來
+// 例如 import { getStaticProps } from './components/StaticProps.js'
+// 然後由上面的 const Index = ({ header }) => {}把data值丟進來。
+
+
+var __N_SSG = true;
+/* harmony default export */ __webpack_exports__["default"] = (Blog);
 
 /***/ }),
 
-/***/ 3:
-/*!**************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fabout.js ***!
-  \**************************************************************************************************************************************************************/
+/***/ "./styles/utils.module.css":
+/*!*********************************!*\
+  !*** ./styles/utils.module.css ***!
+  \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fabout.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fabout.js!./");
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./utils.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/utils.module.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./utils.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/utils.module.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./utils.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/utils.module.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
+/***/ 2:
+/*!************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fblog.js ***!
+  \************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fblog.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fblog.js!./");
 
 
 /***/ }),
@@ -9487,5 +9669,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=about.js.map
+},[[2,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=blog.js.map

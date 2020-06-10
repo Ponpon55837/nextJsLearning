@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/about.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/batman.js"],{
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -1682,21 +1682,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fabout.js!./":
-/*!**********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fabout.js ***!
-  \**********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fbatman&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fbatman.js!./":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fbatman&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fbatman.js ***!
+  \************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/about", function() {
-      var mod = __webpack_require__(/*! ./pages/about.js */ "./pages/about.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/batman", function() {
+      var mod = __webpack_require__(/*! ./pages/batman.js */ "./pages/batman.js")
       if(true) {
-        module.hot.accept(/*! ./pages/about.js */ "./pages/about.js", function() {
-          if(!next.router.components["/about"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/about.js */ "./pages/about.js")
-          next.router.update("/about", updatedPage)
+        module.hot.accept(/*! ./pages/batman.js */ "./pages/batman.js", function() {
+          if(!next.router.components["/batman"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/batman.js */ "./pages/batman.js")
+          next.router.update("/batman", updatedPage)
         })
       }
       return mod
@@ -5207,260 +5207,6 @@ AbstractNavItem.defaultProps = defaultProps;
 
 /***/ }),
 
-/***/ "./node_modules/react-bootstrap/esm/Accordion.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/Accordion.js ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var uncontrollable__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! uncontrollable */ "./node_modules/uncontrollable/esm/index.js");
-/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
-/* harmony import */ var _AccordionToggle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./AccordionToggle */ "./node_modules/react-bootstrap/esm/AccordionToggle.js");
-/* harmony import */ var _SelectableContext__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SelectableContext */ "./node_modules/react-bootstrap/esm/SelectableContext.js");
-/* harmony import */ var _AccordionCollapse__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./AccordionCollapse */ "./node_modules/react-bootstrap/esm/AccordionCollapse.js");
-/* harmony import */ var _AccordionContext__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./AccordionContext */ "./node_modules/react-bootstrap/esm/AccordionContext.js");
-
-
-
-
-
-
-
-
-
-
-var Accordion = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function (props, ref) {
-  var _useUncontrolled = Object(uncontrollable__WEBPACK_IMPORTED_MODULE_4__["useUncontrolled"])(props, {
-    activeKey: 'onSelect'
-  }),
-      _useUncontrolled$as = _useUncontrolled.as,
-      Component = _useUncontrolled$as === void 0 ? 'div' : _useUncontrolled$as,
-      activeKey = _useUncontrolled.activeKey,
-      bsPrefix = _useUncontrolled.bsPrefix,
-      children = _useUncontrolled.children,
-      className = _useUncontrolled.className,
-      onSelect = _useUncontrolled.onSelect,
-      controlledProps = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_useUncontrolled, ["as", "activeKey", "bsPrefix", "children", "className", "onSelect"]);
-
-  bsPrefix = Object(_ThemeProvider__WEBPACK_IMPORTED_MODULE_5__["useBootstrapPrefix"])(bsPrefix, 'accordion');
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_AccordionContext__WEBPACK_IMPORTED_MODULE_9__["default"].Provider, {
-    value: activeKey
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_SelectableContext__WEBPACK_IMPORTED_MODULE_7__["default"].Provider, {
-    value: onSelect
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    ref: ref
-  }, controlledProps, {
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(className, bsPrefix)
-  }), children)));
-});
-Accordion.Toggle = _AccordionToggle__WEBPACK_IMPORTED_MODULE_6__["default"];
-Accordion.Collapse = _AccordionCollapse__WEBPACK_IMPORTED_MODULE_8__["default"];
-/* harmony default export */ __webpack_exports__["default"] = (Accordion);
-
-/***/ }),
-
-/***/ "./node_modules/react-bootstrap/esm/AccordionCollapse.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/AccordionCollapse.js ***!
-  \***************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Collapse__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Collapse */ "./node_modules/react-bootstrap/esm/Collapse.js");
-/* harmony import */ var _AccordionContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AccordionContext */ "./node_modules/react-bootstrap/esm/AccordionContext.js");
-
-
-
-
-
-var AccordionCollapse = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function (_ref, ref) {
-  var children = _ref.children,
-      eventKey = _ref.eventKey,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["children", "eventKey"]);
-
-  var contextEventKey = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_AccordionContext__WEBPACK_IMPORTED_MODULE_4__["default"]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_Collapse__WEBPACK_IMPORTED_MODULE_3__["default"], Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    ref: ref,
-    in: contextEventKey === eventKey
-  }, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.Children.only(children)));
-});
-AccordionCollapse.displayName = 'AccordionCollapse';
-/* harmony default export */ __webpack_exports__["default"] = (AccordionCollapse);
-
-/***/ }),
-
-/***/ "./node_modules/react-bootstrap/esm/AccordionContext.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/AccordionContext.js ***!
-  \**************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-/* harmony default export */ __webpack_exports__["default"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext(null));
-
-/***/ }),
-
-/***/ "./node_modules/react-bootstrap/esm/AccordionToggle.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/AccordionToggle.js ***!
-  \*************************************************************/
-/*! exports provided: useAccordionToggle, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "useAccordionToggle", function() { return useAccordionToggle; });
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _SelectableContext__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SelectableContext */ "./node_modules/react-bootstrap/esm/SelectableContext.js");
-/* harmony import */ var _AccordionContext__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AccordionContext */ "./node_modules/react-bootstrap/esm/AccordionContext.js");
-
-
-
-
-
-function useAccordionToggle(eventKey, onClick) {
-  var contextEventKey = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_AccordionContext__WEBPACK_IMPORTED_MODULE_4__["default"]);
-  var onSelect = Object(react__WEBPACK_IMPORTED_MODULE_2__["useContext"])(_SelectableContext__WEBPACK_IMPORTED_MODULE_3__["default"]);
-  return function (e) {
-    /*
-      Compare the event key in context with the given event key.
-      If they are the same, then collapse the component.
-    */
-    var eventKeyPassed = eventKey === contextEventKey ? null : eventKey;
-    onSelect(eventKeyPassed, e);
-    if (onClick) onClick(e);
-  };
-}
-var AccordionToggle = react__WEBPACK_IMPORTED_MODULE_2___default.a.forwardRef(function (_ref, ref) {
-  var _ref$as = _ref.as,
-      Component = _ref$as === void 0 ? 'button' : _ref$as,
-      children = _ref.children,
-      eventKey = _ref.eventKey,
-      onClick = _ref.onClick,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["as", "children", "eventKey", "onClick"]);
-
-  var accordionOnClick = useAccordionToggle(eventKey, onClick);
-
-  if (Component === 'button') {
-    props.type = 'button';
-  }
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    ref: ref,
-    onClick: accordionOnClick
-  }, props), children);
-});
-/* harmony default export */ __webpack_exports__["default"] = (AccordionToggle);
-
-/***/ }),
-
-/***/ "./node_modules/react-bootstrap/esm/Card.js":
-/*!**************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/Card.js ***!
-  \**************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
-/* harmony import */ var _createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./createWithBsPrefix */ "./node_modules/react-bootstrap/esm/createWithBsPrefix.js");
-/* harmony import */ var _divWithClassName__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./divWithClassName */ "./node_modules/react-bootstrap/esm/divWithClassName.js");
-/* harmony import */ var _CardContext__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./CardContext */ "./node_modules/react-bootstrap/esm/CardContext.js");
-/* harmony import */ var _CardImg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./CardImg */ "./node_modules/react-bootstrap/esm/CardImg.js");
-
-
-
-
-
-
-
-
-
-var DivStyledAsH5 = Object(_divWithClassName__WEBPACK_IMPORTED_MODULE_6__["default"])('h5');
-var DivStyledAsH6 = Object(_divWithClassName__WEBPACK_IMPORTED_MODULE_6__["default"])('h6');
-var CardBody = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-body');
-var defaultProps = {
-  body: false
-};
-var Card = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function (_ref, ref) {
-  var bsPrefix = _ref.bsPrefix,
-      className = _ref.className,
-      bg = _ref.bg,
-      text = _ref.text,
-      border = _ref.border,
-      body = _ref.body,
-      children = _ref.children,
-      _ref$as = _ref.as,
-      Component = _ref$as === void 0 ? 'div' : _ref$as,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["bsPrefix", "className", "bg", "text", "border", "body", "children", "as"]);
-
-  var prefix = Object(_ThemeProvider__WEBPACK_IMPORTED_MODULE_4__["useBootstrapPrefix"])(bsPrefix, 'card');
-  var cardContext = Object(react__WEBPACK_IMPORTED_MODULE_3__["useMemo"])(function () {
-    return {
-      cardHeaderBsPrefix: prefix + "-header"
-    };
-  }, [prefix]);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_CardContext__WEBPACK_IMPORTED_MODULE_7__["default"].Provider, {
-    value: cardContext
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    ref: ref
-  }, props, {
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(className, prefix, bg && "bg-" + bg, text && "text-" + text, border && "border-" + border)
-  }), body ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(CardBody, null, children) : children));
-});
-Card.displayName = 'Card';
-Card.defaultProps = defaultProps;
-Card.Img = _CardImg__WEBPACK_IMPORTED_MODULE_8__["default"];
-Card.Title = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-title', {
-  Component: DivStyledAsH5
-});
-Card.Subtitle = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-subtitle', {
-  Component: DivStyledAsH6
-});
-Card.Body = CardBody;
-Card.Link = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-link', {
-  Component: 'a'
-});
-Card.Text = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-text', {
-  Component: 'p'
-});
-Card.Header = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-header');
-Card.Footer = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-footer');
-Card.ImgOverlay = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-img-overlay');
-/* harmony default export */ __webpack_exports__["default"] = (Card);
-
-/***/ }),
-
 /***/ "./node_modules/react-bootstrap/esm/CardContext.js":
 /*!*********************************************************!*\
   !*** ./node_modules/react-bootstrap/esm/CardContext.js ***!
@@ -5474,51 +5220,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ __webpack_exports__["default"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext(null));
-
-/***/ }),
-
-/***/ "./node_modules/react-bootstrap/esm/CardImg.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/CardImg.js ***!
-  \*****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
-
-
-
-
-
-var defaultProps = {
-  variant: null
-};
-var CardImg = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef( // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
-function (_ref, ref) {
-  var bsPrefix = _ref.bsPrefix,
-      className = _ref.className,
-      variant = _ref.variant,
-      _ref$as = _ref.as,
-      Component = _ref$as === void 0 ? 'img' : _ref$as,
-      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["bsPrefix", "className", "variant", "as"]);
-
-  var prefix = Object(_ThemeProvider__WEBPACK_IMPORTED_MODULE_4__["useBootstrapPrefix"])(bsPrefix, 'card-img');
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    ref: ref,
-    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(variant ? prefix + "-" + variant : prefix, className)
-  }, props));
-});
-CardImg.displayName = 'CardImg';
-CardImg.defaultProps = defaultProps;
-/* harmony default export */ __webpack_exports__["default"] = (CardImg);
 
 /***/ }),
 
@@ -6758,34 +6459,6 @@ function createWithBsPrefix(prefix, _temp) {
   BsComponent.displayName = displayName;
   return BsComponent;
 }
-
-/***/ }),
-
-/***/ "./node_modules/react-bootstrap/esm/divWithClassName.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/react-bootstrap/esm/divWithClassName.js ***!
-  \**************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = (function (className) {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.forwardRef(function (p, ref) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, p, {
-      ref: ref,
-      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(p.className, className)
-    }));
-  });
-});
 
 /***/ }),
 
@@ -9132,166 +8805,6 @@ module.exports = warning;
 
 /***/ }),
 
-/***/ "./pages/about.js":
-/*!************************!*\
-  !*** ./pages/about.js ***!
-  \************************/
-/*! exports provided: __N_SSG, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__N_SSG", function() { return __N_SSG; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _apiComponents_reposJson_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./apiComponents/reposJson.js */ "./pages/apiComponents/reposJson.js");
-/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
-/* harmony import */ var react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap/Row */ "./node_modules/react-bootstrap/esm/Row.js");
-/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Col */ "./node_modules/react-bootstrap/esm/Col.js");
-var _this = undefined,
-    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/about.js";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
- // bootstrap
-
-
-
-
-
-var About = function About(_ref) {
-  var repos = _ref.repos,
-      subscribers = _ref.subscribers,
-      _ref$title = _ref.title,
-      title = _ref$title === void 0 ? 'About this url page' : _ref$title;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 7
-    }
-  }, __jsx("title", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 13
-    }
-  }, title)), __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13,
-      columnNumber: 7
-    }
-  }, __jsx(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    fluid: true,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 9
-    }
-  }, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 11
-    }
-  }, __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    className: "d-none d-sm-none d-md-block",
-    md: 1,
-    lg: 2,
-    xl: 2,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 13
-    }
-  }), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    xs: 12,
-    sm: 12,
-    md: 10,
-    lg: 8,
-    xl: 8,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 13
-    }
-  }, __jsx("h1", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 15
-    }
-  }, "This is the about page"), __jsx(_apiComponents_reposJson_js__WEBPACK_IMPORTED_MODULE_3__["ReposJson"], {
-    repos: repos,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 15
-    }
-  }), __jsx("br", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 42
-    }
-  }), __jsx(_apiComponents_reposJson_js__WEBPACK_IMPORTED_MODULE_3__["SubscribersJson"], {
-    subscribers: subscribers,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 15
-    }
-  })), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    className: "d-none d-sm-none d-md-block",
-    md: 1,
-    lg: 2,
-    xl: 2,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 13
-    }
-  })))));
-};
-
-var __N_SSG = true;
-/* harmony default export */ __webpack_exports__["default"] = (About); // class component用法 可是使用起來串街的太多 反而變得很複雜
-// import React from 'react'
-//
-// class Page extends React.Component {
-//   static async getInitialProps(ctx) {
-//     const res = await fetch('https://api.github.com/repos/zeit/next.js')
-//     const json = await res.json()
-//     return { stars: json.stargazers_count }
-//   }
-//
-//   render() {
-//     return <div>Next stars: {this.props.stars}</div>
-//   }
-// }
-//
-// export default Page
-
-/***/ }),
-
 /***/ "./pages/api/headerlink.json":
 /*!***********************************!*\
   !*** ./pages/api/headerlink.json ***!
@@ -9303,175 +8816,248 @@ module.exports = JSON.parse("[{\"id\":\"1\",\"link\":\"/\",\"title\":\"Home\"},{
 
 /***/ }),
 
-/***/ "./pages/apiComponents/reposJson.js":
-/*!******************************************!*\
-  !*** ./pages/apiComponents/reposJson.js ***!
-  \******************************************/
-/*! exports provided: ReposJson, SubscribersJson */
+/***/ "./pages/batman.js":
+/*!*************************!*\
+  !*** ./pages/batman.js ***!
+  \*************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReposJson", function() { return ReposJson; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SubscribersJson", function() { return SubscribersJson; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Col */ "./node_modules/react-bootstrap/esm/Col.js");
-/* harmony import */ var react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/ListGroup */ "./node_modules/react-bootstrap/esm/ListGroup.js");
-/* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap/Card */ "./node_modules/react-bootstrap/esm/Card.js");
-/* harmony import */ var react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap/Accordion */ "./node_modules/react-bootstrap/esm/Accordion.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Row */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap/Col */ "./node_modules/react-bootstrap/esm/Col.js");
+/* harmony import */ var react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap/ListGroup */ "./node_modules/react-bootstrap/esm/ListGroup.js");
+
+
 var _this = undefined,
-    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/apiComponents/reposJson.js";
+    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/batman.js";
 
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
-var ReposJson = function ReposJson(_ref) {
-  var repos = _ref.repos;
-  return __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    xs: 12,
-    sm: 12,
-    md: 12,
-    lg: 12,
-    xl: 12,
+ // bootstrap
+
+
+
+
+
+
+var Batman = function Batman(props, _ref) {
+  var _ref$title = _ref.title,
+      title = _ref$title === void 0 ? 'Batman TV show menu' : _ref$title;
+  // 當api抓取到值之後，props把接到的值map進li當中
+  // 這裡href為pages/p/[id].js但是後面使用as來代替為api中的id值
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 5
-    }
-  }, __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    defaultActiveKey: repos.svn_url,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 16,
       columnNumber: 7
     }
-  }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 9
-    }
-  }, __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__["default"].Toggle, {
-    as: react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4__["default"].Header,
-    eventKey: repos.svn_url,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 11
-    }
-  }, repos.svn_url), __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__["default"].Collapse, {
-    eventKey: repos.svn_url,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 11
-    }
-  }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4__["default"].Body, {
+  }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 16,
       columnNumber: 13
     }
-  }, __jsx("a", {
-    href: repos.subscribers_url,
+  }, title)), __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 24
-    }
-  }, repos.homepage))))));
-};
-var SubscribersJson = function SubscribersJson(_ref2) {
-  var subscribers = _ref2.subscribers;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    xs: 12,
-    sm: 12,
-    md: 12,
-    lg: 12,
-    xl: 12,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 17,
       columnNumber: 7
     }
-  }, subscribers ? subscribers.map(function (subs) {
-    return __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      defaultActiveKey: subs.id,
-      key: subs.id,
+  }, __jsx(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    fluid: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 9
+    }
+  }, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 11
+    }
+  }, __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    className: "d-none d-sm-none d-md-block",
+    md: 1,
+    lg: 2,
+    xl: 2,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 13
+    }
+  }), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    xs: 12,
+    sm: 12,
+    md: 10,
+    lg: 8,
+    xl: 8,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 13
+    }
+  }, __jsx("h1", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 15
+    }
+  }, "Batman TV Shows"), __jsx("ul", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 15
+    }
+  }, props.shows.map(function (show) {
+    return __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      variant: "flush",
+      key: show.id,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 21
+      }
+    }, __jsx(react_bootstrap_ListGroup__WEBPACK_IMPORTED_MODULE_9__["default"].Item, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 23
+      }
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      href: "/batman/[id]",
+      as: "/batman/".concat(show.id),
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 25
+      }
+    }, __jsx("a", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 30,
-        columnNumber: 13
+        columnNumber: 27
       }
-    }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 31,
-        columnNumber: 15
+    }, show.name))));
+  }))), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    className: "d-none d-sm-none d-md-block",
+    md: 1,
+    lg: 2,
+    xl: 2,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 13
+    }
+  })))));
+}; // 使用非同步的方式讀取json的內容
+
+
+Batman.getInitialProps = function _callee() {
+  var res_batman, data_batman;
+  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 2;
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()('https://api.tvmaze.com/search/shows?q=batman'));
+
+        case 2:
+          res_batman = _context.sent;
+          _context.next = 5;
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res_batman.json());
+
+        case 5:
+          data_batman = _context.sent;
+          // 回報抓到幾個data值
+          console.log("Show data fetched. Count: ".concat(data_batman.length));
+          return _context.abrupt("return", {
+            // 使用map來把值塞入，並且使用變數entry當作主詞來附帶api中的內容
+            shows: data_batman.map(function (entry) {
+              return entry.show;
+            })
+          });
+
+        case 8:
+        case "end":
+          return _context.stop();
       }
-    }, __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__["default"].Toggle, {
-      as: react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4__["default"].Header,
-      eventKey: subs.id,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 32,
-        columnNumber: 17
-      }
-    }, subs.login), __jsx(react_bootstrap_Accordion__WEBPACK_IMPORTED_MODULE_5__["default"].Collapse, {
-      eventKey: subs.id,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 35,
-        columnNumber: 17
-      }
-    }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_4__["default"].Body, {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 36,
-        columnNumber: 19
-      }
-    }, __jsx("a", {
-      href: subs.url,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 37,
-        columnNumber: 21
-      }
-    }, subs.login)))));
-  }) : 'Loading...'));
-};
+    }
+  }, null, null, null, Promise);
+}; // 如果看不懂 return裡面的  <Link href="/batman/[id]" as={`/batman/${show.id}`}>
+// 下面是官網參考的範例我改成es6格式
+// import { useRouter } from 'next/router'
+// import Link from 'next/link'
+// import Header from '../../../components/header'
+//
+// const Post = () => {
+//   const router = useRouter()
+//   const { id } = router.query
+//
+//   return (
+//     <>
+//       <Header />
+//       <h1>Post: {id}</h1>
+//       <ul>
+//         <li>
+//           <Link href="/post/[id]/[comment]" as={`/post/${id}/first-comment`}>
+//             <a>First comment</a>
+//           </Link>
+//         </li>
+//         <li>
+//           <Link href="/post/[id]/[comment]" as={`/post/${id}/second-comment`}>
+//             <a>Second comment</a>
+//           </Link>
+//         </li>
+//       </ul>
+//     </>
+//   )
+// }
+
+
+/* harmony default export */ __webpack_exports__["default"] = (Batman);
 
 /***/ }),
 
-/***/ 3:
-/*!**************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fabout.js ***!
-  \**************************************************************************************************************************************************************/
+/***/ 4:
+/*!****************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fbatman&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fbatman.js ***!
+  \****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fabout.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fabout&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fabout.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fbatman&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fbatman.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fbatman&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fbatman.js!./");
 
 
 /***/ }),
@@ -9487,5 +9073,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=about.js.map
+},[[4,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=batman.js.map

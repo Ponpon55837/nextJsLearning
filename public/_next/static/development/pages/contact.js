@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/404.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/contact.js"],{
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -274,17 +274,6 @@ var Layout = function Layout(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
-
-/***/ }),
-
-/***/ "./img/bg.jpg":
-/*!********************!*\
-  !*** ./img/bg.jpg ***!
-  \********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__.p + "static/media/bg.1875ec282c40d65da77c870918ccce5f.jpg";
 
 /***/ }),
 
@@ -1102,209 +1091,6 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/layout.module.css":
-/*!*************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./styles/layout.module.css ***!
-  \*************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
-// Module
-exports.push([module.i, ".layout_container__1LfYE {\n  max-width: 36rem;\n  padding: 0 1rem;\n  margin: 3rem auto 6rem;\n}\n\n.layout_header__1OJ41 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.layout_headerImage__jSguI {\n  width: 6rem;\n  height: 6rem;\n}\n\n.layout_headerHomeImage__3w_dQ {\n  width: 8rem;\n  height: 8rem;\n}\n\n.layout_backToHome__knf4J {\n  margin: 3rem 0 0;\n}\n", "",{"version":3,"sources":["/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/styles/layout.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,eAAe;EACf,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,gBAAgB;AAClB","file":"layout.module.css","sourcesContent":[".container {\n  max-width: 36rem;\n  padding: 0 1rem;\n  margin: 3rem auto 6rem;\n}\n\n.header {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.headerImage {\n  width: 6rem;\n  height: 6rem;\n}\n\n.headerHomeImage {\n  width: 8rem;\n  height: 8rem;\n}\n\n.backToHome {\n  margin: 3rem 0 0;\n}\n"]}]);
-// Exports
-exports.locals = {
-	"container": "layout_container__1LfYE",
-	"header": "layout_header__1OJ41",
-	"headerImage": "layout_headerImage__jSguI",
-	"headerHomeImage": "layout_headerHomeImage__3w_dQ",
-	"backToHome": "layout_backToHome__knf4J"
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/utils.module.css":
-/*!************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./styles/utils.module.css ***!
-  \************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
-// Imports
-var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-var ___CSS_LOADER_URL_PURE_IMPORT_0___ = __webpack_require__(/*! ../img/bg.jpg */ "./img/bg.jpg");
-var ___CSS_LOADER_URL_IMPORT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_PURE_IMPORT_0___);
-// Module
-exports.push([module.i, ".utils_heading2Xl__1I65m {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingXl__1XecN {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingLg__de7p0 {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.utils_headingMd__3de6G {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.utils_borderCircle__13qdJ {\n  border-radius: 9999px;\n}\n\n.utils_colorInherit__3Gudf {\n  color: inherit;\n}\n\n.utils_padding1px__oCny8 {\n  padding-top: 1px;\n}\n\n.utils_list__S7_pe {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.utils_listItem__2eJpJ {\n  margin: 0 0 1.25rem;\n}\n\n.utils_lightText__12Ckm {\n  color: #999;\n}\n\n.utils_markdown__2R-tk {\n  font-family: 'Arial';\n}\n\n.utils_markdown__2R-tk a {\n  text-decoration: none;\n  color: blue;\n}\n\n.utils_markdown__2R-tk a:hover {\n  opacity: 0.6;\n}\n\n.utils_markdown__2R-tk h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.utils_notfound__3uF6d {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.utils_indexBG__1DCbH {\n  background-image: url(" + ___CSS_LOADER_URL_IMPORT_0___ + ");\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.utils_homeShow__2HxQ3 {\n  padding-top: 12%;\n  padding-bottom: 32%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 800px;\n}\n\n.utils_divH1__1lonv {\n  color: white;\n  font-size: 3rem;\n  font-weight: bold;\n  opacity: 0.5;\n  align: center;\n}\n\n.utils_buttonControl__2dBWX {\n  opacity: 0.3;\n  color:white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2.3rem;\n}\n", "",{"version":3,"sources":["/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/styles/utils.module.css"],"names":[],"mappings":"AAAA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,oBAAoB;AACtB;;AAEA;EACE,qBAAqB;EACrB,WAAW;AACb;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,SAAS;EACT,UAAU;EACV,yBAAyB;AAC3B;;AAEA;EACE,iBAAiB;EACjB,oBAAoB;AACtB;;AAEA;EACE,oDAAoC;EACpC,WAAW;;EAEX,sCAAsC;EACtC,2BAA2B;EAC3B,4BAA4B;EAC5B,sBAAsB;AACxB;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,eAAe;EACf,iBAAiB;EACjB,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,iBAAiB;AACnB","file":"utils.module.css","sourcesContent":[".heading2Xl {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingXl {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingLg {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.headingMd {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.borderCircle {\n  border-radius: 9999px;\n}\n\n.colorInherit {\n  color: inherit;\n}\n\n.padding1px {\n  padding-top: 1px;\n}\n\n.list {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.listItem {\n  margin: 0 0 1.25rem;\n}\n\n.lightText {\n  color: #999;\n}\n\n.markdown {\n  font-family: 'Arial';\n}\n\n.markdown a {\n  text-decoration: none;\n  color: blue;\n}\n\n.markdown a:hover {\n  opacity: 0.6;\n}\n\n.markdown h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.notfound {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.indexBG {\n  background-image: url(../img/bg.jpg);\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.homeShow {\n  padding-top: 12%;\n  padding-bottom: 32%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 800px;\n}\n\n.divH1 {\n  color: white;\n  font-size: 3rem;\n  font-weight: bold;\n  opacity: 0.5;\n  align: center;\n}\n\n.buttonControl {\n  opacity: 0.3;\n  color:white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2.3rem;\n}\n"]}]);
-// Exports
-exports.locals = {
-	"heading2Xl": "utils_heading2Xl__1I65m",
-	"headingXl": "utils_headingXl__1XecN",
-	"headingLg": "utils_headingLg__de7p0",
-	"headingMd": "utils_headingMd__3de6G",
-	"borderCircle": "utils_borderCircle__13qdJ",
-	"colorInherit": "utils_colorInherit__3Gudf",
-	"padding1px": "utils_padding1px__oCny8",
-	"list": "utils_list__S7_pe",
-	"listItem": "utils_listItem__2eJpJ",
-	"lightText": "utils_lightText__12Ckm",
-	"markdown": "utils_markdown__2R-tk",
-	"notfound": "utils_notfound__3uF6d",
-	"indexBG": "utils_indexBG__1DCbH",
-	"homeShow": "utils_homeShow__2HxQ3",
-	"divH1": "utils_divH1__1lonv",
-	"buttonControl": "utils_buttonControl__2dBWX"
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-// eslint-disable-next-line func-names
-module.exports = function (useSourceMap) {
-  var list = []; // return the list of modules as css string
-
-  list.toString = function toString() {
-    return this.map(function (item) {
-      var content = cssWithMappingToString(item, useSourceMap);
-
-      if (item[2]) {
-        return "@media ".concat(item[2], "{").concat(content, "}");
-      }
-
-      return content;
-    }).join('');
-  }; // import a list of modules into the list
-  // eslint-disable-next-line func-names
-
-
-  list.i = function (modules, mediaQuery) {
-    if (typeof modules === 'string') {
-      // eslint-disable-next-line no-param-reassign
-      modules = [[null, modules, '']];
-    }
-
-    var alreadyImportedModules = {};
-
-    for (var i = 0; i < this.length; i++) {
-      // eslint-disable-next-line prefer-destructuring
-      var id = this[i][0];
-
-      if (id != null) {
-        alreadyImportedModules[id] = true;
-      }
-    }
-
-    for (var _i = 0; _i < modules.length; _i++) {
-      var item = modules[_i]; // skip already imported module
-      // this implementation is not 100% perfect for weird media query combinations
-      // when a module is imported multiple times with different media queries.
-      // I hope this will never occur (Hey this way we have smaller bundles)
-
-      if (item[0] == null || !alreadyImportedModules[item[0]]) {
-        if (mediaQuery && !item[2]) {
-          item[2] = mediaQuery;
-        } else if (mediaQuery) {
-          item[2] = "(".concat(item[2], ") and (").concat(mediaQuery, ")");
-        }
-
-        list.push(item);
-      }
-    }
-  };
-
-  return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-  var content = item[1] || ''; // eslint-disable-next-line prefer-destructuring
-
-  var cssMapping = item[3];
-
-  if (!cssMapping) {
-    return content;
-  }
-
-  if (useSourceMap && typeof btoa === 'function') {
-    var sourceMapping = toComment(cssMapping);
-    var sourceURLs = cssMapping.sources.map(function (source) {
-      return "/*# sourceURL=".concat(cssMapping.sourceRoot).concat(source, " */");
-    });
-    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-  }
-
-  return [content].join('\n');
-} // Adapted from convert-source-map (MIT)
-
-
-function toComment(sourceMap) {
-  // eslint-disable-next-line no-undef
-  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-  var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
-  return "/*# ".concat(data, " */");
-}
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = function (url, options) {
-  if (!options) {
-    // eslint-disable-next-line no-param-reassign
-    options = {};
-  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
-
-
-  url = url && url.__esModule ? url.default : url;
-
-  if (typeof url !== 'string') {
-    return url;
-  } // If url is already wrapped in quotes, remove them
-
-
-  if (/^['"].*['"]$/.test(url)) {
-    // eslint-disable-next-line no-param-reassign
-    url = url.slice(1, -1);
-  }
-
-  if (options.hash) {
-    // eslint-disable-next-line no-param-reassign
-    url += options.hash;
-  } // Should url be wrapped?
-  // See https://drafts.csswg.org/css-values-3/#urls
-
-
-  if (/["'() \t\n]/.test(url) || options.needQuotes) {
-    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, '\\n'), "\"");
-  }
-
-  return url;
-};
-
-/***/ }),
-
 /***/ "./node_modules/dom-helpers/esm/addEventListener.js":
 /*!**********************************************************!*\
   !*** ./node_modules/dom-helpers/esm/addEventListener.js ***!
@@ -1861,6 +1647,18 @@ var e,t=(e=__webpack_require__(/*! querystring */ "./node_modules/querystring-es
 
 /***/ }),
 
+/***/ "./node_modules/next/dist/build/polyfills/fetch/index.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/next/dist/build/polyfills/fetch/index.js ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* globals self */var fetch=self.fetch.bind(self);module.exports=fetch;module.exports.default=module.exports;
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/build/polyfills/object-assign.js":
 /*!***********************************************************************************************************************!*\
   !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_2adc2403d89adc16ead0 ***!
@@ -1884,21 +1682,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F404&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2F404.js!./":
-/*!******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F404&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2F404.js ***!
-  \******************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fcontact.js!./":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fcontact.js ***!
+  \**************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/404", function() {
-      var mod = __webpack_require__(/*! ./pages/404.js */ "./pages/404.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/contact", function() {
+      var mod = __webpack_require__(/*! ./pages/contact.js */ "./pages/contact.js")
       if(true) {
-        module.hot.accept(/*! ./pages/404.js */ "./pages/404.js", function() {
-          if(!next.router.components["/404"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/404.js */ "./pages/404.js")
-          next.router.update("/404", updatedPage)
+        module.hot.accept(/*! ./pages/contact.js */ "./pages/contact.js", function() {
+          if(!next.router.components["/contact"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/contact.js */ "./pages/contact.js")
+          next.router.update("/contact", updatedPage)
         })
       }
       return mod
@@ -5409,6 +5207,90 @@ AbstractNavItem.defaultProps = defaultProps;
 
 /***/ }),
 
+/***/ "./node_modules/react-bootstrap/esm/Card.js":
+/*!**************************************************!*\
+  !*** ./node_modules/react-bootstrap/esm/Card.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
+/* harmony import */ var _createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./createWithBsPrefix */ "./node_modules/react-bootstrap/esm/createWithBsPrefix.js");
+/* harmony import */ var _divWithClassName__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./divWithClassName */ "./node_modules/react-bootstrap/esm/divWithClassName.js");
+/* harmony import */ var _CardContext__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./CardContext */ "./node_modules/react-bootstrap/esm/CardContext.js");
+/* harmony import */ var _CardImg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./CardImg */ "./node_modules/react-bootstrap/esm/CardImg.js");
+
+
+
+
+
+
+
+
+
+var DivStyledAsH5 = Object(_divWithClassName__WEBPACK_IMPORTED_MODULE_6__["default"])('h5');
+var DivStyledAsH6 = Object(_divWithClassName__WEBPACK_IMPORTED_MODULE_6__["default"])('h6');
+var CardBody = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-body');
+var defaultProps = {
+  body: false
+};
+var Card = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function (_ref, ref) {
+  var bsPrefix = _ref.bsPrefix,
+      className = _ref.className,
+      bg = _ref.bg,
+      text = _ref.text,
+      border = _ref.border,
+      body = _ref.body,
+      children = _ref.children,
+      _ref$as = _ref.as,
+      Component = _ref$as === void 0 ? 'div' : _ref$as,
+      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["bsPrefix", "className", "bg", "text", "border", "body", "children", "as"]);
+
+  var prefix = Object(_ThemeProvider__WEBPACK_IMPORTED_MODULE_4__["useBootstrapPrefix"])(bsPrefix, 'card');
+  var cardContext = Object(react__WEBPACK_IMPORTED_MODULE_3__["useMemo"])(function () {
+    return {
+      cardHeaderBsPrefix: prefix + "-header"
+    };
+  }, [prefix]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_CardContext__WEBPACK_IMPORTED_MODULE_7__["default"].Provider, {
+    value: cardContext
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    ref: ref
+  }, props, {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(className, prefix, bg && "bg-" + bg, text && "text-" + text, border && "border-" + border)
+  }), body ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(CardBody, null, children) : children));
+});
+Card.displayName = 'Card';
+Card.defaultProps = defaultProps;
+Card.Img = _CardImg__WEBPACK_IMPORTED_MODULE_8__["default"];
+Card.Title = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-title', {
+  Component: DivStyledAsH5
+});
+Card.Subtitle = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-subtitle', {
+  Component: DivStyledAsH6
+});
+Card.Body = CardBody;
+Card.Link = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-link', {
+  Component: 'a'
+});
+Card.Text = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-text', {
+  Component: 'p'
+});
+Card.Header = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-header');
+Card.Footer = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-footer');
+Card.ImgOverlay = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_5__["default"])('card-img-overlay');
+/* harmony default export */ __webpack_exports__["default"] = (Card);
+
+/***/ }),
+
 /***/ "./node_modules/react-bootstrap/esm/CardContext.js":
 /*!*********************************************************!*\
   !*** ./node_modules/react-bootstrap/esm/CardContext.js ***!
@@ -5422,6 +5304,118 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 
 /* harmony default export */ __webpack_exports__["default"] = (react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext(null));
+
+/***/ }),
+
+/***/ "./node_modules/react-bootstrap/esm/CardImg.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/react-bootstrap/esm/CardImg.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
+
+
+
+
+
+var defaultProps = {
+  variant: null
+};
+var CardImg = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef( // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
+function (_ref, ref) {
+  var bsPrefix = _ref.bsPrefix,
+      className = _ref.className,
+      variant = _ref.variant,
+      _ref$as = _ref.as,
+      Component = _ref$as === void 0 ? 'img' : _ref$as,
+      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["bsPrefix", "className", "variant", "as"]);
+
+  var prefix = Object(_ThemeProvider__WEBPACK_IMPORTED_MODULE_4__["useBootstrapPrefix"])(bsPrefix, 'card-img');
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    ref: ref,
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(variant ? prefix + "-" + variant : prefix, className)
+  }, props));
+});
+CardImg.displayName = 'CardImg';
+CardImg.defaultProps = defaultProps;
+/* harmony default export */ __webpack_exports__["default"] = (CardImg);
+
+/***/ }),
+
+/***/ "./node_modules/react-bootstrap/esm/Col.js":
+/*!*************************************************!*\
+  !*** ./node_modules/react-bootstrap/esm/Col.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
+
+
+
+
+
+var DEVICE_SIZES = ['xl', 'lg', 'md', 'sm', 'xs'];
+var Col = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef( // Need to define the default "as" during prop destructuring to be compatible with styled-components github.com/react-bootstrap/react-bootstrap/issues/3595
+function (_ref, ref) {
+  var bsPrefix = _ref.bsPrefix,
+      className = _ref.className,
+      _ref$as = _ref.as,
+      Component = _ref$as === void 0 ? 'div' : _ref$as,
+      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["bsPrefix", "className", "as"]);
+
+  var prefix = Object(_ThemeProvider__WEBPACK_IMPORTED_MODULE_4__["useBootstrapPrefix"])(bsPrefix, 'col');
+  var spans = [];
+  var classes = [];
+  DEVICE_SIZES.forEach(function (brkPoint) {
+    var propValue = props[brkPoint];
+    delete props[brkPoint];
+    var span, offset, order;
+
+    if (propValue != null && typeof propValue === 'object') {
+      var _propValue$span = propValue.span;
+      span = _propValue$span === void 0 ? true : _propValue$span;
+      offset = propValue.offset;
+      order = propValue.order;
+    } else {
+      span = propValue;
+    }
+
+    var infix = brkPoint !== 'xs' ? "-" + brkPoint : '';
+    if (span != null) spans.push(span === true ? "" + prefix + infix : "" + prefix + infix + "-" + span);
+    if (order != null) classes.push("order" + infix + "-" + order);
+    if (offset != null) classes.push("offset" + infix + "-" + offset);
+  });
+
+  if (!spans.length) {
+    spans.push(prefix); // plain 'col'
+  }
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+    ref: ref,
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default.a.apply(void 0, [className].concat(spans, classes))
+  }));
+});
+Col.displayName = 'Col';
+/* harmony default export */ __webpack_exports__["default"] = (Col);
 
 /***/ }),
 
@@ -6098,6 +6092,68 @@ NavbarToggle.defaultProps = defaultProps;
 
 /***/ }),
 
+/***/ "./node_modules/react-bootstrap/esm/Row.js":
+/*!*************************************************!*\
+  !*** ./node_modules/react-bootstrap/esm/Row.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _ThemeProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ThemeProvider */ "./node_modules/react-bootstrap/esm/ThemeProvider.js");
+
+
+
+
+
+var DEVICE_SIZES = ['xl', 'lg', 'md', 'sm', 'xs'];
+var defaultProps = {
+  noGutters: false
+};
+var Row = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function (_ref, ref) {
+  var bsPrefix = _ref.bsPrefix,
+      className = _ref.className,
+      noGutters = _ref.noGutters,
+      _ref$as = _ref.as,
+      Component = _ref$as === void 0 ? 'div' : _ref$as,
+      props = Object(_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref, ["bsPrefix", "className", "noGutters", "as"]);
+
+  var decoratedBsPrefix = Object(_ThemeProvider__WEBPACK_IMPORTED_MODULE_4__["useBootstrapPrefix"])(bsPrefix, 'row');
+  var sizePrefix = decoratedBsPrefix + "-cols";
+  var classes = [];
+  DEVICE_SIZES.forEach(function (brkPoint) {
+    var propValue = props[brkPoint];
+    delete props[brkPoint];
+    var cols;
+
+    if (propValue != null && typeof propValue === 'object') {
+      cols = propValue.cols;
+    } else {
+      cols = propValue;
+    }
+
+    var infix = brkPoint !== 'xs' ? "-" + brkPoint : '';
+    if (cols != null) classes.push("" + sizePrefix + infix + "-" + cols);
+  });
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(Component, Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    ref: ref
+  }, props, {
+    className: classnames__WEBPACK_IMPORTED_MODULE_2___default.a.apply(void 0, [className, decoratedBsPrefix, noGutters && 'no-gutters'].concat(classes))
+  }));
+});
+Row.displayName = 'Row';
+Row.defaultProps = defaultProps;
+/* harmony default export */ __webpack_exports__["default"] = (Row);
+
+/***/ }),
+
 /***/ "./node_modules/react-bootstrap/esm/SafeAnchor.js":
 /*!********************************************************!*\
   !*** ./node_modules/react-bootstrap/esm/SafeAnchor.js ***!
@@ -6394,6 +6450,34 @@ function createWithBsPrefix(prefix, _temp) {
   BsComponent.displayName = displayName;
   return BsComponent;
 }
+
+/***/ }),
+
+/***/ "./node_modules/react-bootstrap/esm/divWithClassName.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/react-bootstrap/esm/divWithClassName.js ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (function (className) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.forwardRef(function (p, ref) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", Object(_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, p, {
+      ref: ref,
+      className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(p.className, className)
+    }));
+  });
+});
 
 /***/ }),
 
@@ -8311,299 +8395,6 @@ try {
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var stylesInDom = {};
-
-var isOldIE = function isOldIE() {
-  var memo;
-  return function memorize() {
-    if (typeof memo === 'undefined') {
-      // Test for IE <= 9 as proposed by Browserhacks
-      // @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-      // Tests for existence of standard globals is to allow style-loader
-      // to operate correctly into non-standard environments
-      // @see https://github.com/webpack-contrib/style-loader/issues/177
-      memo = Boolean(window && document && document.all && !window.atob);
-    }
-
-    return memo;
-  };
-}();
-
-var getTarget = function getTarget() {
-  var memo = {};
-  return function memorize(target) {
-    if (typeof memo[target] === 'undefined') {
-      var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
-
-      if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
-        try {
-          // This will throw an exception if access to iframe is blocked
-          // due to cross-origin restrictions
-          styleTarget = styleTarget.contentDocument.head;
-        } catch (e) {
-          // istanbul ignore next
-          styleTarget = null;
-        }
-      }
-
-      memo[target] = styleTarget;
-    }
-
-    return memo[target];
-  };
-}();
-
-function listToStyles(list, options) {
-  var styles = [];
-  var newStyles = {};
-
-  for (var i = 0; i < list.length; i++) {
-    var item = list[i];
-    var id = options.base ? item[0] + options.base : item[0];
-    var css = item[1];
-    var media = item[2];
-    var sourceMap = item[3];
-    var part = {
-      css: css,
-      media: media,
-      sourceMap: sourceMap
-    };
-
-    if (!newStyles[id]) {
-      styles.push(newStyles[id] = {
-        id: id,
-        parts: [part]
-      });
-    } else {
-      newStyles[id].parts.push(part);
-    }
-  }
-
-  return styles;
-}
-
-function addStylesToDom(styles, options) {
-  for (var i = 0; i < styles.length; i++) {
-    var item = styles[i];
-    var domStyle = stylesInDom[item.id];
-    var j = 0;
-
-    if (domStyle) {
-      domStyle.refs++;
-
-      for (; j < domStyle.parts.length; j++) {
-        domStyle.parts[j](item.parts[j]);
-      }
-
-      for (; j < item.parts.length; j++) {
-        domStyle.parts.push(addStyle(item.parts[j], options));
-      }
-    } else {
-      var parts = [];
-
-      for (; j < item.parts.length; j++) {
-        parts.push(addStyle(item.parts[j], options));
-      }
-
-      stylesInDom[item.id] = {
-        id: item.id,
-        refs: 1,
-        parts: parts
-      };
-    }
-  }
-}
-
-function insertStyleElement(options) {
-  var style = document.createElement('style');
-
-  if (typeof options.attributes.nonce === 'undefined') {
-    var nonce =  true ? __webpack_require__.nc : undefined;
-
-    if (nonce) {
-      options.attributes.nonce = nonce;
-    }
-  }
-
-  Object.keys(options.attributes).forEach(function (key) {
-    style.setAttribute(key, options.attributes[key]);
-  });
-
-  if (typeof options.insert === 'function') {
-    options.insert(style);
-  } else {
-    var target = getTarget(options.insert || 'head');
-
-    if (!target) {
-      throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
-    }
-
-    target.appendChild(style);
-  }
-
-  return style;
-}
-
-function removeStyleElement(style) {
-  // istanbul ignore if
-  if (style.parentNode === null) {
-    return false;
-  }
-
-  style.parentNode.removeChild(style);
-}
-/* istanbul ignore next  */
-
-
-var replaceText = function replaceText() {
-  var textStore = [];
-  return function replace(index, replacement) {
-    textStore[index] = replacement;
-    return textStore.filter(Boolean).join('\n');
-  };
-}();
-
-function applyToSingletonTag(style, index, remove, obj) {
-  var css = remove ? '' : obj.css; // For old IE
-
-  /* istanbul ignore if  */
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = replaceText(index, css);
-  } else {
-    var cssNode = document.createTextNode(css);
-    var childNodes = style.childNodes;
-
-    if (childNodes[index]) {
-      style.removeChild(childNodes[index]);
-    }
-
-    if (childNodes.length) {
-      style.insertBefore(cssNode, childNodes[index]);
-    } else {
-      style.appendChild(cssNode);
-    }
-  }
-}
-
-function applyToTag(style, options, obj) {
-  var css = obj.css;
-  var media = obj.media;
-  var sourceMap = obj.sourceMap;
-
-  if (media) {
-    style.setAttribute('media', media);
-  }
-
-  if (sourceMap && btoa) {
-    css += "\n/*# sourceMappingURL=data:application/json;base64,".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), " */");
-  } // For old IE
-
-  /* istanbul ignore if  */
-
-
-  if (style.styleSheet) {
-    style.styleSheet.cssText = css;
-  } else {
-    while (style.firstChild) {
-      style.removeChild(style.firstChild);
-    }
-
-    style.appendChild(document.createTextNode(css));
-  }
-}
-
-var singleton = null;
-var singletonCounter = 0;
-
-function addStyle(obj, options) {
-  var style;
-  var update;
-  var remove;
-
-  if (options.singleton) {
-    var styleIndex = singletonCounter++;
-    style = singleton || (singleton = insertStyleElement(options));
-    update = applyToSingletonTag.bind(null, style, styleIndex, false);
-    remove = applyToSingletonTag.bind(null, style, styleIndex, true);
-  } else {
-    style = insertStyleElement(options);
-    update = applyToTag.bind(null, style, options);
-
-    remove = function remove() {
-      removeStyleElement(style);
-    };
-  }
-
-  update(obj);
-  return function updateStyle(newObj) {
-    if (newObj) {
-      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {
-        return;
-      }
-
-      update(obj = newObj);
-    } else {
-      remove();
-    }
-  };
-}
-
-module.exports = function (list, options) {
-  options = options || {};
-  options.attributes = typeof options.attributes === 'object' ? options.attributes : {}; // Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-  // tags it will allow on a page
-
-  if (!options.singleton && typeof options.singleton !== 'boolean') {
-    options.singleton = isOldIE();
-  }
-
-  var styles = listToStyles(list, options);
-  addStylesToDom(styles, options);
-  return function update(newList) {
-    var mayRemove = [];
-
-    for (var i = 0; i < styles.length; i++) {
-      var item = styles[i];
-      var domStyle = stylesInDom[item.id];
-
-      if (domStyle) {
-        domStyle.refs--;
-        mayRemove.push(domStyle);
-      }
-    }
-
-    if (newList) {
-      var newStyles = listToStyles(newList, options);
-      addStylesToDom(newStyles, options);
-    }
-
-    for (var _i = 0; _i < mayRemove.length; _i++) {
-      var _domStyle = mayRemove[_i];
-
-      if (_domStyle.refs === 0) {
-        for (var j = 0; j < _domStyle.parts.length; j++) {
-          _domStyle.parts[j]();
-        }
-
-        delete stylesInDom[_domStyle.id];
-      }
-    }
-  };
-};
-
-/***/ }),
-
 /***/ "./node_modules/uncontrollable/esm/hook.js":
 /*!*************************************************!*\
   !*** ./node_modules/uncontrollable/esm/hook.js ***!
@@ -9033,80 +8824,6 @@ module.exports = warning;
 
 /***/ }),
 
-/***/ "./pages/404.js":
-/*!**********************!*\
-  !*** ./pages/404.js ***!
-  \**********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _styles_layout_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/layout.module.css */ "./styles/layout.module.css");
-/* harmony import */ var _styles_layout_module_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_styles_layout_module_css__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/utils.module.css */ "./styles/utils.module.css");
-/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_4__);
-var _this = undefined,
-    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/404.js";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
-
-
-var Custom404 = function Custom404(_ref) {
-  var _ref$title = _ref.title,
-      title = _ref$title === void 0 ? 'This Page is Not Found' : _ref$title;
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 7
-    }
-  }, __jsx("title", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9,
-      columnNumber: 13
-    }
-  }, title)), __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10,
-      columnNumber: 7
-    }
-  }, __jsx("div", {
-    className: "".concat(_styles_layout_module_css__WEBPACK_IMPORTED_MODULE_3___default.a.container, " ").concat(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.notfound),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 9
-    }
-  }, __jsx("h1", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 11
-    }
-  }, "404 - Page Not Found"))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Custom404);
-
-/***/ }),
-
 /***/ "./pages/api/headerlink.json":
 /*!***********************************!*\
   !*** ./pages/api/headerlink.json ***!
@@ -9118,136 +8835,225 @@ module.exports = JSON.parse("[{\"id\":\"1\",\"link\":\"/\",\"title\":\"Home\"},{
 
 /***/ }),
 
-/***/ "./styles/layout.module.css":
-/*!**********************************!*\
-  !*** ./styles/layout.module.css ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./pages/api/parkAPI.json":
+/*!********************************!*\
+  !*** ./pages/api/parkAPI.json ***!
+  \********************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, default */
+/***/ (function(module) {
 
-var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./layout.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/layout.module.css");
-
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
-
-var options = {}
-
-options.insert = function(element){// These elements should always exist. If they do not,
-// this code should fail.
-var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
-// Each style tag should be placed right before our
-// anchor. By inserting before and not after, we do not
-// need to track the last inserted element.
-parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
-//
-// After styles are injected, we need to remove the
-// <style> tags that set `body { display: none; }`.
-//
-// We use `requestAnimationFrame` as a way to defer
-// this operation since there may be multiple style
-// tags.
-;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
-options.singleton = false;
-
-var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
-
-if (content.locals) {
-  module.exports = content.locals;
-}
-
-if (true) {
-  if (!content.locals) {
-    module.hot.accept(
-      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./layout.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/layout.module.css",
-      function () {
-        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./layout.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/layout.module.css");
-
-        if (typeof newContent === 'string') {
-          newContent = [[module.i, newContent, '']];
-        }
-        
-        update(newContent);
-      }
-    )
-  }
-
-  module.hot.dispose(function() { 
-    update();
-  });
-}
+module.exports = JSON.parse("[{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"桃園縣公有府前地下停車場\",\"totalSpace\":334,\"surplusSpace\":\"70\",\"payGuide\":\"停車費率:30 元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府管轄之停車場\",\"address\":\"桃園區縣府路1號(出入口位於桃園市政府警察局前)\",\"wgsX\":121.3011,\"wgsY\":24.9934,\"parkId\":\"P-TY-001\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"新民立體停車場\",\"totalSpace\":191,\"surplusSpace\":\"49\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園區公所管轄之公有停車場\",\"address\":\"桃園市桃園區民權路32號\",\"wgsX\":121.3093,\"wgsY\":24.9926,\"parkId\":\"P-TY-003\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"西門地下停車場\",\"totalSpace\":548,\"surplusSpace\":\"64\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園區公所管轄之公有停車場\",\"address\":\"桃園區四維路39號\",\"wgsX\":121.3046,\"wgsY\":24.9934,\"parkId\":\"P-TY-004\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"廣停一停車場\",\"totalSpace\":77,\"surplusSpace\":\"45\",\"payGuide\":\"汽車：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區六和路與九和六街路口(新街段868地號)\",\"wgsX\":121.2248,\"wgsY\":24.9647,\"parkId\":\"P-JL-001\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"銀河廣場地下停車場\",\"totalSpace\":145,\"surplusSpace\":\"114\",\"payGuide\":\"汽車30元/hr 每半小時為計價單位，機車30元/次-日。\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區九和一街35號地下1、2、3樓\",\"wgsX\":121.224,\"wgsY\":24.9619,\"parkId\":\"P-JL-002\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"中央地下停車場\",\"totalSpace\":299,\"surplusSpace\":\"222\",\"payGuide\":\"小型車：臨停30元/時;小型車：月租3600元/月;機車：臨停30元/次;機車：月租600元/月\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區中央東路83號地下1-3樓\",\"wgsX\":121.2264,\"wgsY\":24.9563,\"parkId\":\"P-JL-003\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"延平立體停車場\",\"totalSpace\":201,\"surplusSpace\":\"104\",\"payGuide\":\"汽車：30元/小時。機車每次30元。月租3600元。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區延平路535號\",\"wgsX\":121.2233,\"wgsY\":24.9558,\"parkId\":\"P-JL-004\"},{\"areaId\":\"3\",\"areaName\":\"八德區\",\"parkName\":\"八德區公有廣停一停車場\",\"totalSpace\":207,\"surplusSpace\":\"67\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"八德區公所管轄之公有停車場\",\"address\":\"八德區廣福路42號\",\"wgsX\":121.2985,\"wgsY\":24.959,\"parkId\":\"P-BD-001\"},{\"areaId\":\"3\",\"areaName\":\"八德區\",\"parkName\":\"大忠地下停車場\",\"totalSpace\":332,\"surplusSpace\":\"37\",\"payGuide\":\"收費費率：20元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府管轄之停車場\",\"address\":\"桃園市八德區大忠街141號(大忠國小地下室)\",\"wgsX\":121.3008,\"wgsY\":24.9585,\"parkId\":\"P-BD-002\"},{\"areaId\":\"8\",\"areaName\":\"蘆竹區\",\"parkName\":\"南崁公一地下停車場\",\"totalSpace\":586,\"surplusSpace\":\"104\",\"payGuide\":\"收費費率：20元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"蘆竹區公所管轄之公有停車場\",\"address\":\"蘆竹區仁愛路一段2號旁\",\"wgsX\":121.2932,\"wgsY\":25.0502,\"parkId\":\"P-LJ-001\"},{\"areaId\":\"12\",\"areaName\":\"龍潭區\",\"parkName\":\"龍潭停一停車場\",\"totalSpace\":95,\"surplusSpace\":\"23\",\"payGuide\":\"計時：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"龍潭區公所管轄之公有停車場\",\"address\":\"龍潭區龍華路134號旁\",\"wgsX\":121.2155,\"wgsY\":24.8634,\"parkId\":\"P-LT-001\"},{\"areaId\":\"5\",\"areaName\":\"大溪區\",\"parkName\":\"橋頭停車場\",\"totalSpace\":584,\"surplusSpace\":\"531\",\"payGuide\":\"收費費率：20元/小時，採半小時計費。\",\"introduction\":\"桃園市政府管轄之停車場\",\"address\":\"大溪區栗子園大溪橋旁堤外高灘地及堤內防汛道路\",\"wgsX\":121.2805,\"wgsY\":24.885,\"parkId\":\"P-DS-002\"},{\"areaId\":\"5\",\"areaName\":\"大溪區\",\"parkName\":\"大溪遊客中心停車場\",\"totalSpace\":40,\"surplusSpace\":\"20\",\"payGuide\":\"免費\",\"introduction\":\"桃園市政府風景區管理所轄之公有停車場\",\"address\":\"桃園市大溪區復興路一段1268號\",\"wgsX\":121.2849,\"wgsY\":24.8521,\"parkId\":\"P-DS-003\"},{\"areaId\":\"5\",\"areaName\":\"大溪區\",\"parkName\":\"兩蔣文化園區慈湖遊客中心暨慈湖廣場附屬停車場\",\"totalSpace\":208,\"surplusSpace\":\"110\",\"payGuide\":\"收費費率：大型車100元/次;小型車50元/次\",\"introduction\":\"桃園市政府風景區管理所轄之公有停車場\",\"address\":\"大溪區復興路一段1097號\",\"wgsX\":121.2933,\"wgsY\":24.8403,\"parkId\":\"P-DS-004\"},{\"areaId\":\"7\",\"areaName\":\"龜山區\",\"parkName\":\"公十二停車場\",\"totalSpace\":473,\"surplusSpace\":\"34\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"龜山區公所管轄之公有停車場\",\"address\":\"龜山區長庚醫院對面\",\"wgsX\":121.3673,\"wgsY\":25.0626,\"parkId\":\"P-GS-001\"},{\"areaId\":\"7\",\"areaName\":\"龜山區\",\"parkName\":\"停十八停車場\",\"totalSpace\":122,\"surplusSpace\":\"15\",\"payGuide\":\"收費費率：20元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"龜山區公所管轄之公有停車場\",\"address\":\"龜山區文化二路與文二一街旁\",\"wgsX\":121.3636,\"wgsY\":25.0612,\"parkId\":\"P-GS-002\"},{\"areaId\":\"7\",\"areaName\":\"龜山區\",\"parkName\":\"龜山區中山街地下停車場\",\"totalSpace\":185,\"surplusSpace\":\"185\",\"payGuide\":\"收費費率：20元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"龜山區公所管轄之公有停車場\",\"address\":\"龜山區新路村自強南路180號\",\"wgsX\":121.3373,\"wgsY\":24.9921,\"parkId\":\"P-GS-003\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"中北健行停車場\",\"totalSpace\":144,\"surplusSpace\":\"7\",\"payGuide\":\"汽車：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。機車：30元/次.日\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區中北路二段151號\",\"wgsX\":121.2264,\"wgsY\":24.9527,\"parkId\":\"P-JL-005\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"中原國小地下停車場\",\"totalSpace\":423,\"surplusSpace\":\"306\",\"payGuide\":\"計時：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區實踐路180號對面\",\"wgsX\":121.2392,\"wgsY\":24.956,\"parkId\":\"P-JL-006\"},{\"areaId\":\"4\",\"areaName\":\"平鎮區\",\"parkName\":\"廣北平面停車場\",\"totalSpace\":119,\"surplusSpace\":\"0\",\"payGuide\":\"計時：20元/小時。前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"平鎮區公所管轄之公有停車場\",\"address\":\"平鎮區民族路與廣成街口\",\"wgsX\":121.2086,\"wgsY\":24.9567,\"parkId\":\"P-PJ-001\"},{\"areaId\":\"4\",\"areaName\":\"平鎮區\",\"parkName\":\"廣南平面停車場\",\"totalSpace\":80,\"surplusSpace\":\"0\",\"payGuide\":\"計時：20元/小時。前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"平鎮區公所管轄之公有停車場\",\"address\":\"平鎮區環南路與延平路轉角地\",\"wgsX\":121.209,\"wgsY\":24.9447,\"parkId\":\"P-PJ-002\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"雙峰停車場\",\"totalSpace\":60,\"surplusSpace\":\"20\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園區公所管轄之公有停車場\",\"address\":\"桃園區雙峰路與民有13街交叉口\",\"wgsX\":121.3136,\"wgsY\":25.0126,\"parkId\":\"P-TY-006\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"中壢內壢站\",\"totalSpace\":49,\"surplusSpace\":\"27\",\"payGuide\":\"收費費率：20元/小時。進場後前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府管轄之停車場\",\"address\":\"中壢區仁愛段1047、1047-3、1073、1073-1地號(中華路364號旁)\",\"wgsX\":121.2553,\"wgsY\":24.972,\"parkId\":\"P-JL-007\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"自強停車場\",\"totalSpace\":102,\"surplusSpace\":\"66\",\"payGuide\":\"收費費率：20元/小時。進場後前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府管轄之停車場\",\"address\":\"中壢區強國路46號旁\",\"wgsX\":121.259,\"wgsY\":24.968,\"parkId\":\"P-JL-008\"},{\"areaId\":\"3\",\"areaName\":\"八德區\",\"parkName\":\"公二地下停車場\",\"totalSpace\":60,\"surplusSpace\":\"21\",\"payGuide\":\"收費費率：20元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"八德區公所管轄之公有停車場\",\"address\":\"桃園市八德區福國北街220號(八德綜合大樓)\",\"wgsX\":121.297,\"wgsY\":24.9629,\"parkId\":\"P-BD-003\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"藝文園區地下停車場\",\"totalSpace\":517,\"surplusSpace\":\"0\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府管轄之停車場\",\"address\":\"桃園區藝文一街55號及77號地下1-3層\",\"wgsX\":121.3012,\"wgsY\":25.0139,\"parkId\":\"P-TY-007\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"綠二停車場\",\"totalSpace\":159,\"surplusSpace\":\"2\",\"payGuide\":\"收費費率：20元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府管轄之停車場\",\"address\":\"桃園區藝文一街與藝文二街\",\"wgsX\":121.3004,\"wgsY\":25.0157,\"parkId\":\"P-TY-008\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"朝陽公園停車場\",\"totalSpace\":45,\"surplusSpace\":\"0\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園區公所管轄之公有停車場\",\"address\":\"桃園區鎮撫街朝陽公園內(出入口於公六街上)\",\"wgsX\":121.3122,\"wgsY\":24.998,\"parkId\":\"P-TY-009\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"三民公園停車場\",\"totalSpace\":81,\"surplusSpace\":\"11\",\"payGuide\":\"計時收費，30元/小時。\",\"introduction\":\"桃園區公所管轄之公有停車場\",\"address\":\"出入口於三元街上鄰近平交道\",\"wgsX\":121.3179,\"wgsY\":25.0017,\"parkId\":\"P-TY-010\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"陽明公園停車場\",\"totalSpace\":64,\"surplusSpace\":\"10\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園區公所管轄之公有停車場\",\"address\":\"桃園區保羅街66號對面1處及長沙街100號對面1處\",\"wgsX\":121.3091,\"wgsY\":24.9824,\"parkId\":\"P-TY-011\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"光明停車場\",\"totalSpace\":49,\"surplusSpace\":\"28\",\"payGuide\":\"計時：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區民權路與光輝二街交叉(三座屋段舊社小段97-4地號)\",\"wgsX\":121.2169,\"wgsY\":24.9634,\"parkId\":\"P-JL-009\"},{\"areaId\":\"11\",\"areaName\":\"新屋區\",\"parkName\":\"新屋區停一立體停車場\",\"totalSpace\":160,\"surplusSpace\":\"0\",\"payGuide\":\"收費費率：20元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"新屋區公所管轄之公有停車場\",\"address\":\"新屋區中山路257號\",\"wgsX\":121.1059,\"wgsY\":24.9726,\"parkId\":\"P-SW-001\"},{\"areaId\":\"11\",\"areaName\":\"新屋區\",\"parkName\":\"新屋區第一公有零售市場附設停車場\",\"totalSpace\":67,\"surplusSpace\":\"30\",\"payGuide\":\"計時：30元/2小時，每逾1小時加收10元。\",\"introduction\":\"新屋區公所管轄之公有停車場\",\"address\":\"新屋區中山路370號地下一、二層\",\"wgsX\":121.1043,\"wgsY\":24.9733,\"parkId\":\"P-SW-002\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"興國公有市場立體停車場\",\"totalSpace\":142,\"surplusSpace\":\"32\",\"payGuide\":\"計時:20元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區中豐路96號\",\"wgsX\":121.2196,\"wgsY\":24.9619,\"parkId\":\"P-JL-010\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"坤慶公園地下停車場\",\"totalSpace\":32,\"surplusSpace\":\"11\",\"payGuide\":\"小型車:30元/小時，3600元/月，全月半日2700元/月。\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區溪洲路288號地下一層\",\"wgsX\":121.2295,\"wgsY\":24.962,\"parkId\":\"P-JL-011\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"廈門停車場\",\"totalSpace\":80,\"surplusSpace\":\"47\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府交通局管轄之停車場\",\"address\":\"桃園市桃園區中路三段189地號(廈門街45號對面空地)\",\"wgsX\":121.2988,\"wgsY\":24.9947,\"parkId\":\"P-TY-012\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"東門段平面停車場\",\"totalSpace\":119,\"surplusSpace\":\"62\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府交通局管轄之停車場\",\"address\":\"桃園區成功路與朝陽街交叉口\",\"wgsX\":121.3141,\"wgsY\":24.9932,\"parkId\":\"P-TY-013\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"南園停車場\",\"totalSpace\":60,\"surplusSpace\":\"47\",\"payGuide\":\"1: 前30分鐘免費，需到繳費機過卡才可離場。繳費完15鐘內免費離場時間。2: 收費:每1小時10元。3: 身障:前3小時免費 ,之後每小時半價累進計價。\",\"introduction\":\"桃園市政府交通局管轄之停車場\",\"address\":\"中壢區南園二路267號旁(培英段18地號)\",\"wgsX\":121.2296,\"wgsY\":24.9715,\"parkId\":\"P-JL-012\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"中壢忠孝站\",\"totalSpace\":92,\"surplusSpace\":\"23\",\"payGuide\":\"收費費率：30元/小時。進場後前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府管轄之停車場\",\"address\":\"中壢區忠孝段1314地號(忠孝公園旁)\",\"wgsX\":121.2542,\"wgsY\":24.9767,\"parkId\":\"p-JL-020\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"中壢復興站\",\"totalSpace\":66,\"surplusSpace\":\"27\",\"payGuide\":\"收費費率：30元/小時。進場後前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府管轄之停車場\",\"address\":\"中壢區復興段2074地號(文化二路161號旁)\",\"wgsX\":121.251,\"wgsY\":24.9751,\"parkId\":\"P-JL-019\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"中壢忠孝黃昏市場站\",\"totalSpace\":35,\"surplusSpace\":\"0\",\"payGuide\":\"收費費率：20元/小時。進場後前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府管轄之停車場\",\"address\":\"中壢區中工段372-1地號土地(忠孝路476號旁)\",\"wgsX\":121.253,\"wgsY\":24.9826,\"parkId\":\"p-JL-018\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"中壢復華站\",\"totalSpace\":46,\"surplusSpace\":\"24\",\"payGuide\":\"收費費率：20元/小時。進場後前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府管轄之停車場\",\"address\":\"中壢區復興段2128地號土地(復華街236旁空地)\",\"wgsX\":121.2482,\"wgsY\":24.9747,\"parkId\":\"P-JL-021\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"新明國小地下停車場\",\"totalSpace\":272,\"surplusSpace\":\"152\",\"payGuide\":\"臨停車每小時30元，月租每月3600元。離峰時段01:00~16:00每小時20元(最高收費100元)；機車臨停30元/次，月租每月600元；計時及月租；機車臨停計次30元/次，月租每月600元。停車時數未滿30分鐘免費。停車時數未滿1小時以1小時計，停車時數逾1小時以上，其超過之不滿1小時部份，如不逾30分鐘，以半小時計算；如逾30分鐘者，仍以1小時計算收費。\",\"introduction\":\"桃園市政府交通局管轄之停車場\",\"address\":\"中壢區明德路211號\",\"wgsX\":121.2169,\"wgsY\":24.9616,\"parkId\":\"P-JL-022\"},{\"areaId\":\"6\",\"areaName\":\"楊梅區\",\"parkName\":\"大模停車場\",\"totalSpace\":42,\"surplusSpace\":\"18\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"楊梅區公所管轄之公有停車場\",\"address\":\"桃園市楊梅區大模街與武營街路口\",\"wgsX\":121.1444,\"wgsY\":24.9096,\"parkId\":\"P-YM-001\"},{\"areaId\":\"6\",\"areaName\":\"楊梅區\",\"parkName\":\"瑞坪停車場\",\"totalSpace\":59,\"surplusSpace\":\"47\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"楊梅區公所管轄之公有停車場\",\"address\":\"桃園市楊梅區瑞坪路與金溪路口\",\"wgsX\":121.1747,\"wgsY\":24.8955,\"parkId\":\"P-YM-002\"},{\"areaId\":\"6\",\"areaName\":\"楊梅區\",\"parkName\":\"埔心公園停車場\",\"totalSpace\":76,\"surplusSpace\":\"0\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"楊梅區公所管轄之公有停車場\",\"address\":\"桃園市楊梅區文化街123巷內(四維國小旁)\",\"wgsX\":121.1848,\"wgsY\":24.9123,\"parkId\":\"P-YM-003\"},{\"areaId\":\"6\",\"areaName\":\"楊梅區\",\"parkName\":\"埔心車站後站停車場\",\"totalSpace\":51,\"surplusSpace\":\"0\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"楊梅區公所管轄之公有停車場\",\"address\":\"埔心火車站後站\",\"wgsX\":121.1826,\"wgsY\":24.9198,\"parkId\":\"P-YM-004\"},{\"areaId\":\"6\",\"areaName\":\"楊梅區\",\"parkName\":\"四維停車場\",\"totalSpace\":49,\"surplusSpace\":\"35\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"楊梅區公所管轄之公有停車場\",\"address\":\"桃園市楊梅區永美路407巷(四維公園旁)\",\"wgsX\":121.1801,\"wgsY\":24.9135,\"parkId\":\"P-YM-005\"},{\"areaId\":\"6\",\"areaName\":\"楊梅區\",\"parkName\":\"瑞溪停車場\",\"totalSpace\":102,\"surplusSpace\":\"79\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"楊梅區公所管轄之公有停車場\",\"address\":\"楊梅區裕成路(愛買後方)\",\"wgsX\":121.1674,\"wgsY\":24.9072,\"parkId\":\"P-YM-006\"},{\"areaId\":\"6\",\"areaName\":\"楊梅區\",\"parkName\":\"三元停車場\",\"totalSpace\":44,\"surplusSpace\":\"30\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"楊梅區公所管轄之公有停車場\",\"address\":\"桃園市楊梅區三元街與三民北路口\",\"wgsX\":121.1702,\"wgsY\":24.9097,\"parkId\":\"P-YM-007\"},{\"areaId\":\"6\",\"areaName\":\"楊梅區\",\"parkName\":\"瑞塘停車場\",\"totalSpace\":73,\"surplusSpace\":\"33\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"楊梅區公所管轄之公有停車場\",\"address\":\"桃園市楊梅區瑞溪路二段與萬大路口\",\"wgsX\":121.179,\"wgsY\":24.9083,\"parkId\":\"P-YM-008\"},{\"areaId\":\"6\",\"areaName\":\"楊梅區\",\"parkName\":\"新成立體停車場\",\"totalSpace\":59,\"surplusSpace\":\"0\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"楊梅區公所管轄之公有停車場\",\"address\":\"桃園市楊梅區光復北街20號(新成路與光復北街路口)\",\"wgsX\":121.1467,\"wgsY\":24.9117,\"parkId\":\"P-YM-009\"},{\"areaId\":\"6\",\"areaName\":\"楊梅區\",\"parkName\":\"自立停車場\",\"totalSpace\":23,\"surplusSpace\":\"0\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"楊梅區公所管轄之公有停車場\",\"address\":\"桃園市楊梅區自立街與新農街245巷口(楊梅消防分隊旁)\",\"wgsX\":121.1523,\"wgsY\":24.9112,\"parkId\":\"P-YM-010\"},{\"areaId\":\"6\",\"areaName\":\"楊梅區\",\"parkName\":\"金山停車場\",\"totalSpace\":37,\"surplusSpace\":\"19\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"楊梅區公所管轄之公有停車場\",\"address\":\"桃園市楊梅區金山街238號對面\",\"wgsX\":121.1613,\"wgsY\":24.9106,\"parkId\":\"P-YM-011\"},{\"areaId\":\"6\",\"areaName\":\"楊梅區\",\"parkName\":\"梅高停車場\",\"totalSpace\":79,\"surplusSpace\":\"31\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"楊梅區公所管轄之公有停車場\",\"address\":\"桃園市楊梅區金德街與新梅六街口(楊梅火車站後站)\",\"wgsX\":121.1457,\"wgsY\":24.9151,\"parkId\":\"P-YM-012\"},{\"areaId\":\"6\",\"areaName\":\"楊梅區\",\"parkName\":\"永福停車場\",\"totalSpace\":11,\"surplusSpace\":\"4\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"楊梅區公所管轄之公有停車場\",\"address\":\"桃園市楊梅區校前路324巷42號旁\",\"wgsX\":121.1498,\"wgsY\":24.899,\"parkId\":\"P-YM-013\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"桃園新站停車場\",\"totalSpace\":38,\"surplusSpace\":\"23\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園區公所管轄之公有停車場\",\"address\":\"桃園火車站臨時站後站廣場-桃園市桃園區大林路62號\",\"wgsX\":121.3142,\"wgsY\":24.9877,\"parkId\":\"P-TY-014\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"大檜溪公園地下室停車場\",\"totalSpace\":65,\"surplusSpace\":\"31\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園區公所管轄之公有停車場\",\"address\":\"桃園區興一街65巷50號B1\",\"wgsX\":121.3167,\"wgsY\":25.0138,\"parkId\":\"P-TY-015\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"建國公園停車場\",\"totalSpace\":23,\"surplusSpace\":\"6\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園區公所管轄之公有停車場\",\"address\":\"桃園區建國公園內(出入口於建成街上)\",\"wgsX\":121.3155,\"wgsY\":24.9861,\"parkId\":\"P-TY-016\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"宏昌六街停車場\",\"totalSpace\":72,\"surplusSpace\":\"24\",\"payGuide\":\"收費費率：30元/小時。停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園區公所管轄之公有停車場\",\"address\":\"桃園區宏昌六街與泰昌八街交叉口(桃園市桃園區宏昌六街237號對面)\",\"wgsX\":121.2919,\"wgsY\":24.9871,\"parkId\":\"P-TY-017\"},{\"areaId\":\"7\",\"areaName\":\"龜山區\",\"parkName\":\"長庚醫院復健停車場\",\"totalSpace\":704,\"surplusSpace\":\"21\",\"payGuide\":\"收費費率：小型車-臨停:30/時 。機車-臨停:30/次\",\"introduction\":\"長庚醫院管轄之私有停車場\",\"address\":\"桃園市龜山區復興街5-6號\",\"wgsX\":121.3685,\"wgsY\":25.0622,\"parkId\":\"P-GS-004\"},{\"areaId\":\"7\",\"areaName\":\"龜山區\",\"parkName\":\"長庚醫院病理停車場\",\"totalSpace\":588,\"surplusSpace\":\"59\",\"payGuide\":\"收費費率：小型車-臨停:30/時\",\"introduction\":\"長庚醫院管轄之私有停車場\",\"address\":\"桃園市龜山區復興街5號\",\"wgsX\":121.3674,\"wgsY\":25.0594,\"parkId\":\"P-GS-005\"},{\"areaId\":\"7\",\"areaName\":\"龜山區\",\"parkName\":\"機場捷運長庚醫院A8站共開大樓停車場\",\"totalSpace\":391,\"surplusSpace\":\"84\",\"payGuide\":\"收費費率：小型車-臨停:100/時。機車-臨停:40/次\",\"introduction\":\"長庚醫院管轄之停車場\",\"address\":\"桃園市龜山區復興一路8號B2-B4F\",\"wgsX\":121.3704,\"wgsY\":25.0601,\"parkId\":\"P-GS-006\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"中鑄停車場\",\"totalSpace\":26,\"surplusSpace\":\"10\",\"payGuide\":\"汽車：30元/小時。前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區復興段2141地號(中華路一段619巷旁)\",\"wgsX\":121.2496,\"wgsY\":24.9674,\"parkId\":\"P-JL-023\"},{\"areaId\":\"12\",\"areaName\":\"龍潭區\",\"parkName\":\"龍潭區停二停車場\",\"totalSpace\":102,\"surplusSpace\":\"18\",\"payGuide\":\"小型車計時：30元/小時。月租3600元。(停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。) 大型車臨停每小時60元。機車臨停每次30元；月租2400元。\",\"introduction\":\"龍潭區公所管轄之公有停車場\",\"address\":\"龍潭區北龍路與公園路口(運動公園前)\",\"wgsX\":121.2163,\"wgsY\":24.8644,\"parkId\":\"P-LT-002\"},{\"areaId\":\"5\",\"areaName\":\"大溪區\",\"parkName\":\"大溪老街停車場\",\"totalSpace\":75,\"surplusSpace\":\"68\",\"payGuide\":\"平日半小時計費,平日大車費率:15,平日小車費率:15,平日收費時段:08:00~20:00,假日累進計費,假日大車費率:20,20,25,假日小車費率:20,20,25,假日收費時段:08:00~20:00\",\"introduction\":\"大溪區公所管轄之公有停車場\",\"address\":\"大溪區中正路與普濟路交叉\",\"wgsX\":121.2872,\"wgsY\":24.881,\"parkId\":\"P-DS-005\"},{\"areaId\":\"8\",\"areaName\":\"蘆竹區\",\"parkName\":\"南榮地下停車場\",\"totalSpace\":77,\"surplusSpace\":\"21\",\"payGuide\":\"收費費率：20元/小時。前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"蘆竹區公所管轄之公有停車場\",\"address\":\"桃園市蘆竹區洛陽街107號旁南榮地下停車場出入口\",\"wgsX\":121.2912,\"wgsY\":25.045,\"parkId\":\"P-LJ-002\"},{\"areaId\":\"8\",\"areaName\":\"蘆竹區\",\"parkName\":\"五福地下停車場\",\"totalSpace\":124,\"surplusSpace\":\"24\",\"payGuide\":\"收費費率：20元/小時。前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"蘆竹區公所管轄之公有停車場\",\"address\":\"蘆竹區五福一路92巷與五福一路交叉口旁(蘆竹區藝文音樂廣場公園下)\",\"wgsX\":121.2947,\"wgsY\":25.0559,\"parkId\":\"P-LJ-003\"},{\"areaId\":\"8\",\"areaName\":\"蘆竹區\",\"parkName\":\"大新平面停車場\",\"totalSpace\":28,\"surplusSpace\":\"11\",\"payGuide\":\"桃園市蘆竹區大新一街與新福街交叉口\",\"introduction\":\"蘆竹區公所管轄之公有停車場\",\"address\":\"蘆竹區大新路與大新一街交叉口(大新路43號旁)\",\"wgsX\":121.2567,\"wgsY\":25.0247,\"parkId\":\"P-LJ-004\"},{\"areaId\":\"8\",\"areaName\":\"蘆竹區\",\"parkName\":\"大竹圍平面停車場\",\"totalSpace\":17,\"surplusSpace\":\"0\",\"payGuide\":\"收費費率：20元/小時。前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"蘆竹區公所管轄之公有停車場\",\"address\":\"蘆竹區博愛街與明德街交叉口(博愛街18號旁空地)\",\"wgsX\":121.2615,\"wgsY\":25.0238,\"parkId\":\"P-LJ-005\"},{\"areaId\":\"7\",\"areaName\":\"龜山區\",\"parkName\":\"桃園市立圖書館龜山分館地下停車場\",\"totalSpace\":72,\"surplusSpace\":\"12\",\"payGuide\":\"臨停20元/時、月租2400元/月\",\"introduction\":\"桃園市立圖書館管轄之公有停車場\",\"address\":\"桃園市龜山區自強南路97號B1\",\"wgsX\":121.3386,\"wgsY\":24.9923,\"parkId\":\"P-TY-018\"},{\"areaId\":\"3\",\"areaName\":\"八德區\",\"parkName\":\"廣豐一停車場\",\"totalSpace\":118,\"surplusSpace\":\"30\",\"payGuide\":\"收費費率：30元/小時。前30分鐘免費，30分鐘以上未滿1小時者，以1小時計費。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府交通局管轄之公有停車場\",\"address\":\"桃園市八德區桃德路100巷與公園路口\",\"wgsX\":121.2973,\"wgsY\":24.9676,\"parkId\":\"P-BD-004\"},{\"areaId\":\"3\",\"areaName\":\"八德區\",\"parkName\":\"廣豐二停車場\",\"totalSpace\":150,\"surplusSpace\":\"48\",\"payGuide\":\"收費費率：30元/小時。前30分鐘免費，30分鐘以上未滿1小時者，以1小時計費。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府交通局管轄之公有停車場\",\"address\":\"桃園市八德區廣豐二街與廣豐三街交叉口\",\"wgsX\":121.2951,\"wgsY\":24.9657,\"parkId\":\"P-BD-005\"},{\"areaId\":\"3\",\"areaName\":\"八德區\",\"parkName\":\"大和段停車場\",\"totalSpace\":45,\"surplusSpace\":\"10\",\"payGuide\":\"收費費率：30元/小時。前30分鐘免費，30分鐘以上未滿1小時者，以1小時計費。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府交通局管轄之公有停車場\",\"address\":\"桃園市八德區建國路與文昌街口\",\"wgsX\":121.2941,\"wgsY\":24.9558,\"parkId\":\"P-BD-006\"},{\"areaId\":\"4\",\"areaName\":\"平鎮區\",\"parkName\":\"桃園市立圖書館平鎮分館停車場\",\"totalSpace\":89,\"surplusSpace\":\"79\",\"payGuide\":\"收費費率：20元/小時。停車前半小時免費，超過半小時停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市立圖書館平鎮分館管轄之公有停車場\",\"address\":\"桃園市平鎮區環南路三段88號\",\"wgsX\":121.2166,\"wgsY\":24.9395,\"parkId\":\"P-PJ-003\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"興仁親子公園停車場\",\"totalSpace\":131,\"surplusSpace\":\"32\",\"payGuide\":\"計時：20元/小時。前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區興仁親子公園\",\"wgsX\":121.261,\"wgsY\":24.9661,\"parkId\":\"P-JL-024\"},{\"areaId\":\"4\",\"areaName\":\"平鎮區\",\"parkName\":\"新榮平面停車場\",\"totalSpace\":36,\"surplusSpace\":\"10\",\"payGuide\":\"計時：20元/小時。前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"平鎮區公所管轄之公有停車場\",\"address\":\"平鎮區三崇段1地號(新德街與安平街路口)\",\"wgsX\":121.2141,\"wgsY\":24.9444,\"parkId\":\"P-PJ-004\"},{\"areaId\":\"4\",\"areaName\":\"平鎮區\",\"parkName\":\"上海平面停車場\",\"totalSpace\":55,\"surplusSpace\":\"28\",\"payGuide\":\"計時：20元/小時。前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"平鎮區公所管轄之公有停車場\",\"address\":\"平鎮區中庸路與上海路口\",\"wgsX\":121.2065,\"wgsY\":24.9135,\"parkId\":\"P-PJ-005\"},{\"areaId\":\"4\",\"areaName\":\"平鎮區\",\"parkName\":\"坤慶平面停車場\",\"totalSpace\":86,\"surplusSpace\":\"49\",\"payGuide\":\"計時：20元/小時。前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"平鎮區公所管轄之公有停車場\",\"address\":\"平鎮區中豐路進入坤慶路坤慶二街旁\",\"wgsX\":121.2136,\"wgsY\":24.9022,\"parkId\":\"P-PJ-006\"},{\"areaId\":\"4\",\"areaName\":\"平鎮區\",\"parkName\":\"大興平面停車場\",\"totalSpace\":27,\"surplusSpace\":\"11\",\"payGuide\":\"NULL計時：20元/小時。前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"平鎮區公所管轄之公有停車場\",\"address\":\"平鎮區金城街與大興街交叉口\",\"wgsX\":121.2094,\"wgsY\":24.9119,\"parkId\":\"P-PJ-007\"},{\"areaId\":\"4\",\"areaName\":\"平鎮區\",\"parkName\":\"大連平面停車場\",\"totalSpace\":88,\"surplusSpace\":\"58\",\"payGuide\":\"計時：20元/小時。前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"平鎮區公所管轄之公有停車場\",\"address\":\"平鎮區上海路與中庸路口\",\"wgsX\":121.2065,\"wgsY\":24.9135,\"parkId\":\"P-PJ-008\"},{\"areaId\":\"3\",\"areaName\":\"八德區\",\"parkName\":\"文昌街停車場\",\"totalSpace\":25,\"surplusSpace\":\"8\",\"payGuide\":\"收費費率：30元/小時。前30分鐘免費，30分鐘以上未滿1小時者，以1小時計費。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府交通局管轄之公有停車場\",\"address\":\"桃園市八德區文昌街111巷與文昌街111巷28弄口\",\"wgsX\":121.2954,\"wgsY\":24.9529,\"parkId\":\"P-BD-007\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"大有路桃殯停車場\",\"totalSpace\":18,\"surplusSpace\":\"0\",\"payGuide\":\"收費費率：30元//小時。停車前半小時免費，超過半小時停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"桃園市政府殯葬管理所管轄之公有停車場\",\"address\":\"桃園區峨眉段937、938地號(大有路919號旁)\",\"wgsX\":121.3145,\"wgsY\":25.0214,\"parkId\":\"P-TY-019\"},{\"areaId\":\"4\",\"areaName\":\"平鎮區\",\"parkName\":\"忠貞二公有停車場\",\"totalSpace\":15,\"surplusSpace\":\"0\",\"payGuide\":\"收費費率：30元//小時。停車前半小時免費，超過半小時停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"平鎮區公所管轄之公有停車場\",\"address\":\"桃園市平鎮區中正三路與龍平路口旁\",\"wgsX\":121.254,\"wgsY\":24.9289,\"parkId\":\"P-PJ-009\"},{\"areaId\":\"4\",\"areaName\":\"平鎮區\",\"parkName\":\"忠貞三公有停車場\",\"totalSpace\":57,\"surplusSpace\":\"43\",\"payGuide\":\"收費費率：30元//小時。停車前半小時免費，超過半小時停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"平鎮區公所管轄之公有停車場\",\"address\":\"桃園市平鎮區中正三路與忠貞路口旁\",\"wgsX\":121.2555,\"wgsY\":24.9283,\"parkId\":\"P-PJ-010\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"中壢區石頭段公有停車場\",\"totalSpace\":133,\"surplusSpace\":\"21\",\"payGuide\":\"計時：30元/小時。前30分鐘免費，停車時數未滿一小時者，以一小時計算。逾一小時者，其超過之不滿一小時部分，如不逾三十分鐘者，以半小時計算；如逾三十分鐘者，仍以一小時計算收費。\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區龍岡路一段與金陵路交叉口\",\"wgsX\":121.2226,\"wgsY\":24.9506,\"parkId\":\"P-JL-025\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"南門公園地下停車場\",\"totalSpace\":345,\"surplusSpace\":\"-7\",\"payGuide\":\"汽車採每小時停車收費30元，機車採每次停車10元，並提供附近里民月租優惠。\",\"introduction\":\"桃園區公所管轄之公有停車場\",\"address\":\"桃園市桃園區三民路3段260號\",\"wgsX\":121.3058,\"wgsY\":24.9923,\"parkId\":\"P-TY-020\"},{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"parkName\":\"桃園展演中心地下停車場\",\"totalSpace\":87,\"surplusSpace\":\"0\",\"payGuide\":\"收費費率：30元/小時。\",\"introduction\":\"桃園區公所管轄之公有停車場\",\"address\":\"桃園區中正路1188號B1\",\"wgsX\":121.2985,\"wgsY\":25.0174,\"parkId\":\"P-TY-021\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"正光二街停車場\",\"totalSpace\":27,\"surplusSpace\":\"9\",\"payGuide\":\"汽車採每小時停車收費30元，半小時計費乙次，月租2000元\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區正光二街116號旁(三座屋段三座屋小段1827地號土地)\",\"wgsX\":121.2053,\"wgsY\":24.9595,\"parkId\":\"P-JL-026\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"青昇停車場\",\"totalSpace\":77,\"surplusSpace\":\"75\",\"payGuide\":\"汽車第一小時10元、採一小時計費，第二小時起採半小時計費，月租1000元\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區青峰路一段與青昇路口(青昇段406地號)\",\"wgsX\":121.2195,\"wgsY\":25.0155,\"parkId\":\"P-JL-027\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"站前東停車場\",\"totalSpace\":73,\"surplusSpace\":\"54\",\"payGuide\":\"汽車第一小時10元、採一小時計費，第二小時起採半小時計費，月租1000元\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區青山路與青心路口(青昇段430地號)\",\"wgsX\":121.2191,\"wgsY\":25.0125,\"parkId\":\"P-JL-028\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"站前西停車場\",\"totalSpace\":90,\"surplusSpace\":\"74\",\"payGuide\":\"汽車第一小時10元、採一小時計費，第二小時起採半小時計費，月租1000元\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區青園路與高鐵站前西路一段路口(青平段42地號)\",\"wgsX\":121.2163,\"wgsY\":25.0097,\"parkId\":\"P-JL-029\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"永春停車場\",\"totalSpace\":108,\"surplusSpace\":\"0\",\"payGuide\":\"汽車第一小時10元、採一小時計費，第二小時起採半小時計費，月租1000元\",\"introduction\":\"中壢區公所管轄之公有停車場\",\"address\":\"中壢區永春路與永順街口(青溪段277地號)\",\"wgsX\":121.2057,\"wgsY\":25.0133,\"parkId\":\"P-JL-030\"},{\"areaId\":\"5\",\"areaName\":\"大溪區\",\"parkName\":\"長興停車場\",\"totalSpace\":83,\"surplusSpace\":\"59\",\"payGuide\":\"計次收費，小型車每次新臺幣50元計算\",\"introduction\":\"大溪區公所管轄之公有停車場\",\"address\":\"長興街二段與介壽路720巷旁\",\"wgsX\":121.2837,\"wgsY\":24.9058,\"parkId\":\"P-DS-006\"},{\"areaId\":\"4\",\"areaName\":\"平鎮區\",\"parkName\":\"新富段停車場\",\"totalSpace\":115,\"surplusSpace\":\"0\",\"payGuide\":\"臨時停車採計時收費，每小時新台幣10元整，進場30分鐘內離場免費，月租車輛每個月1200元整\",\"introduction\":\"平鎮區公所管轄之公有停車場\",\"address\":\"桃園市平鎮區環南路二段290號旁\",\"wgsX\":121.2158,\"wgsY\":24.9392,\"parkId\":\"P-PJ-011\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"文康公有停車場\",\"totalSpace\":125,\"surplusSpace\":\"138\",\"payGuide\":\"小型車：臨停30元/時;小型車：月租3600元/月\",\"introduction\":\"中壢區民權路四段與高鐵南路二段路口(桃園體育園區站-高鐵南路二段350號旁)\",\"address\":\"中壢區民權路四段與高鐵南路二段路口(桃園體育園區站-高鐵南路二段350號旁)\",\"wgsX\":121.2034,\"wgsY\":25.0026,\"parkId\":\"P-0620156\"},{\"areaId\":\"2\",\"areaName\":\"中壢區\",\"parkName\":\"環北公有停車場\",\"totalSpace\":23,\"surplusSpace\":\"6\",\"payGuide\":\"小型車：臨停30元/時;小型車：月租3600元/月\",\"introduction\":\"中壢區環北路與老街溪口(桃園市中壢區環北路89號旁)\",\"address\":\"中壢區環北路與老街溪口(桃園市中壢區環北路89號旁)\",\"wgsX\":121.2191,\"wgsY\":24.9664,\"parkId\":\"P-0620159\"}]");
 
 /***/ }),
 
-/***/ "./styles/utils.module.css":
-/*!*********************************!*\
-  !*** ./styles/utils.module.css ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./pages/contact.js":
+/*!**************************!*\
+  !*** ./pages/contact.js ***!
+  \**************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./utils.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/utils.module.css");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _api_parkAPI_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./api/parkAPI.json */ "./pages/api/parkAPI.json");
+var _api_parkAPI_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ./api/parkAPI.json */ "./pages/api/parkAPI.json", 1);
+/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Row */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Col */ "./node_modules/react-bootstrap/esm/Col.js");
+/* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap/Card */ "./node_modules/react-bootstrap/esm/Card.js");
+var _this = undefined,
+    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/contact.js";
 
-if (typeof content === 'string') {
-  content = [[module.i, content, '']];
-}
 
-var options = {}
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-options.insert = function(element){// These elements should always exist. If they do not,
-// this code should fail.
-var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
-// Each style tag should be placed right before our
-// anchor. By inserting before and not after, we do not
-// need to track the last inserted element.
-parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
-//
-// After styles are injected, we need to remove the
-// <style> tags that set `body { display: none; }`.
-//
-// We use `requestAnimationFrame` as a way to defer
-// this operation since there may be multiple style
-// tags.
-;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
-options.singleton = false;
 
-var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
 
-if (content.locals) {
-  module.exports = content.locals;
-}
+ // bootstrap
 
-if (true) {
-  if (!content.locals) {
-    module.hot.accept(
-      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./utils.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/utils.module.css",
-      function () {
-        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./utils.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/utils.module.css");
 
-        if (typeof newContent === 'string') {
-          newContent = [[module.i, newContent, '']];
-        }
-        
-        update(newContent);
+
+
+
+
+var Contact = function Contact(props, _ref) {
+  var _ref$title = _ref.title,
+      title = _ref$title === void 0 ? 'Contact to the park' : _ref$title;
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 7
+    }
+  }, __jsx("title", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 13
+    }
+  }, title)), __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 7
+    }
+  }, __jsx(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    fluid: true,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16,
+      columnNumber: 9
+    }
+  }, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17,
+      columnNumber: 11
+    }
+  }, __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    className: "d-none d-sm-none d-md-block",
+    md: 1,
+    lg: 2,
+    xl: 2,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
+      columnNumber: 13
+    }
+  }), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    xs: 12,
+    sm: 12,
+    md: 10,
+    lg: 8,
+    xl: 8,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 13
+    }
+  }, __jsx("h1", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 15
+    }
+  }, "Contacts"), getPosts() ? getPosts().map(function (park) {
+    return __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      key: "".concat(park.areaId, " + ").concat(park.parkId),
+      park: park,
+      style: parkStyle,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 19
       }
-    )
-  }
+    }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"].Header, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
+        columnNumber: 21
+      }
+    }, park.areaName), __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"].Body, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 26,
+        columnNumber: 21
+      }
+    }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"].Title, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 23
+      }
+    }, park.introduction), __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"].Text, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 23
+      }
+    }, park.payGuide)), __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"].Footer, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32,
+        columnNumber: 21
+      }
+    }, __jsx("cite", {
+      title: "Source Title",
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32,
+        columnNumber: 34
+      }
+    }, "(", park.address, ")")));
+  }) : 'Loading...', __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 15
+    }
+  }), __jsx("br", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 21
+    }
+  })), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    className: "d-none d-sm-none d-md-block",
+    md: 1,
+    lg: 2,
+    xl: 2,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 13
+    }
+  })))));
+};
 
-  module.hot.dispose(function() { 
-    update();
-  });
-}
+var getPosts = function getPosts() {
+  return _api_parkAPI_json__WEBPACK_IMPORTED_MODULE_4__;
+};
+
+var parkStyle = {
+  margin: '10px 0 10px 0'
+};
+/* harmony default export */ __webpack_exports__["default"] = (Contact);
 
 /***/ }),
 
 /***/ 5:
-/*!**********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F404&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2F404.js ***!
-  \**********************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fcontact.js ***!
+  \******************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F404&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2F404.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F404&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2F404.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fcontact.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fcontact.js!./");
 
 
 /***/ }),
@@ -9264,4 +9070,4 @@ module.exports = dll_2adc2403d89adc16ead0;
 /***/ })
 
 },[[5,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=404.js.map
+//# sourceMappingURL=contact.js.map

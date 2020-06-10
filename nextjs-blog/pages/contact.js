@@ -20,7 +20,7 @@ const Contact = (props, {title = 'Contact to the park'}) => {
             <Col xs={12} sm={12} md={10} lg={8} xl={8}>
               <h1>Contacts</h1>
               {
-                getPosts().map(park => (
+                getPosts() ? getPosts().map(park => (
                   <Card key={`${park.areaId} + ${park.parkId}`} park={park} style={parkStyle}>
                     <Card.Header>{park.areaName}</Card.Header>
                     <Card.Body>
@@ -31,7 +31,7 @@ const Contact = (props, {title = 'Contact to the park'}) => {
                     </Card.Body>
                     <Card.Footer><cite title="Source Title">({park.address})</cite></Card.Footer>
                   </Card>
-                ))
+                )) : 'Loading...'
               }
               <br /><br />
             </Col>

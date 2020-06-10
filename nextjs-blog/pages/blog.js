@@ -24,13 +24,13 @@ const Blog = ({headers, title = 'Blog Page'}) => {
             <Col xs={12} sm={12} md={10} lg={8} xl={8}>
               <h1>My Blog</h1>
               {
-                getPosts().map(post => (
+                getPosts() ? getPosts().map(post => (
                   <ListGroup variant="flush" key={post.id}>
                     <ListGroup.Item>
                       <PostLink key={post.id} post={post} />
                     </ListGroup.Item>
                   </ListGroup>
-                ))
+                )) : 'Loading...'
               }
             </Col>
             <Col className='d-none d-sm-none d-md-none d-lg-block' lg={2} xl={2}></Col>
