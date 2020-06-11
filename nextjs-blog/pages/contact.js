@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
 import fetch from 'isomorphic-unfetch'
-import park from './api/parkAPI.json'
+import { getPark } from './apiComponents/functionContextJson.js'
 // bootstrap
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -20,7 +20,7 @@ const Contact = (props, {title = 'Contact to the park'}) => {
             <Col xs={12} sm={12} md={10} lg={8} xl={8}>
               <h1>Contacts</h1>
               {
-                getPosts() ? getPosts().map(park => (
+                getPark() ? getPark().map(park => (
                   <Card key={`${park.areaId} + ${park.parkId}`} park={park} style={parkStyle}>
                     <Card.Header>{park.areaName}</Card.Header>
                     <Card.Body>
@@ -41,10 +41,6 @@ const Contact = (props, {title = 'Contact to the park'}) => {
       </Layout>
     </>
   )
-}
-
-const getPosts = () => {
-  return park
 }
 
 const parkStyle = {

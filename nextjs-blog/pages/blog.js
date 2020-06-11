@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import HeaderJson from './apiComponents/headerJson.js'
+import { getIndexHelloNextJs } from './apiComponents/functionContextJson.js'
 import Layout from '../components/layout'
-import indexHelloNextJs from './api/indexHelloNextJs.json'
 import utilStyles from '../styles/utils.module.css'
 // bootstrap
 import Container from 'react-bootstrap/Container'
@@ -24,7 +24,7 @@ const Blog = ({headers, title = 'Blog Page'}) => {
             <Col xs={12} sm={12} md={10} lg={8} xl={8}>
               <h1>My Blog</h1>
               {
-                getPosts() ? getPosts().map(post => (
+                getIndexHelloNextJs() ? getIndexHelloNextJs().map(post => (
                   <ListGroup variant="flush" key={post.id}>
                     <ListGroup.Item>
                       <PostLink key={post.id} post={post} />
@@ -39,11 +39,6 @@ const Blog = ({headers, title = 'Blog Page'}) => {
       </Layout>
     </>
   )
-}
-
-// 使用function作爲api承接內容，在上方的return中map接到的值
-const getPosts = () => {
-  return indexHelloNextJs
 }
 
 // 當作額外插入的link來使用，這裡面的post.id，post.title都是藉由被map進來的post值使用

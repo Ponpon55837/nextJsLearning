@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import Layout from '../components/layout'
-import headerlink from '../pages/api/headerlink.json'
+import { getHeader } from './apiComponents/functionContextJson.js'
 import utilStyles from '../styles/utils.module.css'
 // bootstrap
 import Container from 'react-bootstrap/Container'
@@ -33,10 +33,6 @@ const Home = ({ title = 'Index Page' }) => {
 
 const wordCapitalize = {
   textTransform: "capitalize"
-}
-
-const getHeader = () => {
-  return headerlink
 }
 
 export default Home
