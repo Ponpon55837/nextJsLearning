@@ -2,19 +2,7 @@ import Link from 'next/link'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import headerlink from '../pages/api/headerlink.json'
-
-const mainStyle = {
-  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-  position: 'sticky',
-  top:'0',
-  width: '100%',
-  transition:'all 0.5s',
-  zIndex: '1'
-}
-
-const wordCapitalize = {
-  textTransform: "capitalize"
-}
+import { mainStyle, wordCapitalize } from '../styles/utilStyle.js'
 
 const Header = () => {
   return (

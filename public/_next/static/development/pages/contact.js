@@ -11,30 +11,32 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/utilStyle.js */ "./styles/utilStyle.js");
+/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
 var _this = undefined,
     _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/components/Footer.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-// bootstrap
+ // bootstrap
+
 
 
 var Footer = function Footer() {
   return __jsx("footer", {
     className: "footer",
-    style: fatFooter,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6,
-      columnNumber: 5
-    }
-  }, __jsx(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    style: _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_1__["fatFooter"],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7,
+      columnNumber: 5
+    }
+  }, __jsx(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8,
       columnNumber: 7
     }
   }, __jsx("span", {
@@ -42,23 +44,12 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 9,
       columnNumber: 9
     }
   }, "Upfloor make nextjs (\u0E51\u2022\u0E35_\u0E40\u2022\u0E35\u0E51)")));
 };
 
-var fatFooter = {
-  // position: 'fixed',
-  height: 'auto',
-  bottom: '0',
-  width: '100%',
-  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-  textAlign: 'center',
-  paddingTop: '25px',
-  paddingBottom: '25px' // position: 'fixed'
-
-};
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
 
 /***/ }),
@@ -80,6 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Nav */ "./node_modules/react-bootstrap/esm/Nav.js");
 /* harmony import */ var _pages_api_headerlink_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/api/headerlink.json */ "./pages/api/headerlink.json");
 var _pages_api_headerlink_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../pages/api/headerlink.json */ "./pages/api/headerlink.json", 1);
+/* harmony import */ var _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/utilStyle.js */ "./styles/utilStyle.js");
 var _this = undefined,
     _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/components/Header.js";
 
@@ -89,27 +81,17 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var mainStyle = {
-  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-  position: 'sticky',
-  top: '0',
-  width: '100%',
-  transition: 'all 0.5s',
-  zIndex: '1'
-};
-var wordCapitalize = {
-  textTransform: "capitalize"
-};
+
 
 var Header = function Header() {
   return __jsx(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     collapseOnSelect: true,
     expand: "lg",
-    style: mainStyle,
+    style: _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_5__["mainStyle"],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 9,
       columnNumber: 5
     }
   }, __jsx(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"].Brand, {
@@ -117,7 +99,7 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 10,
       columnNumber: 7
     }
   }, "NextJS with Bootstrap"), __jsx(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"].Toggle, {
@@ -125,7 +107,7 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 11,
       columnNumber: 7
     }
   }), __jsx(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"].Collapse, {
@@ -133,7 +115,7 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 12,
       columnNumber: 7
     }
   }, __jsx(react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -141,7 +123,7 @@ var Header = function Header() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25,
+      lineNumber: 13,
       columnNumber: 9
     }
   }, getHeader().map(function (header) {
@@ -151,16 +133,16 @@ var Header = function Header() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 16,
         columnNumber: 15
       }
     }, __jsx("a", {
       className: "nav-item nav-link",
-      style: wordCapitalize,
+      style: _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_5__["wordCapitalize"],
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 17,
         columnNumber: 17
       }
     }, header.title));
@@ -8907,18 +8889,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./apiComponents/functionContextJson.js */ "./pages/apiComponents/functionContextJson.js");
-/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
-/* harmony import */ var react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Row */ "./node_modules/react-bootstrap/esm/Row.js");
-/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Col */ "./node_modules/react-bootstrap/esm/Col.js");
-/* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap/Card */ "./node_modules/react-bootstrap/esm/Card.js");
+/* harmony import */ var _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/utilStyle.js */ "./styles/utilStyle.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./apiComponents/functionContextJson.js */ "./pages/apiComponents/functionContextJson.js");
+/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap/Row */ "./node_modules/react-bootstrap/esm/Row.js");
+/* harmony import */ var react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap/Col */ "./node_modules/react-bootstrap/esm/Col.js");
+/* harmony import */ var react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-bootstrap/Card */ "./node_modules/react-bootstrap/esm/Card.js");
 var _this = undefined,
     _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/contact.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -8936,39 +8920,39 @@ var Contact = function Contact(props, _ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 7
     }
   }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 15,
       columnNumber: 13
     }
   }, title)), __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 16,
       columnNumber: 7
     }
-  }, __jsx(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, __jsx(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_6__["default"], {
     fluid: true,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 17,
       columnNumber: 9
     }
-  }, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, __jsx(react_bootstrap_Row__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 18,
       columnNumber: 11
     }
-  }, __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_8__["default"], {
     className: "d-none d-sm-none d-md-block",
     md: 1,
     lg: 2,
@@ -8976,10 +8960,10 @@ var Contact = function Contact(props, _ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 19,
       columnNumber: 13
     }
-  }), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_8__["default"], {
     xs: 12,
     sm: 12,
     md: 10,
@@ -8988,60 +8972,60 @@ var Contact = function Contact(props, _ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 21,
       columnNumber: 13
     }
   }, __jsx("h1", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 22,
       columnNumber: 15
     }
-  }, "Contacts"), Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["getPark"])() ? Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["getPark"])().map(function (park) {
-    return __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, "Contacts"), Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_5__["getPark"])() ? Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_5__["getPark"])().map(function (park) {
+    return __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_9__["default"], {
       key: "".concat(park.areaId, " + ").concat(park.parkId),
       park: park,
-      style: parkStyle,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 24,
-        columnNumber: 19
-      }
-    }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"].Header, {
+      style: _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_3__["parkStyle"],
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 25,
-        columnNumber: 21
+        columnNumber: 19
       }
-    }, park.areaName), __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"].Body, {
+    }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_9__["default"].Header, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 26,
         columnNumber: 21
       }
-    }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"].Title, {
+    }, park.areaName), __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_9__["default"].Body, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 27,
-        columnNumber: 23
+        columnNumber: 21
       }
-    }, park.introduction), __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"].Text, {
+    }, __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_9__["default"].Title, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 28,
         columnNumber: 23
       }
-    }, park.payGuide)), __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_8__["default"].Footer, {
+    }, park.introduction), __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_9__["default"].Text, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
+        lineNumber: 29,
+        columnNumber: 23
+      }
+    }, park.payGuide)), __jsx(react_bootstrap_Card__WEBPACK_IMPORTED_MODULE_9__["default"].Footer, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 33,
         columnNumber: 21
       }
     }, __jsx("cite", {
@@ -9049,7 +9033,7 @@ var Contact = function Contact(props, _ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
+        lineNumber: 33,
         columnNumber: 34
       }
     }, "(", park.address, ")")));
@@ -9057,17 +9041,17 @@ var Contact = function Contact(props, _ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 37,
       columnNumber: 15
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 37,
       columnNumber: 21
     }
-  })), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  })), __jsx(react_bootstrap_Col__WEBPACK_IMPORTED_MODULE_8__["default"], {
     className: "d-none d-sm-none d-md-block",
     md: 1,
     lg: 2,
@@ -9075,20 +9059,83 @@ var Contact = function Contact(props, _ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 39,
       columnNumber: 13
     }
   })))));
 };
 
-var parkStyle = {
-  margin: '10px 0 10px 0'
-};
 /* harmony default export */ __webpack_exports__["default"] = (Contact);
 
 /***/ }),
 
-/***/ 6:
+/***/ "./styles/utilStyle.js":
+/*!*****************************!*\
+  !*** ./styles/utilStyle.js ***!
+  \*****************************/
+/*! exports provided: mainStyle, fatFooter, divStyle, colStyle, cardTitleStyle, wordCapitalize, parkStyle, rowStyle, cardHeader */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mainStyle", function() { return mainStyle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fatFooter", function() { return fatFooter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "divStyle", function() { return divStyle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "colStyle", function() { return colStyle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cardTitleStyle", function() { return cardTitleStyle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "wordCapitalize", function() { return wordCapitalize; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parkStyle", function() { return parkStyle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rowStyle", function() { return rowStyle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cardHeader", function() { return cardHeader; });
+// js描寫css用法 EX <div style={mainStyle}></div>
+// header
+var mainStyle = {
+  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+  position: 'sticky',
+  top: '0',
+  width: '100%',
+  transition: 'all 0.5s',
+  zIndex: '1'
+}; // foorter
+
+var fatFooter = {
+  // position: 'fixed',
+  height: 'auto',
+  bottom: '0',
+  width: '100%',
+  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+  textAlign: 'center',
+  paddingTop: '25px',
+  paddingBottom: '25px' // position: 'fixed'
+
+}; // page
+
+var divStyle = {
+  width: 'auto',
+  height: 'auto'
+};
+var colStyle = {
+  marginTop: '10px'
+};
+var cardTitleStyle = {
+  background: '#EDBDCA'
+};
+var wordCapitalize = {
+  textTransform: "capitalize"
+};
+var parkStyle = {
+  margin: '10px 0 10px 0'
+};
+var rowStyle = {
+  paddingButtom: '1rem'
+};
+var cardHeader = {
+  background: 'linear-gradient(to bottom right, #f8f0a9 0%, #fbf1f8 100%)'
+};
+
+/***/ }),
+
+/***/ 7:
 /*!******************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fcontact.js ***!
   \******************************************************************************************************************************************************************/
@@ -9111,5 +9158,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js"]]]);
+},[[7,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=contact.js.map

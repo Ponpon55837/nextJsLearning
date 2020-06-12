@@ -1,3 +1,4 @@
+import { fatFooter } from '../styles/utilStyle.js'
 // bootstrap
 import Container from 'react-bootstrap/Container'
 
@@ -9,18 +10,6 @@ const Footer = () => {
       </Container>
     </footer>
   )
-}
-
-const fatFooter = {
-  // position: 'fixed',
-  height: 'auto',
-  bottom: '0',
-  width: '100%',
-  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-  textAlign: 'center',
-  paddingTop: '25px',
-  paddingBottom: '25px',
-  // position: 'fixed'
 }
 
 export default Footer

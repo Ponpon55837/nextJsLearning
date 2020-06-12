@@ -1,4 +1,5 @@
 import fetch from 'isomorphic-unfetch'
+import { wordCapitalize } from '../../styles/utilStyle.js'
 import Link from 'next/link'
 import ListGroup from 'react-bootstrap/ListGroup'
 
@@ -24,10 +25,6 @@ const HeaderJson = ({ headers}) => {
       </ListGroup>
     </>
   )
-}
-
-const wordCapitalize = {
-  textTransform: "capitalize"
 }
 
 export default HeaderJson

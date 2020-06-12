@@ -1,14 +1,11 @@
 import fetch from 'isomorphic-unfetch'
+import { rowStyle } from '../../styles/utilStyle.js'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import ListGroup from 'react-bootstrap/ListGroup'
 import Image from 'react-bootstrap/Image'
 import Card from 'react-bootstrap/Card'
 import Accordion from 'react-bootstrap/Accordion'
-
-const rowStyle = {
-  paddingButtom: '1rem'
-}
 
 // courses由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
 export const CourseJson = ({ courses }) => {

@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Layout from '../components/layout'
 import { getHeader } from './apiComponents/functionContextJson.js'
 import utilStyles from '../styles/utils.module.css'
+import { wordCapitalize } from '../styles/utilStyle.js'
 // bootstrap
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -22,17 +23,13 @@ const Home = ({ title = 'Index Page' }) => {
                 <Button variant="outline-dark" size='lg' block className={utilStyles.buttonControl} key={header.id}>
                   <Link href={header.link}><a style={wordCapitalize}>{header.title}</a></Link>
                 </Button>
-              )) : 'Loading'
+              )) : 'Loading...'
             }
           </Col>
         </Row>
       </Container>
     </div>
   )
-}
-
-const wordCapitalize = {
-  textTransform: "capitalize"
 }
 
 export default Home

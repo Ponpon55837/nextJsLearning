@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import utilStyles from '../../styles/utils.module.css'
+import { cardHeader } from '../../styles/utilStyle.js'
 import Markdown from 'react-markdown'
 import Layout from '../../components/layout'
 import Head from 'next/head'
@@ -8,10 +9,6 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
-
-const cardHeader = {
-  background: 'linear-gradient(to bottom right, #f8f0a9 0%, #fbf1f8 100%)'
-}
 
 const IdPost = ({title = 'ID by index page'}) => {
   const router = useRouter()

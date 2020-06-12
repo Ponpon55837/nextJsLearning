@@ -1,5 +1,6 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
+import { parkStyle } from '../styles/utilStyle.js'
 import fetch from 'isomorphic-unfetch'
 import { getPark } from './apiComponents/functionContextJson.js'
 // bootstrap
@@ -41,10 +42,6 @@ const Contact = (props, {title = 'Contact to the park'}) => {
       </Layout>
     </>
   )
-}
-
-const parkStyle = {
-  margin:'10px 0 10px 0'
 }
 
 export default Contact

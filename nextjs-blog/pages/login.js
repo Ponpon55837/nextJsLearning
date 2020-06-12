@@ -1,5 +1,6 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
+import { divStyle, colStyle, cardTitleStyle } from '../styles/utilStyle.js'
 // bootstrap
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -8,19 +9,6 @@ import ListGroup from 'react-bootstrap/ListGroup'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Card from 'react-bootstrap/Card'
-
-const divStyle = {
-  width:'auto',
-  height: 'auto',
-}
-
-const colStyle = {
-  marginTop: '10px'
-}
-
-const cardTitleStyle = {
-  background: '#EDBDCA'
-}
 
 const Login = (props, {title = 'Login and Regist Page'}) => {
   return (
