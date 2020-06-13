@@ -21,7 +21,7 @@ module.exports = {
       '/batman': { page: '/batman' },
       '/contact': { page: '/contact' },
       '/test': { page: '/test' },
-      '/login': { page: '/login' }
+      '/log&Sign': { page: '/log&Sign' }
 
 
       // 如果要使用在nginx or apache中分網頁有不同的目錄的話，先在.env檔案中加入要放的路徑位置

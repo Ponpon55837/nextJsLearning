@@ -9200,7 +9200,7 @@ module.exports = warning;
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"id\":\"1\",\"link\":\"/\",\"title\":\"Home\"},{\"id\":\"2\",\"link\":\"/blog\",\"title\":\"blog\"},{\"id\":\"3\",\"link\":\"/about\",\"title\":\"about\"},{\"id\":\"4\",\"link\":\"/batman\",\"title\":\"batman\"},{\"id\":\"5\",\"link\":\"/contact\",\"title\":\"contact\"},{\"id\":\"6\",\"link\":\"/test\",\"title\":\"test\"},{\"id\":\"7\",\"link\":\"/login\",\"title\":\"login\"}]");
+module.exports = JSON.parse("[{\"id\":\"1\",\"link\":\"/\",\"title\":\"Home\"},{\"id\":\"2\",\"link\":\"/blog\",\"title\":\"blog\"},{\"id\":\"3\",\"link\":\"/about\",\"title\":\"about\"},{\"id\":\"4\",\"link\":\"/batman\",\"title\":\"batman\"},{\"id\":\"5\",\"link\":\"/contact\",\"title\":\"contact\"},{\"id\":\"6\",\"link\":\"/test\",\"title\":\"test\"},{\"id\":\"7\",\"link\":\"/log&Sign\",\"title\":\"log&Sign\"}]");
 
 /***/ }),
 
@@ -9529,7 +9529,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 1:
+/***/ 6:
 /*!*********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Findex.js ***!
   \*********************************************************************************************************************************************************/
@@ -9552,5 +9552,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[6,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
