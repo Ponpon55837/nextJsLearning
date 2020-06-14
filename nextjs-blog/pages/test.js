@@ -1,6 +1,7 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
 import { CourseJson, ProductJson, CategoryJson } from './apiComponents/contextJson.js'
+import { API_URL } from './apiComponents/functionContextJson.js'
 // bootstrap
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -37,9 +38,7 @@ const Test = ({courses, products, categories, title = 'Courses show menu'}) => {
 // es5寫成 export async function getStaticProps(){}
 // 只有在node.js run npm start時候用getInitialProps才會及時render，放到apache or nginx就要重新build 跟 export
 export const getStaticProps = async ({ start_num = 2, limit_num = 3 }) => {
-  // 使用.env裡面的http://localhost/1337來抓取api網址
-  const { API_URL } = process.env
-
+  // 從functionContextJson引入API_URL來使用
   const res_course = await fetch(`${API_URL}/courses`)
   const res_product = await fetch(`${API_URL}/products`)
   // 只抓取特定頁面的話可以用/categories?_start=4&_limit=1

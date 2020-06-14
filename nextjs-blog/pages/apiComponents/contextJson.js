@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-unfetch'
 import { rowStyle } from '../../styles/utilStyle.js'
+import { API_URL } from './functionContextJson.js'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import ListGroup from 'react-bootstrap/ListGroup'
@@ -7,10 +8,10 @@ import Image from 'react-bootstrap/Image'
 import Card from 'react-bootstrap/Card'
 import Accordion from 'react-bootstrap/Accordion'
 
+
 // courses由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
 export const CourseJson = ({ courses }) => {
-  // API_URL為.env這個檔案中的網址來使用，雖然在這邊並沒有影響，但是如果要使用image這種api匯入的話，就需要指定API_URL
-  const { API_URL } = process.env
+
   console.log(courses)
   return (
     <>
@@ -37,8 +38,7 @@ export const CourseJson = ({ courses }) => {
 
 // products由外部接入，這個值需要由data傳入
 export const ProductJson = ({ products }) => {
-  // API_URL為.env這個檔案中的網址來使用，雖然在這邊並沒有影響，但是如果要使用image這種api匯入的話，就需要指定API_URL
-  const { API_URL } = process.env
+
   console.log(products)
   return (
     <>
@@ -72,8 +72,7 @@ export const ProductJson = ({ products }) => {
 
 // categories由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
 export const CategoryJson = ({ categories }) => {
-  // API_URL為.env這個檔案中的網址來使用，雖然在這邊並沒有影響，但是如果要使用image這種api匯入的話，就需要指定API_URL
-  const { API_URL } = process.env
+
   console.log(categories)
   return (
     <>
@@ -90,7 +89,7 @@ export const CategoryJson = ({ categories }) => {
             </Col>
           ))
           // 如果products不存在，那畫面就顯示Loading...
-          : 'Loading'
+          : 'Loading ...'
         }
       </Row>
     </>
