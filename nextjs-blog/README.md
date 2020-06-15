@@ -12,7 +12,7 @@
 
 在apiComponents Folder中除了functionContextJson.js是用來接入pages/api中JSON中的文字內容，其它則是使用Strapi.js的api方式來接入api內容，這樣接入一次之後只要引用檔案中被export的function就可以直接使用接到的內容了。
 
-###P ages/batman or posts
+### Pages/batman or posts
 
 這兩個Folder中的[id].js就是被用來替代變數id值使用的，如果網站有Dynamic Routes就會使用這個機制。
 
@@ -31,10 +31,10 @@
 ```
 in example.module.css
 .divStyle {
-	padding: 1rem;
+  padding: 1rem;
 }
 .backgroud {
-	color: 000000;
+  color: 000000;
 }
 
 ========================================
@@ -43,12 +43,12 @@ in example.js
 import Example from './Styles/eaxmple.module.css'
 
 export default const ex = () => {
-	return (
-		// basic
-		<div className={Example.divStyle}>TEST</div>
-		//  more
-		<div className={`${Exapmle.divStyle} ${Example.backgroud}`}>
-	)
+  return (
+    // basic
+    <div className={Example.divStyle}>TEST</div>
+    //  more
+    <div className={`${Exapmle.divStyle} ${Example.backgroud}`}>
+  )
 }
 ```
 
