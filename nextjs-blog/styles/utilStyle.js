@@ -24,7 +24,6 @@ export const fatFooter = {
 }
 
 // page
-
 export const divStyle = {
   width:'auto',
   height: 'auto',

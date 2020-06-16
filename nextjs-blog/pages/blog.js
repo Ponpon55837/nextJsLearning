@@ -1,7 +1,6 @@
-import Link from 'next/link'
 import Head from 'next/head'
 import HeaderJson from './apiComponents/headerJson.js'
-import { getIndexHelloNextJs } from './apiComponents/functionContextJson.js'
+import { getIndexHelloNextJs, PostLink } from './apiComponents/functionContextJson.js'
 import Layout from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 // bootstrap
@@ -41,12 +40,7 @@ const Blog = ({headers, title = 'Blog Page'}) => {
   )
 }
 
-// 當作額外插入的link來使用，這裡面的post.id，post.title都是藉由被map進來的post值使用
-const PostLink = ({ post }) => (
-    <Link href="/batman/[id]" as={`/batman/${post.id}`}>
-      <a>{post.title}</a>
-    </Link>
-)
+
 
 // 我覺得這部分應該可以額外拉到一個components裡面去寫，再由import進來
 // 例如 import { getStaticProps } from './components/StaticProps.js'

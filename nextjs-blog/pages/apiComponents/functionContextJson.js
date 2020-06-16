@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import headerlink from '../api/headerlink.json'
 import indexHelloNextJs from '../api/indexHelloNextJs.json'
 import park from '../api/parkAPI.json'
@@ -20,3 +21,10 @@ export const getIndexHelloNextJs = () => {
 export const getPark = () => {
   return park
 }
+
+// 當作額外插入的link來使用，這裡面的post.id，post.title都是藉由被map進來的post值使用
+export const PostLink = ({ post }) => (
+    <Link href="/batman/[id]" as={`/batman/${post.id}`}>
+      <a>{post.title}</a>
+    </Link>
+)
