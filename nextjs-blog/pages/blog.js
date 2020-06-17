@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import HeaderJson from './apiComponents/headerJson.js'
-import { getIndexHelloNextJs, PostLink } from './apiComponents/functionContextJson.js'
+import { getIndexHelloNextJs, API_URL, PostLink } from './apiComponents/functionContextJson.js'
 import Layout from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 // bootstrap
@@ -10,7 +10,8 @@ import Col from 'react-bootstrap/Col'
 import ListGroup from 'react-bootstrap/ListGroup'
 
 const Blog = ({headers, title = 'Blog Page'}) => {
-  const { API_URL } = process.env
+  // 如果要使用圖片的話需要在這邊寫入如下面這行
+  // const { API_URL } = process.env
   return (
     <>
       <Head><title>{title}</title></Head>
@@ -40,13 +41,11 @@ const Blog = ({headers, title = 'Blog Page'}) => {
   )
 }
 
-
-
 // 我覺得這部分應該可以額外拉到一個components裡面去寫，再由import進來
 // 例如 import { getStaticProps } from './components/StaticProps.js'
 // 然後由上面的 const Index = ({ header }) => {}把data值丟進來。
+// API_URL由外部匯入，使用可以重複使用
 export const getStaticProps = async () => {
-  const { API_URL } = process.env
   const res_headers = await fetch(`${API_URL}/headers`)
   const data_headers = await res_headers.json()
 
