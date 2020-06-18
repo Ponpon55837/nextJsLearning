@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-unfetch'
 import { wordCapitalize } from '../../styles/utilStyle.js'
 import Link from 'next/link'
-import ListGroup from 'react-bootstrap/ListGroup'
+import { ListGroup } from 'react-bootstrap'
 
 // headers由外部傳入
 const HeaderJson = ({ headers}) => {

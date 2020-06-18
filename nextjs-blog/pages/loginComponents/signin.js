@@ -1,11 +1,5 @@
-import Container from 'react-bootstrap/Container'
 import { divStyle, colStyle, cardTitleStyle } from '../../styles/utilStyle.js'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import ListGroup from 'react-bootstrap/ListGroup'
-import Form from 'react-bootstrap/Form'
-import Button from 'react-bootstrap/Button'
-import Card from 'react-bootstrap/Card'
+import { ListGroup, Form, Card, Button, Col, Row, Container } from 'react-bootstrap'
 
 const Signin = () => {
   return (

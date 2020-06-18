@@ -5,10 +5,7 @@ import Markdown from 'react-markdown'
 import Layout from '../../components/layout'
 import Head from 'next/head'
 // bootstrap
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Card from 'react-bootstrap/Card'
+import { Card, Col, Row, Container } from 'react-bootstrap'
 
 const IdPost = ({title = 'ID by index page'}) => {
   const router = useRouter()

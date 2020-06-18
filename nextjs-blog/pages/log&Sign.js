@@ -3,9 +3,7 @@ import Head from 'next/head'
 import Login from './loginComponents/login.js'
 import Signin from './loginComponents/signin.js'
 // bootstrap
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import { Col, Row, Container } from 'react-bootstrap'
 
 const LogandSign = (props, {title = 'Login and Regist Page'}) => {
   return (

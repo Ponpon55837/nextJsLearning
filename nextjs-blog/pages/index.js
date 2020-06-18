@@ -5,10 +5,7 @@ import { getHeader } from './apiComponents/functionContextJson.js'
 import utilStyles from '../styles/utils.module.css'
 import { wordCapitalize } from '../styles/utilStyle.js'
 // bootstrap
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button'
+import { Button, Col, Row, Container } from 'react-bootstrap'
 
 const Home = ({ title = 'Index Page' }) => {
   return (

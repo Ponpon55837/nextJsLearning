@@ -3,9 +3,7 @@ import Head from 'next/head'
 import { CourseJson, ProductJson, CategoryJson } from './apiComponents/contextJson.js'
 import { API_URL } from './apiComponents/functionContextJson.js'
 // bootstrap
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import { Col, Row, Container } from 'react-bootstrap'
 
 const Test = ({courses, products, categories, title = 'Courses show menu'}) => {
   // 當api抓取到值之後，props把接到的值map進li當中

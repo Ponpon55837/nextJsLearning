@@ -1,8 +1,5 @@
 import fetch from 'isomorphic-unfetch'
-import Col from 'react-bootstrap/Col'
-import ListGroup from 'react-bootstrap/ListGroup'
-import Card from 'react-bootstrap/Card'
-import Accordion from 'react-bootstrap/Accordion'
+import { Col, ListGroup, Card, Accordion } from 'react-bootstrap'
 
 export const ReposJson = ({ repos }) => {
   return (

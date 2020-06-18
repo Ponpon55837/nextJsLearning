@@ -4,10 +4,7 @@ import { parkStyle } from '../styles/utilStyle.js'
 import fetch from 'isomorphic-unfetch'
 import { getPark } from './apiComponents/functionContextJson.js'
 // bootstrap
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Card from 'react-bootstrap/Card'
+import { Card, Col, Row, Container } from 'react-bootstrap'
 
 const Contact = (props, {title = 'Contact to the park'}) => {
   return (

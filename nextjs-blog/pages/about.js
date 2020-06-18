@@ -2,9 +2,7 @@ import Layout from '../components/layout'
 import Head from 'next/head'
 import { ReposJson, SubscribersJson } from './apiComponents/reposJson.js'
 // bootstrap
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import { Col, Row, Container } from 'react-bootstrap'
 
 const About = ({ repos, subscribers, title ='About this url page' }) => {
   return (

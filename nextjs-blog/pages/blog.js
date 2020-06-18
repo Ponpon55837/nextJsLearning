@@ -4,10 +4,7 @@ import { getIndexHelloNextJs, API_URL, PostLink } from './apiComponents/function
 import Layout from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 // bootstrap
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import ListGroup from 'react-bootstrap/ListGroup'
+import { ListGroup, Col, Row, Container } from 'react-bootstrap'
 
 const Blog = ({headers, title = 'Blog Page'}) => {
   // 如果要使用圖片的話需要在這邊寫入如下面這行
