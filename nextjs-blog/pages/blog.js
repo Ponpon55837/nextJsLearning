@@ -27,7 +27,7 @@ const Blog = ({headers, title = 'Blog Page'}) => {
                       <PostLink key={post.id} post={post} />
                     </ListGroup.Item>
                   </ListGroup>
-                )) : 'Loading...'
+                )) : 'Loading ...'
               }
             </Col>
             <Col className='d-none d-sm-none d-md-none d-lg-block' lg={2} xl={2}></Col>
