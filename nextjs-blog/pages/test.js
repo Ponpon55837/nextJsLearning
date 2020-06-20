@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
 import { CourseJson, ProductJson, CategoryJson } from './apiComponents/contextJson.js'
-import { API_URL } from './apiComponents/functionContextJson.js'
+import { pageDescription, API_URL } from './apiComponents/functionContextJson.js'
 // bootstrap
 import { Col, Row, Container } from 'react-bootstrap'
 
@@ -10,7 +10,10 @@ const Test = ({courses, products, categories, title = 'Courses show menu'}) => {
   // 這裡href為pages/p/[id].js但是後面使用as來代替為api中的id值
   return (
     <>
-      <Head><title>{title}</title></Head>
+      <Head>
+        <title>{title}</title>
+        <meta property="og:description" content={ courses + products + categories ? courses.map(course => (course.title)) : pageDescription }/>
+      </Head>
       <Layout>
         <Container fluid>
           <Row>

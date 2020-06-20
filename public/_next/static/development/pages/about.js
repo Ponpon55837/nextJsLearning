@@ -20611,7 +20611,7 @@ var SubscribersJson = function SubscribersJson(_ref2) {
         columnNumber: 21
       }
     }, subs.login)))));
-  }) : 'Loading...'));
+  }) : 'Loading ...'));
 };
 
 /***/ }),
@@ -20682,7 +20682,7 @@ var cardHeader = {
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!**************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fabout.js ***!
   \**************************************************************************************************************************************************************/
@@ -20705,5 +20705,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=about.js.map

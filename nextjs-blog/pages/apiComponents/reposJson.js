@@ -36,7 +36,7 @@ export const SubscribersJson = ({ subscribers }) => {
                 </Accordion.Collapse>
               </Card>
             </Accordion>
-          )) : 'Loading...'
+          )) : 'Loading ...'
         }
       </Col>
     </>
