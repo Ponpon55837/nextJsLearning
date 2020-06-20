@@ -24,7 +24,11 @@ export const getPark = () => {
 
 // 當作額外插入的link來使用，這裡面的post.id，post.title都是藉由被map進來的post值使用
 export const PostLink = ({ post }) => (
-    <Link href="/batman/[id]" as={`/batman/${post.id}`}>
-      <a>{post.title}</a>
-    </Link>
+  <Link href="/batman/[id]" as={`/batman/${post.id}`}>
+    <a>{post.title}</a>
+  </Link>
 )
+
+export const pageDescription = (pageDes) => {
+  return pageDes = 'This is the page for the website.This content to description this text website how to use.'
+}

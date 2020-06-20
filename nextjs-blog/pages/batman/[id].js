@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import utilStyles from '../../styles/utils.module.css'
 import { cardHeader } from '../../styles/utilStyle.js'
+import { pageDescription } from '../apiComponents/functionContextJson.js'
 import Markdown from 'react-markdown'
 import Layout from '../../components/layout'
 import Head from 'next/head'
@@ -11,7 +12,10 @@ const IdPost = ({title = 'ID by index page'}) => {
   const router = useRouter()
   return (
     <>
-      <Head><title>{title}</title></Head>
+      <Head>
+        <title>{title}</title>
+        <meta property="og:description" content={ pageDescription() }/>
+      </Head>
       <Layout>
         <Container fluid>
           <Row>

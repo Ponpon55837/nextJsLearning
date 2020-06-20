@@ -1,13 +1,17 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
 import { ReposJson, SubscribersJson } from './apiComponents/reposJson.js'
+import { pageDescription } from './apiComponents/functionContextJson.js'
 // bootstrap
 import { Col, Row, Container } from 'react-bootstrap'
 
 const About = ({ repos, subscribers, title ='About this url page' }) => {
   return (
     <>
-      <Head><title>{title}</title></Head>
+      <Head>
+        <title>{title}</title>
+        <meta property="og:description" content={ repos.svn_url ? repos.svn_url + subscribers.login : pageDescription() }/>
+      </Head>
       <Layout>
         <Container fluid>
           <Row>

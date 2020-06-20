@@ -1,17 +1,20 @@
 import Head from 'next/head'
 import HeaderJson from './apiComponents/headerJson.js'
-import { getIndexHelloNextJs, API_URL, PostLink } from './apiComponents/functionContextJson.js'
+import { getIndexHelloNextJs, pageDescription, API_URL, PostLink } from './apiComponents/functionContextJson.js'
 import Layout from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 // bootstrap
 import { ListGroup, Col, Row, Container } from 'react-bootstrap'
 
-const Blog = ({headers, title = 'Blog Page'}) => {
+const Blog = ({ headers, title = 'Blog Page' }) => {
   // 如果要使用圖片的話需要在這邊寫入如下面這行
   // const { API_URL } = process.env
   return (
     <>
-      <Head><title>{title}</title></Head>
+      <Head>
+        <title>{title}</title>
+        <meta property="og:description" content={ getIndexHelloNextJs() ? getIndexHelloNextJs().map(post => (post.id)) : pageDescription() }/>
+      </Head>
       <Layout>
         <Container fluid>
           <Row>

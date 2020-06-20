@@ -213,7 +213,7 @@ var Layout = function Layout(_ref) {
     }
   }), __jsx("link", {
     rel: "shortcut icon",
-    href: "",
+    href: "../public/favicon.ico",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -252,7 +252,7 @@ var Layout = function Layout(_ref) {
       columnNumber: 7
     }
   }), // 原本寫為 props.children ? props.children : 'Loading...'
-  children ? children : 'Loading...', __jsx("br", {
+  children ? children : 'Loading ...', __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -20708,7 +20708,7 @@ module.exports = JSON.parse("[{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"par
 /*!****************************************************!*\
   !*** ./pages/apiComponents/functionContextJson.js ***!
   \****************************************************/
-/*! exports provided: API_URL, getHeader, getIndexHelloNextJs, getPark, PostLink */
+/*! exports provided: API_URL, getHeader, getIndexHelloNextJs, getPark, PostLink, pageDescription */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20718,6 +20718,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getIndexHelloNextJs", function() { return getIndexHelloNextJs; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPark", function() { return getPark; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostLink", function() { return PostLink; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pageDescription", function() { return pageDescription; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
@@ -20762,16 +20763,19 @@ var PostLink = function PostLink(_ref) {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27,
-      columnNumber: 5
+      columnNumber: 3
     }
   }, __jsx("a", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28,
-      columnNumber: 7
+      columnNumber: 5
     }
   }, post.title));
+};
+var pageDescription = function pageDescription(pageDes) {
+  return pageDes = 'This is the page for the website.This content to description this text website how to use.';
 };
 
 /***/ }),
@@ -20900,14 +20904,25 @@ var Blog = function Blog(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 13
+      lineNumber: 15,
+      columnNumber: 9
     }
-  }, title)), __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, title), __jsx("meta", {
+    property: "og:description",
+    content: Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["getIndexHelloNextJs"])() ? Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["getIndexHelloNextJs"])().map(function (post) {
+      return post.id;
+    }) : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["pageDescription"])(),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 16,
+      columnNumber: 9
+    }
+  })), __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
       columnNumber: 7
     }
   }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Container"], {
@@ -20915,14 +20930,14 @@ var Blog = function Blog(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 19,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 20,
       columnNumber: 11
     }
   }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
@@ -20933,7 +20948,7 @@ var Blog = function Blog(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 21,
       columnNumber: 13
     }
   }, __jsx(_apiComponents_headerJson_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -20941,7 +20956,7 @@ var Blog = function Blog(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 22,
       columnNumber: 15
     }
   })), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
@@ -20953,14 +20968,14 @@ var Blog = function Blog(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 24,
       columnNumber: 13
     }
   }, __jsx("h1", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 25,
       columnNumber: 15
     }
   }, "My Blog"), Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["getIndexHelloNextJs"])() ? Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["getIndexHelloNextJs"])().map(function (post) {
@@ -20970,14 +20985,14 @@ var Blog = function Blog(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 28,
         columnNumber: 19
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["ListGroup"].Item, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 29,
         columnNumber: 21
       }
     }, __jsx(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["PostLink"], {
@@ -20986,7 +21001,7 @@ var Blog = function Blog(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 30,
         columnNumber: 23
       }
     })));
@@ -20997,7 +21012,7 @@ var Blog = function Blog(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 36,
       columnNumber: 13
     }
   })))));
@@ -21139,7 +21154,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 2:
 /*!************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fblog.js ***!
   \************************************************************************************************************************************************************/
@@ -21162,5 +21177,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=blog.js.map

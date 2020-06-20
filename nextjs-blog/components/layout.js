@@ -8,8 +8,7 @@ const Layout = ({ children }) => {
     <div>
       <Head>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-        <link rel="shortcut icon" href="" />
-        <meta name="description" content="Make a easy website with Next.js which framework by React.js."/>
+        <link rel="shortcut icon" href="../public/favicon.ico" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta charSet="utf-8" />
       </Head>

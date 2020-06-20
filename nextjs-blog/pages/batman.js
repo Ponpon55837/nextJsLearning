@@ -2,15 +2,19 @@ import Layout from '../components/layout'
 import Link from 'next/link'
 import Head from 'next/head'
 import fetch from 'isomorphic-unfetch'
+import { pageDescription } from './apiComponents/functionContextJson.js'
 // bootstrap
 import { ListGroup, Col, Row, Container } from 'react-bootstrap'
 
-const Batman = (props, {title = 'Batman TV show menu'}) => {
+const Batman = (props, { title = 'Batman TV show menu' }) => {
   // 當api抓取到值之後，props把接到的值map進li當中
   // 這裡href為pages/p/[id].js但是後面使用as來代替為api中的id值
   return (
     <>
-      <Head><title>{title}</title></Head>
+      <Head>
+        <title>{title}</title>
+        <meta property="og:description" content={ props.shows ? props.shows.map(show => (show.name)) : pageDescription() }/>
+      </Head>
       <Layout>
         <Container fluid>
           <Row>
