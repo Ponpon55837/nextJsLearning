@@ -10,7 +10,7 @@ const About = ({ repos, subscribers, title ='About this url page' }) => {
     <>
       <Head>
         <title>{title}</title>
-        <meta property="og:description" content={ repos.svn_url ? repos.svn_url + subscribers.login : pageDescription() }/>
+        <meta property="og:description" content={ !repos.svn_url ? pageDescription() : repos.svn_url + subscribers.login + '.' + pageDescription() }/>
       </Head>
       <Layout>
         <Container fluid>

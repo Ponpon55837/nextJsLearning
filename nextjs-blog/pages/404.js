@@ -9,7 +9,7 @@ const Custom404 = ({ title = 'This Page is Not Found', pageDes = 'This page is f
     <>
       <Head>
         <title>{title}</title>
-        <meta property="og:description" content={ pageDes ? pageDes : pageDescription() }/>
+        <meta property="og:description" content={ !pageDes ? pageDescription() : pageDes + '.' + pageDescription() }/>
       </Head>
       <Layout>
         <div className={`${layout.container} ${utilStyles.notfound}`}>

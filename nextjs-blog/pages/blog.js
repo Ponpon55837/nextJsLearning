@@ -13,7 +13,7 @@ const Blog = ({ headers, title = 'Blog Page' }) => {
     <>
       <Head>
         <title>{title}</title>
-        <meta property="og:description" content={ getIndexHelloNextJs() ? getIndexHelloNextJs().map(post => (post.id)) : pageDescription() }/>
+        <meta property="og:description" content={ !getIndexHelloNextJs() ? pageDescription() : getIndexHelloNextJs().map(post => (post.id)) + '.' + pageDescription() }/>
       </Head>
       <Layout>
         <Container fluid>

@@ -9080,7 +9080,7 @@ var Custom404 = function Custom404(_ref) {
     }
   }, title), __jsx("meta", {
     property: "og:description",
-    content: pageDes ? pageDes : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["pageDescription"])(),
+    content: !pageDes ? Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["pageDescription"])() : pageDes + '.' + Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["pageDescription"])(),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -9413,7 +9413,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 6:
 /*!**********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F404&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2F404.js ***!
   \**********************************************************************************************************************************************************/
@@ -9436,5 +9436,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[6,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=404.js.map

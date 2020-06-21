@@ -20236,7 +20236,7 @@ var About = function About(_ref) {
     }
   }, title), __jsx("meta", {
     property: "og:description",
-    content: repos.svn_url ? repos.svn_url + subscribers.login : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["pageDescription"])(),
+    content: !repos.svn_url ? Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["pageDescription"])() : repos.svn_url + subscribers.login + '.' + Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["pageDescription"])(),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -20561,21 +20561,21 @@ var SubscribersJson = function SubscribersJson(_ref2) {
       lineNumber: 24,
       columnNumber: 7
     }
-  }, subscribers ? subscribers.map(function (subs) {
+  }, !subscribers ? 'Loading ...' : subscribers.map(function (subs) {
     return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Accordion"], {
       defaultActiveKey: subs.id,
       key: subs.id,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 27,
+        lineNumber: 28,
         columnNumber: 13
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28,
+        lineNumber: 29,
         columnNumber: 15
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Accordion"].Toggle, {
@@ -20584,7 +20584,7 @@ var SubscribersJson = function SubscribersJson(_ref2) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 30,
         columnNumber: 17
       }
     }, subs.login), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Accordion"].Collapse, {
@@ -20592,14 +20592,14 @@ var SubscribersJson = function SubscribersJson(_ref2) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32,
+        lineNumber: 33,
         columnNumber: 17
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["Card"].Body, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33,
+        lineNumber: 34,
         columnNumber: 19
       }
     }, __jsx("a", {
@@ -20607,11 +20607,11 @@ var SubscribersJson = function SubscribersJson(_ref2) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34,
+        lineNumber: 35,
         columnNumber: 21
       }
     }, subs.login)))));
-  }) : 'Loading ...'));
+  })));
 };
 
 /***/ }),
@@ -20682,7 +20682,7 @@ var cardHeader = {
 
 /***/ }),
 
-/***/ 2:
+/***/ 8:
 /*!**************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fabout.js ***!
   \**************************************************************************************************************************************************************/
@@ -20705,5 +20705,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[8,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=about.js.map

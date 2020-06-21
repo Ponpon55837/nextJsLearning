@@ -20909,9 +20909,9 @@ var Blog = function Blog(_ref) {
     }
   }, title), __jsx("meta", {
     property: "og:description",
-    content: Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["getIndexHelloNextJs"])() ? Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["getIndexHelloNextJs"])().map(function (post) {
+    content: !Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["getIndexHelloNextJs"])() ? Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["pageDescription"])() : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["getIndexHelloNextJs"])().map(function (post) {
       return post.id;
-    }) : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["pageDescription"])(),
+    }) + '.' + Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["pageDescription"])(),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
@@ -21154,7 +21154,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fblog.js ***!
   \************************************************************************************************************************************************************/
@@ -21177,5 +21177,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=blog.js.map

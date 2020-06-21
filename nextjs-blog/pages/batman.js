@@ -13,7 +13,7 @@ const Batman = (props, { title = 'Batman TV show menu' }) => {
     <>
       <Head>
         <title>{title}</title>
-        <meta property="og:description" content={ props.shows ? props.shows.map(show => (show.name)) : pageDescription() }/>
+        <meta property="og:description" content={ !props.shows ? pageDescription() : props.shows.map(show => (show.name)) + '.' + pageDescription() }/>
       </Head>
       <Layout>
         <Container fluid>

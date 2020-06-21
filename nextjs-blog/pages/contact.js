@@ -11,7 +11,7 @@ const Contact = (props, {title = 'Contact to the park' }) => {
     <>
       <Head>
         <title>{title}</title>
-        <meta property="og:description" content={ getPark() ? getPark().map(park => (park.tiintroductiontle)) : pageDescription() }/>
+        <meta property="og:description" content={ !getPark() ? pageDescription() : getPark().map(park => (park.introduction)) + '.' + pageDescription() }/>
       </Head>
       <Layout>
         <Container fluid>

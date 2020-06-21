@@ -12,7 +12,7 @@ const Test = ({courses, products, categories, title = 'Courses show menu'}) => {
     <>
       <Head>
         <title>{title}</title>
-        <meta property="og:description" content={ courses + products + categories ? courses.map(course => (course.title)) : pageDescription }/>
+        <meta property="og:description" content={ !courses + !products + !categories ?  pageDescription() : courses.map(course => (course.title)) + '.' + pageDescription() }/>
       </Head>
       <Layout>
         <Container fluid>

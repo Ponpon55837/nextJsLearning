@@ -10,8 +10,10 @@ export const CourseJson = ({ courses }) => {
   return (
     <>
       <Row style={rowStyle}>
-        { // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
-          courses ? courses.map(course => (
+        { // 如果products不存在，那畫面就顯示Loading...
+          !courses ? 'Loading ...' :
+          // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
+          courses.map(course => (
             <Col xs={12} sm={6} md={4} lg={4} xl={3} key={course.id}>
               <ListGroup variant="flush" >
                 <ListGroup.Item >
@@ -22,8 +24,6 @@ export const CourseJson = ({ courses }) => {
               </ListGroup>
             </Col>
           ))
-          // 如果products不存在，那畫面就顯示Loading...
-          : 'Loading ...'
         }
       </Row>
     </>
@@ -37,8 +37,10 @@ export const ProductJson = ({ products }) => {
   return (
     <>
       <Row style={rowStyle}>
-        { // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
-          products ? products.map(product => (
+        { // 如果products不存在，那畫面就顯示Loading...
+          !products ? 'Loading ...' :
+          // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
+          products.map(product => (
             <Col xs={12} sm={12} md={12} lg={12} xl={12} key={product.id}>
               <Accordion defaultActiveKey='false'>
                 <Card>
@@ -56,8 +58,6 @@ export const ProductJson = ({ products }) => {
               </Accordion>
             </Col>
           ))
-          // 如果products不存在，那畫面就顯示Loading...
-          : 'Loading ...'
         }
       </Row>
     </>
@@ -71,8 +71,11 @@ export const CategoryJson = ({ categories }) => {
   return (
     <>
       <Row style={rowStyle}>
-        { // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
-          categories ? categories.map(category => (
+        {
+          // 如果products不存在，那畫面就顯示Loading...
+          !categories ? 'Loading ...' :
+          // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
+          categories.map(category => (
             <Col xs={12} sm={12} md={12} lg={6} xl={6} key={category.id}>
               <ListGroup variant="flush" >
                 <ListGroup.Item >
@@ -82,8 +85,6 @@ export const CategoryJson = ({ categories }) => {
               </ListGroup>
             </Col>
           ))
-          // 如果products不存在，那畫面就顯示Loading...
-          : 'Loading ...'
         }
       </Row>
     </>

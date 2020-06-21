@@ -12,7 +12,7 @@ const Home = ({ title = 'Index Page' }) => {
     <div className={utilStyles.indexBG}>
       <Head>
         <title>{title}</title>
-        <meta property="og:description" content={ getHeader() ? getHeader().map(header => (header.title)) : pageDescription() }/>
+        <meta property="og:description" content={ !getHeader() ? pageDescription() : getHeader().map(header => (header.title)) + '.' + pageDescription() }/>
       </Head>
       <Container fluid>
         <Row>
