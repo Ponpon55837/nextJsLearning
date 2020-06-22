@@ -20641,7 +20641,7 @@ module.exports = JSON.parse("[{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"par
 /*!****************************************************!*\
   !*** ./pages/apiComponents/functionContextJson.js ***!
   \****************************************************/
-/*! exports provided: API_URL, getHeader, getIndexHelloNextJs, getPark, PostLink, pageDescription */
+/*! exports provided: API_URL, getHeader, getIndexHelloNextJs, getPark, PostLink, pageDescription, titleDescription */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20652,6 +20652,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPark", function() { return getPark; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostLink", function() { return PostLink; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pageDescription", function() { return pageDescription; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "titleDescription", function() { return titleDescription; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
@@ -20709,6 +20710,9 @@ var PostLink = function PostLink(_ref) {
 };
 var pageDescription = function pageDescription(pageDes) {
   return pageDes = 'This is the page for the website.This content to description this text website how to use.';
+};
+var titleDescription = function titleDescription(titleDes) {
+  return titleDes = 'The website is built by upfloor which is a work that train myself to be up floor.';
 };
 
 /***/ }),
@@ -20769,7 +20773,7 @@ var Batman = function Batman(props, _ref) {
       lineNumber: 15,
       columnNumber: 9
     }
-  }, title), __jsx("meta", {
+  }, title + '.   ' + Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_6__["titleDescription"])()), __jsx("meta", {
     property: "og:description",
     content: !props.shows ? Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_6__["pageDescription"])() : props.shows.map(function (show) {
       return show.name;
@@ -21081,7 +21085,7 @@ var cardHeader = {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!****************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fbatman&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fbatman.js ***!
   \****************************************************************************************************************************************************************/
@@ -21104,5 +21108,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=batman.js.map

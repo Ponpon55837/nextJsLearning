@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import HeaderJson from './apiComponents/headerJson.js'
-import { getIndexHelloNextJs, pageDescription, API_URL, PostLink } from './apiComponents/functionContextJson.js'
+import { getIndexHelloNextJs, titleDescription, pageDescription, API_URL, PostLink } from './apiComponents/functionContextJson.js'
 import Layout from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 // bootstrap
@@ -12,7 +12,7 @@ const Blog = ({ headers, title = 'Blog Page' }) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title + '.   ' + titleDescription()}</title>
         <meta property="og:description" content={ !getIndexHelloNextJs() ? pageDescription() : getIndexHelloNextJs().map(post => (post.id)) + '.' + pageDescription() }/>
       </Head>
       <Layout>

@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import Layout from '../../components/layout.js'
-import { pageDescription } from '../apiComponents/functionContextJson.js'
+import { titleDescription, pageDescription } from '../apiComponents/functionContextJson.js'
 
 const FirstPost = ({ title = 'This is the posts firs-post page.' }) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title + '.   ' + titleDescription()}</title>
         <meta property="og:description" content={ pageDescription() }/>
       </Head>
       <Layout>

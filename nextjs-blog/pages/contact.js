@@ -2,7 +2,7 @@ import Layout from '../components/layout'
 import Head from 'next/head'
 import { parkStyle } from '../styles/utilStyle.js'
 import fetch from 'isomorphic-unfetch'
-import { getPark, pageDescription } from './apiComponents/functionContextJson.js'
+import { getPark, titleDescription, pageDescription } from './apiComponents/functionContextJson.js'
 // bootstrap
 import { Card, Col, Row, Container } from 'react-bootstrap'
 
@@ -10,7 +10,7 @@ const Contact = (props, {title = 'Contact to the park' }) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title + '.   ' + titleDescription()}</title>
         <meta property="og:description" content={ !getPark() ? pageDescription() : getPark().map(park => (park.introduction)) + '.' + pageDescription() }/>
       </Head>
       <Layout>

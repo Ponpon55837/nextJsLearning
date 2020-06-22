@@ -2,7 +2,7 @@ import Layout from '../components/layout'
 import Link from 'next/link'
 import Head from 'next/head'
 import fetch from 'isomorphic-unfetch'
-import { pageDescription } from './apiComponents/functionContextJson.js'
+import { titleDescription, pageDescription } from './apiComponents/functionContextJson.js'
 // bootstrap
 import { ListGroup, Col, Row, Container } from 'react-bootstrap'
 
@@ -12,7 +12,7 @@ const Batman = (props, { title = 'Batman TV show menu' }) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title + '.   ' + titleDescription()}</title>
         <meta property="og:description" content={ !props.shows ? pageDescription() : props.shows.map(show => (show.name)) + '.' + pageDescription() }/>
       </Head>
       <Layout>

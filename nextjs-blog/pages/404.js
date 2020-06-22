@@ -1,6 +1,6 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
-import { pageDescription } from './apiComponents/functionContextJson.js'
+import { titleDescription, pageDescription } from './apiComponents/functionContextJson.js'
 import layout from '../styles/layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 
@@ -8,7 +8,7 @@ const Custom404 = ({ title = 'This Page is Not Found', pageDes = 'This page is f
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title + '.   ' + titleDescription()}</title>
         <meta property="og:description" content={ !pageDes ? pageDescription() : pageDes + '.' + pageDescription() }/>
       </Head>
       <Layout>

@@ -110,9 +110,8 @@
 }
 
 .divH1 {
-  font-family: 'Dancing Script', cursive;
   color: white;
-  font-size: 5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   opacity: 0.5;
   text-align: center;
@@ -125,7 +124,6 @@
   font-weight: bold;
   font-size: 2rem;
   border-radius: 12px;
-  font-family: 'Dancing Script', cursive;
 }
 
 .buttonControl :hover {

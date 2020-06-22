@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
 import { ReposJson, SubscribersJson } from './apiComponents/reposJson.js'
-import { pageDescription } from './apiComponents/functionContextJson.js'
+import { titleDescription, pageDescription } from './apiComponents/functionContextJson.js'
 // bootstrap
 import { Col, Row, Container } from 'react-bootstrap'
 
@@ -9,7 +9,7 @@ const About = ({ repos, subscribers, title ='About this url page' }) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title + '.   ' + titleDescription()}</title>
         <meta property="og:description" content={ !repos.svn_url ? pageDescription() : repos.svn_url + subscribers.login + '.' + pageDescription() }/>
       </Head>
       <Layout>

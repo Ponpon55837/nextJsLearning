@@ -2,7 +2,7 @@ import Layout from '../components/layout'
 import Head from 'next/head'
 import Login from './loginComponents/login.js'
 import Signin from './loginComponents/signin.js'
-import { pageDescription } from './apiComponents/functionContextJson.js'
+import { titleDescription, pageDescription } from './apiComponents/functionContextJson.js'
 // bootstrap
 import { Col, Row, Container } from 'react-bootstrap'
 
@@ -10,7 +10,7 @@ const LogandSign = (props, {title = 'Login and Regist Page'}) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title + '.   ' + titleDescription()}</title>
         <meta property="og:description" content={ pageDescription() }/>
       </Head>
       <Layout>

@@ -1,7 +1,7 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
 import { CourseJson, ProductJson, CategoryJson } from './apiComponents/contextJson.js'
-import { pageDescription, API_URL } from './apiComponents/functionContextJson.js'
+import { titleDescription, pageDescription, API_URL } from './apiComponents/functionContextJson.js'
 // bootstrap
 import { Col, Row, Container } from 'react-bootstrap'
 
@@ -11,7 +11,7 @@ const Test = ({courses, products, categories, title = 'Courses show menu'}) => {
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title + '.   ' + titleDescription()}</title>
         <meta property="og:description" content={ !courses + !products + !categories ?  pageDescription() : courses.map(course => (course.title)) + '.' + pageDescription() }/>
       </Head>
       <Layout>

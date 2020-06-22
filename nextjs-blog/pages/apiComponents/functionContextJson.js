@@ -29,6 +29,10 @@ export const PostLink = ({ post }) => (
   </Link>
 )
 
-export const pageDescription = (pageDes) => {
+export const pageDescription = ( pageDes ) => {
   return pageDes = 'This is the page for the website.This content to description this text website how to use.'
+}
+
+export const titleDescription = ( titleDes ) => {
+  return titleDes = 'The website is built by upfloor which is a work that train myself to be up floor.'
 }

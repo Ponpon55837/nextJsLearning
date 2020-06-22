@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import Layout from '../components/layout'
-import { getHeader, pageDescription } from './apiComponents/functionContextJson.js'
+import { getHeader, titleDescription, pageDescription } from './apiComponents/functionContextJson.js'
 import utilStyles from '../styles/utils.module.css'
 import { wordCapitalize } from '../styles/utilStyle.js'
 // bootstrap
@@ -11,7 +11,7 @@ const Home = ({ title = 'Index Page' }) => {
   return (
     <div className={utilStyles.indexBG}>
       <Head>
-        <title>{title}</title>
+        <title>{title + '.   ' + titleDescription()}</title>
         <meta property="og:description" content={ !getHeader() ? pageDescription() : getHeader().map(header => (header.title)) + '.' + pageDescription() }/>
       </Head>
       <Container fluid>
