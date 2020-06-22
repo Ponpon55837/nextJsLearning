@@ -12,31 +12,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/utilStyle.js */ "./styles/utilStyle.js");
-/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
+/* harmony import */ var _styles_layout_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/layout.module.css */ "./styles/layout.module.css");
+/* harmony import */ var _styles_layout_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_layout_module_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Container */ "./node_modules/react-bootstrap/esm/Container.js");
 var _this = undefined,
     _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/components/Footer.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
  // bootstrap
 
 
 
 var Footer = function Footer() {
   return __jsx("footer", {
-    className: "footer",
+    className: _styles_layout_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.footer,
     style: _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_1__["fatFooter"],
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7,
+      lineNumber: 8,
       columnNumber: 5
     }
-  }, __jsx(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx(react_bootstrap_Container__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8,
+      lineNumber: 9,
       columnNumber: 7
     }
   }, __jsx("span", {
@@ -44,7 +47,7 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9,
+      lineNumber: 10,
       columnNumber: 9
     }
   }, "Upfloor make nextjs (\u0E51\u2022\u0E35_\u0E40\u2022\u0E35\u0E51)")));
@@ -4164,6 +4167,28 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/layout.module.css":
+/*!*************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./styles/layout.module.css ***!
+  \*************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".layout_container__1LfYE {\n  max-width: 36rem;\n  padding: 0 1rem;\n  margin: 3rem auto 6rem;\n}\n\n.layout_header__1OJ41 {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.layout_headerImage__jSguI {\n  width: 6rem;\n  height: 6rem;\n}\n\n.layout_headerHomeImage__3w_dQ {\n  width: 8rem;\n  height: 8rem;\n}\n\n.layout_backToHome__knf4J {\n  margin: 3rem 0 0;\n}\n\n.layout_footer__ktNG5 {\n  \n}\n", "",{"version":3,"sources":["/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/styles/layout.module.css"],"names":[],"mappings":"AAAA;EACE,gBAAgB;EAChB,eAAe;EACf,sBAAsB;AACxB;;AAEA;EACE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;AACrB;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,WAAW;EACX,YAAY;AACd;;AAEA;EACE,gBAAgB;AAClB;;AAEA;;AAEA","file":"layout.module.css","sourcesContent":[".container {\n  max-width: 36rem;\n  padding: 0 1rem;\n  margin: 3rem auto 6rem;\n}\n\n.header {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n}\n\n.headerImage {\n  width: 6rem;\n  height: 6rem;\n}\n\n.headerHomeImage {\n  width: 8rem;\n  height: 8rem;\n}\n\n.backToHome {\n  margin: 3rem 0 0;\n}\n\n.footer {\n  \n}\n"]}]);
+// Exports
+exports.locals = {
+	"container": "layout_container__1LfYE",
+	"header": "layout_header__1OJ41",
+	"headerImage": "layout_headerImage__jSguI",
+	"headerHomeImage": "layout_headerHomeImage__3w_dQ",
+	"backToHome": "layout_backToHome__knf4J",
+	"footer": "layout_footer__ktNG5"
+};
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/utils.module.css":
 /*!************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./styles/utils.module.css ***!
@@ -4177,7 +4202,7 @@ var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../node_modules/cs
 var ___CSS_LOADER_URL_PURE_IMPORT_0___ = __webpack_require__(/*! ../img/bg.jpg */ "./img/bg.jpg");
 var ___CSS_LOADER_URL_IMPORT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_PURE_IMPORT_0___);
 // Module
-exports.push([module.i, "/*\n  在className當中放入module.css的方式如下\n  EX:\n  in exampleStyle.module.css\n  .divStyle { border: 1rem; }\n  ************************************\n  in example.js\n  import exampleStyle from './styles/exampleStyle.module.css'\n\n  return <div className={exampleStyle.divStyle}>example</div>\n\n  多重className寫法為\n  return <div className={`${exampleStyle.divStyle} ${exampleStyle.pStyle}`}>example</div>\n*/\n\n.utils_heading2Xl__1I65m {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingXl__1XecN {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingLg__de7p0 {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.utils_headingMd__3de6G {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.utils_borderCircle__13qdJ {\n  border-radius: 9999px;\n}\n\n.utils_colorInherit__3Gudf {\n  color: inherit;\n}\n\n.utils_padding1px__oCny8 {\n  padding-top: 1px;\n}\n\n.utils_list__S7_pe {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.utils_listItem__2eJpJ {\n  margin: 0 0 1.25rem;\n}\n\n.utils_lightText__12Ckm {\n  color: #999;\n}\n\n.utils_markdown__2R-tk {\n  font-family: 'Arial';\n}\n\n.utils_markdown__2R-tk a {\n  text-decoration: none;\n  color: blue;\n}\n\n.utils_markdown__2R-tk a:hover {\n  opacity: 0.6;\n}\n\n.utils_markdown__2R-tk h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.utils_notfound__3uF6d {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.utils_indexBG__1DCbH {\n  background-image: url(" + ___CSS_LOADER_URL_IMPORT_0___ + ");\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.utils_homeShow__2HxQ3 {\n  padding-top: 12%;\n  padding-bottom: 32%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 800px;\n}\n\n.utils_divH1__1lonv {\n  color: white;\n  font-size: 3rem;\n  font-weight: bold;\n  opacity: 0.5;\n  align: center;\n}\n\n.utils_buttonControl__2dBWX {\n  opacity: 0.3;\n  color:white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2.3rem;\n}\n", "",{"version":3,"sources":["/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/styles/utils.module.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;CAaC;;AAED;EACE,iBAAiB;EACjB,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,oBAAoB;AACtB;;AAEA;EACE,qBAAqB;EACrB,WAAW;AACb;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,SAAS;EACT,UAAU;EACV,yBAAyB;AAC3B;;AAEA;EACE,iBAAiB;EACjB,oBAAoB;AACtB;;AAEA;EACE,oDAAoC;EACpC,WAAW;;EAEX,sCAAsC;EACtC,2BAA2B;EAC3B,4BAA4B;EAC5B,sBAAsB;AACxB;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,gBAAgB;AAClB;;AAEA;EACE,YAAY;EACZ,eAAe;EACf,iBAAiB;EACjB,YAAY;EACZ,aAAa;AACf;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,YAAY;EACZ,iBAAiB;EACjB,iBAAiB;AACnB","file":"utils.module.css","sourcesContent":["/*\n  在className當中放入module.css的方式如下\n  EX:\n  in exampleStyle.module.css\n  .divStyle { border: 1rem; }\n  ************************************\n  in example.js\n  import exampleStyle from './styles/exampleStyle.module.css'\n\n  return <div className={exampleStyle.divStyle}>example</div>\n\n  多重className寫法為\n  return <div className={`${exampleStyle.divStyle} ${exampleStyle.pStyle}`}>example</div>\n*/\n\n.heading2Xl {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingXl {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingLg {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.headingMd {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.borderCircle {\n  border-radius: 9999px;\n}\n\n.colorInherit {\n  color: inherit;\n}\n\n.padding1px {\n  padding-top: 1px;\n}\n\n.list {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.listItem {\n  margin: 0 0 1.25rem;\n}\n\n.lightText {\n  color: #999;\n}\n\n.markdown {\n  font-family: 'Arial';\n}\n\n.markdown a {\n  text-decoration: none;\n  color: blue;\n}\n\n.markdown a:hover {\n  opacity: 0.6;\n}\n\n.markdown h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.notfound {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.indexBG {\n  background-image: url(../img/bg.jpg);\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.homeShow {\n  padding-top: 12%;\n  padding-bottom: 32%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 800px;\n}\n\n.divH1 {\n  color: white;\n  font-size: 3rem;\n  font-weight: bold;\n  opacity: 0.5;\n  align: center;\n}\n\n.buttonControl {\n  opacity: 0.3;\n  color:white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2.3rem;\n}\n"]}]);
+exports.push([module.i, "/*\n  在className當中放入module.css的方式如下\n  EX:\n  in exampleStyle.module.css\n  .divStyle { border: 1rem; }\n  ************************************\n  in example.js\n  import exampleStyle from './styles/exampleStyle.module.css'\n\n  return <div className={exampleStyle.divStyle}>example</div>\n\n  多重className寫法為\n  return <div className={`${exampleStyle.divStyle} ${exampleStyle.pStyle}`}>example</div>\n*/\n\n.utils_heading2Xl__1I65m {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingXl__1XecN {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingLg__de7p0 {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.utils_headingMd__3de6G {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.utils_borderCircle__13qdJ {\n  border-radius: 9999px;\n}\n\n.utils_colorInherit__3Gudf {\n  color: inherit;\n}\n\n.utils_padding1px__oCny8 {\n  padding-top: 1px;\n}\n\n.utils_list__S7_pe {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.utils_listItem__2eJpJ {\n  margin: 0 0 1.25rem;\n}\n\n.utils_lightText__12Ckm {\n  color: #999;\n}\n\n.utils_markdown__2R-tk {\n  font-family: 'Arial';\n}\n\n.utils_markdown__2R-tk a {\n  text-decoration: none;\n  color: blue;\n}\n\n.utils_markdown__2R-tk a:hover {\n  opacity: 0.6;\n}\n\n.utils_markdown__2R-tk h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.utils_notfound__3uF6d {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.utils_indexBG__1DCbH {\n  background-image: url(" + ___CSS_LOADER_URL_IMPORT_0___ + ");\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.utils_homeShow__2HxQ3 {\n  padding-top: 12%;\n  padding-bottom: 32%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 100%;\n  text-align: center;\n}\n\n.utils_divH1__1lonv {\n  font-family: 'Dancing Script', cursive;\n  color: white;\n  font-size: 5rem;\n  font-weight: bold;\n  opacity: 0.5;\n  text-align: center;\n}\n\n.utils_buttonControl__2dBWX {\n  opacity: 0.2;\n  color: white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2rem;\n  border-radius: 12px;\n  font-family: 'Dancing Script', cursive;\n}\n\n.utils_buttonControl__2dBWX :hover {\n  color: red;\n}\n", "",{"version":3,"sources":["/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/styles/utils.module.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;CAaC;;AAED;EACE,iBAAiB;EACjB,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,oBAAoB;AACtB;;AAEA;EACE,qBAAqB;EACrB,WAAW;AACb;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,SAAS;EACT,UAAU;EACV,yBAAyB;AAC3B;;AAEA;EACE,iBAAiB;EACjB,oBAAoB;AACtB;;AAEA;EACE,oDAAoC;EACpC,WAAW;;EAEX,sCAAsC;EACtC,2BAA2B;EAC3B,4BAA4B;EAC5B,sBAAsB;AACxB;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,sCAAsC;EACtC,YAAY;EACZ,eAAe;EACf,iBAAiB;EACjB,YAAY;EACZ,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,YAAY;EACZ,YAAY;EACZ,iBAAiB;EACjB,eAAe;EACf,mBAAmB;EACnB,sCAAsC;AACxC;;AAEA;EACE,UAAU;AACZ","file":"utils.module.css","sourcesContent":["/*\n  在className當中放入module.css的方式如下\n  EX:\n  in exampleStyle.module.css\n  .divStyle { border: 1rem; }\n  ************************************\n  in example.js\n  import exampleStyle from './styles/exampleStyle.module.css'\n\n  return <div className={exampleStyle.divStyle}>example</div>\n\n  多重className寫法為\n  return <div className={`${exampleStyle.divStyle} ${exampleStyle.pStyle}`}>example</div>\n*/\n\n.heading2Xl {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingXl {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingLg {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.headingMd {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.borderCircle {\n  border-radius: 9999px;\n}\n\n.colorInherit {\n  color: inherit;\n}\n\n.padding1px {\n  padding-top: 1px;\n}\n\n.list {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.listItem {\n  margin: 0 0 1.25rem;\n}\n\n.lightText {\n  color: #999;\n}\n\n.markdown {\n  font-family: 'Arial';\n}\n\n.markdown a {\n  text-decoration: none;\n  color: blue;\n}\n\n.markdown a:hover {\n  opacity: 0.6;\n}\n\n.markdown h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.notfound {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.indexBG {\n  background-image: url(../img/bg.jpg);\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.homeShow {\n  padding-top: 12%;\n  padding-bottom: 32%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 100%;\n  text-align: center;\n}\n\n.divH1 {\n  font-family: 'Dancing Script', cursive;\n  color: white;\n  font-size: 5rem;\n  font-weight: bold;\n  opacity: 0.5;\n  text-align: center;\n}\n\n.buttonControl {\n  opacity: 0.2;\n  color: white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2rem;\n  border-radius: 12px;\n  font-family: 'Dancing Script', cursive;\n}\n\n.buttonControl :hover {\n  color: red;\n}\n"]}]);
 // Exports
 exports.locals = {
 	"heading2Xl": "utils_heading2Xl__1I65m",
@@ -20913,6 +20938,67 @@ var Home = function Home(_ref) {
 
 /***/ }),
 
+/***/ "./styles/layout.module.css":
+/*!**********************************!*\
+  !*** ./styles/layout.module.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./layout.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/layout.module.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./layout.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/layout.module.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../node_modules/next/dist/compiled/postcss-loader??__nextjs_postcss!./layout.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/next/dist/compiled/postcss-loader/index.js?!./styles/layout.module.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
+
+/***/ }),
+
 /***/ "./styles/utilStyle.js":
 /*!*****************************!*\
   !*** ./styles/utilStyle.js ***!
@@ -21040,7 +21126,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!*********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Findex.js ***!
   \*********************************************************************************************************************************************************/
@@ -21063,5 +21149,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
