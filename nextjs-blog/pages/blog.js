@@ -24,7 +24,8 @@ const Blog = ({ headers, title = 'Blog Page' }) => {
             <Col xs={12} sm={12} md={10} lg={8} xl={8}>
               <h1>My Blog</h1>
               {
-                !getIndexHelloNextJs() ? 'Loading ...' : getIndexHelloNextJs().map(post => (
+                !getIndexHelloNextJs() ? 'Loading ...' :
+                getIndexHelloNextJs().map(post => (
                   <ListGroup variant="flush" key={post.id}>
                     <ListGroup.Item>
                       <PostLink key={post.id} post={post} />
