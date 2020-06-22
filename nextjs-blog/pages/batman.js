@@ -24,6 +24,7 @@ const Batman = (props, { title = 'Batman TV show menu' }) => {
               <h1>Batman TV Shows</h1>
               <ul>
                 {
+                  !props.shows ? 'Loading ...' :
                   props.shows.map( show => (
                     <ListGroup variant="flush" key={show.id}>
                       <ListGroup.Item>
