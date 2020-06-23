@@ -147,6 +147,7 @@ var Header = function Header() {
       }
     }, __jsx("a", {
       className: "nav-item nav-link",
+      title: "Connect to ".concat(header.title, " Page"),
       style: _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_5__["wordCapitalize"],
       __self: _this,
       __source: {
@@ -20668,11 +20669,13 @@ var _api_headerlink_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/_
 var _api_indexHelloNextJs_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../api/indexHelloNextJs.json */ "./pages/api/indexHelloNextJs.json", 1);
 /* harmony import */ var _api_parkAPI_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../api/parkAPI.json */ "./pages/api/parkAPI.json");
 var _api_parkAPI_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../api/parkAPI.json */ "./pages/api/parkAPI.json", 1);
+/* harmony import */ var _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../styles/utilStyle.js */ "./styles/utilStyle.js");
 var _this = undefined,
     _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/apiComponents/functionContextJson.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -20698,7 +20701,8 @@ var handler = function handler() {
   next_router__WEBPACK_IMPORTED_MODULE_2___default.a.push({
     pathname: '/',
     query: {
-      name: 'Home'
+      name: 'Home',
+      title: 'Connect to Home Page'
     }
   });
 }; // 當作額外插入的link來使用，這裡面的post.id，post.title都是藉由被map進來的post值使用
@@ -20711,14 +20715,15 @@ var PostLink = function PostLink(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 40,
       columnNumber: 3
     }
   }, __jsx("a", {
+    title: "Connect to ".concat(post.title, " Page"),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 41,
       columnNumber: 5
     }
   }, post.title));
@@ -20925,7 +20930,10 @@ var Contact = function Contact(props, _ref) {
       columnNumber: 13
     }
   })))));
-};
+}; // Contact.post('/', (req,res) => {
+//   console.log(req)
+// })
+
 
 /* harmony default export */ __webpack_exports__["default"] = (Contact);
 

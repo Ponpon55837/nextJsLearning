@@ -22,7 +22,7 @@ const Home = ({ title = 'Index Page' }) => {
               !getHeader() ? 'Loading ...' :
               getHeader().map(header => (
                 <Button variant="outline-dark" size='lg' block className={utilStyles.buttonControl} key={header.id}>
-                  <Link href={header.link}><a style={wordCapitalize}>{header.title}</a></Link>
+                  <Link href={header.link}><a style={wordCapitalize} title={`Connect to ${header.title} Page`}>{header.title}</a></Link>
                 </Button>
               ))
             }

@@ -15,7 +15,7 @@ const Header = () => {
             !getHeader() ? 'Loading ...' :
             getHeader().map(header => (
               <Link href={header.link} key={header.id}>
-                <a className="nav-item nav-link" style={wordCapitalize}>{header.title}</a>
+                <a className="nav-item nav-link" title={`Connect to ${header.title} Page`} style={wordCapitalize}>{header.title}</a>
               </Link>
             ))
           }

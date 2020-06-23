@@ -3,6 +3,7 @@ import Router from 'next/router'
 import headerlink from '../api/headerlink.json'
 import indexHelloNextJs from '../api/indexHelloNextJs.json'
 import park from '../api/parkAPI.json'
+import { wordCapitalize } from '../../styles/utilStyle.js'
 
 // 把所有使用內部json的function放在這邊，這樣要重複使用呼叫不用作多餘的事情
 // 但是如果是使用getStaticProps or getInitialProps or getServerSideProps or getStaticPath則無法如此使用
@@ -27,14 +28,17 @@ export const getPark = () => {
 export const handler = () => {
   Router.push({
     pathname: '/',
-    query: { name: 'Home' },
+    query: {
+      name: 'Home',
+      title: 'Connect to Home Page',
+    },
   })
 }
 
 // 當作額外插入的link來使用，這裡面的post.id，post.title都是藉由被map進來的post值使用
 export const PostLink = ({ post }) => (
   <Link href="/batman/[id]" as={`/batman/${post.id}`}>
-    <a>{post.title}</a>
+    <a title={`Connect to ${post.title} Page`}>{post.title}</a>
   </Link>
 )
 

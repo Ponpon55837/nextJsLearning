@@ -44,4 +44,8 @@ const Contact = (props, {title = 'Contact to the park' }) => {
   )
 }
 
+// Contact.post('/', (req,res) => {
+//   console.log(req)
+// })
+
 export default Contact
