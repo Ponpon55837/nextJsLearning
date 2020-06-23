@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/test.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/batman.js"],{
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -5088,21 +5088,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Ftest&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Ftest.js!./":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Ftest&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Ftest.js ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fbatman&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fbatman.js!./":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fbatman&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fbatman.js ***!
+  \************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/test", function() {
-      var mod = __webpack_require__(/*! ./pages/test.js */ "./pages/test.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/batman", function() {
+      var mod = __webpack_require__(/*! ./pages/batman.js */ "./pages/batman.js")
       if(true) {
-        module.hot.accept(/*! ./pages/test.js */ "./pages/test.js", function() {
-          if(!next.router.components["/test"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/test.js */ "./pages/test.js")
-          next.router.update("/test", updatedPage)
+        module.hot.accept(/*! ./pages/batman.js */ "./pages/batman.js", function() {
+          if(!next.router.components["/batman"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/batman.js */ "./pages/batman.js")
+          next.router.update("/batman", updatedPage)
         })
       }
       return mod
@@ -20639,275 +20639,6 @@ module.exports = JSON.parse("[{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"par
 
 /***/ }),
 
-/***/ "./pages/apiComponents/contextJson.js":
-/*!********************************************!*\
-  !*** ./pages/apiComponents/contextJson.js ***!
-  \********************************************/
-/*! exports provided: CourseJson, ProductJson, CategoryJson */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CourseJson", function() { return CourseJson; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductJson", function() { return ProductJson; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CategoryJson", function() { return CategoryJson; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../styles/utilStyle.js */ "./styles/utilStyle.js");
-/* harmony import */ var _functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./functionContextJson.js */ "./pages/apiComponents/functionContextJson.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
-var _this = undefined,
-    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/apiComponents/contextJson.js";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-
-
- // courses由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
-
-var CourseJson = function CourseJson(_ref) {
-  var courses = _ref.courses;
-  console.log(courses);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Row"], {
-    style: _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_2__["rowStyle"],
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 12,
-      columnNumber: 7
-    }
-  }, // 如果products不存在，那畫面就顯示Loading...
-  !courses ? 'Loading ...' : // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
-  courses.map(function (course) {
-    return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
-      xs: 12,
-      sm: 6,
-      md: 4,
-      lg: 4,
-      xl: 3,
-      key: course.id,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 17,
-        columnNumber: 13
-      }
-    }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroup"], {
-      variant: "flush",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18,
-        columnNumber: 15
-      }
-    }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroup"].Item, {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 19,
-        columnNumber: 17
-      }
-    }, course.title, __jsx("br", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20,
-        columnNumber: 33
-      }
-    }), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Image"], {
-      src: _functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["API_URL"] + course.image.url,
-      rounded: true,
-      fluid: true,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21,
-        columnNumber: 19
-      }
-    }), __jsx("br", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21,
-        columnNumber: 76
-      }
-    }), __jsx("cite", {
-      title: "Source Title",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 19
-      }
-    }, course.published))));
-  })));
-}; // products由外部接入，這個值需要由data傳入
-
-var ProductJson = function ProductJson(_ref2) {
-  var products = _ref2.products;
-  console.log(products);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Row"], {
-    style: _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_2__["rowStyle"],
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39,
-      columnNumber: 7
-    }
-  }, // 如果products不存在，那畫面就顯示Loading...
-  !products ? 'Loading ...' : // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
-  products.map(function (product) {
-    return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
-      xs: 12,
-      sm: 12,
-      md: 12,
-      lg: 12,
-      xl: 12,
-      key: product.id,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 44,
-        columnNumber: 13
-      }
-    }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Accordion"], {
-      defaultActiveKey: "false",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 45,
-        columnNumber: 15
-      }
-    }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Card"], {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 46,
-        columnNumber: 17
-      }
-    }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Accordion"].Toggle, {
-      as: react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Card"].Header,
-      eventKey: product.id,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 47,
-        columnNumber: 19
-      }
-    }, product.title), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Accordion"].Collapse, {
-      eventKey: product.id,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50,
-        columnNumber: 19
-      }
-    }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Card"].Body, {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 51,
-        columnNumber: 21
-      }
-    }, product.description, __jsx("br", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 52,
-        columnNumber: 44
-      }
-    }), __jsx("br", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 52,
-        columnNumber: 50
-      }
-    }), "Price:", product.price, __jsx("br", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 53,
-        columnNumber: 44
-      }
-    }), __jsx("cite", {
-      title: "Source Title",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 54,
-        columnNumber: 23
-      }
-    }, "Quality:", product.quality))))));
-  })));
-}; // categories由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
-
-var CategoryJson = function CategoryJson(_ref3) {
-  var categories = _ref3.categories;
-  console.log(categories);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Row"], {
-    style: _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_2__["rowStyle"],
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73,
-      columnNumber: 7
-    }
-  }, // 如果products不存在，那畫面就顯示Loading...
-  !categories ? 'Loading ...' : // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
-  categories.map(function (category) {
-    return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Col"], {
-      xs: 12,
-      sm: 12,
-      md: 12,
-      lg: 6,
-      xl: 6,
-      key: category.id,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 79,
-        columnNumber: 13
-      }
-    }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroup"], {
-      variant: "flush",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 80,
-        columnNumber: 15
-      }
-    }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroup"].Item, {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 81,
-        columnNumber: 17
-      }
-    }, category.name, __jsx("br", {
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 82,
-        columnNumber: 34
-      }
-    }), __jsx("cite", {
-      title: "Source Title",
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 83,
-        columnNumber: 19
-      }
-    }, category.created_at))));
-  })));
-};
-
-/***/ }),
-
 /***/ "./pages/apiComponents/functionContextJson.js":
 /*!****************************************************!*\
   !*** ./pages/apiComponents/functionContextJson.js ***!
@@ -21001,29 +20732,36 @@ var titleDescription = function titleDescription(titleDes) {
 
 /***/ }),
 
-/***/ "./pages/test.js":
-/*!***********************!*\
-  !*** ./pages/test.js ***!
-  \***********************/
-/*! exports provided: __N_SSG, default */
+/***/ "./pages/batman.js":
+/*!*************************!*\
+  !*** ./pages/batman.js ***!
+  \*************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__N_SSG", function() { return __N_SSG; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _apiComponents_contextJson_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./apiComponents/contextJson.js */ "./pages/apiComponents/contextJson.js");
-/* harmony import */ var _apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./apiComponents/functionContextJson.js */ "./pages/apiComponents/functionContextJson.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./apiComponents/functionContextJson.js */ "./pages/apiComponents/functionContextJson.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+
+
 var _this = undefined,
-    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/test.js";
+    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/batman.js";
 
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 
 
@@ -21031,62 +20769,59 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var Test = function Test(_ref) {
-  var courses = _ref.courses,
-      products = _ref.products,
-      categories = _ref.categories,
-      _ref$title = _ref.title,
-      title = _ref$title === void 0 ? 'Courses show menu' : _ref$title;
+var Batman = function Batman(props, _ref) {
+  var _ref$title = _ref.title,
+      title = _ref$title === void 0 ? 'Batman TV show menu' : _ref$title;
   // 當api抓取到值之後，props把接到的值map進li當中
   // 這裡href為pages/p/[id].js但是後面使用as來代替為api中的id值
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 14,
       columnNumber: 7
     }
   }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
-      columnNumber: 9
-    }
-  }, title + '.   ' + Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["titleDescription"])()), __jsx("meta", {
-    property: "og:description",
-    content: !courses + !products + !categories ? Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["pageDescription"])() : courses.map(function (course) {
-      return course.title;
-    }) + '.' + Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["pageDescription"])(),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 15,
       columnNumber: 9
     }
-  })), __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, title + '.   ' + Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_6__["titleDescription"])()), __jsx("meta", {
+    property: "og:description",
+    content: !props.shows ? Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_6__["pageDescription"])() : props.shows.map(function (show) {
+      return show.name;
+    }) + '.' + Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_6__["pageDescription"])(),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
-      columnNumber: 7
+      lineNumber: 16,
+      columnNumber: 9
     }
-  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Container"], {
-    fluid: true,
+  })), __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 18,
-      columnNumber: 9
+      columnNumber: 7
     }
-  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Row"], {
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Container"], {
+    fluid: true,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19,
+      columnNumber: 9
+    }
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Row"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
       columnNumber: 11
     }
-  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
     className: "d-none d-sm-none d-md-block",
     md: 1,
     lg: 2,
@@ -21094,10 +20829,10 @@ var Test = function Test(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 21,
       columnNumber: 13
     }
-  }), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+  }), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
     xs: 12,
     sm: 12,
     md: 10,
@@ -21106,55 +20841,58 @@ var Test = function Test(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22,
+      lineNumber: 23,
       columnNumber: 13
     }
   }, __jsx("h1", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
-      columnNumber: 15
-    }
-  }, "Course shows"), __jsx(_apiComponents_contextJson_js__WEBPACK_IMPORTED_MODULE_3__["CourseJson"], {
-    courses: courses,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 24,
       columnNumber: 15
     }
-  }), __jsx("hr", {
+  }, "Batman TV Shows"), __jsx("ul", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25,
       columnNumber: 15
     }
-  }), __jsx(_apiComponents_contextJson_js__WEBPACK_IMPORTED_MODULE_3__["ProductJson"], {
-    products: products,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 15
-    }
-  }), __jsx("hr", {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 27,
-      columnNumber: 15
-    }
-  }), __jsx(_apiComponents_contextJson_js__WEBPACK_IMPORTED_MODULE_3__["CategoryJson"], {
-    categories: categories,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28,
-      columnNumber: 15
-    }
-  })), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+  }, !props.shows ? 'Loading ...' : props.shows.map(function (show) {
+    return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["ListGroup"], {
+      variant: "flush",
+      key: show.id,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 21
+      }
+    }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["ListGroup"].Item, {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 23
+      }
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+      href: "/batman/[id]",
+      as: "/batman/".concat(show.id),
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 25
+      }
+    }, __jsx("a", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 32,
+        columnNumber: 27
+      }
+    }, show.name))));
+  }))), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
     className: "d-none d-sm-none d-md-block",
     md: 1,
     lg: 2,
@@ -21162,17 +20900,76 @@ var Test = function Test(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 40,
       columnNumber: 13
     }
   })))));
-}; // es6的function async寫法
-// es5寫成 export async function getStaticProps(){}
-// 只有在node.js run npm start時候用getInitialProps才會及時render，放到apache or nginx就要重新build 跟 export
+}; // 使用非同步的方式讀取json的內容
 
 
-var __N_SSG = true;
-/* harmony default export */ __webpack_exports__["default"] = (Test);
+Batman.getInitialProps = function _callee() {
+  var res_batman, data_batman;
+  return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 2;
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()('https://api.tvmaze.com/search/shows?q=batman'));
+
+        case 2:
+          res_batman = _context.sent;
+          _context.next = 5;
+          return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res_batman.json());
+
+        case 5:
+          data_batman = _context.sent;
+          // 回報抓到幾個data值
+          console.log("Show data fetched. Count: ".concat(data_batman.length));
+          return _context.abrupt("return", {
+            // 使用map來把值塞入，並且使用變數entry當作主詞來附帶api中的內容
+            shows: data_batman.map(function (entry) {
+              return entry.show;
+            })
+          });
+
+        case 8:
+        case "end":
+          return _context.stop();
+      }
+    }
+  }, null, null, null, Promise);
+}; // 如果看不懂 return裡面的  <Link href="/batman/[id]" as={`/batman/${show.id}`}>
+// 下面是官網參考的範例我改成es6格式
+// import { useRouter } from 'next/router'
+// import Link from 'next/link'
+// import Header from '../../../components/header'
+//
+// const Post = () => {
+//   const router = useRouter()
+//   const { id } = router.query
+//
+//   return (
+//     <>
+//       <Header />
+//       <h1>Post: {id}</h1>
+//       <ul>
+//         <li>
+//           <Link href="/post/[id]/[comment]" as={`/post/${id}/first-comment`}>
+//             <a>First comment</a>
+//           </Link>
+//         </li>
+//         <li>
+//           <Link href="/post/[id]/[comment]" as={`/post/${id}/second-comment`}>
+//             <a>Second comment</a>
+//           </Link>
+//         </li>
+//       </ul>
+//     </>
+//   )
+// }
+
+
+/* harmony default export */ __webpack_exports__["default"] = (Batman);
 
 /***/ }),
 
@@ -21303,14 +21100,14 @@ var cardHeader = {
 
 /***/ }),
 
-/***/ 4:
-/*!************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Ftest&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Ftest.js ***!
-  \************************************************************************************************************************************************************/
+/***/ 2:
+/*!****************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fbatman&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fbatman.js ***!
+  \****************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Ftest&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Ftest.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Ftest&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Ftest.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fbatman&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fbatman.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fbatman&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fbatman.js!./");
 
 
 /***/ }),
@@ -21326,5 +21123,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=test.js.map
+},[[2,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=batman.js.map

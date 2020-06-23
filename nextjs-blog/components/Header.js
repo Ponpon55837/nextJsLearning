@@ -12,6 +12,7 @@ const Header = () => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           {
+            !getHeader() ? 'Loading ...' :
             getHeader().map(header => (
               <Link href={header.link} key={header.id}>
                 <a className="nav-item nav-link" style={wordCapitalize}>{header.title}</a>
