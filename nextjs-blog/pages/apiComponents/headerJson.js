@@ -18,7 +18,7 @@ const HeaderJson = ({ headers }) => {
             !headers ? 'Loading ...' :
             headers.map(header => (
               <Link href={header.url} key={header.id}>
-                <a className="nav-item nav-link" style={wordCapitalize}>{header.title}</a>
+                <a className="nav-item nav-link" style={wordCapitalize} title={`Connect to ${header.title} Page`}>{header.title}</a>
               </Link>
             ))
           }

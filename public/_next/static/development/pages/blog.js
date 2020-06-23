@@ -20891,6 +20891,7 @@ var HeaderJson = function HeaderJson(_ref) {
     }, __jsx("a", {
       className: "nav-item nav-link",
       style: _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_3__["wordCapitalize"],
+      title: "Connect to ".concat(header.title, " Page"),
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -21266,7 +21267,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 2:
 /*!************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fblog.js ***!
   \************************************************************************************************************************************************************/
@@ -21289,5 +21290,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=blog.js.map
