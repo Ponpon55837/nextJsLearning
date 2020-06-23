@@ -72,8 +72,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap/Navbar */ "./node_modules/react-bootstrap/esm/Navbar.js");
 /* harmony import */ var react_bootstrap_Nav__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-bootstrap/Nav */ "./node_modules/react-bootstrap/esm/Nav.js");
-/* harmony import */ var _pages_api_headerlink_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/api/headerlink.json */ "./pages/api/headerlink.json");
-var _pages_api_headerlink_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../pages/api/headerlink.json */ "./pages/api/headerlink.json", 1);
+/* harmony import */ var _pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/apiComponents/functionContextJson.js */ "./pages/apiComponents/functionContextJson.js");
 /* harmony import */ var _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/utilStyle.js */ "./styles/utilStyle.js");
 var _this = undefined,
     _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/components/Header.js";
@@ -98,14 +97,21 @@ var Header = function Header() {
       columnNumber: 5
     }
   }, __jsx(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"].Brand, {
-    href: "/",
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10,
       columnNumber: 7
     }
-  }, "NextJS with Bootstrap"), __jsx(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"].Toggle, {
+  }, __jsx("span", {
+    onClick: _pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["handler"],
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10,
+      columnNumber: 21
+    }
+  }, "NextJS with Bootstrap")), __jsx(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"].Toggle, {
     "aria-controls": "responsive-navbar-nav",
     __self: _this,
     __source: {
@@ -129,7 +135,7 @@ var Header = function Header() {
       lineNumber: 13,
       columnNumber: 9
     }
-  }, getHeader().map(function (header) {
+  }, Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["getHeader"])().map(function (header) {
     return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: header.link,
       key: header.id,
@@ -150,10 +156,6 @@ var Header = function Header() {
       }
     }, header.title));
   }))));
-};
-
-var getHeader = function getHeader() {
-  return _pages_api_headerlink_json__WEBPACK_IMPORTED_MODULE_4__;
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Header);
@@ -20910,7 +20912,7 @@ var CategoryJson = function CategoryJson(_ref3) {
 /*!****************************************************!*\
   !*** ./pages/apiComponents/functionContextJson.js ***!
   \****************************************************/
-/*! exports provided: API_URL, getHeader, getIndexHelloNextJs, getPark, PostLink, pageDescription, titleDescription */
+/*! exports provided: API_URL, getHeader, getIndexHelloNextJs, getPark, handler, PostLink, pageDescription, titleDescription */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20919,6 +20921,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getHeader", function() { return getHeader; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getIndexHelloNextJs", function() { return getIndexHelloNextJs; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPark", function() { return getPark; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handler", function() { return handler; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostLink", function() { return PostLink; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pageDescription", function() { return pageDescription; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "titleDescription", function() { return titleDescription; });
@@ -20926,17 +20929,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _api_headerlink_json__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../api/headerlink.json */ "./pages/api/headerlink.json");
-var _api_headerlink_json__WEBPACK_IMPORTED_MODULE_2___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../api/headerlink.json */ "./pages/api/headerlink.json", 1);
-/* harmony import */ var _api_indexHelloNextJs_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../api/indexHelloNextJs.json */ "./pages/api/indexHelloNextJs.json");
-var _api_indexHelloNextJs_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../api/indexHelloNextJs.json */ "./pages/api/indexHelloNextJs.json", 1);
-/* harmony import */ var _api_parkAPI_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../api/parkAPI.json */ "./pages/api/parkAPI.json");
-var _api_parkAPI_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../api/parkAPI.json */ "./pages/api/parkAPI.json", 1);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _api_headerlink_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../api/headerlink.json */ "./pages/api/headerlink.json");
+var _api_headerlink_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../api/headerlink.json */ "./pages/api/headerlink.json", 1);
+/* harmony import */ var _api_indexHelloNextJs_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../api/indexHelloNextJs.json */ "./pages/api/indexHelloNextJs.json");
+var _api_indexHelloNextJs_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../api/indexHelloNextJs.json */ "./pages/api/indexHelloNextJs.json", 1);
+/* harmony import */ var _api_parkAPI_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../api/parkAPI.json */ "./pages/api/parkAPI.json");
+var _api_parkAPI_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../api/parkAPI.json */ "./pages/api/parkAPI.json", 1);
 var _this = undefined,
     _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/apiComponents/functionContextJson.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -20947,14 +20953,23 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 var API_URL = "http://localhost:1337";
 
 var getHeader = function getHeader() {
-  return _api_headerlink_json__WEBPACK_IMPORTED_MODULE_2__;
+  return _api_headerlink_json__WEBPACK_IMPORTED_MODULE_3__;
 }; // 使用function作爲api承接內容，在上方的return中map接到的值
 
 var getIndexHelloNextJs = function getIndexHelloNextJs() {
-  return _api_indexHelloNextJs_json__WEBPACK_IMPORTED_MODULE_3__;
+  return _api_indexHelloNextJs_json__WEBPACK_IMPORTED_MODULE_4__;
 };
 var getPark = function getPark() {
-  return _api_parkAPI_json__WEBPACK_IMPORTED_MODULE_4__;
+  return _api_parkAPI_json__WEBPACK_IMPORTED_MODULE_5__;
+}; // for Header.js
+
+var handler = function handler() {
+  next_router__WEBPACK_IMPORTED_MODULE_2___default.a.push({
+    pathname: '/',
+    query: {
+      name: 'Home'
+    }
+  });
 }; // 當作額外插入的link來使用，這裡面的post.id，post.title都是藉由被map進來的post值使用
 
 var PostLink = function PostLink(_ref) {
@@ -20965,14 +20980,14 @@ var PostLink = function PostLink(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27,
+      lineNumber: 36,
       columnNumber: 3
     }
   }, __jsx("a", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 37,
       columnNumber: 5
     }
   }, post.title));

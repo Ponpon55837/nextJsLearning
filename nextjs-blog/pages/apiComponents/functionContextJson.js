@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Router from 'next/router'
 import headerlink from '../api/headerlink.json'
 import indexHelloNextJs from '../api/indexHelloNextJs.json'
 import park from '../api/parkAPI.json'
@@ -20,6 +21,14 @@ export const getIndexHelloNextJs = () => {
 
 export const getPark = () => {
   return park
+}
+
+// for Header.js
+export const handler = () => {
+  Router.push({
+    pathname: '/',
+    query: { name: 'Home' },
+  })
 }
 
 // 當作額外插入的link來使用，這裡面的post.id，post.title都是藉由被map進來的post值使用
