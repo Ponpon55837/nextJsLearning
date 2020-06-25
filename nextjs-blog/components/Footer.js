@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { getHeader } from '../pages/apiComponents/functionContextJson.js'
+import { getHeader, footerDescription } from '../pages/apiComponents/functionContextJson.js'
 import { fatFooter, wordCapitalize } from '../styles/utilStyle.js'
 import layoutStyles from '../styles/layout.module.css'
 // bootstrap
@@ -23,7 +23,9 @@ const Footer = () => {
         </Row>
         <Row>
           <Col>
-            <span className={`text-muted ${layoutStyles.textModule}`}>Upfloor make nextjs (๑•ี_เ•ี๑)</span>
+            <span className={`text-muted ${layoutStyles.textModule}`}>
+              { footerDescription() }
+            </span>
           </Col>
         </Row>
       </Container>

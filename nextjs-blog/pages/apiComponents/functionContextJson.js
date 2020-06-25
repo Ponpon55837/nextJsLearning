@@ -4,6 +4,7 @@ import headerlink from '../api/headerlink.json'
 import indexHelloNextJs from '../api/indexHelloNextJs.json'
 import park from '../api/parkAPI.json'
 import { wordCapitalize } from '../../styles/utilStyle.js'
+import { Row, Col } from 'react-bootstrap'
 
 // 把所有使用內部json的function放在這邊，這樣要重複使用呼叫不用作多餘的事情
 // 但是如果是使用getStaticProps or getInitialProps or getServerSideProps or getStaticPath則無法如此使用
@@ -48,4 +49,23 @@ export const pageDescription = ( pageDes ) => {
 
 export const titleDescription = ( titleDes ) => {
   return titleDes = 'The website is built by upfloor which is a work that train myself to be up floor.'
+}
+
+export const footerDescription = ( footerDes ) => {
+  return (
+    <Row>
+      <Col xs={0} sm={0} md={1} lg={1} xl={2}></Col>
+      <Col xs={6} sm={6} md={5} lg={5} xl={4}>{ webDescription() }</Col>
+      <Col xs={6} sm={6} md={5} lg={5} xl={4}>{ copyRight() }</Col>
+      <Col xs={0} sm={0} md={1} lg={1} xl={2}></Col>
+    </Row>
+  )
+}
+
+export const webDescription = ( webDes ) => {
+  return webDes = `Upfloor make nextjs (๑•ี_เ•ี๑)`
+}
+
+export const copyRight = ( copyDes ) => {
+  return copyDes = `Copyright © 2019-2020 Upfloor`
 }
