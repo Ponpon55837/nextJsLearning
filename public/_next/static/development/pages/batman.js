@@ -56,6 +56,7 @@ var Footer = function Footer() {
     }
   }, !Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["getHeader"])() ? 'Loading ...' : Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["getHeader"])().map(function (header) {
     return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+      key: header.id,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -64,7 +65,6 @@ var Footer = function Footer() {
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: header.link,
-      key: header.id,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -21228,7 +21228,7 @@ var cardHeader = {
 
 /***/ }),
 
-/***/ 2:
+/***/ 7:
 /*!****************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fbatman&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fbatman.js ***!
   \****************************************************************************************************************************************************************/
@@ -21251,5 +21251,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[7,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=batman.js.map

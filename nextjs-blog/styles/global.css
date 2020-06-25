@@ -13,11 +13,15 @@ body {
 }
 
 a {
-  color: #0070f3;
+  color: #EB8B9C;
+  opacity: 0.8;
   text-decoration: none;
 }
 
 a:hover {
+  color: #F8F0A9;
+  opacity: 0.8;
+  font-weight: bold;
   text-decoration: underline;
 }
 
