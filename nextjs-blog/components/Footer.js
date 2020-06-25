@@ -1,13 +1,31 @@
-import { fatFooter } from '../styles/utilStyle.js'
+import Link from 'next/link'
+import { getHeader } from '../pages/apiComponents/functionContextJson.js'
+import { fatFooter, wordCapitalize } from '../styles/utilStyle.js'
 import layoutStyles from '../styles/layout.module.css'
 // bootstrap
-import Container from 'react-bootstrap/Container'
+import { Container, Row, Col } from 'react-bootstrap'
 
 const Footer = () => {
   return (
     <footer className={layoutStyles.footer} style ={fatFooter}>
       <Container>
-        <span className="text-muted">Upfloor make nextjs (๑•ี_เ•ี๑)</span>
+        <Row>
+          {
+            !getHeader() ? 'Loading ...' :
+            getHeader().map(header => (
+              <Col>
+                <Link href={header.link} key={header.id}>
+                  <a className="nav-item nav-link" title={`Connect to ${header.title} Page`} style={wordCapitalize}>{header.title}</a>
+                </Link>
+              </Col>
+            ))
+          }
+        </Row>
+        <Row>
+          <Col>
+            <span className={`text-muted ${layoutStyles.textModule}`}>Upfloor make nextjs (๑•ี_เ•ี๑)</span>
+          </Col>
+        </Row>
       </Container>
     </footer>
   )
