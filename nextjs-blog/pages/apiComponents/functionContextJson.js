@@ -55,8 +55,8 @@ export const footerDescription = ( footerDes ) => {
   return (
     <Row>
       <Col xs={0} sm={0} md={1} lg={1} xl={2}></Col>
-      <Col xs={6} sm={6} md={5} lg={5} xl={4}>{ webDescription() }</Col>
-      <Col xs={6} sm={6} md={5} lg={5} xl={4}>{ copyRight() }</Col>
+      <Col xs={6} sm={6} md={5} lg={5} xl={4}>{ !webDescription() ? 'Loading ...' : webDescription() }</Col>
+      <Col xs={6} sm={6} md={5} lg={5} xl={4}>{ !copyRight() ? 'Loafing ...' : copyRight() }</Col>
       <Col xs={0} sm={0} md={1} lg={1} xl={2}></Col>
     </Row>
   )

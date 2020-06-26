@@ -24,7 +24,7 @@ const Footer = () => {
         <Row>
           <Col>
             <span className={`text-muted ${layoutStyles.textModule}`}>
-              { footerDescription() }
+              { !footerDescription() ? 'Loading ...' : footerDescription() }
             </span>
           </Col>
         </Row>

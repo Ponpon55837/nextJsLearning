@@ -104,7 +104,7 @@ var Footer = function Footer() {
       lineNumber: 26,
       columnNumber: 13
     }
-  }, Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["footerDescription"])())))));
+  }, !Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["footerDescription"])() ? 'Loading ...' : Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["footerDescription"])())))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -20906,7 +20906,7 @@ var footerDescription = function footerDescription(footerDes) {
       lineNumber: 58,
       columnNumber: 7
     }
-  }, webDescription()), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
+  }, !webDescription() ? 'Loading ...' : webDescription()), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
     xs: 6,
     sm: 6,
     md: 5,
@@ -20918,7 +20918,7 @@ var footerDescription = function footerDescription(footerDes) {
       lineNumber: 59,
       columnNumber: 7
     }
-  }, copyRight()), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
+  }, !copyRight() ? 'Loafing ...' : copyRight()), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
     xs: 0,
     sm: 0,
     md: 1,
@@ -21275,7 +21275,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!*********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Findex.js ***!
   \*********************************************************************************************************************************************************/
@@ -21298,5 +21298,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
