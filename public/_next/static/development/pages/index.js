@@ -21275,7 +21275,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!*********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Findex.js ***!
   \*********************************************************************************************************************************************************/
@@ -21298,5 +21298,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
