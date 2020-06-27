@@ -56,6 +56,7 @@ var Footer = function Footer() {
     }
   }, !Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["getHeader"])() ? 'Loading ...' : Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["getHeader"])().map(function (header) {
     return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
+      className: "d-none d-sm-none d-md-none d-lg-block",
       key: header.id,
       __self: _this,
       __source: {
@@ -21391,7 +21392,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 2:
+/***/ 3:
 /*!************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fblog.js ***!
   \************************************************************************************************************************************************************/
@@ -21414,5 +21415,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=blog.js.map

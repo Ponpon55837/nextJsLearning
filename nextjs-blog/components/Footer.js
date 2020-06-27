@@ -13,7 +13,7 @@ const Footer = () => {
           {
             !getHeader() ? 'Loading ...' :
             getHeader().map(header => (
-              <Col key={header.id}>
+              <Col className='d-none d-sm-none d-md-none d-lg-block' key={header.id}>
                 <Link href={header.link}>
                   <a className="nav-item nav-link" title={`Connect to ${header.title} Page`} style={wordCapitalize}>{header.title}</a>
                 </Link>
