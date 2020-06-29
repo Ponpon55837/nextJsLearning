@@ -71,7 +71,7 @@ export const copyRight = ( copyDes ) => {
 }
 
 export const get_random = (list) => {
-  return list[Math.floor((Math.random()*list.length))]
+  return list[ Math.floor( Math.random() * list.length ) ]
 }
 
 export const headerBar = ( headBar ) => {
