@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import { handler, getHeader } from '../pages/apiComponents/functionContextJson.js'
+import { handler, headerBar, getHeader } from '../pages/apiComponents/functionContextJson.js'
 import { mainStyle, wordCapitalize } from '../styles/utilStyle.js'
 
 const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" style={mainStyle}>
-      <Navbar.Brand><span onClick={handler}>NextJS with Bootstrap</span></Navbar.Brand>
+      <Navbar.Brand><span onClick={handler}>{ !headerBar()? 'Loading ...' : headerBar() }</span></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">

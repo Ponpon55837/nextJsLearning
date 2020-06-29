@@ -166,7 +166,7 @@ var Header = function Header() {
       lineNumber: 10,
       columnNumber: 21
     }
-  }, "NextJS with Bootstrap")), __jsx(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"].Toggle, {
+  }, !Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["headerBar"])() ? 'Loading ...' : Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["headerBar"])())), __jsx(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"].Toggle, {
     "aria-controls": "responsive-navbar-nav",
     __self: _this,
     __source: {
@@ -20968,7 +20968,7 @@ var CategoryJson = function CategoryJson(_ref3) {
 /*!****************************************************!*\
   !*** ./pages/apiComponents/functionContextJson.js ***!
   \****************************************************/
-/*! exports provided: API_URL, getHeader, getIndexHelloNextJs, getPark, handler, PostLink, pageDescription, titleDescription, footerDescription, webDescription, copyRight */
+/*! exports provided: API_URL, getHeader, getIndexHelloNextJs, getPark, handler, PostLink, pageDescription, titleDescription, footerDescription, webDescription, copyRight, headerBar */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -20984,6 +20984,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "footerDescription", function() { return footerDescription; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "webDescription", function() { return webDescription; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "copyRight", function() { return copyRight; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "headerBar", function() { return headerBar; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
@@ -21126,6 +21127,11 @@ var webDescription = function webDescription(webDes) {
 };
 var copyRight = function copyRight(copyDes) {
   return copyDes = "Copyright \xA9 2019-2020 Upfloor";
+};
+var headerBar = function headerBar(headBar) {
+  var randomText = ['NextJS', 'Bootstrap', 'ReactJs', 'Framework', 'Javascript'];
+  var randomWriter = ['Upfloor', 'StudioP', 'GameStart', 'FrontendLearning'];
+  return headBar = randomText[Math.floor(Math.random() * randomText.length)] + ' with ' + randomWriter[Math.floor(Math.random() * randomWriter.length)];
 };
 
 /***/ }),
@@ -21432,7 +21438,7 @@ var cardHeader = {
 
 /***/ }),
 
-/***/ 2:
+/***/ 4:
 /*!************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ftest&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Ftest.js ***!
   \************************************************************************************************************************************************************/
@@ -21455,5 +21461,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[4,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=test.js.map

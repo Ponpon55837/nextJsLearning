@@ -69,3 +69,10 @@ export const webDescription = ( webDes ) => {
 export const copyRight = ( copyDes ) => {
   return copyDes = `Copyright © 2019-2020 Upfloor`
 }
+
+export const headerBar = ( headBar ) => {
+  const randomText = [ 'NextJS', 'Bootstrap', 'ReactJs', 'Framework', 'Javascript' ]
+  const randomWriter = [ 'Upfloor', 'StudioP', 'GameStart', 'FrontendLearning' ]
+  return headBar = randomText[Math.floor(Math.random() * randomText.length)] +
+  ' with ' + randomWriter[Math.floor(Math.random() * randomWriter.length)]
+}
