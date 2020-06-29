@@ -70,9 +70,13 @@ export const copyRight = ( copyDes ) => {
   return copyDes = `Copyright © 2019-2020 Upfloor`
 }
 
+export const get_random = (list) => {
+  return list[Math.floor((Math.random()*list.length))]
+}
+
 export const headerBar = ( headBar ) => {
   const randomText = [ 'NextJS', 'Bootstrap', 'ReactJs', 'Framework', 'Javascript' ]
   const randomWriter = [ 'Upfloor', 'StudioP', 'GameStart', 'FrontendLearning' ]
-  return headBar = randomText[Math.floor(Math.random() * randomText.length)] +
-  ' with ' + randomWriter[Math.floor(Math.random() * randomWriter.length)]
+
+  return headBar = get_random(randomText) + ' with ' + get_random(randomWriter)
 }

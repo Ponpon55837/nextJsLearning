@@ -7,7 +7,7 @@ import { mainStyle, wordCapitalize } from '../styles/utilStyle.js'
 const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg" style={mainStyle}>
-      <Navbar.Brand><span onClick={handler}>{ !headerBar()? 'Loading ...' : headerBar() }</span></Navbar.Brand>
+      <Navbar.Brand><span onClick={handler}>{ !headerBar()? 'NextJS with Bootsrtap' : headerBar() }</span></Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">

@@ -166,7 +166,7 @@ var Header = function Header() {
       lineNumber: 10,
       columnNumber: 21
     }
-  }, !Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["headerBar"])() ? 'Loading ...' : Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["headerBar"])())), __jsx(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"].Toggle, {
+  }, !Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["headerBar"])() ? 'NextJS with Bootsrtap' : Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["headerBar"])())), __jsx(react_bootstrap_Navbar__WEBPACK_IMPORTED_MODULE_2__["default"].Toggle, {
     "aria-controls": "responsive-navbar-nav",
     __self: _this,
     __source: {
@@ -20862,7 +20862,12 @@ var copyRight = function copyRight(copyDes) {
 var headerBar = function headerBar(headBar) {
   var randomText = ['NextJS', 'Bootstrap', 'ReactJs', 'Framework', 'Javascript'];
   var randomWriter = ['Upfloor', 'StudioP', 'GameStart', 'FrontendLearning'];
-  return headBar = randomText[Math.floor(Math.random() * randomText.length)] + ' with ' + randomWriter[Math.floor(Math.random() * randomWriter.length)];
+
+  var get_random = function get_random(list) {
+    return list[Math.floor(Math.random() * list.length)];
+  };
+
+  return headBar = get_random(randomText) + ' with ' + get_random(randomWriter);
 };
 
 /***/ }),
@@ -21235,7 +21240,7 @@ var cardHeader = {
 
 /***/ }),
 
-/***/ 8:
+/***/ 2:
 /*!****************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fbatman&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fbatman.js ***!
   \****************************************************************************************************************************************************************/
@@ -21258,5 +21263,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[8,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=batman.js.map
