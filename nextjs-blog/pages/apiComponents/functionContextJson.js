@@ -55,8 +55,8 @@ export const footerDescription = ( footerDes ) => {
   return (
     <Row>
       <Col xs={0} sm={0} md={1} lg={1} xl={2}></Col>
-      <Col xs={6} sm={6} md={5} lg={5} xl={4}>{ !webDescription() ? 'Loading ...' : webDescription() }</Col>
-      <Col xs={6} sm={6} md={5} lg={5} xl={4}>{ !copyRight() ? 'Loafing ...' : copyRight() }</Col>
+      <Col className='d-none d-sm-block' sm={6} md={5} lg={5} xl={4}>{ !webDescription() ? 'Loading ...' : webDescription() }</Col>
+      <Col xs={12} sm={6} md={5} lg={5} xl={4}>{ !copyRight() ? 'Loafing ...' : copyRight() }</Col>
       <Col xs={0} sm={0} md={1} lg={1} xl={2}></Col>
     </Row>
   )
@@ -70,7 +70,7 @@ export const copyRight = ( copyDes ) => {
   return copyDes = `Copyright © 2019-2020 Upfloor`
 }
 
-export const get_random = (list) => {
+export const getRandom = ( list ) => {
   return list[ Math.floor( Math.random() * list.length ) ]
 }
 
@@ -78,5 +78,5 @@ export const headerBar = ( headBar ) => {
   const randomText = [ 'NextJS', 'Bootstrap', 'ReactJs', 'Framework', 'Javascript' ]
   const randomWriter = [ 'Upfloor', 'StudioP', 'GameStart', 'FrontendLearning' ]
 
-  return headBar = get_random(randomText) + ' with ' + get_random(randomWriter)
+  return headBar = getRandom(randomText) + ' with ' + getRandom(randomWriter)
 }
