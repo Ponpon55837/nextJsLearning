@@ -51,11 +51,14 @@ export const ProductJson = ({ products }) => {
                       {product.description}<br /><br />
                       Price:{
                         console.log(product.categories[0].id),
-                        !product.categories[0].id ? '' : product.price }<br />
+                        !product.categories[0].id ? null : product.price }<br />
                       Category:{
-                        !product.categories[0].id ? '' : product.categories[0].name
+                        !product.categories[0].id ? null : product.categories[0].name
                       }<br />
-                      <cite title="Source Title">Quality:{product.quality}</cite>
+                      <cite title="Source Title">Quality:{product.quality}</cite><br />
+                      {
+                        product.categories[0].id != 1 ? null :
+                        `Create_at:` + product.categories[0].created_at }
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>

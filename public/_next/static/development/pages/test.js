@@ -20882,14 +20882,14 @@ var ProductJson = function ProductJson(_ref2) {
         lineNumber: 51,
         columnNumber: 50
       }
-    }), "Price:", (console.log(product.categories[0].id), !product.categories[0].id ? '' : product.price), __jsx("br", {
+    }), "Price:", (console.log(product.categories[0].id), !product.categories[0].id ? null : product.price), __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 54,
-        columnNumber: 73
+        columnNumber: 75
       }
-    }), "Category:", !product.categories[0].id ? '' : product.categories[0].name, __jsx("br", {
+    }), "Category:", !product.categories[0].id ? null : product.categories[0].name, __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -20904,7 +20904,14 @@ var ProductJson = function ProductJson(_ref2) {
         lineNumber: 58,
         columnNumber: 23
       }
-    }, "Quality:", product.quality))))));
+    }, "Quality:", product.quality), __jsx("br", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 58,
+        columnNumber: 82
+      }
+    }), product.categories[0].id != 1 ? null : "Create_at:" + product.categories[0].created_at)))));
   })));
 }; // categories由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
 
@@ -20916,7 +20923,7 @@ var CategoryJson = function CategoryJson(_ref3) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 80,
       columnNumber: 7
     }
   }, // 如果products不存在，那畫面就顯示Loading...
@@ -20932,7 +20939,7 @@ var CategoryJson = function CategoryJson(_ref3) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 83,
+        lineNumber: 86,
         columnNumber: 13
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroup"], {
@@ -20940,21 +20947,21 @@ var CategoryJson = function CategoryJson(_ref3) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84,
+        lineNumber: 87,
         columnNumber: 15
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroup"].Item, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85,
+        lineNumber: 88,
         columnNumber: 17
       }
     }, category.name, __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86,
+        lineNumber: 89,
         columnNumber: 34
       }
     }), __jsx("cite", {
@@ -20962,7 +20969,7 @@ var CategoryJson = function CategoryJson(_ref3) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87,
+        lineNumber: 90,
         columnNumber: 19
       }
     }, category.created_at))));
