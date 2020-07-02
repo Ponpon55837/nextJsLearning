@@ -32,7 +32,6 @@ export const CourseJson = ({ courses }) => {
 
 // products由外部接入，這個值需要由data傳入
 export const ProductJson = ({ products }) => {
-
   console.log(products)
   return (
     <>
@@ -50,7 +49,12 @@ export const ProductJson = ({ products }) => {
                   <Accordion.Collapse eventKey={product.id}>
                     <Card.Body>
                       {product.description}<br /><br />
-                      Price:{product.price}<br />
+                      Price:{
+                        console.log(product.categories[0].id),
+                        !product.categories[0].id ? '' : product.price }<br />
+                      Category:{
+                        !product.categories[0].id ? '' : product.categories[0].name
+                      }<br />
                       <cite title="Source Title">Quality:{product.quality}</cite>
                     </Card.Body>
                   </Accordion.Collapse>

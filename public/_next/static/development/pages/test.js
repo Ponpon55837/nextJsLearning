@@ -20810,7 +20810,7 @@ var ProductJson = function ProductJson(_ref2) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39,
+      lineNumber: 38,
       columnNumber: 7
     }
   }, // 如果products不存在，那畫面就顯示Loading...
@@ -20826,7 +20826,7 @@ var ProductJson = function ProductJson(_ref2) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44,
+        lineNumber: 43,
         columnNumber: 13
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Accordion"], {
@@ -20834,14 +20834,14 @@ var ProductJson = function ProductJson(_ref2) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45,
+        lineNumber: 44,
         columnNumber: 15
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Card"], {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46,
+        lineNumber: 45,
         columnNumber: 17
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Accordion"].Toggle, {
@@ -20850,7 +20850,7 @@ var ProductJson = function ProductJson(_ref2) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47,
+        lineNumber: 46,
         columnNumber: 19
       }
     }, product.title), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Accordion"].Collapse, {
@@ -20858,43 +20858,50 @@ var ProductJson = function ProductJson(_ref2) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50,
+        lineNumber: 49,
         columnNumber: 19
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Card"].Body, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51,
+        lineNumber: 50,
         columnNumber: 21
       }
     }, product.description, __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52,
+        lineNumber: 51,
         columnNumber: 44
       }
     }), __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52,
+        lineNumber: 51,
         columnNumber: 50
       }
-    }), "Price:", product.price, __jsx("br", {
+    }), "Price:", (console.log(product.categories[0].id), !product.categories[0].id ? '' : product.price), __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53,
-        columnNumber: 44
+        lineNumber: 54,
+        columnNumber: 73
+      }
+    }), "Category:", !product.categories[0].id ? '' : product.categories[0].name, __jsx("br", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 57,
+        columnNumber: 24
       }
     }), __jsx("cite", {
       title: "Source Title",
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54,
+        lineNumber: 58,
         columnNumber: 23
       }
     }, "Quality:", product.quality))))));
@@ -20909,7 +20916,7 @@ var CategoryJson = function CategoryJson(_ref3) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 77,
       columnNumber: 7
     }
   }, // 如果products不存在，那畫面就顯示Loading...
@@ -20925,7 +20932,7 @@ var CategoryJson = function CategoryJson(_ref3) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 79,
+        lineNumber: 83,
         columnNumber: 13
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroup"], {
@@ -20933,21 +20940,21 @@ var CategoryJson = function CategoryJson(_ref3) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80,
+        lineNumber: 84,
         columnNumber: 15
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["ListGroup"].Item, {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81,
+        lineNumber: 85,
         columnNumber: 17
       }
     }, category.name, __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 82,
+        lineNumber: 86,
         columnNumber: 34
       }
     }), __jsx("cite", {
@@ -20955,7 +20962,7 @@ var CategoryJson = function CategoryJson(_ref3) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 83,
+        lineNumber: 87,
         columnNumber: 19
       }
     }, category.created_at))));
@@ -21442,7 +21449,7 @@ var cardHeader = {
 
 /***/ }),
 
-/***/ 4:
+/***/ 2:
 /*!************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ftest&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Ftest.js ***!
   \************************************************************************************************************************************************************/
@@ -21465,5 +21472,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]);
+},[[2,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=test.js.map
