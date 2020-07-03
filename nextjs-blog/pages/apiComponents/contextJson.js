@@ -18,7 +18,7 @@ export const CourseJson = ({ courses }) => {
               <ListGroup variant="flush" >
                 <ListGroup.Item >
                   {course.title}<br />
-                  <Image  src={API_URL + course.image.url} rounded fluid /><br />
+                  <Image  src={ !(API_URL + course.image.url) ? null : API_URL + course.image.url} rounded fluid /><br />
                   <cite title="Source Title">{course.published}</cite>
                 </ListGroup.Item>
               </ListGroup>
@@ -49,15 +49,17 @@ export const ProductJson = ({ products }) => {
                   <Accordion.Collapse eventKey={product.id}>
                     <Card.Body>
                       {product.description}<br /><br />
-                      Price:{
-                        console.log(product.categories[0].id),
-                        !product.categories[0].id ? null : product.price }<br />
-                      Category:{
-                        !product.categories[0].id ? null : product.categories[0].name
-                      }<br />
-                      <cite title="Source Title">Quality:{product.quality}</cite><br />
                       {
-                        product.categories[0].id != 1 ? null :
+                        console.log(product.categories[0].id),
+                        !product.categories[0].id ? null :
+                        `Price:` + product.price }<br />
+                      {
+                        !product.categories[0].id ? null :
+                        `Category:` + product.categories[0].name }<br />
+                      { !product.categories[0].id ? null :
+                        `Quality:` + product.quality }<br />
+                      {
+                        !product.categories[0].id == 1 ? null :
                         `Create_at:` + product.categories[0].created_at }
                     </Card.Body>
                   </Accordion.Collapse>

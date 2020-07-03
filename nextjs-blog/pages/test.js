@@ -43,7 +43,8 @@ export const getStaticProps = async ({ start_num = 2, limit_num = 3 }) => {
   const res_course = await fetch(`${API_URL}/courses`)
   const res_product = await fetch(`${API_URL}/products`)
   // 只抓取特定頁面的話可以用/categories?_start=4&_limit=1
-  const res_category = await fetch(`${API_URL}/categories?_start=${start_num}&_limit=${limit_num}`)
+  const res_category = await fetch(
+    `${API_URL}/categories?_start=${start_num}&_limit=${limit_num}`)
 
   const data_course = await res_course.json()
   const data_product = await res_product.json()
