@@ -187,7 +187,14 @@ var ProductJson = function ProductJson(_ref2) {
         lineNumber: 51,
         columnNumber: 50
       }
-    }), (console.log(product.categories[0].id), !product.categories[0].id ? null : "Price:" + product.price + "<br />"), !product.categories[0].id ? null : "Category:" + product.categories[0].name, __jsx("br", {
+    }), (console.log(product.categories[0].id), !product.categories[0].id ? null : "Price:" + product.price), __jsx("br", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 55,
+        columnNumber: 51
+      }
+    }), !product.categories[0].id ? null : "Category:" + product.categories[0].name, __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -269,4 +276,4 @@ var CategoryJson = function CategoryJson(_ref3) {
 /***/ })
 
 })
-//# sourceMappingURL=test.js.ffc01bba460078924231.hot-update.js.map
+//# sourceMappingURL=test.js.2b4203b361dfbcc96598.hot-update.js.map

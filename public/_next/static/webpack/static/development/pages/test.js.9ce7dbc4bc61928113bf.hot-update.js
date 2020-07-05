@@ -150,7 +150,7 @@ var ProductJson = function ProductJson(_ref2) {
         columnNumber: 17
       }
     }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Accordion"].Toggle, {
-      as: react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Card"].Header,
+      as: product.Header,
       eventKey: product.id,
       __self: _this,
       __source: {
@@ -276,4 +276,4 @@ var CategoryJson = function CategoryJson(_ref3) {
 /***/ })
 
 })
-//# sourceMappingURL=test.js.e38fc5d9b630ac5361e0.hot-update.js.map
+//# sourceMappingURL=test.js.9ce7dbc4bc61928113bf.hot-update.js.map
