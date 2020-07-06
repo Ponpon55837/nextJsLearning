@@ -17,7 +17,7 @@ export const CourseJson = ({ courses }) => {
             <Col xs={12} sm={6} md={4} lg={4} xl={3} key={course.id}>
               <ListGroup variant="flush" >
                 <ListGroup.Item >
-                  {course.title}<br />
+                  <center>{course.title}</center><br />
                   <Image  src={ !(API_URL + course.image.url) ? null : API_URL + course.image.url} rounded fluid /><br />
                   <cite title="Source Title">{course.published}</cite>
                 </ListGroup.Item>

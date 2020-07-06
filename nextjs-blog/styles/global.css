@@ -34,3 +34,8 @@ img {
 h1 {
 	font-size: 1.9rem;
 }
+
+center {
+  font-weight: bold;
+  color: #afaeb2;
+}

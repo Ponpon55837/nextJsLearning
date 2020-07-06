@@ -20766,12 +20766,19 @@ var CourseJson = function CourseJson(_ref) {
         lineNumber: 19,
         columnNumber: 17
       }
-    }, course.title, __jsx("br", {
+    }, __jsx("center", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 20,
-        columnNumber: 33
+        columnNumber: 19
+      }
+    }, course.title), __jsx("br", {
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 20,
+        columnNumber: 50
       }
     }), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Image"], {
       src: !(_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["API_URL"] + course.image.url) ? null : _functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["API_URL"] + course.image.url,
