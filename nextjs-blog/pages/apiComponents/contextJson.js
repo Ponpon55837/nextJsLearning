@@ -1,5 +1,6 @@
 import fetch from 'isomorphic-unfetch'
 import { rowStyle } from '../../styles/utilStyle.js'
+import utilStyle from '../../styles/utils.module.css'
 import { API_URL } from './functionContextJson.js'
 import { Col, Row, ListGroup, Image, Card, Accordion } from 'react-bootstrap'
 
@@ -17,8 +18,8 @@ export const CourseJson = ({ courses }) => {
             <Col xs={12} sm={6} md={4} lg={4} xl={3} key={course.id}>
               <ListGroup variant="flush" >
                 <ListGroup.Item >
-                  <center>{course.title}</center><br />
-                  <Image  src={ !(API_URL + course.image.url) ? null : API_URL + course.image.url} rounded fluid /><br />
+                  <div className={utilStyle.courseDiv}>{course.title}</div><br />
+                  <Image className={utilStyle.courseIMG}  src={ !(API_URL + course.image.url) ? null : API_URL + course.image.url} rounded fluid /><br />
                   <cite title="Source Title">{course.published}</cite>
                 </ListGroup.Item>
               </ListGroup>
