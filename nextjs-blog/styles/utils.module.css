@@ -139,6 +139,7 @@
   font-weight: bold;
   color: #afaeb2;
 }
+
 .courseIMG {
   overflow: hidden;
   transition: all 0.6s;
@@ -146,4 +147,14 @@
 
 .courseIMG:hover {
   transform: scale(1.2);
+}
+
+.courseListGroupItem {
+  overflow: hidden;
+}
+
+.productStyle {
+  text-align: center;
+  font-weight: bold;
+  color: #afaeb2;
 }

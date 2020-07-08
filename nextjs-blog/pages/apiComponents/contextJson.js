@@ -17,9 +17,9 @@ export const CourseJson = ({ courses }) => {
           courses.map(course => (
             <Col xs={12} sm={6} md={4} lg={4} xl={3} key={course.id}>
               <ListGroup variant="flush" >
-                <ListGroup.Item >
+                <ListGroup.Item className={utilStyle.courseListGroupItem}>
                   <div className={utilStyle.courseDiv}>{course.title}</div><br />
-                  <Image className={utilStyle.courseIMG}  src={ !(API_URL + course.image.url) ? null : API_URL + course.image.url} rounded fluid /><br />
+                  <Image className={utilStyle.courseIMG}  src={ !(API_URL + course.image.url) ? null : API_URL + course.image.url } rounded fluid /><br />
                   <cite title="Source Title">{course.published}</cite>
                 </ListGroup.Item>
               </ListGroup>
@@ -55,15 +55,15 @@ export const ProductJson = ({ products }) => {
                         // 如果陣列不存在清空位置，存在的話才顯示內容
                         console.log(product.categories[0].id),
                         !product.categories[0].id ? null :
-                        `Price:` + product.price }<br />
+                        `Price: ` + product.price }<br />
                       {
                         !product.categories[0].id ? null :
-                        `Category:` + product.categories[0].name }<br />
+                        `Category: ` + product.categories[0].name }<br />
                       { !product.categories[0].id ? null :
-                        `Quality:` + product.quality }<br />
+                        `Quality: ` + product.quality }<br />
                       {
                         !product.categories[0].id == 1 ? null :
-                        `Create_at:` + product.categories[0].created_at }
+                        `Create_at: ` + product.categories[0].created_at }
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
