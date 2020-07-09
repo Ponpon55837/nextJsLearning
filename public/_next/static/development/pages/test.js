@@ -21248,6 +21248,9 @@ var copyRight = function copyRight(copyDes) {
   return copyDes = "Copyright \xA9 2019-2020 Upfloor";
 };
 var getRandom = function getRandom(list) {
+  // Math.floor函式會回傳小於等於所給數字的最大整數。
+  // console.log(Math.floor(45.95)) => 45
+  // console.log(Math.floor(-8.77)) => -9
   return list[Math.floor(Math.random() * list.length)];
 };
 var headerBar = function headerBar(headBar) {
