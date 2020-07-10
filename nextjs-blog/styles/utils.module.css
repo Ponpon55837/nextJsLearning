@@ -158,3 +158,9 @@
   font-weight: bold;
   color: #afaeb2;
 }
+
+.colStyle {
+  border-left-width: 0.09rem;
+  border-left-style: solid;
+  border-left-color: #D87E79;
+}

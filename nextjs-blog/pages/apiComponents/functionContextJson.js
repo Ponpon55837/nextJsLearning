@@ -58,12 +58,17 @@ export const titleDescription = () => {
 export const footerDescription = () => {
   return (
     <Row>
-      <Col xs={0} sm={0} md={1} lg={1} xl={2}></Col>
-      <Col className='d-none d-sm-block' sm={6} md={5} lg={5} xl={4}>{
-        // 判斷式先判斷webDescription()能不能執行，如果不能那麼顯示Loading ... ， 可以的話執行webDescription()
-        !webDescription() ? 'Loading ...' : webDescription() }</Col>
-      <Col xs={12} sm={6} md={5} lg={5} xl={4}>{ !copyRight() ? 'Loading ...' : copyRight() }</Col>
-      <Col xs={0} sm={0} md={1} lg={1} xl={2}></Col>
+      <Col className='d-none d-sm-block' sm={12} md={12} lg={12} xl={12}>
+        {
+          // 判斷式先判斷webDescription()能不能執行，如果不能那麼顯示Loading ... ， 可以的話執行webDescription()
+          !webDescription() ? 'Loading ...' : webDescription()
+        }
+      </Col>
+      <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+        {
+          !copyRight() ? 'Loading ...' : copyRight()
+        }
+      </Col>
     </Row>
   )
 }

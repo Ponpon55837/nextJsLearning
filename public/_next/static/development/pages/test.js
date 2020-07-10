@@ -17,12 +17,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/utilStyle.js */ "./styles/utilStyle.js");
 /* harmony import */ var _styles_layout_module_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/layout.module.css */ "./styles/layout.module.css");
 /* harmony import */ var _styles_layout_module_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_layout_module_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/utils.module.css */ "./styles/utils.module.css");
+/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
 var _this = undefined,
     _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/components/Footer.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -37,40 +40,79 @@ var Footer = function Footer() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10,
+      lineNumber: 11,
       columnNumber: 5
     }
-  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Container"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11,
-      columnNumber: 7
-    }
-  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Row"], {
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Container"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12,
+      columnNumber: 7
+    }
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Row"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
       columnNumber: 9
     }
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
+    xs: 12,
+    sm: 12,
+    md: 12,
+    lg: 6,
+    xl: 6,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 11
+    }
+  }, __jsx("span", {
+    className: "text-muted ".concat(_styles_layout_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.textModule),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15,
+      columnNumber: 13
+    }
+  }, !Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["footerDescription"])() ? 'Loading ...' : Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["footerDescription"])())), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
+    xs: 12,
+    sm: 12,
+    md: 12,
+    lg: 6,
+    xl: 6,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19,
+      columnNumber: 11
+    }
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Row"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 13
+    }
   }, !Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["getHeader"])() ? 'Loading ...' : Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["getHeader"])().map(function (header) {
-    return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
-      className: "d-none d-sm-none d-md-none d-lg-block",
+    return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
+      className: "d-none d-sm-block",
       key: header.id,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16,
-        columnNumber: 15
+        lineNumber: 24,
+        columnNumber: 19
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
       href: header.link,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17,
-        columnNumber: 17
+        lineNumber: 25,
+        columnNumber: 21
       }
     }, __jsx("a", {
       className: "nav-item nav-link",
@@ -79,33 +121,11 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 18,
-        columnNumber: 19
+        lineNumber: 26,
+        columnNumber: 23
       }
     }, header.title)));
-  })), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Row"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 9
-    }
-  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["Col"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25,
-      columnNumber: 11
-    }
-  }, __jsx("span", {
-    className: "text-muted ".concat(_styles_layout_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.textModule),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26,
-      columnNumber: 13
-    }
-  }, !Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["footerDescription"])() ? 'Loading ...' : Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["footerDescription"])())))));
+  }))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
@@ -4260,7 +4280,7 @@ var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../node_modules/cs
 var ___CSS_LOADER_URL_PURE_IMPORT_0___ = __webpack_require__(/*! ../img/bg.jpg */ "./img/bg.jpg");
 var ___CSS_LOADER_URL_IMPORT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_PURE_IMPORT_0___);
 // Module
-exports.push([module.i, "/*\n  在className當中放入module.css的方式如下\n  EX:\n  in exampleStyle.module.css\n  .divStyle { border: 1rem; }\n  ************************************\n  in example.js\n  import exampleStyle from './styles/exampleStyle.module.css'\n\n  return <div className={exampleStyle.divStyle}>example</div>\n\n  多重className寫法為\n  return <div className={`${exampleStyle.divStyle} ${exampleStyle.pStyle}`}>example</div>\n*/\n\n.utils_heading2Xl__1I65m {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingXl__1XecN {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingLg__de7p0 {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.utils_headingMd__3de6G {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.utils_borderCircle__13qdJ {\n  border-radius: 9999px;\n}\n\n.utils_colorInherit__3Gudf {\n  color: inherit;\n}\n\n.utils_padding1px__oCny8 {\n  padding-top: 1px;\n}\n\n.utils_list__S7_pe {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.utils_listItem__2eJpJ {\n  margin: 0 0 1.25rem;\n}\n\n.utils_lightText__12Ckm {\n  color: #999;\n}\n\n.utils_markdown__2R-tk {\n  font-family: 'Arial';\n}\n\n.utils_markdown__2R-tk a {\n  text-decoration: none;\n  color: blue;\n}\n\n.utils_markdown__2R-tk a:hover {\n  opacity: 0.6;\n}\n\n.utils_markdown__2R-tk h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.utils_notfound__3uF6d {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.utils_indexBG__1DCbH {\n  background-image: url(" + ___CSS_LOADER_URL_IMPORT_0___ + ");\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.utils_homeShow__2HxQ3 {\n  padding-top: 15%;\n  padding-bottom: 35%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 100%;\n  text-align: center;\n}\n\n.utils_divH1__1lonv {\n  color: white;\n  font-size: 3.5rem;\n  font-weight: bold;\n  opacity: 0.5;\n  text-align: center;\n}\n\n.utils_buttonControl__2dBWX {\n  opacity: 0.2;\n  color: white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2rem;\n  border-radius: 12px;\n}\n\n.utils_buttonControl__2dBWX :hover {\n  color: red;\n}\n\n.utils_textModule__KK23B {\n  text-align: center;\n}\n\n.utils_courseDiv__3FbM5 {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n\n.utils_courseIMG__V-pDo {\n  overflow: hidden;\n  transition: all 0.6s;\n}\n\n.utils_courseIMG__V-pDo:hover {\n  transform: scale(1.2);\n}\n\n.utils_courseListGroupItem__3D8Wi {\n  overflow: hidden;\n}\n\n.utils_productStyle__18EQF {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n", "",{"version":3,"sources":["/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/styles/utils.module.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;CAaC;;AAED;EACE,iBAAiB;EACjB,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,oBAAoB;AACtB;;AAEA;EACE,qBAAqB;EACrB,WAAW;AACb;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,SAAS;EACT,UAAU;EACV,yBAAyB;AAC3B;;AAEA;EACE,iBAAiB;EACjB,oBAAoB;AACtB;;AAEA;EACE,oDAAoC;EACpC,WAAW;;EAEX,sCAAsC;EACtC,2BAA2B;EAC3B,4BAA4B;EAC5B,sBAAsB;AACxB;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,iBAAiB;EACjB,iBAAiB;EACjB,YAAY;EACZ,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,YAAY;EACZ,YAAY;EACZ,iBAAiB;EACjB,eAAe;EACf,mBAAmB;AACrB;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,oBAAoB;AACtB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,cAAc;AAChB","file":"utils.module.css","sourcesContent":["/*\n  在className當中放入module.css的方式如下\n  EX:\n  in exampleStyle.module.css\n  .divStyle { border: 1rem; }\n  ************************************\n  in example.js\n  import exampleStyle from './styles/exampleStyle.module.css'\n\n  return <div className={exampleStyle.divStyle}>example</div>\n\n  多重className寫法為\n  return <div className={`${exampleStyle.divStyle} ${exampleStyle.pStyle}`}>example</div>\n*/\n\n.heading2Xl {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingXl {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingLg {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.headingMd {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.borderCircle {\n  border-radius: 9999px;\n}\n\n.colorInherit {\n  color: inherit;\n}\n\n.padding1px {\n  padding-top: 1px;\n}\n\n.list {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.listItem {\n  margin: 0 0 1.25rem;\n}\n\n.lightText {\n  color: #999;\n}\n\n.markdown {\n  font-family: 'Arial';\n}\n\n.markdown a {\n  text-decoration: none;\n  color: blue;\n}\n\n.markdown a:hover {\n  opacity: 0.6;\n}\n\n.markdown h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.notfound {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.indexBG {\n  background-image: url(../img/bg.jpg);\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.homeShow {\n  padding-top: 15%;\n  padding-bottom: 35%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 100%;\n  text-align: center;\n}\n\n.divH1 {\n  color: white;\n  font-size: 3.5rem;\n  font-weight: bold;\n  opacity: 0.5;\n  text-align: center;\n}\n\n.buttonControl {\n  opacity: 0.2;\n  color: white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2rem;\n  border-radius: 12px;\n}\n\n.buttonControl :hover {\n  color: red;\n}\n\n.textModule {\n  text-align: center;\n}\n\n.courseDiv {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n\n.courseIMG {\n  overflow: hidden;\n  transition: all 0.6s;\n}\n\n.courseIMG:hover {\n  transform: scale(1.2);\n}\n\n.courseListGroupItem {\n  overflow: hidden;\n}\n\n.productStyle {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n"]}]);
+exports.push([module.i, "/*\n  在className當中放入module.css的方式如下\n  EX:\n  in exampleStyle.module.css\n  .divStyle { border: 1rem; }\n  ************************************\n  in example.js\n  import exampleStyle from './styles/exampleStyle.module.css'\n\n  return <div className={exampleStyle.divStyle}>example</div>\n\n  多重className寫法為\n  return <div className={`${exampleStyle.divStyle} ${exampleStyle.pStyle}`}>example</div>\n*/\n\n.utils_heading2Xl__1I65m {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingXl__1XecN {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingLg__de7p0 {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.utils_headingMd__3de6G {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.utils_borderCircle__13qdJ {\n  border-radius: 9999px;\n}\n\n.utils_colorInherit__3Gudf {\n  color: inherit;\n}\n\n.utils_padding1px__oCny8 {\n  padding-top: 1px;\n}\n\n.utils_list__S7_pe {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.utils_listItem__2eJpJ {\n  margin: 0 0 1.25rem;\n}\n\n.utils_lightText__12Ckm {\n  color: #999;\n}\n\n.utils_markdown__2R-tk {\n  font-family: 'Arial';\n}\n\n.utils_markdown__2R-tk a {\n  text-decoration: none;\n  color: blue;\n}\n\n.utils_markdown__2R-tk a:hover {\n  opacity: 0.6;\n}\n\n.utils_markdown__2R-tk h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.utils_notfound__3uF6d {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.utils_indexBG__1DCbH {\n  background-image: url(" + ___CSS_LOADER_URL_IMPORT_0___ + ");\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.utils_homeShow__2HxQ3 {\n  padding-top: 15%;\n  padding-bottom: 35%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 100%;\n  text-align: center;\n}\n\n.utils_divH1__1lonv {\n  color: white;\n  font-size: 3.5rem;\n  font-weight: bold;\n  opacity: 0.5;\n  text-align: center;\n}\n\n.utils_buttonControl__2dBWX {\n  opacity: 0.2;\n  color: white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2rem;\n  border-radius: 12px;\n}\n\n.utils_buttonControl__2dBWX :hover {\n  color: red;\n}\n\n.utils_textModule__KK23B {\n  text-align: center;\n}\n\n.utils_courseDiv__3FbM5 {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n\n.utils_courseIMG__V-pDo {\n  overflow: hidden;\n  transition: all 0.6s;\n}\n\n.utils_courseIMG__V-pDo:hover {\n  transform: scale(1.2);\n}\n\n.utils_courseListGroupItem__3D8Wi {\n  overflow: hidden;\n}\n\n.utils_productStyle__18EQF {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n\n.utils_colStyle__3j38I {\n  border-left-width: 0.09rem;\n  border-left-style: solid;\n  border-left-color: #D87E79;\n}\n", "",{"version":3,"sources":["/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/styles/utils.module.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;CAaC;;AAED;EACE,iBAAiB;EACjB,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,oBAAoB;AACtB;;AAEA;EACE,qBAAqB;EACrB,WAAW;AACb;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,SAAS;EACT,UAAU;EACV,yBAAyB;AAC3B;;AAEA;EACE,iBAAiB;EACjB,oBAAoB;AACtB;;AAEA;EACE,oDAAoC;EACpC,WAAW;;EAEX,sCAAsC;EACtC,2BAA2B;EAC3B,4BAA4B;EAC5B,sBAAsB;AACxB;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,iBAAiB;EACjB,iBAAiB;EACjB,YAAY;EACZ,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,YAAY;EACZ,YAAY;EACZ,iBAAiB;EACjB,eAAe;EACf,mBAAmB;AACrB;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,oBAAoB;AACtB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,0BAA0B;EAC1B,wBAAwB;EACxB,0BAA0B;AAC5B","file":"utils.module.css","sourcesContent":["/*\n  在className當中放入module.css的方式如下\n  EX:\n  in exampleStyle.module.css\n  .divStyle { border: 1rem; }\n  ************************************\n  in example.js\n  import exampleStyle from './styles/exampleStyle.module.css'\n\n  return <div className={exampleStyle.divStyle}>example</div>\n\n  多重className寫法為\n  return <div className={`${exampleStyle.divStyle} ${exampleStyle.pStyle}`}>example</div>\n*/\n\n.heading2Xl {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingXl {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingLg {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.headingMd {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.borderCircle {\n  border-radius: 9999px;\n}\n\n.colorInherit {\n  color: inherit;\n}\n\n.padding1px {\n  padding-top: 1px;\n}\n\n.list {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.listItem {\n  margin: 0 0 1.25rem;\n}\n\n.lightText {\n  color: #999;\n}\n\n.markdown {\n  font-family: 'Arial';\n}\n\n.markdown a {\n  text-decoration: none;\n  color: blue;\n}\n\n.markdown a:hover {\n  opacity: 0.6;\n}\n\n.markdown h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.notfound {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.indexBG {\n  background-image: url(../img/bg.jpg);\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.homeShow {\n  padding-top: 15%;\n  padding-bottom: 35%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 100%;\n  text-align: center;\n}\n\n.divH1 {\n  color: white;\n  font-size: 3.5rem;\n  font-weight: bold;\n  opacity: 0.5;\n  text-align: center;\n}\n\n.buttonControl {\n  opacity: 0.2;\n  color: white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2rem;\n  border-radius: 12px;\n}\n\n.buttonControl :hover {\n  color: red;\n}\n\n.textModule {\n  text-align: center;\n}\n\n.courseDiv {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n\n.courseIMG {\n  overflow: hidden;\n  transition: all 0.6s;\n}\n\n.courseIMG:hover {\n  transform: scale(1.2);\n}\n\n.courseListGroupItem {\n  overflow: hidden;\n}\n\n.productStyle {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n\n.colStyle {\n  border-left-width: 0.09rem;\n  border-left-style: solid;\n  border-left-color: #D87E79;\n}\n"]}]);
 // Exports
 exports.locals = {
 	"heading2Xl": "utils_heading2Xl__1I65m",
@@ -4283,7 +4303,8 @@ exports.locals = {
 	"courseDiv": "utils_courseDiv__3FbM5",
 	"courseIMG": "utils_courseIMG__V-pDo",
 	"courseListGroupItem": "utils_courseListGroupItem__3D8Wi",
-	"productStyle": "utils_productStyle__18EQF"
+	"productStyle": "utils_productStyle__18EQF",
+	"colStyle": "utils_colStyle__3j38I"
 };
 
 /***/ }),
@@ -21177,86 +21198,64 @@ var PostLink = function PostLink(_ref) {
     }
   }, post.title));
 };
-var pageDescription = function pageDescription(pageDes) {
-  return pageDes = 'This is the page for the website.This content to description this text website how to use.';
+var pageDescription = function pageDescription() {
+  return "This is the page for the website.This content to description this text website how to use.";
 };
-var titleDescription = function titleDescription(titleDes) {
-  return titleDes = 'The website is built by upfloor which is a work that train myself to be up floor.';
+var titleDescription = function titleDescription() {
+  return "The website is built by upfloor which is a work that train myself to be up floor.";
 };
-var footerDescription = function footerDescription(footerDes) {
+var footerDescription = function footerDescription() {
   return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56,
+      lineNumber: 60,
       columnNumber: 5
     }
   }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
-    xs: 0,
-    sm: 0,
-    md: 1,
-    lg: 1,
-    xl: 2,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57,
-      columnNumber: 7
-    }
-  }), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
     className: "d-none d-sm-block",
-    sm: 6,
-    md: 5,
-    lg: 5,
-    xl: 4,
+    sm: 12,
+    md: 12,
+    lg: 12,
+    xl: 12,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58,
+      lineNumber: 61,
       columnNumber: 7
     }
-  }, !webDescription() ? 'Loading ...' : webDescription()), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
+  }, // 判斷式先判斷webDescription()能不能執行，如果不能那麼顯示Loading ... ， 可以的話執行webDescription()
+  !webDescription() ? 'Loading ...' : webDescription()), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
     xs: 12,
-    sm: 6,
-    md: 5,
-    lg: 5,
-    xl: 4,
+    sm: 12,
+    md: 12,
+    lg: 12,
+    xl: 12,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
+      lineNumber: 67,
       columnNumber: 7
     }
-  }, !copyRight() ? 'Loafing ...' : copyRight()), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
-    xs: 0,
-    sm: 0,
-    md: 1,
-    lg: 1,
-    xl: 2,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60,
-      columnNumber: 7
-    }
-  }));
+  }, !copyRight() ? 'Loading ...' : copyRight()));
 };
-var webDescription = function webDescription(webDes) {
-  return webDes = "Upfloor make nextjs (\u0E51\u2022\u0E35_\u0E40\u2022\u0E35\u0E51)";
+var webDescription = function webDescription() {
+  return "Upfloor make nextjs (\u0E51\u2022\u0E35_\u0E40\u2022\u0E35\u0E51)";
 };
-var copyRight = function copyRight(copyDes) {
-  return copyDes = "Copyright \xA9 2019-2020 Upfloor";
-};
+var copyRight = function copyRight() {
+  return "Copyright \xA9 2019-2020 Upfloor";
+}; // 由list接入內容，這樣在return中才能使用
+
 var getRandom = function getRandom(list) {
   // Math.floor函式會回傳小於等於所給數字的最大整數。
   // console.log(Math.floor(45.95)) => 45
   // console.log(Math.floor(-8.77)) => -9
   return list[Math.floor(Math.random() * list.length)];
 };
-var headerBar = function headerBar(headBar) {
+var headerBar = function headerBar() {
   var randomText = ['NextJS', 'Bootstrap', 'ReactJs', 'Framework', 'Javascript'];
   var randomWriter = ['Upfloor', 'StudioP', 'GameStart', 'FrontendLearning'];
-  return headBar = getRandom(randomText) + ' with ' + getRandom(randomWriter);
+  return getRandom(randomText) + ' with ' + getRandom(randomWriter);
 };
 
 /***/ }),
@@ -21533,8 +21532,8 @@ var fatFooter = {
   width: '100%',
   background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
   textAlign: 'center',
-  paddingTop: '25px',
-  paddingBottom: '25px' // position: 'fixed'
+  paddingTop: '3rem',
+  paddingBottom: '2rem' // position: 'fixed'
 
 }; // page
 
