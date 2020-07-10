@@ -43,43 +43,58 @@ export const PostLink = ({ post }) => (
   </Link>
 )
 
-export const pageDescription = ( pageDes ) => {
-  return pageDes = 'This is the page for the website.This content to description this text website how to use.'
+export const pageDescription = () => {
+  return (
+    `This is the page for the website.This content to description this text website how to use.`
+  )
 }
 
-export const titleDescription = ( titleDes ) => {
-  return titleDes = 'The website is built by upfloor which is a work that train myself to be up floor.'
+export const titleDescription = () => {
+  return (
+    `The website is built by upfloor which is a work that train myself to be up floor.`
+  )
 }
 
-export const footerDescription = ( footerDes ) => {
+export const footerDescription = () => {
   return (
     <Row>
       <Col xs={0} sm={0} md={1} lg={1} xl={2}></Col>
-      <Col className='d-none d-sm-block' sm={6} md={5} lg={5} xl={4}>{ !webDescription() ? 'Loading ...' : webDescription() }</Col>
-      <Col xs={12} sm={6} md={5} lg={5} xl={4}>{ !copyRight() ? 'Loafing ...' : copyRight() }</Col>
+      <Col className='d-none d-sm-block' sm={6} md={5} lg={5} xl={4}>{
+        // 判斷式先判斷webDescription()能不能執行，如果不能那麼顯示Loading ... ， 可以的話執行webDescription()
+        !webDescription() ? 'Loading ...' : webDescription() }</Col>
+      <Col xs={12} sm={6} md={5} lg={5} xl={4}>{ !copyRight() ? 'Loading ...' : copyRight() }</Col>
       <Col xs={0} sm={0} md={1} lg={1} xl={2}></Col>
     </Row>
   )
 }
 
-export const webDescription = ( webDes ) => {
-  return webDes = `Upfloor make nextjs (๑•ี_เ•ี๑)`
+export const webDescription = () => {
+  return (
+    `Upfloor make nextjs (๑•ี_เ•ี๑)`
+  )
 }
 
-export const copyRight = ( copyDes ) => {
-  return copyDes = `Copyright © 2019-2020 Upfloor`
+export const copyRight = () => {
+  return (
+    `Copyright © 2019-2020 Upfloor`
+  )
 }
 
+// 由list接入內容，這樣在return中才能使用
 export const getRandom = ( list ) => {
   // Math.floor函式會回傳小於等於所給數字的最大整數。
   // console.log(Math.floor(45.95)) => 45
   // console.log(Math.floor(-8.77)) => -9
-  return list[ Math.floor( Math.random() * list.length ) ]
+  return (
+    list[ Math.floor( Math.random() * list.length ) ]
+  )
 }
 
-export const headerBar = ( headBar ) => {
+export const headerBar = () => {
   const randomText = [ 'NextJS', 'Bootstrap', 'ReactJs', 'Framework', 'Javascript' ]
   const randomWriter = [ 'Upfloor', 'StudioP', 'GameStart', 'FrontendLearning' ]
 
-  return headBar = getRandom(randomText) + ' with ' + getRandom(randomWriter)
+  return (
+    getRandom(randomText) + ' with ' + getRandom(randomWriter)
+  )
 }
