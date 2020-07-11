@@ -11,17 +11,12 @@ const Footer = () => {
     <footer className={layoutStyles.footer} style ={fatFooter}>
       <Container>
         <Row>
-          <Col xs={12} sm={12} md={12} lg={6} xl={6}>
-            <span className={`text-muted ${layoutStyles.textModule}`}>
-              { !footerDescription() ? 'Loading ...' : footerDescription() }
-            </span>
-          </Col>
-          <Col xs={12} sm={12} md={12} lg={6} xl={6}>
+          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
             <Row>
               {
                 !getHeader() ? 'Loading ...' :
                 getHeader().map(header => (
-                  <Col className='d-none d-sm-block' key={header.id}>
+                  <Col className='d-none d-sm-block' sm={4} md={4} lg={3} xl={3} key={header.id}>
                     <Link href={header.link}>
                       <a className="nav-item nav-link" title={`Connect to ${header.title} Page`} style={wordCapitalize}>{header.title}</a>
                     </Link>
@@ -29,6 +24,11 @@ const Footer = () => {
                 ))
               }
             </Row>
+          </Col>
+          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+            <span className={`text-muted ${layoutStyles.textModule}`}>
+              { !footerDescription() ? 'Loading ...' : footerDescription() }
+            </span>
           </Col>
         </Row>
       </Container>

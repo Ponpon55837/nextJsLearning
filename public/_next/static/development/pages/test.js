@@ -60,7 +60,7 @@ var Footer = function Footer() {
   }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
     xs: 12,
     sm: 12,
-    md: 12,
+    md: 6,
     lg: 6,
     xl: 6,
     __self: _this,
@@ -69,41 +69,25 @@ var Footer = function Footer() {
       lineNumber: 14,
       columnNumber: 11
     }
-  }, __jsx("span", {
-    className: "text-muted ".concat(_styles_layout_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.textModule),
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 15,
       columnNumber: 13
     }
-  }, !Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["footerDescription"])() ? 'Loading ...' : Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["footerDescription"])())), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
-    xs: 12,
-    sm: 12,
-    md: 12,
-    lg: 6,
-    xl: 6,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19,
-      columnNumber: 11
-    }
-  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Row"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 13
-    }
   }, !Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["getHeader"])() ? 'Loading ...' : Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["getHeader"])().map(function (header) {
     return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
       className: "d-none d-sm-block",
+      sm: 4,
+      md: 4,
+      lg: 3,
+      xl: 3,
       key: header.id,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 19,
         columnNumber: 19
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -111,7 +95,7 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 20,
         columnNumber: 21
       }
     }, __jsx("a", {
@@ -121,11 +105,31 @@ var Footer = function Footer() {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26,
+        lineNumber: 21,
         columnNumber: 23
       }
     }, header.title)));
-  }))))));
+  }))), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
+    xs: 12,
+    sm: 12,
+    md: 6,
+    lg: 6,
+    xl: 6,
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 11
+    }
+  }, __jsx("span", {
+    className: "text-muted ".concat(_styles_layout_module_css__WEBPACK_IMPORTED_MODULE_4___default.a.textModule),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 13
+    }
+  }, !Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["footerDescription"])() ? 'Loading ...' : Object(_pages_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_2__["footerDescription"])())))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
