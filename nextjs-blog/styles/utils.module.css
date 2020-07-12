@@ -160,7 +160,10 @@
 }
 
 .colStyle {
-  border-left-width: 0.09rem;
-  border-left-style: solid;
-  border-left-color: #D87E79;
+  border-right-width: 0.06rem;
+  border-right-style: solid;
+  border-right-color: rgb(21, 34, 55 ,0.15);
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 5;
 }

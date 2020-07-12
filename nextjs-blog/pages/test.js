@@ -17,9 +17,9 @@ const Test = ({courses, products, categories, title = 'Courses show menu'}) => {
       <Layout>
         <Container fluid>
           <Row>
-            <Col className='d-none d-sm-none d-md-block' md={1} lg={2} xl={2}>
+            <Col className='d-none d-sm-none d-md-block' md={1} lg={1} xl={1}>
             </Col>
-            <Col xs={12} sm={12} md={10} lg={8} xl={8}>
+            <Col xs={12} sm={12} md={10} lg={10} xl={10}>
               <h1>Course shows</h1>
               <CourseJson courses={courses} />
               <hr />
@@ -27,7 +27,7 @@ const Test = ({courses, products, categories, title = 'Courses show menu'}) => {
               <hr />
               <CategoryJson categories={categories} />
             </Col>
-            <Col className='d-none d-sm-none d-md-block' md={1} lg={2} xl={2}></Col>
+            <Col className='d-none d-sm-none d-md-block' md={1} lg={1} xl={1}></Col>
           </Row>
         </Container>
       </Layout>
