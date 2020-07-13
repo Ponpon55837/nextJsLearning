@@ -6,7 +6,7 @@ import utilStyles from '../styles/utils.module.css'
 // bootstrap
 import { ListGroup, Col, Row, Container } from 'react-bootstrap'
 
-const Blog = ({ headers, title = 'Blog Page' }) => {
+const Blog = ({ headers, title = 'Blog Page', heading= 'My Blog' }) => {
   // 如果要使用圖片的話需要在這邊寫入如下面這行
   // const { API_URL } = process.env
   return (
@@ -22,7 +22,7 @@ const Blog = ({ headers, title = 'Blog Page' }) => {
               <HeaderJson headers={headers} />
             </Col>
             <Col xs={12} sm={12} md={10} lg={8} xl={8}>
-              <h1>My Blog</h1>
+              <h1 className={utilStyles.headingH1}>{heading}</h1>
               {
                 !getIndexHelloNextJs() ? 'Loading ...' :
                 getIndexHelloNextJs().map(post => (

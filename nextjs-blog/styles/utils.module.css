@@ -167,3 +167,19 @@
   padding-right: 0;
   margin-right: 5;
 }
+
+.headingH1 {
+  text-align: center;
+  font-weight: bold;
+  color: #afaeb2;
+  text-shadow: #afaeb2 0.1em 0.1em 0.2em;
+}
+
+.headingH1:hover {
+  text-shadow: #afaeb2 0.1em 0.1em 0.1em;
+}
+
+.footerDesSpan {
+  font-weight: bold;
+  color: #000000;
+}

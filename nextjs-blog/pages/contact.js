@@ -3,10 +3,11 @@ import Head from 'next/head'
 import { parkStyle } from '../styles/utilStyle.js'
 import fetch from 'isomorphic-unfetch'
 import { getPark, titleDescription, pageDescription } from './apiComponents/functionContextJson.js'
+import utilStyles from '../styles/utils.module.css'
 // bootstrap
 import { Card, Col, Row, Container } from 'react-bootstrap'
 
-const Contact = (props, {title = 'Contact to the park' }) => {
+const Contact = (props, {title = 'Contact to the park', heading = 'Contacts' }) => {
   return (
     <>
       <Head>
@@ -19,7 +20,7 @@ const Contact = (props, {title = 'Contact to the park' }) => {
             <Col className='d-none d-sm-none d-md-block' md={1} lg={1} xl={1}>
             </Col>
             <Col xs={12} sm={12} md={10} lg={10} xl={10}>
-              <h1>Contacts</h1>
+              <h1 className={utilStyles.headingH1}>{heading}</h1>
               {
                 !getPark() ? 'Loading ...' :
                 getPark().map(park => (

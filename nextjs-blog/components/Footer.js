@@ -8,7 +8,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 const Footer = () => {
   return (
-    <footer className={layoutStyles.footer} style ={fatFooter}>
+    <footer className={layoutStyles.footer} style={fatFooter} >
       <Container>
         <Row>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
@@ -26,7 +26,7 @@ const Footer = () => {
             </Row>
           </Col>
           <Col xs={12} sm={12} md={6} lg={6} xl={6}>
-            <span className={`text-muted ${layoutStyles.textModule}`}>
+            <span className={`text-muted ${layoutStyles.textModule} ${utilStyles.footerDesSpan}`}>
               { !footerDescription() ? 'Loading ...' : footerDescription() }
             </span>
           </Col>

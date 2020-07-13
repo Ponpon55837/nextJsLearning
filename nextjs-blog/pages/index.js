@@ -7,7 +7,7 @@ import { wordCapitalize } from '../styles/utilStyle.js'
 // bootstrap
 import { Button, Col, Row, Container } from 'react-bootstrap'
 
-const Home = ({ title = 'Index Page' }) => {
+const Home = ({ title = 'Index Page', heading = 'Welcome' }) => {
   return (
     <div className={utilStyles.indexBG}>
       <Head>
@@ -17,7 +17,7 @@ const Home = ({ title = 'Index Page' }) => {
       <Container fluid>
         <Row>
           <Col className={utilStyles.homeShow} xs={12} sm={12} md={8} lg={6} xl={6}>
-            <h1 className={utilStyles.divH1}>Welcome</h1>
+            <h1 className={utilStyles.divH1}>{heading}</h1>
             { // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
               !getHeader() ? 'Loading ...' :
               getHeader().map(header => (

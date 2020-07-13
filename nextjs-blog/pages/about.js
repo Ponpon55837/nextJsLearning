@@ -2,10 +2,11 @@ import Layout from '../components/layout'
 import Head from 'next/head'
 import { ReposJson, SubscribersJson } from './apiComponents/reposJson.js'
 import { titleDescription, pageDescription } from './apiComponents/functionContextJson.js'
+import utilStyles from '../styles/utils.module.css'
 // bootstrap
 import { Col, Row, Container } from 'react-bootstrap'
 
-const About = ({ repos, subscribers, title ='About this url page' }) => {
+const About = ({ repos, subscribers, title ='About this url page', heading= 'This is the About Page' }) => {
   return (
     <>
       <Head>
@@ -18,7 +19,7 @@ const About = ({ repos, subscribers, title ='About this url page' }) => {
             <Col className='d-none d-sm-none d-md-block' md={1} lg={1} xl={1}>
             </Col>
             <Col xs={12} sm={12} md={10} lg={10} xl={10}>
-              <h1>This is the about page</h1>
+              <h1 className={utilStyles.headingH1}>{heading}</h1>
               <ReposJson repos={repos} /><br />
               <SubscribersJson subscribers={subscribers} />
             </Col>
