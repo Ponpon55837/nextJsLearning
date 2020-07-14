@@ -2,12 +2,14 @@ import Layout from '../components/layout'
 import Head from 'next/head'
 import { parkStyle } from '../styles/utilStyle.js'
 import fetch from 'isomorphic-unfetch'
-import { getPark, titleDescription, pageDescription } from './apiComponents/functionContextJson.js'
+import { getPark, titleDescription, getheadingH1, pageDescription } from './apiComponents/functionContextJson.js'
 import utilStyles from '../styles/utils.module.css'
 // bootstrap
 import { Card, Col, Row, Container } from 'react-bootstrap'
 
-const Contact = (props, {title = 'Contact to the park', heading = 'Contacts' }) => {
+const Contact = (props, {title = 'Contact to the park'}) => {
+  const h1_id = 5
+  const arr_id = 5
   return (
     <>
       <Head>
@@ -20,7 +22,14 @@ const Contact = (props, {title = 'Contact to the park', heading = 'Contacts' }) 
             <Col className='d-none d-sm-none d-md-block' md={1} lg={1} xl={1}>
             </Col>
             <Col xs={12} sm={12} md={10} lg={10} xl={10}>
-              <h1 className={utilStyles.headingH1}>{heading}</h1>
+              {
+                !getheadingH1() ? 'Loading ...' :
+                getheadingH1().map(headingH1 => (
+                  <h1 className={utilStyles.headingH1} key={headingH1.id}>
+                    {!(headingH1.id == h1_id && headingH1.arr[0].id == arr_id) ? null : headingH1.h1}
+                  </h1>
+                ))
+              }
               {
                 !getPark() ? 'Loading ...' :
                 getPark().map(park => (

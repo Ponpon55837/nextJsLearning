@@ -1,12 +1,14 @@
 import Head from 'next/head'
 import HeaderJson from './apiComponents/headerJson.js'
-import { getIndexHelloNextJs, titleDescription, pageDescription, API_URL, PostLink } from './apiComponents/functionContextJson.js'
+import { getIndexHelloNextJs, titleDescription, getheadingH1, pageDescription, API_URL, PostLink } from './apiComponents/functionContextJson.js'
 import Layout from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 // bootstrap
 import { ListGroup, Col, Row, Container } from 'react-bootstrap'
 
-const Blog = ({ headers, title = 'Blog Page', heading= 'My Blog' }) => {
+const Blog = ({ headers, title = 'Blog Page'}) => {
+  const h1_id = 2
+  const arr_id = 2
   // 如果要使用圖片的話需要在這邊寫入如下面這行
   // const { API_URL } = process.env
   return (
@@ -22,7 +24,14 @@ const Blog = ({ headers, title = 'Blog Page', heading= 'My Blog' }) => {
               <HeaderJson headers={headers} />
             </Col>
             <Col xs={12} sm={12} md={10} lg={8} xl={8}>
-              <h1 className={utilStyles.headingH1}>{heading}</h1>
+              {
+                !getheadingH1() ? 'Loading ...' :
+                getheadingH1().map(headingH1 => (
+                  <h1 className={utilStyles.headingH1} key={headingH1.id}>
+                    {!(headingH1.id == h1_id && headingH1.arr[0].id == arr_id) ? null : headingH1.h1}
+                  </h1>
+                ))
+              }
               {
                 !getIndexHelloNextJs() ? 'Loading ...' :
                 getIndexHelloNextJs().map(post => (

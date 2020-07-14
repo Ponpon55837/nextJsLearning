@@ -3,6 +3,7 @@ import Router from 'next/router'
 import headerlink from '../api/headerlink.json'
 import indexHelloNextJs from '../api/indexHelloNextJs.json'
 import park from '../api/parkAPI.json'
+import headingH1Json from '../api/headingH1.json'
 import { wordCapitalize } from '../../styles/utilStyle.js'
 import { Row, Col } from 'react-bootstrap'
 
@@ -23,6 +24,10 @@ export const getIndexHelloNextJs = () => {
 
 export const getPark = () => {
   return park
+}
+
+export const getheadingH1 = () => {
+  return headingH1Json
 }
 
 // for Header.js

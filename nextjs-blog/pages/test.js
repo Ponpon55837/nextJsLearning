@@ -1,12 +1,14 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
 import { CourseJson, ProductJson, CategoryJson } from './apiComponents/contextJson.js'
-import { titleDescription, pageDescription, API_URL } from './apiComponents/functionContextJson.js'
+import { titleDescription, getheadingH1, pageDescription, API_URL } from './apiComponents/functionContextJson.js'
 import utilStyles from '../styles/utils.module.css'
 // bootstrap
 import { Col, Row, Container } from 'react-bootstrap'
 
-const Test = ({courses, products, categories, title = 'Courses show menu', heading = 'Course shows'}) => {
+const Test = ({courses, products, categories, title = 'Courses show menu'}) => {
+  const h1_id = 6
+  const arr_id = 6
   // 當api抓取到值之後，props把接到的值map進li當中
   // 這裡href為pages/p/[id].js但是後面使用as來代替為api中的id值
   return (
@@ -21,7 +23,14 @@ const Test = ({courses, products, categories, title = 'Courses show menu', headi
             <Col className='d-none d-sm-none d-md-block' md={1} lg={1} xl={1}>
             </Col>
             <Col xs={12} sm={12} md={10} lg={10} xl={10}>
-              <h1 className={utilStyles.headingH1}>{heading}</h1>
+              {
+                !getheadingH1() ? 'Loading ...' :
+                getheadingH1().map(headingH1 => (
+                  <h1 className={utilStyles.headingH1} key={headingH1.id}>
+                    {!(headingH1.id == h1_id && headingH1.arr[0].id == arr_id) ? null : headingH1.h1}
+                  </h1>
+                ))
+              }
               <CourseJson courses={courses} />
               <hr />
               <ProductJson products={products} />

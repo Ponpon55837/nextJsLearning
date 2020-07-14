@@ -7,7 +7,7 @@ import { Col, Row, ListGroup, Image, Card, Accordion } from 'react-bootstrap'
 // courses由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
 export const CourseJson = ({ courses }) => {
 
-  console.log(courses)
+  // console.log(courses)
   return (
     <>
       <Row style={rowStyle}>
@@ -33,7 +33,7 @@ export const CourseJson = ({ courses }) => {
 
 // products由外部接入，這個值需要由data傳入
 export const ProductJson = ({ products }) => {
-  console.log(products)
+  // console.log(products)
   return (
     <>
       <Row style={rowStyle}>
@@ -79,7 +79,7 @@ export const ProductJson = ({ products }) => {
 // categories由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
 export const CategoryJson = ({ categories }) => {
 
-  console.log(categories)
+  // console.log(categories)
   return (
     <>
       <Row style={rowStyle}>

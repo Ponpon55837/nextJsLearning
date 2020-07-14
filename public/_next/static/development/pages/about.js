@@ -21007,21 +21007,21 @@ var About = function About(_ref) {
   var repos = _ref.repos,
       subscribers = _ref.subscribers,
       _ref$title = _ref.title,
-      title = _ref$title === void 0 ? 'About this url page' : _ref$title,
-      _ref$heading = _ref.heading,
-      heading = _ref$heading === void 0 ? 'This is the About Page' : _ref$heading;
+      title = _ref$title === void 0 ? 'About this url page' : _ref$title;
+  var h1_id = 3;
+  var arr_id = 3;
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 14,
       columnNumber: 7
     }
   }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 15,
       columnNumber: 9
     }
   }, title + '.   ' + Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["titleDescription"])()), __jsx("meta", {
@@ -21030,14 +21030,14 @@ var About = function About(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 16,
       columnNumber: 9
     }
   })), __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 18,
       columnNumber: 7
     }
   }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Container"], {
@@ -21045,14 +21045,14 @@ var About = function About(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17,
+      lineNumber: 19,
       columnNumber: 9
     }
   }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18,
+      lineNumber: 20,
       columnNumber: 11
     }
   }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
@@ -21063,7 +21063,7 @@ var About = function About(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 21,
       columnNumber: 13
     }
   }), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
@@ -21075,30 +21075,33 @@ var About = function About(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21,
+      lineNumber: 23,
       columnNumber: 13
     }
-  }, __jsx("h1", {
-    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.headingH1,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 15
-    }
-  }, heading), __jsx(_apiComponents_reposJson_js__WEBPACK_IMPORTED_MODULE_3__["ReposJson"], {
+  }, !Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["getheadingH1"])() ? 'Loading ...' : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["getheadingH1"])().map(function (headingH1) {
+    return __jsx("h1", {
+      className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default.a.headingH1,
+      key: headingH1.id,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 19
+      }
+    }, !(headingH1.id == h1_id && headingH1.arr[0].id == arr_id) ? null : headingH1.h1);
+  }), __jsx(_apiComponents_reposJson_js__WEBPACK_IMPORTED_MODULE_3__["ReposJson"], {
     repos: repos,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 32,
       columnNumber: 15
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 32,
       columnNumber: 42
     }
   }), __jsx(_apiComponents_reposJson_js__WEBPACK_IMPORTED_MODULE_3__["SubscribersJson"], {
@@ -21106,7 +21109,7 @@ var About = function About(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
+      lineNumber: 33,
       columnNumber: 15
     }
   })), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
@@ -21117,7 +21120,7 @@ var About = function About(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26,
+      lineNumber: 35,
       columnNumber: 13
     }
   })))));
@@ -21154,6 +21157,17 @@ module.exports = JSON.parse("[{\"id\":\"1\",\"link\":\"/\",\"title\":\"Home\"},{
 
 /***/ }),
 
+/***/ "./pages/api/headingH1.json":
+/*!**********************************!*\
+  !*** ./pages/api/headingH1.json ***!
+  \**********************************/
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, default */
+/***/ (function(module) {
+
+module.exports = JSON.parse("[{\"id\":\"1\",\"page\":\"index\",\"arr\":[{\"id\":1}],\"h1\":\"Welcome\"},{\"id\":\"2\",\"page\":\"blog\",\"arr\":[{\"id\":2}],\"h1\":\"My Blog\"},{\"id\":\"3\",\"page\":\"about\",\"arr\":[{\"id\":3}],\"h1\":\"This is the About Page\"},{\"id\":\"4\",\"page\":\"batman\",\"arr\":[{\"id\":4}],\"h1\":\"Batman TV Shows\"},{\"id\":\"5\",\"page\":\"contact\",\"arr\":[{\"id\":5}],\"h1\":\"Contacts\"},{\"id\":\"6\",\"page\":\"test\",\"arr\":[{\"id\":6}],\"h1\":\"Course shows\"},{\"id\":\"7\",\"page\":\"log&Sign\",\"arr\":[{\"id\":7}],\"h1\":\"log&Sign\"},{\"id\":\"8\",\"page\":\"404\",\"arr\":[{\"id\":8}],\"h1\":\"404 Not Found\"}]");
+
+/***/ }),
+
 /***/ "./pages/api/indexHelloNextJs.json":
 /*!*****************************************!*\
   !*** ./pages/api/indexHelloNextJs.json ***!
@@ -21180,7 +21194,7 @@ module.exports = JSON.parse("[{\"areaId\":\"1\",\"areaName\":\"桃園區\",\"par
 /*!****************************************************!*\
   !*** ./pages/apiComponents/functionContextJson.js ***!
   \****************************************************/
-/*! exports provided: API_URL, getHeader, getIndexHelloNextJs, getPark, handler, PostLink, pageDescription, titleDescription, footerDescription, webDescription, copyRight, getRandom, headerBar */
+/*! exports provided: API_URL, getHeader, getIndexHelloNextJs, getPark, getheadingH1, handler, PostLink, pageDescription, titleDescription, footerDescription, webDescription, copyRight, getRandom, headerBar */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -21189,6 +21203,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getHeader", function() { return getHeader; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getIndexHelloNextJs", function() { return getIndexHelloNextJs; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getPark", function() { return getPark; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getheadingH1", function() { return getheadingH1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handler", function() { return handler; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostLink", function() { return PostLink; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pageDescription", function() { return pageDescription; });
@@ -21210,13 +21225,16 @@ var _api_headerlink_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/_
 var _api_indexHelloNextJs_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../api/indexHelloNextJs.json */ "./pages/api/indexHelloNextJs.json", 1);
 /* harmony import */ var _api_parkAPI_json__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../api/parkAPI.json */ "./pages/api/parkAPI.json");
 var _api_parkAPI_json__WEBPACK_IMPORTED_MODULE_5___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../api/parkAPI.json */ "./pages/api/parkAPI.json", 1);
-/* harmony import */ var _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../styles/utilStyle.js */ "./styles/utilStyle.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var _api_headingH1_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../api/headingH1.json */ "./pages/api/headingH1.json");
+var _api_headingH1_json__WEBPACK_IMPORTED_MODULE_6___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../api/headingH1.json */ "./pages/api/headingH1.json", 1);
+/* harmony import */ var _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../styles/utilStyle.js */ "./styles/utilStyle.js");
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
 var _this = undefined,
     _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/apiComponents/functionContextJson.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
 
 
@@ -21238,6 +21256,9 @@ var getIndexHelloNextJs = function getIndexHelloNextJs() {
 };
 var getPark = function getPark() {
   return _api_parkAPI_json__WEBPACK_IMPORTED_MODULE_5__;
+};
+var getheadingH1 = function getheadingH1() {
+  return _api_headingH1_json__WEBPACK_IMPORTED_MODULE_6__;
 }; // for Header.js
 
 var handler = function handler() {
@@ -21258,7 +21279,7 @@ var PostLink = function PostLink(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41,
+      lineNumber: 46,
       columnNumber: 3
     }
   }, __jsx("a", {
@@ -21266,7 +21287,7 @@ var PostLink = function PostLink(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 47,
       columnNumber: 5
     }
   }, post.title));
@@ -21278,14 +21299,14 @@ var titleDescription = function titleDescription() {
   return "The website is built by upfloor which is a work that train myself to be up floor.";
 };
 var footerDescription = function footerDescription() {
-  return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Row"], {
+  return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["Row"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 65,
       columnNumber: 5
     }
-  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["Col"], {
     className: "d-none d-sm-block",
     sm: 12,
     md: 12,
@@ -21294,11 +21315,11 @@ var footerDescription = function footerDescription() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 66,
       columnNumber: 7
     }
   }, // 判斷式先判斷webDescription()能不能執行，如果不能那麼顯示Loading ... ， 可以的話執行webDescription()
-  !webDescription() ? 'Loading ...' : webDescription()), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
+  !webDescription() ? 'Loading ...' : webDescription()), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_8__["Col"], {
     xs: 12,
     sm: 12,
     md: 12,
@@ -21307,7 +21328,7 @@ var footerDescription = function footerDescription() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 72,
       columnNumber: 7
     }
   }, !copyRight() ? 'Loading ...' : copyRight()));
@@ -21678,7 +21699,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!**************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fabout.js ***!
   \**************************************************************************************************************************************************************/
@@ -21701,5 +21722,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=about.js.map
