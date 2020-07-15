@@ -2,14 +2,12 @@ import Layout from '../components/layout'
 import Link from 'next/link'
 import Head from 'next/head'
 import fetch from 'isomorphic-unfetch'
-import { titleDescription, getheadingH1, pageDescription } from './apiComponents/functionContextJson.js'
+import { titleDescription, h1Mapping, pageDescription } from './apiComponents/functionContextJson.js'
 import utilStyles from '../styles/utils.module.css'
 // bootstrap
 import { ListGroup, Col, Row, Container } from 'react-bootstrap'
 
-const Batman = (props, { title = 'Batman TV show menu'}) => {
-  const h1_id = 4
-  const arr_id = 4
+const Batman = (props, { title = 'Batman TV show menu', h1_id = 4, arr_id = 4 }) => {
   // 當api抓取到值之後，props把接到的值map進li當中
   // 這裡href為pages/p/[id].js但是後面使用as來代替為api中的id值
   return (
@@ -24,14 +22,7 @@ const Batman = (props, { title = 'Batman TV show menu'}) => {
             <Col className='d-none d-sm-none d-md-block' md={1} lg={1} xl={1}>
             </Col>
             <Col xs={12} sm={12} md={10} lg={10} xl={10}>
-              {
-                !getheadingH1() ? 'Loading ...' :
-                getheadingH1().map(headingH1 => (
-                  <h1 className={utilStyles.headingH1} key={headingH1.id}>
-                    {!(headingH1.id == h1_id && headingH1.arr[0].id == arr_id) ? null : headingH1.h1}
-                  </h1>
-                ))
-              }
+              { h1Mapping(h1_id, arr_id) }
               <ul>
                 {
                   !props.shows ? 'Loading ...' :

@@ -5,6 +5,7 @@ import indexHelloNextJs from '../api/indexHelloNextJs.json'
 import park from '../api/parkAPI.json'
 import headingH1Json from '../api/headingH1.json'
 import { wordCapitalize } from '../../styles/utilStyle.js'
+import utilStyles from '../../styles/utils.module.css'
 import { Row, Col } from 'react-bootstrap'
 
 // 把所有使用內部json的function放在這邊，這樣要重複使用呼叫不用作多餘的事情
@@ -28,6 +29,21 @@ export const getPark = () => {
 
 export const getheadingH1 = () => {
   return headingH1Json
+}
+
+export const h1Mapping = (h1_id, arr_id) => {
+  return (
+    <>
+      {
+        !getheadingH1() ? 'Loading ...' :
+        getheadingH1().map(headingH1 => (
+          <h1 className={utilStyles.headingH1} key={headingH1.id}>
+            {!(headingH1.id == h1_id && headingH1.arr[0].id == arr_id) ? null : headingH1.h1}
+          </h1>
+        ))
+      }
+    </>
+  )
 }
 
 // for Header.js

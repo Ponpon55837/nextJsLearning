@@ -1,14 +1,11 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
 import { ReposJson, SubscribersJson } from './apiComponents/reposJson.js'
-import { titleDescription, getheadingH1, pageDescription } from './apiComponents/functionContextJson.js'
-import utilStyles from '../styles/utils.module.css'
+import { titleDescription, h1Mapping, pageDescription } from './apiComponents/functionContextJson.js'
 // bootstrap
 import { Col, Row, Container } from 'react-bootstrap'
 
-const About = ({ repos, subscribers, title ='About this url page' }) => {
-  const h1_id = 3
-  const arr_id = 3
+const About = ({ repos, subscribers, title ='About this url page', h1_id = 3, arr_id = 3 }) => {
   return (
     <>
       <Head>
@@ -21,14 +18,7 @@ const About = ({ repos, subscribers, title ='About this url page' }) => {
             <Col className='d-none d-sm-none d-md-block' md={1} lg={1} xl={1}>
             </Col>
             <Col xs={12} sm={12} md={10} lg={10} xl={10}>
-              {
-                !getheadingH1() ? 'Loading ...' :
-                getheadingH1().map(headingH1 => (
-                  <h1 className={utilStyles.headingH1} key={headingH1.id}>
-                    {!(headingH1.id == h1_id && headingH1.arr[0].id == arr_id) ? null : headingH1.h1}
-                  </h1>
-                ))
-              }
+              { h1Mapping(h1_id, arr_id) }
               <ReposJson repos={repos} /><br />
               <SubscribersJson subscribers={subscribers} />
             </Col>
