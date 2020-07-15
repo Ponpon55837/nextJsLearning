@@ -13,7 +13,7 @@ const Custom404 = ({ title = 'This Page is Not Found', pageDes = 'This page is f
       </Head>
       <Layout>
         <div className={`${layout.container} ${utilStyles.notfound}`}>
-          { h1Mapping(h1_id, arr_id) }
+          { !h1Mapping() ? null : h1Mapping(h1_id, arr_id) }
         </div>
       </Layout>
     </>

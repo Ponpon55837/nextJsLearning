@@ -22,7 +22,7 @@ const Blog = ({ headers, title = 'Blog Page', h1_id = 2, arr_id = 2}) => {
               <HeaderJson headers={headers} />
             </Col>
             <Col xs={12} sm={12} md={10} lg={8} xl={8}>
-              { h1Mapping(h1_id, arr_id) }
+              { !h1Mapping() ? null : h1Mapping(h1_id, arr_id) }
               {
                 !getIndexHelloNextJs() ? 'Loading ...' :
                 getIndexHelloNextJs().map(post => (

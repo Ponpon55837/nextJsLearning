@@ -18,7 +18,7 @@ const About = ({ repos, subscribers, title ='About this url page', h1_id = 3, ar
             <Col className='d-none d-sm-none d-md-block' md={1} lg={1} xl={1}>
             </Col>
             <Col xs={12} sm={12} md={10} lg={10} xl={10}>
-              { h1Mapping(h1_id, arr_id) }
+              { !h1Mapping() ? null : h1Mapping(h1_id, arr_id) }
               <ReposJson repos={repos} /><br />
               <SubscribersJson subscribers={subscribers} />
             </Col>
