@@ -53,7 +53,7 @@ export const ProductJson = ({ products }) => {
                       {
                         // 判斷式先去看在product底下categories下面的陣列存不存在，使用[0]代表這個陣列的第一項，因為每一個product底下的categories都是獨立存在的，所以除非有同一個product.categories下面有一個以上陣列才要用0以上的數字
                         // 如果陣列不存在清空位置，存在的話才顯示內容
-                        console.log(product.categories[0].id),
+                        // console.log(product.categories[0].id),
                         !product.categories[0].id ? null :
                         `Price: ` + product.price }<br />
                       {
