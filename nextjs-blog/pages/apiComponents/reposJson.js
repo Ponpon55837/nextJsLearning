@@ -10,9 +10,13 @@ export const ReposJson = ({ repos }) => {
             {repos.svn_url}
           </Accordion.Toggle>
           <Accordion.Collapse eventKey={repos.svn_url}>
-            <Card.Body><a href={repos.subscribers_url} title={`Connect to ${repos.homepage} Page`}>{repos.homepage}</a></Card.Body>
+            <Card.Body>
+              <a href={repos.subscribers_url} title={`Connect to ${repos.homepage} Page`}>
+                {repos.homepage}
+              </a>
+            </Card.Body>
           </Accordion.Collapse>
-        </Card>
+        </Card><br />
       </Accordion>
     </Col>
   )
@@ -35,7 +39,7 @@ export const SubscribersJson = ({ subscribers }) => {
                     <a href={subs.url} title={`Connect to ${subs.login} Page`}>{subs.login}</a>
                   </Card.Body>
                 </Accordion.Collapse>
-              </Card>
+              </Card><br />
             </Accordion>
           ))
         }
