@@ -4267,9 +4267,11 @@ var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../node_modules/cs
 var ___CSS_LOADER_URL_PURE_IMPORT_0___ = __webpack_require__(/*! ../img/bg.jpg */ "./img/bg.jpg");
 var ___CSS_LOADER_URL_IMPORT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_PURE_IMPORT_0___);
 // Module
-exports.push([module.i, "/*\n  在className當中放入module.css的方式如下\n  EX:\n  in exampleStyle.module.css\n  .divStyle { border: 1rem; }\n  ************************************\n  in example.js\n  import exampleStyle from './styles/exampleStyle.module.css'\n\n  return <div className={exampleStyle.divStyle}>example</div>\n\n  多重className寫法為\n  return <div className={`${exampleStyle.divStyle} ${exampleStyle.pStyle}`}>example</div>\n*/\n\n.utils_heading2Xl__1I65m {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingXl__1XecN {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingLg__de7p0 {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.utils_headingMd__3de6G {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.utils_borderCircle__13qdJ {\n  border-radius: 9999px;\n}\n\n.utils_colorInherit__3Gudf {\n  color: inherit;\n}\n\n.utils_padding1px__oCny8 {\n  padding-top: 1px;\n}\n\n.utils_list__S7_pe {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.utils_listItem__2eJpJ {\n  margin: 0 0 1.25rem;\n}\n\n.utils_lightText__12Ckm {\n  color: #999;\n}\n\n.utils_markdown__2R-tk {\n  font-family: 'Arial';\n}\n\n.utils_markdown__2R-tk a {\n  text-decoration: none;\n  color: blue;\n}\n\n.utils_markdown__2R-tk a:hover {\n  opacity: 0.6;\n}\n\n.utils_markdown__2R-tk h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.utils_notfound__3uF6d {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.utils_indexBG__1DCbH {\n  background-image: url(" + ___CSS_LOADER_URL_IMPORT_0___ + ");\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.utils_homeShow__2HxQ3 {\n  padding-top: 15%;\n  padding-bottom: 35%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 100%;\n  text-align: center;\n}\n\n.utils_divH1__1lonv {\n  color: white;\n  font-size: 3.5rem;\n  font-weight: bold;\n  opacity: 0.5;\n  text-align: center;\n}\n\n.utils_buttonControl__2dBWX {\n  opacity: 0.2;\n  color: white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2rem;\n  border-radius: 12px;\n}\n\n.utils_buttonControl__2dBWX :hover {\n  color: red;\n}\n\n.utils_textModule__KK23B {\n  text-align: center;\n}\n\n.utils_courseDiv__3FbM5 {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n\n.utils_courseIMG__V-pDo {\n  overflow: hidden;\n  transition: all 0.6s;\n}\n\n.utils_courseIMG__V-pDo:hover {\n  transform: scale(1.2);\n}\n\n.utils_courseListGroupItem__3D8Wi {\n  overflow: hidden;\n}\n\n.utils_productStyle__18EQF {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n\n.utils_colStyle__3j38I {\n  border-right-width: 0.06rem;\n  border-right-style: solid;\n  border-right-color: rgb(21, 34, 55 ,0.15);\n  padding-left: 0;\n  padding-right: 0;\n  margin-right: 5;\n}\n\n.utils_headingH1__13KvI {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n  text-shadow: #afaeb2 0.1em 0.1em 0.2em;\n}\n\n.utils_headingH1__13KvI:hover {\n  text-shadow: #afaeb2 0.1em 0.1em 0.1em;\n}\n\n.utils_footerDesSpan__AvtiV {\n  font-weight: bold;\n  color: #000000;\n}\n\n.utils_ulDiv__1XYFY {\n  padding-left: 0;\n}\n", "",{"version":3,"sources":["/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/styles/utils.module.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;CAaC;;AAED;EACE,iBAAiB;EACjB,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,oBAAoB;AACtB;;AAEA;EACE,qBAAqB;EACrB,WAAW;AACb;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,SAAS;EACT,UAAU;EACV,yBAAyB;AAC3B;;AAEA;EACE,iBAAiB;EACjB,oBAAoB;AACtB;;AAEA;EACE,oDAAoC;EACpC,WAAW;;EAEX,sCAAsC;EACtC,2BAA2B;EAC3B,4BAA4B;EAC5B,sBAAsB;AACxB;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,iBAAiB;EACjB,iBAAiB;EACjB,YAAY;EACZ,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,YAAY;EACZ,YAAY;EACZ,iBAAiB;EACjB,eAAe;EACf,mBAAmB;AACrB;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,oBAAoB;AACtB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,2BAA2B;EAC3B,yBAAyB;EACzB,yCAAyC;EACzC,eAAe;EACf,gBAAgB;EAChB,eAAe;AACjB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,cAAc;EACd,sCAAsC;AACxC;;AAEA;EACE,sCAAsC;AACxC;;AAEA;EACE,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,eAAe;AACjB","file":"utils.module.css","sourcesContent":["/*\n  在className當中放入module.css的方式如下\n  EX:\n  in exampleStyle.module.css\n  .divStyle { border: 1rem; }\n  ************************************\n  in example.js\n  import exampleStyle from './styles/exampleStyle.module.css'\n\n  return <div className={exampleStyle.divStyle}>example</div>\n\n  多重className寫法為\n  return <div className={`${exampleStyle.divStyle} ${exampleStyle.pStyle}`}>example</div>\n*/\n\n.heading2Xl {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingXl {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingLg {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.headingMd {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.borderCircle {\n  border-radius: 9999px;\n}\n\n.colorInherit {\n  color: inherit;\n}\n\n.padding1px {\n  padding-top: 1px;\n}\n\n.list {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.listItem {\n  margin: 0 0 1.25rem;\n}\n\n.lightText {\n  color: #999;\n}\n\n.markdown {\n  font-family: 'Arial';\n}\n\n.markdown a {\n  text-decoration: none;\n  color: blue;\n}\n\n.markdown a:hover {\n  opacity: 0.6;\n}\n\n.markdown h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.notfound {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.indexBG {\n  background-image: url(../img/bg.jpg);\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.homeShow {\n  padding-top: 15%;\n  padding-bottom: 35%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 100%;\n  text-align: center;\n}\n\n.divH1 {\n  color: white;\n  font-size: 3.5rem;\n  font-weight: bold;\n  opacity: 0.5;\n  text-align: center;\n}\n\n.buttonControl {\n  opacity: 0.2;\n  color: white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2rem;\n  border-radius: 12px;\n}\n\n.buttonControl :hover {\n  color: red;\n}\n\n.textModule {\n  text-align: center;\n}\n\n.courseDiv {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n\n.courseIMG {\n  overflow: hidden;\n  transition: all 0.6s;\n}\n\n.courseIMG:hover {\n  transform: scale(1.2);\n}\n\n.courseListGroupItem {\n  overflow: hidden;\n}\n\n.productStyle {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n\n.colStyle {\n  border-right-width: 0.06rem;\n  border-right-style: solid;\n  border-right-color: rgb(21, 34, 55 ,0.15);\n  padding-left: 0;\n  padding-right: 0;\n  margin-right: 5;\n}\n\n.headingH1 {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n  text-shadow: #afaeb2 0.1em 0.1em 0.2em;\n}\n\n.headingH1:hover {\n  text-shadow: #afaeb2 0.1em 0.1em 0.1em;\n}\n\n.footerDesSpan {\n  font-weight: bold;\n  color: #000000;\n}\n\n.ulDiv {\n  padding-left: 0;\n}\n"]}]);
+exports.push([module.i, "/*\n  在className當中放入module.css的方式如下\n  EX:\n  in exampleStyle.module.css\n  .divStyle { border: 1rem; }\n  ************************************\n  in example.js\n  import exampleStyle from './styles/exampleStyle.module.css'\n\n  return <div className={exampleStyle.divStyle}>example</div>\n\n  多重className寫法為\n  return <div className={`${exampleStyle.divStyle} ${exampleStyle.pStyle}`}>example</div>\n*/\n\n.utils_h1__FWn9W.utils_hidden__ImX6l {\n  display: none;\n}\n\n.utils_heading2Xl__1I65m {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingXl__1XecN {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.utils_headingLg__de7p0 {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.utils_headingMd__3de6G {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.utils_borderCircle__13qdJ {\n  border-radius: 9999px;\n}\n\n.utils_colorInherit__3Gudf {\n  color: inherit;\n}\n\n.utils_padding1px__oCny8 {\n  padding-top: 1px;\n}\n\n.utils_list__S7_pe {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.utils_listItem__2eJpJ {\n  margin: 0 0 1.25rem;\n}\n\n.utils_lightText__12Ckm {\n  color: #999;\n}\n\n.utils_markdown__2R-tk {\n  font-family: 'Arial';\n}\n\n.utils_markdown__2R-tk a {\n  text-decoration: none;\n  color: blue;\n}\n\n.utils_markdown__2R-tk a:hover {\n  opacity: 0.6;\n}\n\n.utils_markdown__2R-tk h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.utils_notfound__3uF6d {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.utils_indexBG__1DCbH {\n  background-image: url(" + ___CSS_LOADER_URL_IMPORT_0___ + ");\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.utils_homeShow__2HxQ3 {\n  padding-top: 15%;\n  padding-bottom: 35%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 100%;\n  text-align: center;\n}\n\n.utils_divH1__1lonv {\n  color: white;\n  font-size: 3.5rem;\n  font-weight: bold;\n  opacity: 0.5;\n  text-align: center;\n}\n\n.utils_buttonControl__2dBWX {\n  opacity: 0.2;\n  color: white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2rem;\n  border-radius: 12px;\n}\n\n.utils_buttonControl__2dBWX :hover {\n  color: red;\n}\n\n.utils_textModule__KK23B {\n  text-align: center;\n}\n\n.utils_courseDiv__3FbM5 {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n\n.utils_courseIMG__V-pDo {\n  overflow: hidden;\n  transition: all 0.6s;\n}\n\n.utils_courseIMG__V-pDo:hover {\n  transform: scale(1.2);\n}\n\n.utils_courseListGroupItem__3D8Wi {\n  overflow: hidden;\n}\n\n.utils_productStyle__18EQF {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n\n.utils_colStyle__3j38I {\n  border-right-width: 0.06rem;\n  border-right-style: solid;\n  border-right-color: rgb(21, 34, 55 ,0.15);\n  padding-left: 0;\n  padding-right: 0;\n  margin-right: 5;\n}\n\n.utils_headingH1__13KvI {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n  text-shadow: #afaeb2 0.1em 0.1em 0.2em;\n}\n\n.utils_headingH1__13KvI:hover {\n  text-shadow: #afaeb2 0.1em 0.1em 0.1em;\n}\n\n.utils_footerDesSpan__AvtiV {\n  font-weight: bold;\n  color: #000000;\n}\n\n.utils_ulDiv__1XYFY {\n  padding-left: 0;\n}\n", "",{"version":3,"sources":["/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/styles/utils.module.css"],"names":[],"mappings":"AAAA;;;;;;;;;;;;;CAaC;;AAED;EACE,aAAa;AACf;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,eAAe;EACf,gBAAgB;EAChB,gBAAgB;EAChB,wBAAwB;EACxB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,cAAc;AAChB;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;AAClB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,cAAc;AAChB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,gBAAgB;EAChB,UAAU;EACV,SAAS;AACX;;AAEA;EACE,mBAAmB;AACrB;;AAEA;EACE,WAAW;AACb;;AAEA;EACE,oBAAoB;AACtB;;AAEA;EACE,qBAAqB;EACrB,WAAW;AACb;;AAEA;EACE,YAAY;AACd;;AAEA;EACE,SAAS;EACT,UAAU;EACV,yBAAyB;AAC3B;;AAEA;EACE,iBAAiB;EACjB,oBAAoB;AACtB;;AAEA;EACE,oDAAoC;EACpC,WAAW;;EAEX,sCAAsC;EACtC,2BAA2B;EAC3B,4BAA4B;EAC5B,sBAAsB;AACxB;;AAEA;EACE,gBAAgB;EAChB,mBAAmB;EACnB,iBAAiB;EACjB,kBAAkB;EAClB,eAAe;EACf,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,iBAAiB;EACjB,iBAAiB;EACjB,YAAY;EACZ,kBAAkB;AACpB;;AAEA;EACE,YAAY;EACZ,YAAY;EACZ,YAAY;EACZ,iBAAiB;EACjB,eAAe;EACf,mBAAmB;AACrB;;AAEA;EACE,UAAU;AACZ;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,gBAAgB;EAChB,oBAAoB;AACtB;;AAEA;EACE,qBAAqB;AACvB;;AAEA;EACE,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,2BAA2B;EAC3B,yBAAyB;EACzB,yCAAyC;EACzC,eAAe;EACf,gBAAgB;EAChB,eAAe;AACjB;;AAEA;EACE,kBAAkB;EAClB,iBAAiB;EACjB,cAAc;EACd,sCAAsC;AACxC;;AAEA;EACE,sCAAsC;AACxC;;AAEA;EACE,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,eAAe;AACjB","file":"utils.module.css","sourcesContent":["/*\n  在className當中放入module.css的方式如下\n  EX:\n  in exampleStyle.module.css\n  .divStyle { border: 1rem; }\n  ************************************\n  in example.js\n  import exampleStyle from './styles/exampleStyle.module.css'\n\n  return <div className={exampleStyle.divStyle}>example</div>\n\n  多重className寫法為\n  return <div className={`${exampleStyle.divStyle} ${exampleStyle.pStyle}`}>example</div>\n*/\n\n.h1.hidden {\n  display: none;\n}\n\n.heading2Xl {\n  font-size: 2.5rem;\n  line-height: 1.2;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingXl {\n  font-size: 2rem;\n  line-height: 1.3;\n  font-weight: 800;\n  letter-spacing: -0.05rem;\n  margin: 1rem 0;\n}\n\n.headingLg {\n  font-size: 1.5rem;\n  line-height: 1.4;\n  margin: 1rem 0;\n}\n\n.headingMd {\n  font-size: 1.2rem;\n  line-height: 1.5;\n}\n\n.borderCircle {\n  border-radius: 9999px;\n}\n\n.colorInherit {\n  color: inherit;\n}\n\n.padding1px {\n  padding-top: 1px;\n}\n\n.list {\n  list-style: none;\n  padding: 0;\n  margin: 0;\n}\n\n.listItem {\n  margin: 0 0 1.25rem;\n}\n\n.lightText {\n  color: #999;\n}\n\n.markdown {\n  font-family: 'Arial';\n}\n\n.markdown a {\n  text-decoration: none;\n  color: blue;\n}\n\n.markdown a:hover {\n  opacity: 0.6;\n}\n\n.markdown h3 {\n  margin: 0;\n  padding: 0;\n  text-transform: uppercase;\n}\n\n.notfound {\n  margin-top: 16rem;\n  margin-bottom: 16rem;\n}\n\n.indexBG {\n  background-image: url(../img/bg.jpg);\n  height: 50%;\n\n  /* Center and scale the image nicely */\n  background-position: center;\n  background-repeat: no-repeat;\n  background-size: cover;\n}\n\n.homeShow {\n  padding-top: 15%;\n  padding-bottom: 35%;\n  padding-left: 10%;\n  padding-right: 10%;\n  max-width: 100%;\n  text-align: center;\n}\n\n.divH1 {\n  color: white;\n  font-size: 3.5rem;\n  font-weight: bold;\n  opacity: 0.5;\n  text-align: center;\n}\n\n.buttonControl {\n  opacity: 0.2;\n  color: white;\n  margin: 1rem;\n  font-weight: bold;\n  font-size: 2rem;\n  border-radius: 12px;\n}\n\n.buttonControl :hover {\n  color: red;\n}\n\n.textModule {\n  text-align: center;\n}\n\n.courseDiv {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n\n.courseIMG {\n  overflow: hidden;\n  transition: all 0.6s;\n}\n\n.courseIMG:hover {\n  transform: scale(1.2);\n}\n\n.courseListGroupItem {\n  overflow: hidden;\n}\n\n.productStyle {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n}\n\n.colStyle {\n  border-right-width: 0.06rem;\n  border-right-style: solid;\n  border-right-color: rgb(21, 34, 55 ,0.15);\n  padding-left: 0;\n  padding-right: 0;\n  margin-right: 5;\n}\n\n.headingH1 {\n  text-align: center;\n  font-weight: bold;\n  color: #afaeb2;\n  text-shadow: #afaeb2 0.1em 0.1em 0.2em;\n}\n\n.headingH1:hover {\n  text-shadow: #afaeb2 0.1em 0.1em 0.1em;\n}\n\n.footerDesSpan {\n  font-weight: bold;\n  color: #000000;\n}\n\n.ulDiv {\n  padding-left: 0;\n}\n"]}]);
 // Exports
 exports.locals = {
+	"h1": "utils_h1__FWn9W",
+	"hidden": "utils_hidden__ImX6l",
 	"heading2Xl": "utils_heading2Xl__1I65m",
 	"headingXl": "utils_headingXl__1XecN",
 	"headingLg": "utils_headingLg__de7p0",
@@ -21215,9 +21217,10 @@ var ProductJson = function ProductJson(_ref2) {
         lineNumber: 52,
         columnNumber: 50
       }
-    }), ( // 判斷式先去看在product底下categories下面的陣列存不存在，使用[0]代表這個陣列的第一項，因為每一個product底下的categories都是獨立存在的，所以除非有同一個product.categories下面有一個以上陣列才要用0以上的數字
+    }), // 判斷式先去看在product底下categories下面的陣列存不存在，使用[0]代表這個陣列的第一項，因為每一個product底下的categories都是獨立存在的，所以除非有同一個product.categories下面有一個以上陣列才要用0以上的數字
     // 如果陣列不存在清空位置，存在的話才顯示內容
-    console.log(product.categories[0].id), !product.categories[0].id ? null : "Price: " + product.price), __jsx("br", {
+    // console.log(product.categories[0].id),
+    !product.categories[0].id ? null : "Price: " + product.price, __jsx("br", {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
@@ -21380,14 +21383,16 @@ var getheadingH1 = function getheadingH1() {
   return _api_headingH1_json__WEBPACK_IMPORTED_MODULE_6__;
 };
 var h1Mapping = function h1Mapping(h1_id, arr_id) {
+  // 這邊要特別注意，使用function進行return中render內容，如果內容包含其它function.map
+  // 需要被包含在<></>裡面，否則會被報錯顯示declare
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, !getheadingH1() ? 'Loading ...' : getheadingH1().map(function (headingH1) {
     return __jsx("h1", {
-      className: !(h1_id == 1 && arr_id == 1) ? _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_8___default.a.headingH1 : _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_8___default.a.divH1,
+      className: !(headingH1.id == h1_id && headingH1.arr[0].id == arr_id) ? _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_8___default.a.h1.hidden : !(h1_id == 1 && arr_id == 1) ? _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_8___default.a.headingH1 : _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_8___default.a.divH1,
       key: headingH1.id,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40,
+        lineNumber: 42,
         columnNumber: 11
       }
     }, !(headingH1.id == h1_id && headingH1.arr[0].id == arr_id) ? null : headingH1.h1);
@@ -21406,24 +21411,24 @@ var handler = function handler() {
 
 var PostLink = function PostLink(_ref) {
   var post = _ref.post;
-  return __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/batman/[id]",
     as: "/batman/".concat(post.id),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 3
+      lineNumber: 71,
+      columnNumber: 7
     }
   }, __jsx("a", {
     title: "Connect to ".concat(post.title, " Page"),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 5
+      lineNumber: 72,
+      columnNumber: 9
     }
-  }, post.title));
+  }, post.title)));
 };
 var pageDescription = function pageDescription() {
   return "This is the page for the website.This content to description this text website how to use.";
@@ -21436,7 +21441,7 @@ var footerDescription = function footerDescription() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 92,
       columnNumber: 5
     }
   }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["Col"], {
@@ -21448,7 +21453,7 @@ var footerDescription = function footerDescription() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 93,
       columnNumber: 7
     }
   }, // 判斷式先判斷webDescription()能不能執行，如果不能那麼顯示Loading ... ， 可以的話執行webDescription()
@@ -21461,7 +21466,7 @@ var footerDescription = function footerDescription() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
+      lineNumber: 99,
       columnNumber: 7
     }
   }, !copyRight() ? 'Loading ...' : copyRight()));
@@ -21850,7 +21855,7 @@ if (true) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Ftest&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Ftest.js ***!
   \************************************************************************************************************************************************************/
@@ -21873,5 +21878,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[5,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=test.js.map

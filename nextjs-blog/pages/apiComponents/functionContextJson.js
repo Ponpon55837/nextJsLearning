@@ -32,6 +32,8 @@ export const getheadingH1 = () => {
 }
 
 export const h1Mapping = (h1_id, arr_id) => {
+  // 這邊要特別注意，使用function進行return中render內容，如果內容包含其它function.map
+  // 需要被包含在<></>裡面，否則會被報錯顯示declare
   return (
     <>
       {
@@ -39,6 +41,7 @@ export const h1Mapping = (h1_id, arr_id) => {
         getheadingH1().map(headingH1 => (
           <h1
             className={
+              !(headingH1.id == h1_id && headingH1.arr[0].id == arr_id) ? utilStyles.h1.hidden :
               !(h1_id == 1 && arr_id == 1) ? utilStyles.headingH1 : utilStyles.divH1
             }
             key={headingH1.id}>
@@ -62,11 +65,15 @@ export const handler = () => {
 }
 
 // 當作額外插入的link來使用，這裡面的post.id，post.title都是藉由被map進來的post值使用
-export const PostLink = ({ post }) => (
-  <Link href="/batman/[id]" as={`/batman/${post.id}`}>
-    <a title={`Connect to ${post.title} Page`}>{post.title}</a>
-  </Link>
-)
+export const PostLink = ({ post }) => {
+  return (
+    <>
+      <Link href="/batman/[id]" as={`/batman/${post.id}`}>
+        <a title={`Connect to ${post.title} Page`}>{post.title}</a>
+      </Link>
+    </>
+  )
+}
 
 export const pageDescription = () => {
   return (
