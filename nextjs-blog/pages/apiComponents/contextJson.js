@@ -62,7 +62,8 @@ export const ProductJson = ({ products }) => {
                       { !product.categories[0].id ? null :
                         `Quality: ` + product.quality }<br />
                       {
-                        !product.categories[0].id == 1 ? null :
+                        // 判斷式要被包含不然判斷會錯誤或是失效
+                        !(product.categories[0].id == 1) ? null :
                         `Create_at: ` + product.categories[0].created_at }
                     </Card.Body>
                   </Accordion.Collapse>

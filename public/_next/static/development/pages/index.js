@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/index.js"],{
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -5219,18 +5219,6 @@ var e,t=(e=__webpack_require__(/*! querystring */ "./node_modules/querystring-es
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/polyfills/fetch/index.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/next/dist/build/polyfills/fetch/index.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* globals self */var fetch=self.fetch.bind(self);module.exports=fetch;module.exports.default=module.exports;
-
-/***/ }),
-
 /***/ "./node_modules/next/dist/build/polyfills/object-assign.js":
 /*!***********************************************************************************************************************!*\
   !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_2adc2403d89adc16ead0 ***!
@@ -5254,21 +5242,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fblog.js!./":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fblog.js ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Findex.js!./":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Findex.js ***!
+  \*****************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog", function() {
-      var mod = __webpack_require__(/*! ./pages/blog.js */ "./pages/blog.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/", function() {
+      var mod = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
       if(true) {
-        module.hot.accept(/*! ./pages/blog.js */ "./pages/blog.js", function() {
-          if(!next.router.components["/blog"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/blog.js */ "./pages/blog.js")
-          next.router.update("/blog", updatedPage)
+        module.hot.accept(/*! ./pages/index.js */ "./pages/index.js", function() {
+          if(!next.router.components["/"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/index.js */ "./pages/index.js")
+          next.router.update("/", updatedPage)
         })
       }
       return mod
@@ -21201,10 +21189,10 @@ var headerBar = function headerBar() {
 
 /***/ }),
 
-/***/ "./pages/apiComponents/headerJson.js":
-/*!*******************************************!*\
-  !*** ./pages/apiComponents/headerJson.js ***!
-  \*******************************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -21212,97 +21200,22 @@ var headerBar = function headerBar() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../styles/utilStyle.js */ "./styles/utilStyle.js");
-/* harmony import */ var _functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./functionContextJson.js */ "./pages/apiComponents/functionContextJson.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
+/* harmony import */ var _apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./apiComponents/functionContextJson.js */ "./pages/apiComponents/functionContextJson.js");
+/* harmony import */ var _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/utilStyle.js */ "./styles/utilStyle.js");
+/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/utils.module.css */ "./styles/utils.module.css");
+/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
 var _this = undefined,
-    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/apiComponents/headerJson.js";
+    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/index.js";
 
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-
-
-
- // headers由外部傳入
-
-var HeaderJson = function HeaderJson(_ref) {
-  var headers = _ref.headers;
-  // API_URL為.env這個檔案中的網址來使用，雖然在這邊並沒有影響，但是如果要使用image這種api匯入的話，就需要指定API_URL
-  // const { API_URL } = process.env
-  console.log(headers);
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["ListGroup"], {
-    variant: "flush",
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15,
-      columnNumber: 7
-    }
-  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_5__["ListGroup"].Item, {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 9
-    }
-  }, !headers ? 'Loading ...' : headers.map(function (header) {
-    return __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-      href: header.url,
-      key: header.id,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20,
-        columnNumber: 15
-      }
-    }, __jsx("a", {
-      className: "nav-item nav-link",
-      style: _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_3__["wordCapitalize"],
-      title: "Connect to ".concat(header.title, " Page"),
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21,
-        columnNumber: 17
-      }
-    }, header.title));
-  }))));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (HeaderJson);
-
-/***/ }),
-
-/***/ "./pages/blog.js":
-/*!***********************!*\
-  !*** ./pages/blog.js ***!
-  \***********************/
-/*! exports provided: __N_SSG, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__N_SSG", function() { return __N_SSG; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _apiComponents_headerJson_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./apiComponents/headerJson.js */ "./pages/apiComponents/headerJson.js");
-/* harmony import */ var _apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./apiComponents/functionContextJson.js */ "./pages/apiComponents/functionContextJson.js");
-/* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
-/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/utils.module.css */ "./styles/utils.module.css");
-/* harmony import */ var _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_styles_utils_module_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-bootstrap */ "./node_modules/react-bootstrap/esm/index.js");
-var _this = undefined,
-    _jsxFileName = "/Users/ponpon55837/nextJsPublic/next-learn-demo/nextjs-blog/pages/blog.js";
-
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
@@ -21311,140 +21224,110 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-var Blog = function Blog(_ref) {
-  var headers = _ref.headers,
-      _ref$title = _ref.title,
-      title = _ref$title === void 0 ? 'Blog Page' : _ref$title,
+var Home = function Home(_ref) {
+  var _ref$title = _ref.title,
+      title = _ref$title === void 0 ? 'Index Page' : _ref$title,
       _ref$h1_id = _ref.h1_id,
-      h1_id = _ref$h1_id === void 0 ? 2 : _ref$h1_id,
+      h1_id = _ref$h1_id === void 0 ? 1 : _ref$h1_id,
       _ref$arr_id = _ref.arr_id,
-      arr_id = _ref$arr_id === void 0 ? 2 : _ref$arr_id;
-  // 如果要使用圖片的話需要在這邊寫入如下面這行
-  // const { API_URL } = process.env
-  return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, __jsx(next_head__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      arr_id = _ref$arr_id === void 0 ? 1 : _ref$arr_id;
+  return __jsx("div", {
+    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.indexBG,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14,
+      lineNumber: 12,
+      columnNumber: 5
+    }
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13,
       columnNumber: 7
     }
   }, __jsx("title", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 14,
+      columnNumber: 9
+    }
+  }, title + '.   ' + Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["titleDescription"])()), __jsx("meta", {
+    property: "og:description",
+    content: !Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["getHeader"])() ? Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["pageDescription"])() : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["getHeader"])().map(function (header) {
+      return header.title;
+    }) + '.' + Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["pageDescription"])(),
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 15,
       columnNumber: 9
     }
-  }, title + '.   ' + Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["titleDescription"])()), __jsx("meta", {
-    property: "og:description",
-    content: !Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["getIndexHelloNextJs"])() ? Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["pageDescription"])() : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["getIndexHelloNextJs"])().map(function (post) {
-      return post.id;
-    }) + '.' + Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["pageDescription"])(),
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16,
-      columnNumber: 9
-    }
-  })), __jsx(_components_layout__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18,
-      columnNumber: 7
-    }
-  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Container"], {
+  })), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Container"], {
     fluid: true,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 17,
+      columnNumber: 7
+    }
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Row"], {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18,
       columnNumber: 9
     }
-  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Row"], {
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20,
-      columnNumber: 11
-    }
-  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
-    className: "d-none d-sm-none d-md-block",
-    md: 2,
-    lg: 2,
-    xl: 2,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 21,
-      columnNumber: 13
-    }
-  }, __jsx(_apiComponents_headerJson_js__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    headers: headers,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22,
-      columnNumber: 15
-    }
-  })), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
+  }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Col"], {
+    className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.homeShow,
     xs: 12,
     sm: 12,
-    md: 10,
-    lg: 8,
-    xl: 8,
+    md: 8,
+    lg: 6,
+    xl: 6,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24,
-      columnNumber: 13
+      lineNumber: 19,
+      columnNumber: 11
     }
-  }, !Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["h1Mapping"])() ? null : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["h1Mapping"])(h1_id, arr_id), !Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["getIndexHelloNextJs"])() ? 'Loading ...' : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["getIndexHelloNextJs"])().map(function (post) {
-    return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["ListGroup"], {
-      variant: "flush",
-      key: post.id,
+  }, !Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["h1Mapping"])() ? null : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["h1Mapping"])(h1_id, arr_id), // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
+  !Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["getHeader"])() ? 'Loading ...' : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["getHeader"])().map(function (header) {
+    return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Button"], {
+      variant: "outline-dark",
+      size: "lg",
+      block: true,
+      className: _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_6___default.a.buttonControl,
+      key: header.id,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29,
+        lineNumber: 24,
+        columnNumber: 17
+      }
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: header.link,
+      __self: _this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 25,
         columnNumber: 19
       }
-    }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["ListGroup"].Item, {
+    }, __jsx("a", {
+      style: _styles_utilStyle_js__WEBPACK_IMPORTED_MODULE_5__["wordCapitalize"],
+      title: "Connect to ".concat(header.title, " Page"),
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30,
-        columnNumber: 21
+        lineNumber: 25,
+        columnNumber: 44
       }
-    }, __jsx(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_3__["PostLink"], {
-      key: post.id,
-      post: post,
-      __self: _this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 31,
-        columnNumber: 23
-      }
-    })));
-  })), __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_6__["Col"], {
-    className: "d-none d-sm-none d-md-none d-lg-block",
-    lg: 2,
-    xl: 2,
-    __self: _this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37,
-      columnNumber: 13
-    }
+    }, header.title)));
   })))));
-}; // 我覺得這部分應該可以額外拉到一個components裡面去寫，再由import進來
-// 例如 import { getStaticProps } from './components/StaticProps.js'
-// 然後由上面的 const Index = ({ header }) => {}把data值丟進來。
-// API_URL由外部匯入，使用可以重複使用
+};
 
-
-var __N_SSG = true;
-/* harmony default export */ __webpack_exports__["default"] = (Blog);
+/* harmony default export */ __webpack_exports__["default"] = (Home);
 
 /***/ }),
 
@@ -21636,14 +21519,14 @@ if (true) {
 
 /***/ }),
 
-/***/ 3:
-/*!************************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fblog.js ***!
-  \************************************************************************************************************************************************************/
+/***/ 7:
+/*!*********************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Findex.js ***!
+  \*********************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fblog.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Fblog.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Findex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=%2FUsers%2Fponpon55837%2FnextJsPublic%2Fnext-learn-demo%2Fnextjs-blog%2Fpages%2Findex.js!./");
 
 
 /***/ }),
@@ -21659,5 +21542,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=blog.js.map
+},[[7,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=index.js.map
