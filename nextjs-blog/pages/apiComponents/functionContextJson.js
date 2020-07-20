@@ -40,11 +40,12 @@ export const h1Mapping = (h1_id, arr_id) => {
         !getheadingH1() ? 'Loading ...' :
         getheadingH1().map(headingH1 => (
           <h1 className={
-              !(headingH1.id == h1_id && headingH1.arr[0].id == arr_id) ? utilStyles.h1.hidden :
+              !(headingH1.h1_id == h1_id && headingH1.arr[0].arr_id == arr_id) ? utilStyles.h1.hidden :
               !(h1_id == 1 && arr_id == 1) ? utilStyles.headingH1 : utilStyles.divH1
             }
-            key={headingH1.id}>
-            {!(headingH1.id == h1_id && headingH1.arr[0].id == arr_id) ? null : headingH1.h1}
+            key={headingH1.h1_id}>
+            {!(headingH1.h1_id == h1_id && headingH1.arr[0].arr_id == arr_id) ?
+              null : headingH1.h1}
           </h1>
         ))
       }
@@ -127,8 +128,8 @@ export const getRandom = ( list ) => {
 }
 
 export const headerBar = () => {
-  const randomText = [ 'NextJS', 'Bootstrap', 'ReactJs', 'Framework', 'Javascript' ]
-  const randomWriter = [ 'Upfloor', 'StudioP', 'GameStart', 'FrontendLearning' ]
+  const randomText = [ 'NextJs', 'Bootstrap', 'ReactJs', 'JS' ]
+  const randomWriter = [ 'Upfloor', 'StudioP', 'Learning', 'Frontend' ]
 
   return (
     getRandom(randomText) + ' with ' + getRandom(randomWriter)

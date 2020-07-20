@@ -30,7 +30,7 @@ const Batman = (props, { title = 'Batman TV show menu', h1_id = 4, arr_id = 4 })
                     <ListGroup variant="flush" key={show.id}>
                       <ListGroup.Item>
                         <Link href="/batman/[id]" as={`/batman/${show.id}`}>
-                          <a>{show.name}</a>
+                          <a title={`Connect to ${show.name}`}>{show.name}</a>
                         </Link>
                       </ListGroup.Item>
                     </ListGroup>

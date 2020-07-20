@@ -36,7 +36,8 @@ export const SubscribersJson = ({ subscribers }) => {
                 </Accordion.Toggle>
                 <Accordion.Collapse eventKey={subs.id}>
                   <Card.Body>
-                    <a href={subs.url} title={`Connect to ${subs.login} Page`}>{subs.login}</a>
+                    <a href={subs.url}
+                    title={`Connect to ${subs.login} Page`}>{subs.login}</a>
                   </Card.Body>
                 </Accordion.Collapse>
               </Card><br />

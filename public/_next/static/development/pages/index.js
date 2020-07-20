@@ -286,9 +286,9 @@ var Layout = function Layout(_ref) {
       columnNumber: 7
     }
   }, __jsx("link", {
-    href: "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css",
     rel: "stylesheet",
-    integrity: "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh",
+    href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css",
+    integrity: "sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk",
     crossorigin: "anonymous",
     __self: _this,
     __source: {
@@ -302,7 +302,7 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11,
+      lineNumber: 14,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -311,7 +311,7 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12,
+      lineNumber: 15,
       columnNumber: 9
     }
   }), __jsx("meta", {
@@ -319,21 +319,21 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13,
+      lineNumber: 16,
       columnNumber: 9
     }
   })), __jsx(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15,
+      lineNumber: 18,
       columnNumber: 7
     }
   }), __jsx("br", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16,
+      lineNumber: 19,
       columnNumber: 7
     }
   }), // 原本寫為 props.children ? props.children : 'Loading...'
@@ -341,14 +341,14 @@ var Layout = function Layout(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19,
+      lineNumber: 22,
       columnNumber: 7
     }
   }), __jsx(_Footer__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20,
+      lineNumber: 23,
       columnNumber: 7
     }
   }));
@@ -11291,7 +11291,7 @@ var FormRow = Object(_createWithBsPrefix__WEBPACK_IMPORTED_MODULE_12__["default"
 var defaultProps = {
   inline: false
 };
-var Form = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function (_ref, ref) {
+var FormImpl = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function (_ref, ref) {
   var bsPrefix = _ref.bsPrefix,
       inline = _ref.inline,
       className = _ref.className,
@@ -11306,17 +11306,17 @@ var Form = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function (_re
     className: classnames__WEBPACK_IMPORTED_MODULE_2___default()(className, validated && 'was-validated', inline && bsPrefix + "-inline")
   }));
 });
-Form.displayName = 'Form';
-Form.defaultProps = defaultProps;
-Form.Row = FormRow;
-Form.Group = _FormGroup__WEBPACK_IMPORTED_MODULE_7__["default"];
-Form.Control = _FormControl__WEBPACK_IMPORTED_MODULE_6__["default"];
-Form.Check = _FormCheck__WEBPACK_IMPORTED_MODULE_4__["default"];
-Form.File = _FormFile__WEBPACK_IMPORTED_MODULE_5__["default"];
-Form.Switch = _Switch__WEBPACK_IMPORTED_MODULE_10__["default"];
-Form.Label = _FormLabel__WEBPACK_IMPORTED_MODULE_8__["default"];
-Form.Text = _FormText__WEBPACK_IMPORTED_MODULE_9__["default"];
-/* harmony default export */ __webpack_exports__["default"] = (Form);
+FormImpl.displayName = 'Form';
+FormImpl.defaultProps = defaultProps;
+FormImpl.Row = FormRow;
+FormImpl.Group = _FormGroup__WEBPACK_IMPORTED_MODULE_7__["default"];
+FormImpl.Control = _FormControl__WEBPACK_IMPORTED_MODULE_6__["default"];
+FormImpl.Check = _FormCheck__WEBPACK_IMPORTED_MODULE_4__["default"];
+FormImpl.File = _FormFile__WEBPACK_IMPORTED_MODULE_5__["default"];
+FormImpl.Switch = _Switch__WEBPACK_IMPORTED_MODULE_10__["default"];
+FormImpl.Label = _FormLabel__WEBPACK_IMPORTED_MODULE_8__["default"];
+FormImpl.Text = _FormText__WEBPACK_IMPORTED_MODULE_9__["default"];
+/* harmony default export */ __webpack_exports__["default"] = (FormImpl);
 
 /***/ }),
 
@@ -11751,6 +11751,8 @@ var FormFile = react__WEBPACK_IMPORTED_MODULE_3___default.a.forwardRef(function 
   }, feedback))));
 });
 FormFile.displayName = 'FormFile';
+FormFile.Input = _FormFileInput__WEBPACK_IMPORTED_MODULE_6__["default"];
+FormFile.Label = _FormFileLabel__WEBPACK_IMPORTED_MODULE_7__["default"];
 /* harmony default export */ __webpack_exports__["default"] = (FormFile);
 
 /***/ }),
@@ -13041,6 +13043,7 @@ __webpack_require__.r(__webpack_exports__);
  // TODO: check this
 
 var NavContext = react__WEBPACK_IMPORTED_MODULE_0___default.a.createContext(null);
+NavContext.displayName = 'NavContext';
 /* harmony default export */ __webpack_exports__["default"] = (NavContext);
 
 /***/ }),
@@ -20979,7 +20982,7 @@ module.exports = JSON.parse("[{\"id\":\"1\",\"link\":\"/\",\"title\":\"Home\"},{
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"id\":\"1\",\"page\":\"index\",\"arr\":[{\"id\":1}],\"h1\":\"Welcome\"},{\"id\":\"2\",\"page\":\"blog\",\"arr\":[{\"id\":2}],\"h1\":\"My Blog\"},{\"id\":\"3\",\"page\":\"about\",\"arr\":[{\"id\":3}],\"h1\":\"This is the About Page\"},{\"id\":\"4\",\"page\":\"batman\",\"arr\":[{\"id\":4}],\"h1\":\"Batman TV Shows\"},{\"id\":\"5\",\"page\":\"contact\",\"arr\":[{\"id\":5}],\"h1\":\"Contacts\"},{\"id\":\"6\",\"page\":\"test\",\"arr\":[{\"id\":6}],\"h1\":\"Course shows\"},{\"id\":\"7\",\"page\":\"log&Sign\",\"arr\":[{\"id\":7}],\"h1\":\"log&Sign\"},{\"id\":\"8\",\"page\":\"404\",\"arr\":[{\"id\":8}],\"h1\":\"404 Not Found\"}]");
+module.exports = JSON.parse("[{\"h1_id\":\"1\",\"page\":\"index\",\"arr\":[{\"arr_id\":1}],\"h1\":\"Welcome\"},{\"h1_id\":\"2\",\"page\":\"blog\",\"arr\":[{\"arr_id\":2}],\"h1\":\"My Blog\"},{\"h1_id\":\"3\",\"page\":\"about\",\"arr\":[{\"arr_id\":3}],\"h1\":\"This is the About Page\"},{\"h1_id\":\"4\",\"page\":\"batman\",\"arr\":[{\"arr_id\":4}],\"h1\":\"Batman TV Shows\"},{\"h1_id\":\"5\",\"page\":\"contact\",\"arr\":[{\"arr_id\":5}],\"h1\":\"Contacts\"},{\"h1_id\":\"6\",\"page\":\"test\",\"arr\":[{\"arr_id\":6}],\"h1\":\"Course shows\"},{\"h1_id\":\"7\",\"page\":\"log&Sign\",\"arr\":[{\"arr_id\":7}],\"h1\":\"log&Sign\"},{\"h1_id\":\"8\",\"page\":\"404\",\"arr\":[{\"arr_id\":8}],\"h1\":\"404 Not Found\"}]");
 
 /***/ }),
 
@@ -21084,15 +21087,15 @@ var h1Mapping = function h1Mapping(h1_id, arr_id) {
   // 需要被包含在<></>裡面，否則會被報錯顯示declare
   return __jsx(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, !getheadingH1() ? 'Loading ...' : getheadingH1().map(function (headingH1) {
     return __jsx("h1", {
-      className: !(headingH1.id == h1_id && headingH1.arr[0].id == arr_id) ? _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_8___default.a.h1.hidden : !(h1_id == 1 && arr_id == 1) ? _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_8___default.a.headingH1 : _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_8___default.a.divH1,
-      key: headingH1.id,
+      className: !(headingH1.h1_id == h1_id && headingH1.arr[0].arr_id == arr_id) ? _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_8___default.a.h1.hidden : !(h1_id == 1 && arr_id == 1) ? _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_8___default.a.headingH1 : _styles_utils_module_css__WEBPACK_IMPORTED_MODULE_8___default.a.divH1,
+      key: headingH1.h1_id,
       __self: _this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 42,
         columnNumber: 11
       }
-    }, !(headingH1.id == h1_id && headingH1.arr[0].id == arr_id) ? null : headingH1.h1);
+    }, !(headingH1.h1_id == h1_id && headingH1.arr[0].arr_id == arr_id) ? null : headingH1.h1);
   }));
 }; // for Header.js
 
@@ -21114,7 +21117,7 @@ var PostLink = function PostLink(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 71,
       columnNumber: 7
     }
   }, __jsx("a", {
@@ -21122,7 +21125,7 @@ var PostLink = function PostLink(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 72,
       columnNumber: 9
     }
   }, post.title)));
@@ -21138,7 +21141,7 @@ var footerDescription = function footerDescription() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91,
+      lineNumber: 92,
       columnNumber: 5
     }
   }, __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_9__["Col"], {
@@ -21150,7 +21153,7 @@ var footerDescription = function footerDescription() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
+      lineNumber: 93,
       columnNumber: 7
     }
   }, // 判斷式先判斷webDescription()能不能執行，如果不能那麼顯示Loading ... ， 可以的話執行webDescription()
@@ -21163,7 +21166,7 @@ var footerDescription = function footerDescription() {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 99,
       columnNumber: 7
     }
   }, !copyRight() ? 'Loading ...' : copyRight()));
@@ -21182,8 +21185,8 @@ var getRandom = function getRandom(list) {
   return list[Math.floor(Math.random() * list.length)];
 };
 var headerBar = function headerBar() {
-  var randomText = ['NextJS', 'Bootstrap', 'ReactJs', 'Framework', 'Javascript'];
-  var randomWriter = ['Upfloor', 'StudioP', 'GameStart', 'FrontendLearning'];
+  var randomText = ['NextJs', 'Bootstrap', 'ReactJs', 'JS'];
+  var randomWriter = ['Upfloor', 'StudioP', 'Learning', 'Frontend'];
   return getRandom(randomText) + ' with ' + getRandom(randomWriter);
 };
 
@@ -21292,7 +21295,8 @@ var Home = function Home(_ref) {
       lineNumber: 19,
       columnNumber: 11
     }
-  }, !Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["h1Mapping"])() ? null : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["h1Mapping"])(h1_id, arr_id), // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
+  }, // 判斷h1Mapping有沒有呼叫到，當呼叫到則輸入h1_id，arr_id用來作為對應不同page使用
+  !Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["h1Mapping"])() ? null : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["h1Mapping"])(h1_id, arr_id), // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
   !Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["getHeader"])() ? 'Loading ...' : Object(_apiComponents_functionContextJson_js__WEBPACK_IMPORTED_MODULE_4__["getHeader"])().map(function (header) {
     return __jsx(react_bootstrap__WEBPACK_IMPORTED_MODULE_7__["Button"], {
       variant: "outline-dark",
@@ -21303,7 +21307,7 @@ var Home = function Home(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24,
+        lineNumber: 25,
         columnNumber: 17
       }
     }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
@@ -21311,7 +21315,7 @@ var Home = function Home(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 26,
         columnNumber: 19
       }
     }, __jsx("a", {
@@ -21320,7 +21324,7 @@ var Home = function Home(_ref) {
       __self: _this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25,
+        lineNumber: 26,
         columnNumber: 44
       }
     }, header.title)));
