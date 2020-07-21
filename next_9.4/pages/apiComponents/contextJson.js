@@ -20,7 +20,8 @@ export const CourseJson = ({ courses }) => {
                 <ListGroup.Item className={utilStyle.courseListGroupItem}>
                   <div className={utilStyle.courseDiv}>{course.title}</div><br />
                   <Image className={utilStyle.courseIMG}  src={ !(API_URL + course.image.url) ? null : API_URL + course.image.url } rounded fluid /><br />
-                  <cite title="Source Title">{course.published}</cite>
+                  <cite title="Source Title">{
+                    new Date(course.published).toLocaleDateString()}</cite>
                 </ListGroup.Item>
               </ListGroup>
             </Col>
@@ -64,7 +65,7 @@ export const ProductJson = ({ products }) => {
                       {
                         // 判斷式要被包含不然判斷會錯誤或是失效
                         !(product.categories[0].id == 1) ? null :
-                        `Create_at: ` + product.categories[0].created_at }
+                        `Create_at: ` + new Date(product.categories[0].created_at).toLocaleDateString() }
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
@@ -93,7 +94,8 @@ export const CategoryJson = ({ categories }) => {
               <ListGroup variant="flush" >
                 <ListGroup.Item >
                   {category.name}<br />
-                  <cite title="Source Title">{category.created_at}</cite>
+                  <cite title="Source Title">{
+                    new Date(category.created_at).toLocaleDateString()}</cite>
                 </ListGroup.Item>
               </ListGroup>
             </Col>
