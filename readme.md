@@ -50,8 +50,9 @@
 
 ## 3. 備註
 >主要想要減少每個頁面使用的程式行數，所以大部分的重複內容都會以json進行書寫再匯入
+> 20200721 update next.js version to 9.4
 
 ---
 >目前使用的網站：https://ttttproject-102f7.firebaseapp.com/
 >
->這是由nextjs-blog資料夾輸出的內容
+>這是由nextjs_9.4資料夾輸出的內容
