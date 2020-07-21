@@ -1,0 +1,20 @@
+{
+  "name": "next_9.4",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "9.4.4",
+    "react": "16.13.1",
+    "react-bootstrap": "^1.2.2",
+    "react-dom": "16.13.1",
+    "react-markdown": "^4.3.1"
+  }
+}
