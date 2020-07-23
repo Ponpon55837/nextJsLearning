@@ -1,6 +1,6 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
-import { parkStyle } from '../styles/utilStyle.js'
+import { parkStyle, wordStyle } from '../styles/utilStyle.js'
 import fetch from 'isomorphic-unfetch'
 import { getPark, titleDescription, h1Mapping, pageDescription } from './apiComponents/functionContextJson.js'
 import utilStyles from '../styles/utils.module.css'
@@ -25,7 +25,7 @@ const Contact = (props, {title = 'Contact to the park', h1_id = 5, arr_id = 5}) 
                 {
                   !getPark() ? 'Loading ...' :
                   getPark().map(park => (
-                    <Col xs={12} sm={12} md={12} lg={6} xl={4} key={`${park.areaId} + ${park.parkId}`}>
+                    <Col xs={12} sm={12} md={12} lg={6} xl={4} key={`${park.areaId} + ${park.parkId}`} style={wordStyle}>
                       <Card park={park} style={parkStyle}>
                         <Card.Header>{park.areaName}</Card.Header>
                         <Card.Body>
@@ -35,7 +35,7 @@ const Contact = (props, {title = 'Contact to the park', h1_id = 5, arr_id = 5}) 
                           </Card.Text>
                         </Card.Body>
                         <Card.Footer>
-                          <cite title="Source Title">({park.address})</cite>
+                          <cite title="Source Title">{park.address}</cite>
                         </Card.Footer>
                       </Card>
                     </Col>

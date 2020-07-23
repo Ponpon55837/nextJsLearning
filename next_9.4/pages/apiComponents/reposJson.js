@@ -3,7 +3,7 @@ import { Col, ListGroup, Card, Accordion } from 'react-bootstrap'
 
 export const ReposJson = ({ repos }) => {
   return (
-    <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+    <Col xs={12} sm={6} md={4} lg={4} xl={4}>
       <Accordion defaultActiveKey={repos.svn_url}>
         <Card>
           <Accordion.Toggle as={Card.Header} eventKey={repos.svn_url}>
@@ -25,11 +25,11 @@ export const ReposJson = ({ repos }) => {
 export const SubscribersJson = ({ subscribers }) => {
   return (
     <>
-      <Col xs={12} sm={12} md={12} lg={12} xl={12}>
-        {
-          !subscribers ?  'Loading ...' :
-          subscribers.map(subs => (
-            <Accordion defaultActiveKey={subs.id} key={subs.id}>
+      {
+        !subscribers ?  'Loading ...' :
+        subscribers.map(subs => (
+          <Col xs={12} sm={6} md={4} lg={4} xl={4} key={subs.id}>
+            <Accordion defaultActiveKey={subs.id}>
               <Card>
                 <Accordion.Toggle as={Card.Header} eventKey={subs.id}>
                   {subs.login}
@@ -42,9 +42,9 @@ export const SubscribersJson = ({ subscribers }) => {
                 </Accordion.Collapse>
               </Card><br />
             </Accordion>
-          ))
-        }
-      </Col>
+          </Col>
+        ))
+      }
     </>
   )
 }

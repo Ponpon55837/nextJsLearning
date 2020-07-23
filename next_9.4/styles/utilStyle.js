@@ -52,3 +52,7 @@ export const rowStyle = {
 export const cardHeader = {
   background: 'linear-gradient(to bottom right, #f8f0a9 0%, #fbf1f8 100%)'
 }
+
+export const wordStyle = {
+  wordBreak: 'break-all'
+}

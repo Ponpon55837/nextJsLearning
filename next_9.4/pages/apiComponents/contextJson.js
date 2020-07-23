@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-unfetch'
-import { rowStyle } from '../../styles/utilStyle.js'
+import { rowStyle, wordStyle } from '../../styles/utilStyle.js'
 import utilStyle from '../../styles/utils.module.css'
 import { API_URL } from './functionContextJson.js'
 import { Col, Row, ListGroup, Image, Card, Accordion } from 'react-bootstrap'
@@ -43,13 +43,13 @@ export const ProductJson = ({ products }) => {
           // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
           products.map(product => (
             <Col xs={12} sm={12} md={6} lg={4} xl={4} key={product.id} className='my-2'>
-              <Accordion defaultActiveKey='0'>
+              <Accordion defaultActiveKey={product.id}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey={product.id}>
                     {product.title}
                   </Accordion.Toggle>
                   <Accordion.Collapse eventKey={product.id}>
-                    <Card.Body>
+                    <Card.Body style={wordStyle}>
                       {product.description}<br /><br />
                       {
                         // 判斷式先去看在product底下categories下面的陣列存不存在，使用[0]代表這個陣列的第一項，因為每一個product底下的categories都是獨立存在的，所以除非有同一個product.categories下面有一個以上陣列才要用0以上的數字
