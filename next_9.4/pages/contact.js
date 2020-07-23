@@ -21,21 +21,27 @@ const Contact = (props, {title = 'Contact to the park', h1_id = 5, arr_id = 5}) 
             </Col>
             <Col xs={12} sm={12} md={10} lg={10} xl={10}>
               { !h1Mapping() ? null : h1Mapping(h1_id, arr_id) }
-              {
-                !getPark() ? 'Loading ...' :
-                getPark().map(park => (
-                  <Card key={`${park.areaId} + ${park.parkId}`} park={park} style={parkStyle}>
-                    <Card.Header>{park.areaName}</Card.Header>
-                    <Card.Body>
-                      <Card.Title>{park.introduction}</Card.Title>
-                      <Card.Text>
-                        {park.payGuide}
-                      </Card.Text>
-                    </Card.Body>
-                    <Card.Footer><cite title="Source Title">({park.address})</cite></Card.Footer>
-                  </Card>
-                ))
-              }
+              <Row>
+                {
+                  !getPark() ? 'Loading ...' :
+                  getPark().map(park => (
+                    <Col xs={12} sm={12} md={12} lg={6} xl={4} key={`${park.areaId} + ${park.parkId}`}>
+                      <Card park={park} style={parkStyle}>
+                        <Card.Header>{park.areaName}</Card.Header>
+                        <Card.Body>
+                          <Card.Title>{park.introduction}</Card.Title>
+                          <Card.Text>
+                            {park.payGuide}
+                          </Card.Text>
+                        </Card.Body>
+                        <Card.Footer>
+                          <cite title="Source Title">({park.address})</cite>
+                        </Card.Footer>
+                      </Card>
+                    </Col>
+                  ))
+                }
+              </Row>
               <br /><br />
             </Col>
             <Col className='d-none d-sm-none d-md-block' md={1} lg={1} xl={1}></Col>

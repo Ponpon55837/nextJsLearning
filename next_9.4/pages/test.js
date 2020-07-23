@@ -23,9 +23,7 @@ const Test = ({courses, products, categories, title = 'Courses show menu', h1_id
             <Col xs={12} sm={12} md={10} lg={10} xl={10}>
               { !h1Mapping() ? null : h1Mapping(h1_id, arr_id) }
               <CourseJson courses={courses} />
-              <hr />
               <ProductJson products={products} />
-              <hr />
               <CategoryJson categories={categories} />
             </Col>
             <Col className='d-none d-sm-none d-md-block' md={1} lg={1} xl={1}></Col>

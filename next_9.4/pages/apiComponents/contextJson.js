@@ -10,18 +10,18 @@ export const CourseJson = ({ courses }) => {
   // console.log(courses)
   return (
     <>
-      <Row style={rowStyle}>
+      <Row style={rowStyle} className='my-2'>
         { // 如果products不存在，那畫面就顯示Loading...
           !courses ? 'Loading ...' :
           // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
           courses.map(course => (
-            <Col xs={12} sm={6} md={4} lg={4} xl={3} key={course.id}>
-              <ListGroup variant="flush" >
-                <ListGroup.Item className={utilStyle.courseListGroupItem}>
+            <Col xs={12} sm={6} md={4} lg={4} xl={3} key={course.id} className='my-2'>
+              <ListGroup variant="flush">
+                <ListGroup.Item className={`bg-light ${utilStyle.courseListGroupItem}`}>
                   <div className={utilStyle.courseDiv}>{course.title}</div><br />
-                  <Image className={utilStyle.courseIMG}  src={ !(API_URL + course.image.url) ? null : API_URL + course.image.url } rounded fluid /><br />
+                  <Image className={utilStyle.courseIMG} src={ !(API_URL + course.image.url) ? null : API_URL + course.image.url } rounded fluid /><br />
                   <cite title="Source Title">{
-                    new Date(course.published).toLocaleDateString()}</cite>
+                    new Date(course.published).toLocaleString()}</cite>
                 </ListGroup.Item>
               </ListGroup>
             </Col>
@@ -37,13 +37,13 @@ export const ProductJson = ({ products }) => {
   // console.log(products)
   return (
     <>
-      <Row style={rowStyle}>
+      <Row style={rowStyle} className='my-2'>
         { // 如果products不存在，那畫面就顯示Loading...
           !products ? 'Loading ...' :
           // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
           products.map(product => (
-            <Col xs={12} sm={12} md={12} lg={12} xl={12} key={product.id}>
-              <Accordion defaultActiveKey='false'>
+            <Col xs={12} sm={12} md={6} lg={4} xl={4} key={product.id} className='my-2'>
+              <Accordion defaultActiveKey='0'>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey={product.id}>
                     {product.title}
@@ -65,7 +65,7 @@ export const ProductJson = ({ products }) => {
                       {
                         // 判斷式要被包含不然判斷會錯誤或是失效
                         !(product.categories[0].id == 1) ? null :
-                        `Create_at: ` + new Date(product.categories[0].created_at).toLocaleDateString() }
+                        `Create_at: ` + new Date(product.categories[0].created_at).toLocaleString() }
                     </Card.Body>
                   </Accordion.Collapse>
                 </Card>
@@ -84,18 +84,18 @@ export const CategoryJson = ({ categories }) => {
   // console.log(categories)
   return (
     <>
-      <Row style={rowStyle}>
+      <Row style={rowStyle} className='my-3'>
         {
           // 如果products不存在，那畫面就顯示Loading...
           !categories ? 'Loading ...' :
           // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
           categories.map(category => (
-            <Col xs={12} sm={12} md={12} lg={6} xl={6} key={category.id}>
+            <Col xs={12} sm={6} md={4} lg={4} xl={4} key={category.id} className='my-2'>
               <ListGroup variant="flush" >
-                <ListGroup.Item >
+                <ListGroup.Item className='bg-light'>
                   {category.name}<br />
                   <cite title="Source Title">{
-                    new Date(category.created_at).toLocaleDateString()}</cite>
+                    new Date(category.created_at).toLocaleString()}</cite>
                 </ListGroup.Item>
               </ListGroup>
             </Col>

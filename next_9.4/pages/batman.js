@@ -28,7 +28,7 @@ const Batman = (props, { title = 'Batman TV show menu', h1_id = 4, arr_id = 4 })
                   !props.shows ? 'Loading ...' :
                   props.shows.map( show => (
                     <ListGroup variant="flush" key={show.id}>
-                      <ListGroup.Item>
+                      <ListGroup.Item className='bg-light'>
                         <Link href="/batman/[id]" as={`/batman/${show.id}`}>
                           <a title={`Connect to ${show.name}`}>{show.name}</a>
                         </Link>

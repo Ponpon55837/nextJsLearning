@@ -13,7 +13,7 @@ const HeaderJson = ({ headers }) => {
   return (
     <>
       <ListGroup variant="flush">
-        <ListGroup.Item>
+        <ListGroup.Item className='bg-light'>
           {
             !headers ? 'Loading ...' :
             headers.map(header => (
