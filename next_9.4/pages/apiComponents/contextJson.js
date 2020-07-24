@@ -42,7 +42,7 @@ export const ProductJson = ({ products }) => {
           !products ? 'Loading ...' :
           // if else判斷式，用來避免萬一沒有load到資料時，會報錯，直接顯示loading
           products.map(product => (
-            <Col xs={12} sm={12} md={6} lg={4} xl={4} key={product.id} className='my-2'>
+            <Col xs={12} sm={12} md={12} lg={6} xl={4} key={product.id} className='my-2'>
               <Accordion defaultActiveKey={product.id}>
                 <Card>
                   <Accordion.Toggle as={Card.Header} eventKey={product.id}>
