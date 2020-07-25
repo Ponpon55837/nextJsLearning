@@ -5,9 +5,10 @@ import fetch from 'isomorphic-unfetch'
 import { getPark, titleDescription, h1Mapping, pageDescription } from './apiComponents/functionContextJson.js'
 import utilStyles from '../styles/utils.module.css'
 // bootstrap
-import { Card, Col, Row, Container } from 'react-bootstrap'
+import { Card, Col, Row, Container, Badge } from 'react-bootstrap'
 
 const Contact = (props, {title = 'Contact to the park', h1_id = 5, arr_id = 5}) => {
+
   return (
     <>
       <Head>
@@ -29,14 +30,22 @@ const Contact = (props, {title = 'Contact to the park', h1_id = 5, arr_id = 5}) 
                       <Card park={park} style={parkStyle}>
                         <Card.Header>{park.areaName}</Card.Header>
                         <Card.Body>
-                          <Card.Title>{park.introduction}</Card.Title>
-                          <Card.Text>
+                          <Badge className='mr-2' variant='info'>
+                            {
+                              !(park.introduction.length > 20) ? park.introduction :
+                              park.introduction.substring(0,20) + '...'
+                            }
+                          </Badge>
+                          <Badge className='' variant='secondary'>
+                            {
+                              !(park.address.length > 20) ? park.address :
+                              park.address.substring(0,20) + '...'
+                            }
+                          </Badge>
+                          <div className='mt-2'>
                             {park.payGuide}
-                          </Card.Text>
+                          </div>
                         </Card.Body>
-                        <Card.Footer>
-                          <cite title="Source Title">{park.address}</cite>
-                        </Card.Footer>
                       </Card>
                     </Col>
                   ))
