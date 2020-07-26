@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import Layout from '../components/layout'
 import Head from 'next/head'
 import { parkStyle, wordStyle } from '../styles/utilStyle.js'
@@ -5,9 +6,10 @@ import fetch from 'isomorphic-unfetch'
 import { getPark, titleDescription, h1Mapping, pageDescription } from './apiComponents/functionContextJson.js'
 import utilStyles from '../styles/utils.module.css'
 // bootstrap
-import { Card, Col, Row, Container, Badge } from 'react-bootstrap'
+import { Card, Col, Row, Container, Badge, Accordion } from 'react-bootstrap'
 
 const Contact = (props, {title = 'Contact to the park', h1_id = 5, arr_id = 5}) => {
+  const [open, setOpen] = useState(false)
 
   return (
     <>
@@ -27,26 +29,32 @@ const Contact = (props, {title = 'Contact to the park', h1_id = 5, arr_id = 5}) 
                   !getPark() ? 'Loading ...' :
                   getPark().map(park => (
                     <Col xs={12} sm={12} md={12} lg={6} xl={4} key={`${park.areaId} + ${park.parkId}`} style={wordStyle}>
-                      <Card park={park} style={parkStyle}>
-                        <Card.Header>{park.areaName}</Card.Header>
-                        <Card.Body>
-                          <Badge className='mr-2' variant='info'>
-                            {
-                              !(park.introduction.length > 20) ? park.introduction :
-                              park.introduction.substring(0,20) + '...'
-                            }
-                          </Badge>
-                          <Badge className='' variant='secondary'>
-                            {
-                              !(park.address.length > 20) ? park.address :
-                              park.address.substring(0,20) + '...'
-                            }
-                          </Badge>
-                          <div className='mt-2'>
-                            {park.payGuide}
-                          </div>
-                        </Card.Body>
-                      </Card>
+                      <Accordion defaultActiveKey='false'>
+                        <Card park={park} style={parkStyle}>
+                          <Accordion.Toggle as={Card.Header} eventKey={`${park.areaId} + ${park.parkId}`}>
+                            {park.areaName}
+                          </Accordion.Toggle>
+                          <Card.Subtitle className='text-muted m-2'>
+                            <Badge className='mr-2 mb-1' variant='info'>
+                              {
+                                !(park.introduction.length > 20) ? park.introduction :
+                                park.introduction.substring(0,20) + '...'
+                              }
+                            </Badge>
+                            <Badge className='' variant='secondary'>
+                              {
+                                !(park.address.length > 20) ? park.address :
+                                park.address.substring(0,20) + '...'
+                              }
+                            </Badge>
+                          </Card.Subtitle>
+                          <Accordion.Collapse eventKey={`${park.areaId} + ${park.parkId}`}>
+                            <Card.Body>
+                              {park.payGuide}
+                            </Card.Body>
+                          </Accordion.Collapse>
+                        </Card>
+                      </Accordion>
                     </Col>
                   ))
                 }
