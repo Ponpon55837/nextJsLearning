@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Router from 'next/router'
 import headerlink from '../api/headerlink.json'
@@ -134,4 +135,67 @@ export const headerBar = () => {
   return (
     getRandom(randomText) + ' with ' + getRandom(randomWriter)
   )
+}
+
+// for contactJson page
+export const ifElseFunc = (mointorSize, changeVar) => {
+  if(mointorSize.width >= 1200 && changeVar.length > 20) {
+    return (changeVar.substring(0,19) + '...')
+  }
+  else if (mointorSize.width >= 1200 && changeVar.length < 20){
+    return (changeVar)
+  }
+  else if (990 < mointorSize.width < 1200 && changeVar.length > 25){
+    return (changeVar.substring(0,24) + '...')
+  }
+  else if (990 < mointorSize.width < 1200 && changeVar.length < 25){
+    return (changeVar)
+  }
+  else if (910 < mointorSize.width < 990 && changeVar.length > 25){
+    return (changeVar.substring(0,24) + '...')
+  }
+  else if (910 < mointorSize.width < 990 && changeVar.length <= 25){
+    return (changeVar)
+  }
+  else if (768 < mointorSize.width < 910 && changeVar.length > 27){
+    return (changeVar.substring(0,26) + '...')
+  }
+  else if (768 < mointorSize.width < 910 && changeVar.length <= 27){
+    return (changeVar)
+  }
+  else if (mointorSize.width < 768){
+    return (changeVar)
+  }
+  else {
+    return (changeVar)
+  }
+}
+
+// for windows mointorSize
+export const useWindowSize = () => {
+  const isClient = typeof window === 'object'
+
+  const getSize = () => {
+    return {
+      width: isClient ? window.innerWidth : undefined,
+      height: isClient ? window.innerHeight : undefined
+    }
+  }
+
+  const [windowSize, setWindowSize] = useState(getSize)
+
+  useEffect(() => {
+    if (!isClient) {
+      return false
+    }
+
+    function handleResize() {
+      setWindowSize(getSize())
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, []) // Empty array ensures that effect is only run on mount and unmount
+
+  return windowSize
 }
