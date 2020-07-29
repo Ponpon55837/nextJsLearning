@@ -142,33 +142,19 @@ export const ifElseFunc = (mointorSize, changeVar) => {
   if(mointorSize.width >= 1200 && changeVar.length > 20) {
     return (changeVar.substring(0,19) + '...')
   }
-  else if (mointorSize.width >= 1200 && changeVar.length < 20){
+  else if (mointorSize.width >= 1200 && changeVar.length <= 20){
     return (changeVar)
   }
-  else if (990 < mointorSize.width < 1200 && changeVar.length > 25){
-    return (changeVar.substring(0,24) + '...')
-  }
-  else if (990 < mointorSize.width < 1200 && changeVar.length < 25){
-    return (changeVar)
-  }
-  else if (910 < mointorSize.width < 990 && changeVar.length > 25){
-    return (changeVar.substring(0,24) + '...')
-  }
-  else if (910 < mointorSize.width < 990 && changeVar.length <= 25){
-    return (changeVar)
-  }
-  else if (768 < mointorSize.width < 910 && changeVar.length > 27){
+  else if (990 <= mointorSize.width < 1200 && changeVar.length > 27){
     return (changeVar.substring(0,26) + '...')
-  }
-  else if (768 < mointorSize.width < 910 && changeVar.length <= 27){
-    return (changeVar)
-  }
-  else if (mointorSize.width < 768){
-    return (changeVar)
   }
   else {
     return (changeVar)
   }
+}
+
+export const badgeAlert = (inputAlert) => {
+  alert(inputAlert)
 }
 
 // for windows mointorSize

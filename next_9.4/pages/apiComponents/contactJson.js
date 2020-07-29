@@ -1,5 +1,5 @@
 import React from 'react'
-import { getPark, ifElseFunc, useWindowSize } from './functionContextJson.js'
+import { getPark, ifElseFunc, badgeAlert, useWindowSize } from './functionContextJson.js'
 import { parkStyle, wordStyle } from '../../styles/utilStyle.js'
 import { Row, Col, Accordion, Card, Badge } from 'react-bootstrap'
 
@@ -17,12 +17,12 @@ export const ContactJson = () => {
                   {park.areaName}
                 </Accordion.Toggle>
                 <Card.Subtitle className='text-muted m-2'>
-                  <Badge className='mr-2 mb-1' variant='info'>
+                  <Badge onClick={() => badgeAlert(park.introduction)} className='mr-2 mb-1' variant='info'>
                     {
                       ifElseFunc(webAtThisMointorSize, park.introduction)
                     }
                   </Badge>
-                  <Badge className='' variant='secondary'>
+                  <Badge onClick={() => badgeAlert(park.address)} variant='secondary'>
                     {
                       ifElseFunc(webAtThisMointorSize, park.address)
                     }
