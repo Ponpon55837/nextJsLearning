@@ -3,6 +3,7 @@ import { rowStyle, wordStyle } from '../../styles/utilStyle.js'
 import utilStyle from '../../styles/utils.module.css'
 import { API_URL } from './functionContextJson.js'
 import { Col, Row, ListGroup, Image, Card, Accordion } from 'react-bootstrap'
+import { motion } from 'framer-motion'
 
 // courses由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
 export const CourseJson = ({ courses }) => {
@@ -19,7 +20,21 @@ export const CourseJson = ({ courses }) => {
               <ListGroup variant="flush">
                 <ListGroup.Item className={`bg-light ${utilStyle.courseListGroupItem}`}>
                   <div className={utilStyle.courseDiv}>{course.title}</div><br />
-                  <Image className={utilStyle.courseIMG} src={ !(API_URL + course.image.url) ? null : API_URL + course.image.url } rounded fluid /><br />
+                  <motion.div
+                    layout
+                    whileHover={{ opacity: 1 }}>
+                    <motion.img
+                      className={utilStyle.courseIMG}
+                      src={ !(API_URL + course.image.url) ? null : API_URL + course.image.url }
+                      rounded fluid
+                      initial={{ opacity: 0 }}
+                      animate={{
+                        opacity: 1,
+                        scale: [1, 2, 2, 1, 1],
+                        rotate: [0, 0, 270, 270, 0],
+                        borderRadius: ["0%", "66%", "100%", "33%", "0%"], }}
+                      tramsition={{ delay: 1 }} />
+                  </motion.div><br />
                   <cite title="Source Title">{
                     new Date(course.published).toLocaleString()}</cite>
                 </ListGroup.Item>
