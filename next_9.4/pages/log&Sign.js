@@ -19,11 +19,10 @@ const LogandSign = (props, {title = 'Login and Regist Page'}) => {
             <Col className='d-none d-sm-none d-md-block' md={1} lg={1} xl={1}>
             </Col>
             <Col xs={12} sm={12} md={10} lg={10} xl={10}>
-              <Row>
-                <Login />
-                <Signin />
+              <Row className='my-4'>
+                <Login className='my-4' />
+                <Signin className='my-4' />
               </Row>
-              <br /><br /><br />
             </Col>
             <Col className='d-none d-sm-none d-md-block' md={1} lg={1} xl={1}></Col>
           </Row>

@@ -35,7 +35,7 @@ export const SubscribersJson = ({ subscribers }) => {
                   {subs.login}
                 </Accordion.Toggle>
                 <Card.Subtitle >
-                  <Badge className='mt-3 ml-2' variant='info'>
+                  <Badge className='mt-3 ml-3' variant='info'>
                     ID:{subs.id}
                   </Badge>
                 </Card.Subtitle>

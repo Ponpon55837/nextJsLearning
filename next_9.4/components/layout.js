@@ -15,9 +15,10 @@ const Layout = ({ children }) => {
       <Header />
       <br />
       { // 原本寫為 props.children ? props.children : 'Loading...'
-        children ? children : 'Loading ...'}
+        children ? children : 'Loading ...'
+      }
       <br />
-      <Footer />
+      <Footer className='mt-5' />
     </div>
   )
 }
