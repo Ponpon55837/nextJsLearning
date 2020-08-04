@@ -22,11 +22,14 @@ export const ContactJson = () => {
                       ifElseFunc(webAtThisMointorSize, park.introduction)
                     }
                   </Badge>
-                  <Badge onClick={() => badgeAlert(park.address)} variant='secondary'>
+                  <Badge className='mr-2 mb-1' onClick={() => badgeAlert(park.address)} variant='secondary'>
                     {
                       ifElseFunc(webAtThisMointorSize, park.address)
                     }
                   </Badge>
+                  <div>
+                    停車場坪數：{park.totalSpace} 坪
+                  </div>
                 </Card.Subtitle>
                 <Accordion.Collapse eventKey={`${park.areaId} + ${park.parkId}`}>
                   <Card.Body>
