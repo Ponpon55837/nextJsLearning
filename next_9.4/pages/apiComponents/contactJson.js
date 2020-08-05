@@ -27,6 +27,9 @@ export const ContactJson = () => {
                       ifElseFunc(webAtThisMointorSize, park.address)
                     }
                   </Badge>
+                  <div className='mr-2 mb-1'>
+                    剩餘車位：{park.surplusSpace} 個
+                  </div>
                   <div>
                     停車場坪數：{park.totalSpace} 坪
                   </div>
