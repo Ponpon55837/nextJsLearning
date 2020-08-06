@@ -175,7 +175,7 @@ export const useWindowSize = () => {
       return false
     }
 
-    function handleResize() {
+    const handleResize = () => {
       setWindowSize(getSize())
     }
 
@@ -185,3 +185,24 @@ export const useWindowSize = () => {
 
   return windowSize
 }
+
+// 底下為另一種window size寫法
+// export const reWindowSize = () => {
+//   const [windowWidth, setwindowWidth] = useState(window.innerWidth)
+//
+//   const handleResize = () => {
+//     setwindowWidth(window.innerWidth)
+//   }
+//
+//   useEffect(() => {
+//     window.addEventListener('resize', handleResize)
+//     console.log('windows resize remove 0')
+//     return () => {
+//       console.log('windows resize remove 1')
+//       window.removeEventListener('resize', handleResize)
+//       console.log('windows resize remove 2')
+//     }
+//   }, [windowWidth])
+//
+//   return windowWidth
+// }
