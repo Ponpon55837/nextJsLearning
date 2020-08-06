@@ -29,13 +29,13 @@ export const SubscribersJson = ({ subscribers }) => {
         !subscribers ?  'Loading ...' :
         subscribers.map(subs => (
           <Col xs={12} sm={6} md={6} lg={4} xl={4} key={subs.id}>
-            <Accordion defaultActiveKey={subs.id}>
+            <Accordion defaultActiveKey='false'>
               <Card>
                 <Accordion.Toggle as={Card.Header} eventKey={subs.id}>
                   {subs.login}
                 </Accordion.Toggle>
                 <Card.Subtitle >
-                  <Badge className='mt-3 ml-3' variant='info'>
+                  <Badge className='my-3 ml-3' variant='info'>
                     ID:{subs.id}
                   </Badge>
                 </Card.Subtitle>
