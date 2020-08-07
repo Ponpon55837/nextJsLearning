@@ -181,12 +181,12 @@ export const useWindowSize = () => {
 
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
-  }, []) // Empty array ensures that effect is only run on mount and unmount
+  }, [windowSize]) // Empty array ensures that effect is only run on mount and unmount
 
   return windowSize
 }
 
-// 底下為另一種window size寫法
+// 底下為另一種window size寫法, 不過這樣就無法一次寫入width跟height
 // export const reWindowSize = () => {
 //   const [windowWidth, setwindowWidth] = useState(window.innerWidth)
 //
