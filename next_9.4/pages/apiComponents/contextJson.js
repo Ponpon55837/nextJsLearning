@@ -2,11 +2,12 @@ import fetch from 'isomorphic-unfetch'
 import { rowStyle, wordStyle } from '../../styles/utilStyle.js'
 import utilStyle from '../../styles/utils.module.css'
 import { API_URL } from './functionContextJson.js'
+// import Modal from '../comps/Modal.js'
 import { Col, Row, ListGroup, Image, Card, Accordion } from 'react-bootstrap'
 import { motion } from 'framer-motion'
 
 // courses由外部接入，這個值需要由外部接到data後，藉由function return後再重變數傳入
-export const CourseJson = ({ courses }) => {
+export const CourseJson = ({ courses, isOpen, setIsOpen }) => {
 
   // console.log(courses)
   return (
@@ -19,10 +20,13 @@ export const CourseJson = ({ courses }) => {
             <Col xs={12} sm={6} md={4} lg={4} xl={3} key={course.id} className='my-2'>
               <ListGroup variant="flush">
                 <ListGroup.Item className={`bg-light ${utilStyle.courseListGroupItem}`}>
-                  <div className={utilStyle.courseDiv}>{course.title}</div><br />
+                  <div className={utilStyle.courseDiv}>
+                    {course.title}
+                  </div><br />
                   <motion.div
                     layout
-                    whileHover={{ opacity: 1 }}>
+                    whileHover={{ opacity: 1 }}
+                    >
                     <motion.img
                       className={utilStyle.courseIMG}
                       src={ !(API_URL + course.image.url) ? null : API_URL + course.image.url }
