@@ -1,6 +1,5 @@
 import Link from 'next/link'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import { Navbar, Nav } from 'react-bootstrap'
 import { handler, headerBar, getHeader } from '../pages/apiComponents/functionContextJson.js'
 import { mainStyle, wordCapitalize } from '../styles/utilStyle.js'
 
