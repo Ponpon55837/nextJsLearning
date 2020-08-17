@@ -5,6 +5,7 @@ import { Row, Col, Accordion, Card, Badge } from 'react-bootstrap'
 
 export const ContactJson = () => {
   const webAtThisMointorSize = useWindowSize()
+  console.log(webAtThisMointorSize)
   return (
     <>
       {

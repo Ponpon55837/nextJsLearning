@@ -145,8 +145,11 @@ export const ifElseFunc = (mointorSize, changeVar) => {
   else if (mointorSize.width >= 1200 && changeVar.length <= 20){
     return (changeVar)
   }
-  else if (990 <= mointorSize.width < 1200 && changeVar.length > 27){
-    return (changeVar.substring(0,26) + '...')
+  else if (mointorSize.width > 992 && changeVar.length > 27){
+    return (changeVar.substring(0,25) + '...')
+  }
+  else if (mointorSize.width < 992 && changeVar.length > 27){
+    return (changeVar)
   }
   else {
     return (changeVar)
